@@ -32,7 +32,7 @@ def convert_custom_questions(md_text):
                 question, answer = para.split('\n', 1)
                 question = question.strip()
                 answer = answer.strip()
-                processed_text += f"<details>\n<summary><strong>{question}</strong></summary>\n\n{answer}\n\n</details>\n\n"
+                processed_text += f"<details>\n<summary>{question}</summary>\n\n{answer}\n\n</details>\n\n"
             else:
                 processed_text += para + "\n\n"
     
@@ -90,7 +90,7 @@ def convert_md_to_html(output_html):
             }}
         }}
 
-        // Toggle details open/closed state based on localStorage
+        // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {{
             const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
             const saved = localStorage.getItem(key);

@@ -3,8 +3,10 @@ Question - simple line
 Answer - html syntax
  -->
 
-What is this
-## Table of Contents
+## Table Of Contents
+
+<div class="toc">
+
 <a href='#topic-1' class="table-of-contents">Topic 1: Algorithm</a>
 
 <a href='#topic-2' class="table-of-contents">Topic 2: Programming</a>
@@ -17,58 +19,51 @@ What is this
 
 <a href='#topic-6' class="table-of-contents">Topic 6: The Bigger Picture</a>
 
+<a href="#chap-29" class="table-of-contents subtopic">Chapter 29: Current and emerging trends</a>
+
+</div>
+
+
 <h2 id='topic-1'> Topic 1: Algorithms </h2>
 
-What is an algorithm?
-<p>An algorithm is a step-by-step method for solving a problem or completing a task.</p>
+What is an algorithm? <span class='mark'>[1 mark]</span>
+<answer><p><a>An</a> algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
 
-How does Linear search work?
-<ul>
-  <li>It starts at the front of the list</li>
-  <li>It continues till it matches</li>
-  <li>Stops when the item is found</li>
-</ul>
+How does Linear search work? <span class='mark'>[3 marks]</span>
+<answer>
+  <ul>
+    <li>It starts at the front of the list</li>
+    <li>It continues till it matches</li>
+    <li>Stops when the item is found</li>
+  </ul>
+</answer>
 
-Question?
-- Item 1  
-- Item 2  
-- Item 3  
+How does Binary search work? <span class='mark'>[4 marks]</span>
+<answer>
+  <ul>
+    <li>It starts at the front of the list</li>
+    <li>It continues till it matches</li>
+    <li>Stops when the item is found</li>
+  </ul>
+</answer>
 
-How does linear search work?
-```python 
-print("hello world")
-```
+Define algorithm <span class='mark'>[1 marks]</span>
+<answer><p>A set of instructinos to carry out a specific task/problem<p></answer>
+
+Define abstraction <span class='mark'>[1 marks]</span>
+<answer><p> The process of removing or hiding unnecessary detail so that only the important points remain</p></answer>
+
+Define decomposition <span class='mark'>[1 marks]</span>
+<answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
 
 <h2 id='topic-2'> Topic 2: Programming</h2>
 
-Question
-answer
-
-
 <h2 id='topic-3'> Topic 3: Binary</h2>
-
-How does binary represent data?
-Binary uses only 0s and 1s to represent all data, where each digit is called a bit.
-
-What is hexadecimal used for?
-Hexadecimal provides a more human-readable representation of binary numbers,
-where each hex digit represents 4 binary bits.
 
 <h2 id='topic-4'> Topic 4: Computers</h2>
 
 <h2 id='topic-5'> Topic 5: Networking</h2>
 
-State what is meant by the term "Authentication".
-Process of checking the identity of a user
-
-State what is meant by the term "Validation".
-Process of checking if the data is in the correct format
-
 <h2 id='topic-6'> Topic 6: The Bigger Picture</h2>
 
-What is meant by the quantum computing?
-What is meant by the nanocomputing?
-What is meant by the DNA computing?
-What is meant by the machine learning?
-
-### Current and emerging trends
+<h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
