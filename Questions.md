@@ -13,6 +13,13 @@ An algorithm is a step-by-step procedure to solve a problem or perform a task.
 
 ## Topic 2: Programming
 
+<details>
+<summary><strong>What is an programming?</strong></summary>
+
+A language
+
+</details>
+
 ## Topic 3: Binary
 
 ## Topic 4: Computers
