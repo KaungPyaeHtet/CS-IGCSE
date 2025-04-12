@@ -3,19 +3,9 @@ from markdown.extensions.toc import TocExtension
 import os
 import sys
 
-def load_faq_section(faq_path="Questions.md"):
-    if os.path.exists(faq_path):
-        with open(faq_path, 'r', encoding='utf-8') as f:
-            return "\n\n## Commonly Asked Questions IGCSE CS\n\n" + f.read()
-    return ""
-
 def convert_md_to_html(output_html):
-    if os.path.exists("Questions.md"):
-        with open("Questions.md", 'r', encoding='utf-8') as f:
-            md_text = f.read()
-    else:
-        md_text = ""
-    md_text += load_faq_section()
+    with open("Questions.md", 'r', encoding='utf-8') as f:
+        md_text = f.read()
 
     html = markdown.markdown(
         md_text,
@@ -80,6 +70,6 @@ def convert_md_to_html(output_html):
 
 if __name__ == "__main__":
     if len(sys.argv) < 1:
-        print("Usage: python main.py output.html")
+        print("Usage: python main.py index.html")
     else:
         convert_md_to_html(sys.argv[1])
