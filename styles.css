@@ -29,52 +29,83 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Theme Toggle Button Styles */
 .theme-toggle {
     position: fixed;
     top: 1.2rem;
     right: 1.5rem;
-    background-color: var(--code-bg);
-    border: 2px solid var(--border);
+    background: var(--primary);
+    color: var(--bg);
+    border: none;
     border-radius: 50%;
-    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 1.2rem;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    z-index: 999;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .theme-toggle:hover {
-    transform: rotate(180deg);
-    background-color: var(--primary);
-    color: white;
+    transform: scale(1.1) rotate(30deg);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Dark mode specific toggle icon */
+[data-theme="dark"] .theme-toggle {
+    background: var(--primary);
+    color: var(--bg);
+}
+
+/* Content Styles */
 details {
     border: 1px solid var(--border);
-    padding: 0.8rem;
-    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    margin: 1.2rem 0;
     border-radius: 8px;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    background: var(--bg);
 }
 
 details[open] {
     background-color: var(--code-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 summary {
     cursor: pointer;
     font-weight: 600;
     font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: -0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+summary:hover {
+    background-color: rgba(var(--primary), 0.1);
+}
+
+summary::marker {
+    color: var(--primary);
 }
 
 pre, code {
@@ -82,24 +113,100 @@ pre, code {
     padding: 0.2em 0.4em;
     border-radius: 4px;
     overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+
+pre {
+    padding: 1em;
+    margin: 1em 0;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
     border: 1px solid var(--border);
-    padding: 0.6em;
+    padding: 0.8em;
+    text-align: left;
 }
 
 th {
     background-color: var(--code-bg);
+    font-weight: 600;
 }
 
 a {
     color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary);
     text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+footer a {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+    
+    .theme-toggle {
+        top: 0.8rem;
+        right: 0.8rem;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
+.cool-answer {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary);
+}
+
+.cool-answer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cool-answer li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.cool-answer li:before {
+    position: absolute;
+    left: 0;
+}
+
+.cool-answer em {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 0.3rem;
+    color: var(--text);
+    opacity: 0.8;
 }

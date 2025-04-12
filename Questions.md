@@ -1,35 +1,30 @@
+<!-- Syntax For Questions
+Question = (to create another question just create a blank line)
+Answer = (Answer can be multiple lines)
+Example 1:
+What's the difference between pseudocode and flowcharts? -> Q
+Pseudocode is a text-based way to describe algorithms using programming-like syntax,
+while flowcharts are graphical representations using standardized symbols. -> A
+ -->
+
 ## Topic 1: Algorithms
 
-<!-- Follow this guidelines
-Sample Structure
-<details>
-<summary><strong>What is an algorithm?</strong></summary>
+What is an algorithm?
+An algorithm is a step-by-step method for solving a problem or completing a task.
 
-An algorithm is a step-by-step procedure to solve a problem or perform a task.
-
-</details> -->
-
----
+What's the difference between pseudocode and flowcharts?
+Pseudocode is a text-based way to describe algorithms using programming-like syntax,
+while flowcharts are graphical representations using standardized symbols.
 
 ## Topic 2: Programming
 
-<details>
-<summary><strong>What is an programming?</strong></summary>
 
-A language
-
-</details>
-
-<details>
-<summary><strong>What is an programming?</strong></summary>
-
-A language
-
-</details>
 
 ## Topic 3: Binary
 
-## Topic 4: Computers
+How does binary represent data?
+Binary uses only 0s and 1s to represent all data, where each digit is called a bit.
 
-## Topic 5: Networking
-## Topic 6: The Bigger Picture
+What is hexadecimal used for?
+Hexadecimal provides a more human-readable representation of binary numbers,
+where each hex digit represents 4 binary bits.
