@@ -19,12 +19,10 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip install markdown
+        run: pip install markdown
 
       - name: Generate HTML
-        run: |
-          python3 main.py index.html dark
+        run: python3 main.py index.html dark
 
       - name: Commit and push
         env:
