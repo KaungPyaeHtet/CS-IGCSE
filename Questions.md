@@ -43,3 +43,6 @@ Process of checking if the data is in the correct format
 ## Topic 6: The Bigger Picture
 
 What is meant by the quantum computing?
+What is meant by the nanocomputing?
+What is meant by the DNA computing?
+What is meant by the machine learning?
