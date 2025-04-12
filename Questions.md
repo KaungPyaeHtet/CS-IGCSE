@@ -20,6 +20,7 @@ while flowcharts are graphical representations using standardized symbols.
 
 
 
+
 ## Topic 3: Binary
 
 How does binary represent data?
@@ -29,7 +30,16 @@ What is hexadecimal used for?
 Hexadecimal provides a more human-readable representation of binary numbers,
 where each hex digit represents 4 binary bits.
 
+## Topic 4: Computers
+
 ## Topic 5: Networking
+
+State what is meant by the term "Authentication".
+Process of checking the identity of a user
 
 State what is meant by the term "Validation".
 Process of checking if the data is in the correct format
+
+## Topic 6: The Bigger Picture
+
+What is meant by the quantum computing?
