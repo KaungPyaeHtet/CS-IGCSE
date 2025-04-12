@@ -9,108 +9,94 @@
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
-    <h2 id="table-of-contents">Table of Contents</h2>
-<p><a href='#topic-1' class="table-of-contents">Topic 1: Algorithm</a></p>
-<p><a href='#topic-2' class="table-of-contents">Topic 2: Programming</a></p>
-<p><a href='#topic-3' class="table-of-contents">Topic 3: Binary</a></p>
-<p><a href='#topic-4' class="table-of-contents">Topic 4: Computers</a></p>
-<p><a href='#topic-5' class="table-of-contents">Topic 5: Networking</a></p>
-<p><a href='#topic-6' class="table-of-contents">Topic 6: The Bigger Picture</a></p>
+    <h2 id="table-of-contents">Table Of Contents</h2>
+<div class="toc">
+
+<a href='#topic-1' class="table-of-contents">Topic 1: Algorithm</a>
+
+<a href='#topic-2' class="table-of-contents">Topic 2: Programming</a>
+
+<a href='#topic-3' class="table-of-contents">Topic 3: Binary</a>
+
+<a href='#topic-4' class="table-of-contents">Topic 4: Computers</a>
+
+<a href='#topic-5' class="table-of-contents">Topic 5: Networking</a>
+
+<a href='#topic-6' class="table-of-contents">Topic 6: The Bigger Picture</a>
+
+<a href="#chap-29" class="table-of-contents subtopic">Chapter 29: Current and emerging trends</a>
+
+</div>
+
 <h2 id='topic-1'> Topic 1: Algorithms </h2>
 
 <details>
-<summary><strong>What is an algorithm?</strong></summary>
+<summary>What is an algorithm? <span class='mark'>[1 mark]</span></summary>
 
-<p>An algorithm is a step-by-step method for solving a problem or completing a task.</p>
-
-</details>
-
-<details>
-<summary><strong>How does Linear search work?</strong></summary>
-
-<ul>
-  <li>It starts at the front of the list</li>
-  <li>It continues till it matches</li>
-  <li>Stops when the item is found</li>
-</ul>
+<answer><p><a>An</a> algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
 
 </details>
 
 <details>
-<summary><strong>Question?</strong></summary>
+<summary>How does Linear search work? <span class='mark'>[3 marks]</span></summary>
 
-- Item 1  
-- Item 2  
-- Item 3
+<answer>
+  <ul>
+    <li>It starts at the front of the list</li>
+    <li>It continues till it matches</li>
+    <li>Stops when the item is found</li>
+  </ul>
+</answer>
 
 </details>
 
 <details>
-<summary><strong>How does linear search work?</strong></summary>
+<summary>How does Binary search work? <span class='mark'>[4 marks]</span></summary>
 
+<answer>
+  <ul>
+    <li>It starts at the front of the list</li>
+    <li>It continues till it matches</li>
+    <li>Stops when the item is found</li>
+  </ul>
+</answer>
 
-<pre><code class="language-python">print(&quot;hello world&quot;)
-</code></pre>
+</details>
 
+<h3> Terms </h3>
+
+<details>
+<summary>Define algorithm <span class='mark'>[1 marks]</span></summary>
+
+<answer><p>A set of instructinos to carry out a specific task/problem<p></answer>
+
+</details>
+
+<details>
+<summary>Define abstraction <span class='mark'>[1 marks]</span></summary>
+
+<answer><p> The process of removing or hiding unnecessary detail so that only the important points remain</p></answer>
+
+</details>
+
+<details>
+<summary>Define decomposition <span class='mark'>[1 marks]</span></summary>
+
+<answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
 
 </details>
 
 <h2 id='topic-2'> Topic 2: Programming</h2>
 
-<details>
-<summary><strong>Question</strong></summary>
-
-answer
-
-</details>
-
 <h2 id='topic-3'> Topic 3: Binary</h2>
-
-<details>
-<summary><strong>How does binary represent data?</strong></summary>
-
-Binary uses only 0s and 1s to represent all data, where each digit is called a bit.
-
-</details>
-
-<details>
-<summary><strong>What is hexadecimal used for?</strong></summary>
-
-Hexadecimal provides a more human-readable representation of binary numbers,
-where each hex digit represents 4 binary bits.
-
-</details>
 
 <h2 id='topic-4'> Topic 4: Computers</h2>
 
 <h2 id='topic-5'> Topic 5: Networking</h2>
 
-<details>
-<summary><strong>State what is meant by the term "Authentication".</strong></summary>
-
-Process of checking the identity of a user
-
-</details>
-
-<details>
-<summary><strong>State what is meant by the term "Validation".</strong></summary>
-
-Process of checking if the data is in the correct format
-
-</details>
-
 <h2 id='topic-6'> Topic 6: The Bigger Picture</h2>
 
-<details>
-<summary><strong>What is meant by the quantum computing?</strong></summary>
-
-What is meant by the nanocomputing?
-What is meant by the DNA computing?
-What is meant by the machine learning?
-
-</details>
-
-<h3 id="current-and-emerging-trends">Current and emerging trends</h3>
+<h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
         <div style="margin-top: 0.5rem;">
@@ -132,7 +118,7 @@ What is meant by the machine learning?
             }
         }
 
-        // Toggle details open/closed state based on localStorage
+        // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {
             const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
             const saved = localStorage.getItem(key);
