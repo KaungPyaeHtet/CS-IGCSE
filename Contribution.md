@@ -19,12 +19,11 @@ git checkout -b your-feature-name
 * Group your questions under clear topics (e.g., ### Topic Name).
 * Use a structure like this:
 ```
-#### Topic: Algorithms
+## for Heading topics
 
-<details>
-<summary>What is an algorithm?</summary>
-An algorithm is a step-by-step procedure to solve a problem or perform a task.
-</details>
+Q: What is the main difference between pseudocode and flowchart
+A: Pseudocode is a text-based way to describe algorithms using programming-like syntax,
+while flowcharts are graphical representations using standardized symbols. 
 
 ```
 4. Commit your changes:
@@ -33,6 +32,10 @@ git commit -m "Added questions on Topic XYZ"
 ```
 5. Push and create a pull request:
 * Push and create a Pull Request:
+* Use force when index.html are different 
+```bash
+git push --force
+```
 * Write a clear title and description for your PR.
 * Explain what you added or modified.
 * Once reviewed, your changes will be merged!
@@ -44,5 +47,5 @@ git commit -m "Added questions on Topic XYZ"
 
 ## Testing Changes
 ```bash
-python3 main.py output.html dark
+python3 main.py index.html
 ```
