@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" defer></script>
+</head>
+<body>
+    <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <h2 id="topic-1-algorithms">Topic 1: Algorithms</h2>
+<details>
+<summary><strong>What is an algorithm?</strong></summary>
+
+An algorithm is a step-by-step procedure to solve a problem or perform a task.
+
+</details>
+
+<details>
+<summary><strong>What's the difference between pseudocode and flowcharts?</strong></summary>
+
+Pseudocode is text-based while flowcharts are graphical representations.
+
+</details>
+
+<hr>
+<h2 id="topic-2-programming">Topic 2: Programming</h2>
+<details>
+<summary><strong>What are the three basic programming constructs?</strong></summary>
+
+Sequence, selection (if/else), and iteration (loops).
+
+</details>
+
+<details>
+<summary><strong>What is a variable?</strong></summary>
+
+A named storage location in memory that holds data.
+
+</details>
+
+<h2 id="topic-3-binary">Topic 3: Binary</h2>
+<h2 id="topic-4-computers">Topic 4: Computers</h2>
+<h2 id="topic-5-networking">Topic 5: Networking</h2>
+<h2 id="topic-6-the-bigger-picture">Topic 6: The Bigger Picture</h2>
+<h2 id="commonly-asked-questions-igcse-cs">Commonly Asked Questions IGCSE CS</h2>
+<h2 id="topic-1-algorithms_1">Topic 1: Algorithms</h2>
+<details>
+<summary><strong>What is an algorithm?</strong></summary>
+
+An algorithm is a step-by-step procedure to solve a problem or perform a task.
+
+</details>
+
+<details>
+<summary><strong>What's the difference between pseudocode and flowcharts?</strong></summary>
+
+Pseudocode is text-based while flowcharts are graphical representations.
+
+</details>
+
+<hr>
+<h2 id="topic-2-programming_1">Topic 2: Programming</h2>
+<details>
+<summary><strong>What are the three basic programming constructs?</strong></summary>
+
+Sequence, selection (if/else), and iteration (loops).
+
+</details>
+
+<details>
+<summary><strong>What is a variable?</strong></summary>
+
+A named storage location in memory that holds data.
+
+</details>
+
+<h2 id="topic-3-binary_1">Topic 3: Binary</h2>
+<h2 id="topic-4-computers_1">Topic 4: Computers</h2>
+<h2 id="topic-5-networking_1">Topic 5: Networking</h2>
+<h2 id="topic-6-the-bigger-picture_1">Topic 6: The Bigger Picture</h2>
+    <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
+        <div>&copy; 2025 Ozzy</div>
+        <div style="margin-top: 0.5rem;">
+            Contributions are welcome!<br>
+            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;">Submit a pull request on GitHub</a> or contact me directly.
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+
+            const prismLink = document.getElementById('prism-theme');
+            if (prismLink) {
+                prismLink.href = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-${next}.min.css`;
+            }
+        }
+
+        document.querySelectorAll('details').forEach(detail => {
+            const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
+            const saved = localStorage.getItem(key);
+            if (saved === 'open') detail.open = true;
+
+            detail.addEventListener('toggle', () => {
+                localStorage.setItem(key, detail.open ? 'open' : 'closed');
+            });
+        });
+    </script>
+</body>
+</html>

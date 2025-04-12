@@ -1,0 +1,105 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #1f2937;
+    --primary-light: #3b82f6;
+    --code-bg-light: #f3f4f6;
+    --border-light: #e5e7eb;
+
+    --bg-dark: #111827;
+    --text-dark: #f9fafb;
+    --primary-dark: #60a5fa;
+    --code-bg-dark: #1f2937;
+    --border-dark: #374151;
+}
+
+[data-theme="light"] {
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --primary: var(--primary-light);
+    --code-bg: var(--code-bg-light);
+    --border: var(--border-light);
+}
+
+[data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+    --primary: var(--primary-dark);
+    --code-bg: var(--code-bg-dark);
+    --border: var(--border-dark);
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    background-color: var(--code-bg);
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 999;
+}
+
+.theme-toggle:hover {
+    transform: rotate(180deg);
+    background-color: var(--primary);
+    color: white;
+}
+
+details {
+    border: 1px solid var(--border);
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+details[open] {
+    background-color: var(--code-bg);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+pre, code {
+    background-color: var(--code-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 0.6em;
+}
+
+th {
+    background-color: var(--code-bg);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+}
