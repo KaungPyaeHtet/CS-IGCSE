@@ -66,4 +66,9 @@ Process of checking if the data is in the correct format
 
 <h2 id='topic-6'> Topic 6: The Bigger Picture</h2>
 
+What is meant by the quantum computing?
+What is meant by the nanocomputing?
+What is meant by the DNA computing?
+What is meant by the machine learning?
+
 ### Current and emerging trends
