@@ -32,5 +32,4 @@ A language
 ## Topic 4: Computers
 
 ## Topic 5: Networking
-
 ## Topic 6: The Bigger Picture
