@@ -20,6 +20,13 @@ A language
 
 </details>
 
+<details>
+<summary><strong>What is an programming?</strong></summary>
+
+A language
+
+</details>
+
 ## Topic 3: Binary
 
 ## Topic 4: Computers
