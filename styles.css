@@ -210,3 +210,9 @@ footer a {
     color: var(--text);
     opacity: 0.8;
 }
+
+img{
+    max-width: 750px;
+    border-radius: 18px;
+    margin: 10px;
+}

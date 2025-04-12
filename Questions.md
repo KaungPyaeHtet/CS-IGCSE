@@ -12,13 +12,27 @@ while flowcharts are graphical representations using standardized symbols. -> A
 What is an algorithm?
 An algorithm is a step-by-step method for solving a problem or completing a task.
 
-What's the difference between pseudocode and flowcharts?
-Pseudocode is a text-based way to describe algorithms using programming-like syntax,
-while flowcharts are graphical representations using standardized symbols.
+How does Linear search work?
+<ul>
+  <li>It starts at the front of the list</li>
+  <li>It continues till it matches</li>
+  <li>Stops when the item is found</li>
+</ul>
+
+Question?
+- Item 1  
+- Item 2  
+- Item 3  
+
+How does linear search work?
+```python 
+print("hello world")
+```
 
 ## Topic 2: Programming
 
-
+Question
+<img src="./assets/images/answer1.jpg">
 
 
 ## Topic 3: Binary
@@ -43,3 +57,4 @@ Process of checking if the data is in the correct format
 ## Topic 6: The Bigger Picture
 
 What is meant by the quantum computing?
+
