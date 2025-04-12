@@ -108,6 +108,9 @@ summary:hover {
 summary::marker {
   color: var(--primary);
 }
+details[open] answer {
+  animation: fadeIn 1s ease-in forwards;
+} 
 
 pre,
 code {
