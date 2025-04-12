@@ -216,3 +216,7 @@ img{
     border-radius: 18px;
     margin: 10px;
 }
+.table-of-contents{
+    color: #99abbd;
+    text-decoration: underline;
+}
