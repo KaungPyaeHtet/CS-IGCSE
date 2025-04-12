@@ -34,7 +34,7 @@ git commit -m "Added questions on Topic XYZ"
 * Push and create a Pull Request:
 * Use force when index.html are different 
 ```bash
-git push --force
+git push -u origin your-branch-name --force
 ```
 * Write a clear title and description for your PR.
 * Explain what you added or modified.
