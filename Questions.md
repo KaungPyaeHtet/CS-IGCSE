@@ -28,3 +28,8 @@ Binary uses only 0s and 1s to represent all data, where each digit is called a b
 What is hexadecimal used for?
 Hexadecimal provides a more human-readable representation of binary numbers,
 where each hex digit represents 4 binary bits.
+
+## Topic 5: Networking
+
+State what is meant by the term "Validation".
+Process of checking if the data is in the correct format
