@@ -3,11 +3,11 @@ Question - simple line
 Answer - html syntax
  -->
 
-## Table Of Contents
+## Table of Contents
 
 <div class="toc">
 
-<a href='#topic-1' class="table-of-contents">Topic 1: Algorithm</a>
+<a href='#topic-1' data-translate="Topic 1: Algorithm"class="table-of-contents">Topic 1: Algorithm</a>
 
 <a href='#topic-2' class="table-of-contents">Topic 2: Programming</a>
 
@@ -23,7 +23,6 @@ Answer - html syntax
 
 </div>
 
-
 <h2 id='topic-1'> Topic 1: Algorithms </h2>
 
 What is an algorithm? <span class='mark'>[1 mark]</span>
@@ -31,6 +30,7 @@ What is an algorithm? <span class='mark'>[1 mark]</span>
 
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
+
   <ul>
     <li>It starts at the front of the list</li>
     <li>It continues till it matches</li>
@@ -40,6 +40,7 @@ How does Linear search work? <span class='mark'>[3 marks]</span>
 
 How does Binary search work? <span class='mark'>[4 marks]</span>
 <answer>
+
   <ul>
     <li>It starts at the front of the list</li>
     <li>It continues till it matches</li>

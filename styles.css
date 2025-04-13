@@ -368,3 +368,20 @@ answer li::before {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+
+.language-toggle{
+  float: right;
+  font-size: 20px;
+  border: 0.2rem outset var(--border);
+  border-radius: 18px;
+  padding: 20px;
+}
+.language_active{
+  color: var(--text);
+  text-decoration: underline;
+  font-weight: 100px;
+}
+.language-toggle-text{
+  cursor: pointer;
+}

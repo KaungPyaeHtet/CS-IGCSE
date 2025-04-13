@@ -3,16 +3,24 @@ from markdown.extensions.toc import TocExtension
 import os
 import sys
 import re
+import json
+from mmTranslations import TRANSLATIONS
+
+translation_js = "const translations = " + json.dumps(TRANSLATIONS, ensure_ascii=False, indent=4) + ";"
+
+def translate_text(text, lang):
+    if lang == "english":
+        return text
+    return TRANSLATIONS.get(text, text)
 
 def convert_custom_questions(md_text):
-    # Process :::answer blocks first
-    md_text = re.sub(
-        r':::answer\n(.*?)\n:::',
-        lambda m: f'<div class="cool-answer">\n{m.group(1)}\n</div>',
-        md_text,
-        flags=re.DOTALL
-    )
     
+    md_text = re.sub(
+        r'^(#+ )(.+?)$',
+        lambda m: f'{m.group(1)}<span data-translate="{m.group(2)}">{m.group(2)}</span>',
+        md_text,
+        flags=re.MULTILINE
+    )
     # Rest of the existing processing
     topics = re.split(r'(^## .*?$)', md_text, flags=re.MULTILINE)[1:]
     processed_text = ""
@@ -68,6 +76,7 @@ def convert_md_to_html(output_html):
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
@@ -89,6 +98,33 @@ def convert_md_to_html(output_html):
                 prismLink.href = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-${{next}}.min.css`;
             }}
         }}
+function toggleLanguage(lang) {{
+            document.documentElement.setAttribute('data-lang', lang);
+            
+            const burmeseBtn = document.getElementById('burmese-toggle-text');
+            const englishBtn = document.getElementById('english-toggle-text');
+            
+            if (lang === 'burmese') {{
+                burmeseBtn.classList.add('language_active');
+                englishBtn.classList.remove('language_active');
+            }} else {{
+                englishBtn.classList.add('language_active');
+                burmeseBtn.classList.remove('language_active');
+            }}
+            
+            // Translate all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(el => {{
+                const key = el.getAttribute('data-translate');
+                if (lang === 'burmese') {{
+                    el.textContent = translations[key] || el.textContent;
+                }} else {{
+                    el.textContent = key; // Revert to English
+                }}
+            }});
+        }}
+        
+        // Translations dictionary
+        {translation_js}
 
         // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {{

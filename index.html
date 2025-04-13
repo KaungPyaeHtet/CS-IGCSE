@@ -9,9 +9,11 @@
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
+    <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
 <div class="toc">
 
-<a href='#topic-1' class="table-of-contents">Topic 1: Algorithm</a>
+<a href='#topic-1' data-translate="Topic 1: Algorithm"class="table-of-contents">Topic 1: Algorithm</a>
 
 <a href='#topic-2' class="table-of-contents">Topic 2: Programming</a>
 
@@ -40,8 +42,13 @@
 <summary>How does Linear search work? <span class='mark'>[3 marks]</span></summary>
 
 <answer>
-  <ul>
-    <li>It starts at the front of the list</li>
+
+</details>
+
+<details>
+<summary><ul></summary>
+
+<li>It starts at the front of the list</li>
     <li>It continues till it matches</li>
     <li>Stops when the item is found</li>
   </ul>
@@ -53,8 +60,13 @@
 <summary>How does Binary search work? <span class='mark'>[4 marks]</span></summary>
 
 <answer>
-  <ul>
-    <li>It starts at the front of the list</li>
+
+</details>
+
+<details>
+<summary><ul></summary>
+
+<li>It starts at the front of the list</li>
     <li>It continues till it matches</li>
     <li>Stops when the item is found</li>
   </ul>
@@ -114,6 +126,42 @@
                 prismLink.href = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-${next}.min.css`;
             }
         }
+function toggleLanguage(lang) {
+            document.documentElement.setAttribute('data-lang', lang);
+            
+            const burmeseBtn = document.getElementById('burmese-toggle-text');
+            const englishBtn = document.getElementById('english-toggle-text');
+            
+            if (lang === 'burmese') {
+                burmeseBtn.classList.add('language_active');
+                englishBtn.classList.remove('language_active');
+            } else {
+                englishBtn.classList.add('language_active');
+                burmeseBtn.classList.remove('language_active');
+            }
+            
+            // Translate all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (lang === 'burmese') {
+                    el.textContent = translations[key] || el.textContent;
+                } else {
+                    el.textContent = key; // Revert to English
+                }
+            });
+        }
+        
+        // Translations dictionary
+        const translations = {
+    "Table of Contents": "မာတိကာ",
+    "Topic 1: Algorithm": "အကြောင်းအရာ ၁: အယ်လ်ဂိုရီသမ်",
+    "Topic 2: Programming": "အကြောင်းအရာ ၂: ပရိုဂရမ်ရေးသားခြင်း",
+    "Topic 3: Binary": "အကြောင်းအရာ ၃: ဒွိစနစ်",
+    "Topic 4: Computers": "အကြောင်းအရာ ၄: ကွန်ပျူတာများ",
+    "Topic 5: Networking": "အကြောင်းအရာ ၅: ကွန်ရက်ချိတ်ဆက်ခြင်း",
+    "Topic 6: The Bigger Picture": "အကြောင်းအရာ ၆: ပိုမိုကျယ်ပြန့်သောအမြင်များ",
+    "Chapter 29: Current and emerging trends": "အခန်း ၂၉: လက်ရှိနှင့်ပေါ်ထွန်းလာသောအလားအလာများ"
+};
 
         // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {
