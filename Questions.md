@@ -82,7 +82,7 @@ Answer - html syntax
 <h2 id='topic-1'> Topic 1: Algorithms </h2>
 
 What is an algorithm? <span class='mark'>[1 mark]</span>
-<answer><p><a>An</a> algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
+<answer><p>An algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
 
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
