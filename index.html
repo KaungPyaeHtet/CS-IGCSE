@@ -9,7 +9,7 @@
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
-    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">× Close All</button>
+    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
 <div class="toc">
@@ -175,6 +175,24 @@
 
 <answer>
   <img src='assets/network/star-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <li>Easy to connect/ remove new nodes</li>
+  <li>Failure of one node/link does not affect the rest of the network</li>
+  <li>Easy to detect the failure of one node/link</li>
+  <strong>Disadvantages</strong>
+  <li>If the central switch/hub fails, then the whole network fails</li>
+  <li>Performance and the number of nodes that can be added depend on the capacity of the central switch/hub</li>
+  <li>Can require more cable than some of the other topologies</li>
+</ul>
 </answer>
 
 </details>
