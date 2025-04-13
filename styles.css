@@ -10,9 +10,12 @@
   --primary-dark: #60a5fa;
   --code-bg-dark: #1f2937;
   --border-dark: #374151;
+  --shadow-light: ;
+  --shadow-dark: ;
 }
 
 [data-theme="light"] {
+  --shadow: var(--shadow-light);
   --bg: var(--bg-light);
   --text: var(--text-light);
   --primary: var(--primary-light);
@@ -22,6 +25,7 @@
 
 [data-theme="dark"] {
   --bg: var(--bg-dark);
+  --shadow: var(--shadow-dark);
   --text: var(--text-dark);
   --primary: var(--primary-dark);
   --code-bg: var(--code-bg-dark);
@@ -40,7 +44,6 @@ body {
   transition: background-color 1.2s ease, color 1.2s ease;
 }
 
-/* Theme Toggle Button Styles */
 .theme-toggle {
   position: fixed;
   top: 1.2rem;
@@ -70,13 +73,11 @@ body {
   transform: scale(0.95);
 }
 
-/* Dark mode specific toggle icon */
 [data-theme="dark"] .theme-toggle {
   background: var(--primary);
   color: var(--bg);
 }
 
-/* Content Styles */
 details {
   border: 1px solid var(--border);
   padding: 0.8rem 1rem;
@@ -167,36 +168,28 @@ a:hover {
 
 ul,
 ol {
-  /* Remove default list styling */
   list-style: none;
   margin: 0;
   padding: 0;
-
-  /* Your custom styles */
-  color: var(--text); /* Uses your theme variable */
+  color: var(--text);
 }
 
 li {
-  /* Remove default list item styling */
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  /* Your custom bullet styling */
   position: relative;
-  padding-left: 1.5rem; /* Space for custom bullet */
+  padding-left: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-/* Custom bullet points */
 li::before {
-  content: "•"; /* Or use "○", "■", "→", etc. */
-  color: var(--primary); /* Uses your theme color */
+  content: "•";
+  color: var(--primary);
   position: absolute;
   left: 0;
 }
 
-/* Footer Styles */
 footer {
   margin-top: 4rem;
   padding-top: 1.5rem;
@@ -251,12 +244,6 @@ answer p {
   padding-left: 0;
 }
 
-answer img {
-  max-width: 750px;
-  border-radius: 18px;
-  margin: 10px;
-}
-
 answer ul,
 answer ol {
   padding-left: 1.2rem;
@@ -276,17 +263,27 @@ answer li::before {
 }
 
 answer img {
-  width: 725px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 var(--shadow-light), 0 6px 20px 0 var(--shadow-dark);
   border-radius: 18px;
   margin: 10px;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--code-bg);
+  padding: 8px;
+}
+
+[data-theme="dark"] answer img {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1),
+    0 6px 20px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="dark"] answer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Arrow Indicator */
 .toc .table-of-contents::before {
   content: "→";
   position: absolute;
@@ -299,18 +296,17 @@ answer img {
 .toc .table-of-contents:hover::before {
   opacity: 1;
 }
-/* Rounded Table of Contents */
+
 .toc {
   background: var(--code-bg);
-  border-radius: 18px; /* Increased from 8px for more rounding */
+  border-radius: 18px;
   padding: 1.5rem;
   margin: 2rem 0;
   border-left: 4px solid var(--primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Ensures child elements respect the border radius */
+  overflow: hidden; 
 }
 
-/* Table of Contents Links */
 .toc .table-of-contents {
   display: block;
   color: var(--text);
@@ -318,25 +314,22 @@ answer img {
   padding: 0.7rem 1rem;
   margin: 0.2rem 0;
   transition: all 0.3s ease;
-  border-radius: 6px; /* Rounded corners for each link */
-  font-weight: 600; /* Semi-bold for main topics */
+  border-radius: 6px;
+  font-weight: 600; 
 }
 
-/* Hover Effect with Rounded Corners */
 .toc .table-of-contents:hover {
   background: rgba(var(--primary), 0.1);
   color: var(--primary);
   transform: translateX(4px);
 }
 
-/* Subtopic Styling */
 .toc .table-of-contents.subtopic {
   padding-left: 2rem;
   font-size: 0.9em;
-  border-radius: 4px; /* Slightly less rounded for subtopics */
+  border-radius: 4px;
 }
 
-/* First and last child rounding */
 .toc .table-of-contents:first-child {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
