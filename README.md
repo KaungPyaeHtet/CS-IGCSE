@@ -16,14 +16,11 @@ The main goal of this project is to provide easy access to frequently asked ques
 - **Networking**
 - **The Bigger Picture**
 
-These topics are commonly asked in the IGCSE Edexcel Computer Science exam and can help you understand key concepts more thoroughly.
+Commonly Asked Questions or Interesting Questions from past papers and textbooks are collected.
 
 ## How to Use
 
 The project consists of two main components:
-
-1. **Questions.md** - This is the Markdown file that contains all the questions and answers. You can add, modify, or delete questions as needed.
-2. **HTML Conversion** - The `main.py` script converts the `Questions.md` Markdown file into an HTML document, which is used to display the FAQ content on the website.
 
 To use this project, follow these steps:
 
@@ -32,14 +29,14 @@ To use this project, follow these steps:
    git clone https://github.com/KaungPyaeHtet/CS-IGCSE.git
     ```
 2. **Install the necessary dependencies**:
-```bash
-pip install markdown
-```
+    ```bash
+    pip install markdown
+    ```
 3. **Convert the Markdown to HTML**:
 To generate the index.html from the Questions.md file, simply run the following command:
-```bash
-python main.py index.html
-```
+    ```bash
+    python main.py index.html
+    ```
 4. **View the HTML file**:
 Once converted you can view index.html
 
@@ -49,12 +46,7 @@ We welcome contributions to this project! If you have any suggestions, additions
 
 How to contribute:
 
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Edit Questions.md to add, modify, or delete questions.
-4. Commit your changes and push them to your fork.
-5. Submit a pull request to the main branch of the original repository.
-6. Contributions are welcome! For more details on how to contribute, visit our Contribution.md.
+READ [Contributions.md](Contribution.md)
 
 ## License
 

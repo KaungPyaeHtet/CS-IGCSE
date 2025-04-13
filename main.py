@@ -77,7 +77,7 @@ def convert_md_to_html(output_html):
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
-    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">× Close All</button>
+    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">

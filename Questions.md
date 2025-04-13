@@ -136,6 +136,20 @@ Draw A Star Topology <span class='mark'>[4 marks]</span>
   <img src='assets/network/star-topology.png'>
 </answer>
 
+Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span>
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <li>Easy to connect/ remove new nodes</li>
+  <li>Failure of one node/link does not affect the rest of the network</li>
+  <li>Easy to detect the failure of one node/link</li>
+  <strong>Disadvantages</strong>
+  <li>If the central switch/hub fails, then the whole network fails</li>
+  <li>Performance and the number of nodes that can be added depend on the capacity of the central switch/hub</li>
+  <li>Can require more cable than some of the other topologies</li>
+</ul>
+</answer>
+
 Draw A Mesh Topology <span class='mark'>[4 marks]</span>
 <answer>
   <img src='assets/network/mesh-topology.png'>

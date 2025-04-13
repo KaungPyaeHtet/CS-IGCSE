@@ -365,3 +365,20 @@ answer img {
 answer ul strong {
   text-decoration: underline;
 }
+
+.close-all {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.close-all:hover {
+  opacity: 0.9;
+}
