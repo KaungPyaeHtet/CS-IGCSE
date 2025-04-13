@@ -63,6 +63,22 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.contributor-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 8px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
+}
+.contributor-link:hover {
+  text-decoration: none;
+  color: #374151;
+}
 
 .theme-toggle:hover {
   transform: scale(1.1) rotate(30deg);
@@ -304,7 +320,7 @@ answer img {
   margin: 2rem 0;
   border-left: 4px solid var(--primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .toc .table-of-contents {
@@ -315,7 +331,7 @@ answer img {
   margin: 0.2rem 0;
   transition: all 0.3s ease;
   border-radius: 6px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .toc .table-of-contents:hover {

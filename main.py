@@ -71,12 +71,13 @@ def convert_md_to_html(output_html):
 <head>
     <meta charset="UTF-8">
     <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" defer></script>
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}

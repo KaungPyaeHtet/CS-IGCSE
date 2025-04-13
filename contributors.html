@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Contributors | CS-IGCSE-EDEXCEL</title>
+    <link rel="stylesheet" href="contributors.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body data-theme="light">
+
+    <button class="home-nav" onclick="window.location.href='index.html'" title="Home"><i class="fa-solid fa-book"></i></button>
+
+    <!-- Added theme attribute -->
+    <!-- Added theme toggle button -->
+    <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
+
+    <header class="contributors-header">
+      <!-- Changed class -->
+      <div class="contributors-container">
+        <!-- Changed class -->
+        <h1 class="contributors-title">Our Amazing Contributors</h1>
+        <!-- Added class -->
+        <p class="contributors-intro">
+            Meet contributors who made this possible
+        </p>
+        <!-- Changed class -->
+      </div>
+    </header>
+
+    <main class="contributors-container">
+      <!-- Changed class -->
+      <section class="contributors-section">
+        <!-- Added class -->
+        <h2 class="section-title">Core Team</h2>
+        <!-- Added class -->
+        <div class="contributors-grid">
+          <div class="contributor-card">
+            <img
+              src="assets/contributors/ozzy.jpg"
+              alt="Taylor Brown"
+              class="contributor-img"
+            />
+            <div class="contributor-info">
+              <h3 class="contributor-name">Ozzy</h3>
+              <p class="contributor-role">Main Programmer</p>
+              <p class="contributor-bio">
+                Handles coding | Added Questions | Teaches Computer Science
+              </p>
+              <div class="social-links">
+                <a href="https://github.com/kaungpyaehtet" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@kaungpyaehtet8850" aria-label="Blog"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contributors-section">
+        <!-- Added class -->
+        <h2 class="section-title">Active Contributors</h2>
+        <!-- Added class -->
+        <div class="contributors-grid">
+          <div class="contributor-card">
+            <img
+              src="https://via.placeholder.com/300x200?text=Contributor"
+              alt="Taylor Brown"
+              class="contributor-img"
+            />
+            <div class="contributor-info">
+              <h3 class="contributor-name">Taylor Brown</h3>
+              <p class="contributor-role">Documentation</p>
+              <p class="contributor-bio">
+                Taylor ensures our documentation is clear and comprehensive.
+              </p>
+              <div class="social-links">
+                <a href="#" aria-label="GitHub">👨‍💻</a>
+                <a href="#" aria-label="Blog">✍️</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <h2>Want to join our team?</h2>
+        <p>
+          We're always looking for passionate individuals to contribute to our
+          project.
+        </p>
+        <a href="#" class="cta-button">Become a Contributor</a>
+        <!-- Changed class -->
+      </section>
+    </main>
+
+    <footer class="contributors-footer">
+      <!-- Added class -->
+      <div class="contributors-container">
+        <!-- Changed class -->
+        <p>&copy; 2025 Your Project Name. All rights reserved.</p>
+        <p>Made with ❤️ by our wonderful contributors</p>
+      </div>
+    </footer>
+
+    <script>
+      // Add theme toggle functionality
+      const themeToggle = document.querySelector(".theme-toggle");
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = document.body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        document.body.setAttribute("data-theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
