@@ -14,14 +14,17 @@ def translate_text(text, lang):
     return TRANSLATIONS.get(text, text)
 
 def convert_custom_questions(md_text):
-    
+    """
+    Convert ## to <span data-translate> {text} </span>
+    Convert questions answer lines to <details><summary>{question}</summary>{answer}</details
+    """
     md_text = re.sub(
         r'^(#+ )(.+?)$',
         lambda m: f'{m.group(1)}<span data-translate="{m.group(2)}">{m.group(2)}</span>',
         md_text,
         flags=re.MULTILINE
     )
-    # Rest of the existing processing
+
     topics = re.split(r'(^## .*?$)', md_text, flags=re.MULTILINE)[1:]
     processed_text = ""
     
@@ -54,10 +57,8 @@ def convert_md_to_html(output_html):
         print("Error: 'Questions.md' not found.")
         sys.exit(1)
 
-    # Convert our custom question format to proper Markdown
     md_text = convert_custom_questions(md_text)
 
-    # Convert to HTML with our extensions
     html = markdown.markdown(
         md_text,
         extensions=[TocExtension(toc_depth=3), 'fenced_code', 'tables'],
@@ -76,13 +77,14 @@ def convert_md_to_html(output_html):
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">× Close All</button>
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
         <div style="margin-top: 0.5rem;">
-            Contributions are welcome!<br>
-            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;">Submit a pull request on GitHub</a> or contact me directly.
+            <span data-translate='Contributions are welcome!'>Contributions are welcome!</span><br>
+            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;"><span data-translate='Submit a pull request on GitHub or contact me directly.'>Submit a pull request on GitHub or contact me directly.</span></a>
         </div>
     </footer>
 
@@ -125,6 +127,20 @@ function toggleLanguage(lang) {{
         
         // Translations dictionary
         {translation_js}
+
+         function closeAllToggles() {{
+            document.querySelectorAll('details').forEach(detail => {{
+                // Close the toggle
+                detail.open = false;
+                
+                // Remove from localStorage
+                const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
+                localStorage.removeItem(key);
+            }});
+            
+            // Optional: Show a brief confirmation
+            alert('All sections have been closed');
+        }}
 
         // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {{

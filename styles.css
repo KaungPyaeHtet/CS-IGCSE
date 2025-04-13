@@ -109,13 +109,17 @@ summary::marker {
   color: var(--primary);
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 details[open] answer {
   animation: fadeIn 1s ease-in forwards;
-} 
+}
 
 pre,
 code {
@@ -222,11 +226,6 @@ footer a {
   }
 }
 
-img {
-  max-width: 750px;
-  border-radius: 18px;
-  margin: 10px;
-}
 .mark {
   color: #3b82f6;
   float: right;
@@ -243,7 +242,6 @@ answer {
   position: relative;
 }
 
-/* Content inside answer */
 answer p {
   font-size: 1.05rem;
   line-height: 1.6;
@@ -253,40 +251,14 @@ answer p {
   padding-left: 0;
 }
 
-/* Links inside answer paragraphs */
-answer p a {
-  color: var(--primary);
-  text-decoration: none;
-  transition: all 1s ease;
-  display: inline; /* Reset to inline */
-  padding-left: 0; /* Remove inherited padding */
-  position: relative;
+answer img {
+  max-width: 750px;
+  border-radius: 18px;
+  margin: 10px;
 }
 
-answer p a:hover {
-  text-decoration: underline;
-  transform: none; /* Remove transform if not needed */
-}
-
-/* Arrow for links inside answer */
-answer p a::before {
-  content: "→";
-  position: relative;
-  left: -0.3em;
-  color: var(--primary);
-  opacity: 0.6;
-  font-size: 0.9em;
-  display: inline-block;
-  transition: all 1s ease;
-}
-
-answer p a:hover::before {
-  opacity: 1;
-  transform: translateX(0.2em);
-}
-
-/* Lists inside answer */
-answer ul {
+answer ul,
+answer ol {
   padding-left: 1.2rem;
   margin: 0.8rem 0;
 }
@@ -303,7 +275,13 @@ answer li::before {
   left: -1rem;
 }
 
-/* Dark mode adjustment */
+answer img {
+  width: 725px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 18px;
+  margin: 10px;
+}
+
 [data-theme="dark"] answer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -369,19 +347,21 @@ answer li::before {
   border-bottom-right-radius: 8px;
 }
 
-
-.language-toggle{
+.language-toggle {
   float: right;
   font-size: 20px;
   border: 0.2rem outset var(--border);
   border-radius: 18px;
   padding: 20px;
 }
-.language_active{
+.language_active {
   color: var(--text);
   text-decoration: underline;
   font-weight: 100px;
 }
-.language-toggle-text{
+.language-toggle-text {
   cursor: pointer;
+}
+answer ul strong {
+  text-decoration: underline;
 }

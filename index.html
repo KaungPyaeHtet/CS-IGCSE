@@ -9,23 +9,80 @@
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">× Close All</button>
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
 <div class="toc">
 
-<a href='#topic-1' data-translate="Topic 1: Algorithm"class="table-of-contents">Topic 1: Algorithm</a>
+  <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
-<a href='#topic-2' class="table-of-contents">Topic 2: Programming</a>
+  <a href="#chap-1" class="table-of-contents subtopic">1. Understanding Algorithms</a>
 
-<a href='#topic-3' class="table-of-contents">Topic 3: Binary</a>
+  <a href="#chap-2" class="table-of-contents subtopic">2. Creating Algorithms</a>
 
-<a href='#topic-4' class="table-of-contents">Topic 4: Computers</a>
+  <a href="#chap-3" class="table-of-contents subtopic">3. Sorting and Searching Algorithms</a>
 
-<a href='#topic-5' class="table-of-contents">Topic 5: Networking</a>
+  <a href="#chap-4" class="table-of-contents subtopic">4. Decomposition and Abstraction</a>
 
-<a href='#topic-6' class="table-of-contents">Topic 6: The Bigger Picture</a>
+  <a href='#topic-2' class="table-of-contents">Programming</a>
 
-<a href="#chap-29" class="table-of-contents subtopic">Chapter 29: Current and emerging trends</a>
+  <a href="#chap-5" class="table-of-contents subtopic">5. Develop Code</a>
+
+  <a href="#chap-6" class="table-of-contents subtopic">6. Making Programs Easy to Read</a>
+
+  <a href="#chap-7" class="table-of-contents subtopic">7. Strings</a>
+
+  <a href="#chap-8" class="table-of-contents subtopic">8. Data Structures</a>
+
+  <a href="#chap-9" class="table-of-contents subtopic">9. Input/Output</a>
+
+  <a href="#chap-10" class="table-of-contents subtopic">10. Subprograms</a>
+
+  <a href="#chap-11" class="table-of-contents subtopic">11. Testing and Evaluation</a>
+
+  <a href='#topic-3' class="table-of-contents">Data</a>
+
+  <a href="#chap-12" class="table-of-contents subtopic">12. Binary</a>
+
+  <a href="#chap-13" class="table-of-contents subtopic">13. Data Representation</a>
+
+  <a href="#chap-14" class="table-of-contents subtopic">14. Data Storage and Compression</a>
+
+  <a href="#chap-15" class="table-of-contents subtopic">15. Encryption</a>
+
+  <a href='#topic-4' class="table-of-contents">Computers</a>
+
+  <a href="#chap-16" class="table-of-contents subtopic">16. Machines and Computational Models</a>
+
+  <a href="#chap-17" class="table-of-contents subtopic">17. Hardware</a>
+
+  <a href="#chap-18" class="table-of-contents subtopic">18. Logic</a>
+
+  <a href="#chap-19" class="table-of-contents subtopic">19. Software</a>
+
+  <a href="#chap-20" class="table-of-contents subtopic">20. Programming Languages</a>
+
+  <a href='#topic-5' class="table-of-contents">Communication and The Internet</a>
+
+  <a href="#chap-21" class="table-of-contents subtopic">21. Networks</a>
+
+  <a href="#chap-22" class="table-of-contents subtopic">22. Network Security</a>
+
+  <a href="#chap-23" class="table-of-contents subtopic">23. The Internet and The World Wide Web</a>
+
+  <a href='#topic-6' class="table-of-contents">The Bigger Picture</a>
+
+  <a href="#chap-24" class="table-of-contents subtopic">24. Computing and The Environmental Impact of Technology</a>
+
+  <a href="#chap-25" class="table-of-contents subtopic">25. Privacy</a>
+
+  <a href="#chap-26" class="table-of-contents subtopic">26. Digital Inclusion</a>
+
+  <a href="#chap-27" class="table-of-contents subtopic">27. Professionalism</a>
+
+  <a href="#chap-28" class="table-of-contents subtopic">28. Computing and The Legal Impact of Technology</a>
+
+  <a href="#chap-29" class="table-of-contents subtopic">29. Current and Emerging Trends</a>
 
 </div>
 
@@ -42,13 +99,8 @@
 <summary>How does Linear search work? <span class='mark'>[3 marks]</span></summary>
 
 <answer>
-
-</details>
-
-<details>
-<summary><ul></summary>
-
-<li>It starts at the front of the list</li>
+  <ul>
+    <li>It starts at the front of the list</li>
     <li>It continues till it matches</li>
     <li>Stops when the item is found</li>
   </ul>
@@ -60,13 +112,8 @@
 <summary>How does Binary search work? <span class='mark'>[4 marks]</span></summary>
 
 <answer>
-
-</details>
-
-<details>
-<summary><ul></summary>
-
-<li>It starts at the front of the list</li>
+  <ul>
+    <li>It starts at the front of the list</li>
     <li>It continues till it matches</li>
     <li>Stops when the item is found</li>
   </ul>
@@ -75,21 +122,21 @@
 </details>
 
 <details>
-<summary>Define algorithm <span class='mark'>[1 marks]</span></summary>
+<summary>Define algorithm <span class='mark'>[1 mark]</span></summary>
 
 <answer><p>A set of instructinos to carry out a specific task/problem<p></answer>
 
 </details>
 
 <details>
-<summary>Define abstraction <span class='mark'>[1 marks]</span></summary>
+<summary>Define abstraction <span class='mark'>[1 mark]</span></summary>
 
 <answer><p> The process of removing or hiding unnecessary detail so that only the important points remain</p></answer>
 
 </details>
 
 <details>
-<summary>Define decomposition <span class='mark'>[1 marks]</span></summary>
+<summary>Define decomposition <span class='mark'>[1 mark]</span></summary>
 
 <answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
 
@@ -103,14 +150,93 @@
 
 <h2 id='topic-5'> Topic 5: Networking</h2>
 
+<h3 id='chap-21'>Chapter 21: Networks</h3>
+
+<details>
+<summary>Draw A Bus Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <img src='assets/network/bus-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Ring Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <img src='assets/network/ring-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Star Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <img src='assets/network/star-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Mesh Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <img src='assets/network/mesh-topology.png'>
+</answer>
+
+</details>
+
+<h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
+
+<details>
+<summary>Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Internet</strong>
+  <li>The internet is a global network of networks</li>
+  <li>The internet is the most well known WAN (Wide Area Network)</li>
+  <li>The internet is a infrastructure used to provide connectivity to WWW</li>
+  <strong>World Wide Web</strong>
+  <li>Collection of websites and web pages that are accessed using internet</li>
+  <li>Web pages are accessed using a web browser, which communicates with web servers to retrieve and display the content.</li>
+</ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<li>IPv4 addresses are running out</li>
+<li>IPv6 can represent more devices using 128 bits per address compared to 32 bits per address</li>
+</ul>
+</answer>
+
+</details>
+
 <h2 id='topic-6'> Topic 6: The Bigger Picture</h2>
+
+<h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
+
+<h3 id='chap-25'>Chapter 25: Privacy</h3>
+
+<h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
+
+<h3 id='chap-27'>Chapter 27: Professionalism</h3>
+
+<h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
         <div style="margin-top: 0.5rem;">
-            Contributions are welcome!<br>
-            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;">Submit a pull request on GitHub</a> or contact me directly.
+            <span data-translate='Contributions are welcome!'>Contributions are welcome!</span><br>
+            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;"><span data-translate='Submit a pull request on GitHub or contact me directly.'>Submit a pull request on GitHub or contact me directly.</span></a>
         </div>
     </footer>
 
@@ -154,14 +280,23 @@ function toggleLanguage(lang) {
         // Translations dictionary
         const translations = {
     "Table of Contents": "မာတိကာ",
-    "Topic 1: Algorithm": "အကြောင်းအရာ ၁: အယ်လ်ဂိုရီသမ်",
-    "Topic 2: Programming": "အကြောင်းအရာ ၂: ပရိုဂရမ်ရေးသားခြင်း",
-    "Topic 3: Binary": "အကြောင်းအရာ ၃: ဒွိစနစ်",
-    "Topic 4: Computers": "အကြောင်းအရာ ၄: ကွန်ပျူတာများ",
-    "Topic 5: Networking": "အကြောင်းအရာ ၅: ကွန်ရက်ချိတ်ဆက်ခြင်း",
-    "Topic 6: The Bigger Picture": "အကြောင်းအရာ ၆: ပိုမိုကျယ်ပြန့်သောအမြင်များ",
-    "Chapter 29: Current and emerging trends": "အခန်း ၂၉: လက်ရှိနှင့်ပေါ်ထွန်းလာသောအလားအလာများ"
+    "Contributions are welcome!": "Contributions များကို ကြိုဆိုပါသည်။",
+    "Submit a pull request on GitHub or contact me directly.": "GitHub တွင် Pull request တစ်ခု တင်သွင်းပါ သို့မဟုတ် ကျွန်ုပ်ကို တိုက်ရိုက်ဆက်သွယ်ပါ။"
 };
+
+         function closeAllToggles() {
+            document.querySelectorAll('details').forEach(detail => {
+                // Close the toggle
+                detail.open = false;
+                
+                // Remove from localStorage
+                const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
+                localStorage.removeItem(key);
+            });
+            
+            // Optional: Show a brief confirmation
+            alert('All sections have been closed');
+        }
 
         // LocalStorage Toggle
         document.querySelectorAll('details').forEach(detail => {
