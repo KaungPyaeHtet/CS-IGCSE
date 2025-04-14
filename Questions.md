@@ -85,10 +85,14 @@ Answer - html syntax
 
 <h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
 
-What is meant by an algorithm? <span class='mark'>[1 mark]</span>
+<h3 id='chap-1'>Chapter 1: Understanding Algorithms</h3>
+
+<question>What is meant by an algorithm? <span class='mark'>[1 mark]</span></question>
 <answer><p>An algorithm is a precise step-by-step method for solving a problem or completing a task.</p></answer>
 
-How does Linear search work? <span class='mark'>[3 marks]</span>
+<h3 id='chap-3'>Chapter 3: Sorting and Searching Algorithms</h3>
+
+<question>How does Linear search work? <span class='mark'>[3 marks]</span></question>
 <answer>
   <ul>
     <li>Starts at the first item of the list</li>
@@ -97,7 +101,7 @@ How does Linear search work? <span class='mark'>[3 marks]</span>
   </ul>
 </answer>
 
-How does Binary search work? <span class='mark'>[4 marks]</span>
+<question>How does Binary search work? <span class='mark'>[4 marks]</span></question>
 <answer>
   <ul>
     <li>Select the median item of the list</li>
@@ -108,7 +112,7 @@ How does Binary search work? <span class='mark'>[4 marks]</span>
   </ul>
 </answer>
 
-How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
+<question>How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span></question>
 <answer>
   <ul>
     <li>Start at the beginning of the list</li>
@@ -118,27 +122,31 @@ How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
   </ul>
 </answer>
 
-What is meant by recursion <span class='mark'>[1 mark]</span>
+<question>Define recursion <span class='mark'>[1 mark]</span></question>
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
 
-What is meant by bruteforce <span class='mark'>[2 marks]</span>
+<question>Define bruteforce <span class='mark'>[2 marks]</span></question>
 <answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
 
-What is meant by divide and conqueror <span class='mark'>[2 marks]</span>
+<question>Define divide and conqueror <span class='mark'>[2 marks]</span></question>
 <answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
 
-What is meant by abstraction <span class='mark'>[1 mark]</span>
+<h3 id='chap-4'>Chapter 4: Decomposition and Abstractions</h3>
+
+<question>Define abstraction <span class='mark'>[1 mark]</span></question>
 <answer><p> The process of removing or hiding unnecessary detail and highlighting only main points</p></answer>
 
-What is meant by decomposition <span class='mark'>[1 mark]</span>
+<question>Define decomposition <span class='mark'>[1 mark]</span></question>
 <answer><p> Breaking a problem down into smaller and more managable parts, which are then easier to solve</p></answer>
 
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
-Implement Linear Search
+<h3 id='chap-5'>Chapter 5: Developing Code</h3>
+
+<question>Implement Linear Search</question>
 <answer>
 ```python
-numbers = [1, 2, 3, 4, 5, 6, 7] # Note that the array does not have to be sorted in linear search
+numbers = [1, 2, 3, 4, 5, 6, 7]
 found = False
 target = int(input("Enter a number:"))
 while index < len(numbers) and not found:
@@ -149,12 +157,13 @@ if found:
 else:
   print("Not found")
 ```
+
 </answer>
 
-Implement Binary Search
+<question>Implement Binary Search</question>
 <answer>
 ```python
-numbers = [1, 2, 3, 4, 5, 6, 7] # Note that the array has to be sorted in binary search
+numbers = [1, 2, 3, 4, 5, 6, 7]
 low = 0
 high = len(numbers) - 1
 found = False
@@ -171,11 +180,43 @@ if found:
 else:
   print("Not Found")
 ```
+
+</answer>
+
+<h3 id='chap-6'>Chapter 6: Making Programs Easier To Read</h3>
+
+<question>4 Techniques</question>
+<answer><table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Technique</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Comments</td>
+      <td>Comments should be used to explain what each part of the program does.</td>
+    </tr>
+    <tr>
+      <td>Descriptive Names</td>
+      <td>Using descriptive identifiers for variables, constants, and subprograms helps make their purpose clear.</td>
+    </tr>
+    <tr>
+      <td>Indentation</td>
+      <td>Indentations make it easier to see where code starts and finishes.</td>
+    </tr>
+    <tr>
+      <td>White Space</td>
+      <td>Adding blank lines between different blocks of code makes them stand out.</td>
+    </tr>
+  </tbody>
+</table>
 </answer>
 
 <h3 id='chap-9'>Chapter 9: Input/Output</h3>
 
-Implement Range Check (case: make sure the number is between 1 and 10)
+<question>Implement Range Check (case: make sure the number is between 1 and 10)</question>
 <answer>
 ```python
 num = int(input("Enter a number"))
@@ -183,9 +224,10 @@ while num < 1 or num > 10:
   num = int(input("Enter a number again because number isn't between 1 and 10"))
 print("You have entered", num)
 ```
+
 </answer>
 
-Implement Presence Check (case: check whether username is empty or not)
+<question>Implement Presence Check (case: check whether username is empty or not)</question>
 <answer>
 ```python
 username = ''
@@ -193,9 +235,10 @@ while username == '':
   username = input("Please enter username:")
 print("Hello", username)
 ```
+
 </answer>
 
-Implement Look up Check (case: check whether an item is in array)
+<question>Implement Look up Check (case: check whether an item is in array)</question>
 <answer>
 ```python
 arrayForms = ['7AXB', '7PDB', '7ARL', '7JEH']
@@ -212,9 +255,10 @@ if valid == True:
 else:
   print("The form you have entered doesn't exist")
 ```
+
 </answer>
 
-Implement Length Check (Case: Enter a string of length 8)
+<question>Implement Length Check (Case: Enter a string of length 8)</question>
 <answer>
 ```python
 binaryString = input("Enter a string of 8 bit binary: ")
@@ -222,9 +266,10 @@ while len(binaryString) != 8:
   binaryString = input("You must enter a length of 8 binary string: ")
 print("Valid")
 ```
+
 </answer>
 
-Testing Validation Rules (Normal, Boundary, Erroneous datas)
+<question>Testing Validation Rules (Normal, Boundary, Erroneous datas)</question>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <thead>
@@ -252,12 +297,12 @@ Testing Validation Rules (Normal, Boundary, Erroneous datas)
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
-What is meant by built in functions <span class='mark'>[1 mark]</span>
+<question>What is meant by built in functions <span class='mark'>[1 mark]</span></question>
 <answer><p>Functions that are provided by programming languages to perform common tasks</p></answer>
 
 <h3 id='chap-11'>Chapter 11: Testing and Evaluation</h3>
 
-What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
+<question>What is trace table and why do we use it? <span class='mark'>[2 marks]</span></question>
 <answer>
   <ul>
     <li>A technique used to identify logic errors in algorithms</li>
@@ -265,7 +310,7 @@ What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
   </ul>
 </answer>
 
-Three types of errors
+<question>Three types of errors</question>
 <answer>
   <table>
     <thead>
@@ -293,9 +338,14 @@ Three types of errors
 
 <h2 id='topic-3'><a href='#toc'> Topic 3: Binary</a></h2>
 
+<h3 id='chap-12'>Chapter 12: Binary </h3>
+
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
 
-Explain why Unicode was developed <span class='mark'>[2 marks]</span>
+<question>Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span></question>
+<answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
+
+<question>Explain why Unicode was developed <span class='mark'>[2 marks]</span></question>
 <answer>
   <ul>
     <li>Before Unicode, there were hundreds of different encoding systems, and no single encoding system could contain enough characters to represent all major languages</li>
@@ -305,7 +355,7 @@ Explain why Unicode was developed <span class='mark'>[2 marks]</span>
   </ul>
 </answer>
 
-Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span>
+<question>Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span></question>
 <answer>
 <ul>
   <li>set the sample rate/parameters/bit-depth (1)</li>
@@ -316,14 +366,20 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
   </ul>
 </answer>
 
+<h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
+
+<h3 id='chap-15'>Chapter 15: Encryption </h3>
+
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
+
+<h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
-Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span>
+<question>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></question>
 <answer><ul><li>Data</li><li>Instructions</li></ul></answer>
 
-Explain how virtual memory works <span class='mark'>[2 marks]</span>
+<question>Explain how virtual memory works <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
 <li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
@@ -335,7 +391,7 @@ Explain how virtual memory works <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-how does HDD work? <span class='mark'>[3 marks]</span>
+<question>how does HDD work? <span class='mark'>[3 marks]</span></question>
 <answer>
   <ul>
     <li>Made up of several metal discs coated with magnetic materials (Platters)</li>
@@ -344,8 +400,8 @@ how does HDD work? <span class='mark'>[3 marks]</span>
   </ul>
 </answer>
 
-How does SSD work? <span class='mark'>[3 marks]</span>  
-<answer>  
+<question>How does SSD work? <span class='mark'>[3 marks]</span></question>  
+<answer>
   <ul>  
     <li>Uses electronic circuits that can store binary values (1 or 0) <strong>(1 mark)</strong></li>  
     <li>Uses NAND/NOR flash memory to persistently control electron flow <strong>(1 mark)</strong></li>  
@@ -353,40 +409,40 @@ How does SSD work? <span class='mark'>[3 marks]</span>
   </ul>  
 </answer>
 
-How does an optical drive work? <span class='mark'>[2 marks]</span>  
-<answer>  
+<question>How does an optical drive work? <span class='mark'>[2 marks]</span></question>  
+<answer>
   <ul>  
     <li>Uses a disc with a polycarbonate surface layer <strong>(1 mark)</strong></li>  
     <li>A laser beam reads/writes data by targeting the disc surface <strong>(1 mark)</strong></li>  
     <li>Creates physical pits (indentations) and lands (flat areas) on the disc <strong>(1 mark)</strong></li>  
     <li>Pits represent binary 0, lands represent binary 1<strong>(1 mark)</strong></li>  
   </ul>  
-</answer>  
+</answer>
 
-What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span>
+<question>What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span></question>
 <answer><p>Stores the address of the next instruction to be fetched.</p></answer>
 
-What does the Memory Address Register (MAR) hold? <span class='mark'>[1 mark]</span>
+<question>What does the Memory Address Register (MAR) hold? <span class='mark'>[1 mark]</span></question>
 <answer><p>Stores the address of the instruction/data to be fetched from memory.</p></answer>
 
-Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks]</span>
+<question>Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul> <li>Stores the data fetched from memory <strong>(1 mark)</strong>.</li> <li>Transfers this data to the Arithmetic Logic Unit (ALU) for execution <strong>(1 mark)</strong>.</li> </ul> </answer>
 
-What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span>
+<question>What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span></question>
 <answer><p>Stores the instruction currently being decoded by the CPU.</p></answer>
 
-Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
+<question>Explain the function of the Accumulator. <span class='mark'>[1 mark]</span></question>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
 
-Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
+<question>Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span></question>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
 
-Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span>
+<question>Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span></question>
 <answer>
 <ol type="1"> <li><strong>Fetch Stage (3 marks)</strong> <ul> <li>Memory Address Register (MAR) holds the address of the next instruction, sent via the <em>address bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction/data is fetched from memory to the Memory Data Register (MDR) via the <em>data bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction is copied to the Current Instruction Register (CIR); Program Counter (PC) increments <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Decode Stage (1 mark)</strong> <ul> <li>Control Unit decodes the instruction in CIR into <em>opcode</em> (operation) and <em>operand</em> (data) <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Execute Stage (2 marks)</strong> <ul> <li>Arithmetic Logic Unit (ALU) performs the operation (opcode) on the operand <strong>(1 mark)</strong>.</li> <li>Result is stored in the <em>accumulator</em> or written back to memory <strong>(1 mark)</strong>.</li> </ul> </li> </ol> <img src='assets/computer/fetch-decode-execute.png' /></answer>
 
-Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span>
+<question>Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span></question>
 <answer>
 <div class="comparison"> <div class="benefits"> <h4>Benefits</h4> <ul> <li><strong>Accessibility</strong>: <ul> <li>Access files from any location with WAN connectivity</li> <li>Collaborate in real-time with permission controls</li> <li>Device-agnostic access (any internet-enabled device)</li> </ul> </li> <li><strong>Scalability</strong>: <ul> <li>Flexible storage capacity adjustments (pay-as-you-grow)</li> </ul> </li> <li><strong>Reliability</strong>: <ul> <li>Redundant server backups minimize data loss risks</li> </ul> </li> <li><strong>Cost Efficiency</strong>: <ul> <li>Reduces local hardware/staff costs (provider-managed IT)</li> </ul> </li> </ul> </div>
 <div class="drawbacks">  <h4>Drawbacks</h4>  <ul>  <li><strong>Security Risks</strong>:  <ul><li>Potential for external breaches or unauthorized access</li>  
@@ -414,12 +470,14 @@ Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 
 </div>  
 </div></answer>
 
+<h3 id='chap-18'>Chapter 18: Logic </h3>
+
 <h3 id='chap-19'>Chapter 19: Software</h3>
 
-What is an application software <span class='mark'>[2 marks]</span>
+<question>What is an application software? <span class='mark'>[2 marks]</span></question>
 <answer><p>Software that is designed to perform specific task for the user. For instance, word processing software, photo editing software, etc</p></answer>
 
-Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span>
+<question>Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span></question>
 <answer>
   <ul>
     <li>OS checks whether there is space on disk</li>
@@ -430,7 +488,7 @@ Describe how an operating system manages the storage of a file on random-access 
   </ul>
 </answer>
 
-List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span>
+<question>List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span></question>
 <answer>
   <ul>
     <li>Providing User Interface</li>
@@ -444,15 +502,15 @@ List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</spa
   </ul>
 </answer>
 
-What is scheduling <span class='mark'>[2 marks]</span>
+<question>What is scheduling? <span class='mark'>[2 marks]</span></question>
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
 
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
-What is a low level programming language? <span class='mark'>[1 mark]</span>
+<question>What is a low level programming language? <span class='mark'>[1 mark]</span></question>
 <answer><p>The language that is closer to machine code (binary)</p></answer>
 
-Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span>
+<question>Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span></question>
 <answer>
 <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td><strong>Execution</strong> <em>(1 mark)</em></td> <td>Translates entire code into machine language <strong>before</strong> execution.</td> <td>Translates and executes code <strong>line-by-line</strong>.</td> </tr> <tr> <td><strong>Speed</strong> <em>(1 mark)</em></td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td><strong>Error Handling</strong> <em>(1 mark)</em></td> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td><strong>Portability</strong> <em>(1 mark)</em></td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
 
@@ -460,8 +518,8 @@ Compare four features between a compiler and an interpreter. <span class='mark'>
 
 <h3 id='chap-21'>Chapter 21: Networks</h3>
 
-Why do people connect to network?<span class='mark'>[2 marks]</span>
-<answer>  
+<question>Why do people connect to network?<span class='mark'>[2 marks]</span></question>
+<answer>
   <ul>  
     <li>To share access to the internet/WWW/broadband connection</li>  
     <li>To enable internal communication using email, instant messaging, and calendar</li>  
@@ -470,22 +528,19 @@ Why do people connect to network?<span class='mark'>[2 marks]</span>
   </ul>  
 </answer>
 
-Draw A Bus Topology <span class='mark'>[4 marks]</span>
-<answer>
-<img src='assets/network/bus-topology.png'>
+<question>Draw A Bus Topology <span class='mark'>[4 marks]</span></question>
+<answer><img src='assets/network/bus-topology.png'>
 </answer>
 
-Draw A Ring Topology <span class='mark'>[4 marks]</span>
-<answer>
-<img src='assets/network/ring-topology.png'>
+<question>Draw A Ring Topology <span class='mark'>[4 marks]</span></question>
+<answer><img src='assets/network/ring-topology.png'>
 </answer>
 
-Draw A Star Topology <span class='mark'>[4 marks]</span>
-<answer>
-<img src='assets/network/star-topology.png'>
+<question>Draw A Star Topology <span class='mark'>[4 marks]</span></question>
+<answer><img src='assets/network/star-topology.png'>
 </answer>
 
-Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span>
+<question>Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span></question>
 <answer>
 <ul>
   <strong>Advantages</strong>
@@ -499,18 +554,17 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 </ul>
 </answer>
 
-Draw A Mesh Topology <span class='mark'>[4 marks]</span>
-<answer>
-<img src='assets/network/mesh-topology.png'>
+<question>Draw A Mesh Topology <span class='mark'>[4 marks]</span></question>
+<answer><img src='assets/network/mesh-topology.png'>
 </answer>
 
-Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
+<question>Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span></question>
 <answer>
 <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th> </tr> </thead> <tbody> <tr> <td><strong>Speed</strong></td> <td>Faster data transmission (e.g., fiber optic cables)</td> <td>Slower due to signal interference</td> </tr> <tr> <td><strong>Security</strong></td> <td>Harder to intercept (physical access required)</td> <td>Requires encryption to prevent eavesdropping</td> </tr> <tr> <td><strong>Installation</strong></td> <td>Expensive/cumbersome (cables, ports)</td> <td>Flexible but prone to interference (walls/devices)</td> </tr> </tbody> </table> </answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
-Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
+<question>Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
 <li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
@@ -518,7 +572,7 @@ Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
+<question>Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
 <li>shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)</li>
@@ -526,7 +580,7 @@ Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-Explain why the delay of not updating software to latest version could pose a threat to the security of the network. <span class='mark'>[2 marks]</span>
+<question>Explain why the delay of not updating software to latest version could pose a threat to the security of the network. <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
 <strong>One method</strong>
@@ -540,7 +594,7 @@ Explain why the delay of not updating software to latest version could pose a th
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
 
-Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span>
+<question>Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
   <strong>Internet</strong>
@@ -553,7 +607,7 @@ Describe the difference between the Internet and the World Wide Web. <span class
 </ul>
 </answer>
 
-Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
+<question>Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
 <li>IPv4 addresses are running out</li>
@@ -565,7 +619,7 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
-List two positive impacts of using technology on the environment
+<question>List two positive impacts of using technology on the environment</question>
 <answer></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
@@ -578,16 +632,16 @@ List two positive impacts of using technology on the environment
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
-Describe what is meant by Artificial Intelligence <span class='mark'>[2 marks]</span>
+<question>Describe what is meant by Artificial Intelligence <span class='mark'>[2 marks]</span></question>
 <answer><p>The ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings. Intelligent beings are those that can adapt to changing circumstances.</p></answer>
 
-Describe what is meant by Machine Learning <span class='mark'>[2 marks]</span>
+<question>Describe what is meant by Machine Learning <span class='mark'>[2 marks]</span></question>
 <answer><p>Machine learning is a form of artificial intelligence (AI) that allows computer systems to carry out complex processes by learning from data, rather than following pre-programmed rules.</p></answer>
 
-What is DNA? <span class='mark'>[1 mark]</span>
+<question>What is DNA? <span class='mark'>[1 mark]</span></question>
 <answer><p>DNA is the material that stores genetic information in all organisms.</p></answer>
 
-Describe differences between normal computer and DNA computers <span class='mark'>[2 marks]</span>
+<question>Describe differences between normal computer and DNA computers <span class='mark'>[2 marks]</span></question>
 <answer>
 <ul>
   <li>DNA computers use DNA rather than silicon like normal computers. DNA doesn’t use two bits but four bits (A, T, G and C).Normal computers use binary which is two bits (0 and 1).</li>
@@ -595,7 +649,7 @@ Describe differences between normal computer and DNA computers <span class='mark
 </ul>
 </answer>
 
-Describe the advantages of DNA computers over normal ones <span class='mark'>[2 marks]</span>
+<question>Describe the advantages of DNA computers over normal ones <span class='mark'>[2 marks]</span></question>
 <answer>
   <ul>
     <li>There will always be supply of DNA</li>
@@ -605,13 +659,13 @@ Describe the advantages of DNA computers over normal ones <span class='mark'>[2 
   </ul>
 </answer>
 
-Why is DNA suitable for storing data <span class='mark'>[2 marks]</span>
+<question>Why is DNA suitable for storing data? <span class='mark'>[2 marks]</span></question>
 <answer><p>Because DNA consists of 4 digits which are arranged in groups of 3, it can encode information represented by the bits and bytes of computer systems.</p></answer>
 
-Define what is meant by nanotechnology <span class='mark'>[1 mark]</span>
+<question>Define what is meant by nanotechnology <span class='mark'>[1 mark]</span></question>
 <answer><p>The manipulation of matter with a size of from 1 to 100 nanometres.</p></answer>
 
-Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span>
+<question>Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span></question>
 <answer>
   <ul>
     <li>Self cleaning windows</li>
@@ -621,18 +675,18 @@ Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span
   </ul>
 </answer>
 
-What is meant by quantum computing <span class='mark'>[2 marks]</span>
+<question>What is meant by quantum computing <span class='mark'>[2 marks]</span></question>
 <answer><p>
 Quantum computing is based on quantum mechanics. Quantum mechanics is the branch of physics that describes the behviour of very small subatomic particles, which can exist as both particles and waves. Quantum computers use qubits, which can represent both 1 and 0 at the same time.</p></answer>
 
-Define the term superposition <span class='mark'>[1 mark]</span>
+<question>Define the term superposition <span class='mark'>[1 mark]</span></question>
 <answer><p>The ability of a quantum system to be in multiple states at the same time until it is measured.</p></answer>
 
-Define the term entanglement <span class='mark'>[1 mark]</span>
+<question>Define the term entanglement <span class='mark'>[1 mark]</span></question>
 <answer><p>Co-dependence of the quantum states of pairs or groups of particles.</p></answer>
 
-Define the term qubit <span class='mark'>[1 mark]</span>
+<question>Define the term qubit <span class='mark'>[1 mark]</span></question>
 <answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class='mark'>[2 marks]</span>
+<question>How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class='mark'>[2 marks]</span></question>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>

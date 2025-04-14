@@ -490,19 +490,23 @@ details[data-answered="wrong"] {
 }
 
 .download-pdf {
-  position: fixed; /* Fixed position to make it float */
-  left: 20px; /* Distance from the left edge */
-  top: 20px; /* Distance from the top edge */
-  background-color: var(--primary-dark); /* Green background */
-  color: white; /* White text */
-  padding: 15px 25px; /* Padding for the button */
-  font-size: 16px; /* Font size */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Cursor pointer on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .download-pdf:hover {
   color:#111827
+}
+
+img{
+  width : 750px
 }

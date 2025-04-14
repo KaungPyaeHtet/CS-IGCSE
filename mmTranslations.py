@@ -6,5 +6,7 @@ TRANSLATIONS = {
     "Start Random Questions": "Random မေးခွန်းများ စမည်",
     "Stop Practice": "ရပ်မည်",
     "Mark as Answered": "ဖြေပြီးပါပြီဟု မှတ်မည်",
-    "Number of questions": "မေးခွန်းအရေအတွက်"
+    "Number of questions": "မေးခွန်းအရေအတွက်",
+    "Download PDF Version": "pdf ယူမည်။",
+    "🙌 Close all questions":  "🙌 ေမးခွန်းပိတ်မည်"
 }

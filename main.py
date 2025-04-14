@@ -82,9 +82,9 @@ def convert_md_to_html(output_html):
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
-    <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
-    <a href="output.pdf" download class='toggle-download'>
-        <button class='download-pdf'>Download PDF Version</button>
+    <button onclick="closeAllToggles()" class="close-all" data-translate='🙌 Close all questions' title="Close All Toggles">🙌 Close all questions</button>
+    <a href="output.pdf" download class='download'>
+        <button class='download-pdf'><span data-translate='Download PDF Version'>Download PDF Version</span></button>
     </a>
     
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
