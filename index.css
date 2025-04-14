@@ -376,7 +376,8 @@ answer ul strong {
   opacity: 0.9;
 }
 
-#prism-theme-light, #prism-theme-dark {
+#prism-theme-light,
+#prism-theme-dark {
   transition: opacity 0.9s ease;
 }
 
@@ -445,6 +446,7 @@ answer ul strong {
 }
 
 .correct-button {
+  font-size: large;
   padding: 0.5rem 1rem;
   background: var(--success);
   color: white;
@@ -455,6 +457,7 @@ answer ul strong {
 }
 
 .wrong-button {
+  font-size: large;
   padding: 0.5rem 1rem;
   background: var(--error);
   color: white;
@@ -484,4 +487,22 @@ details[data-answered="correct"] {
 details[data-answered="wrong"] {
   border-left: 4px solid red;
   background-color: rgba(255, 0, 0, 0.1);
+}
+
+.download-pdf {
+  position: fixed; /* Fixed position to make it float */
+  left: 20px; /* Distance from the left edge */
+  top: 20px; /* Distance from the top edge */
+  background-color: var(--primary-dark); /* Green background */
+  color: white; /* White text */
+  padding: 15px 25px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.download-pdf:hover {
+  color:#111827
 }

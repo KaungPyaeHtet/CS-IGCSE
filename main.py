@@ -5,6 +5,7 @@ import sys
 import re
 import json
 from mmTranslations import TRANSLATIONS
+from pdfconvert import convert
 
 translation_js = "const translations = " + json.dumps(TRANSLATIONS, ensure_ascii=False, indent=4) + ";"
 
@@ -82,6 +83,9 @@ def convert_md_to_html(output_html):
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
+    <a href="output.pdf" download>
+        <button class='download-pdf'>Download PDF Version</button>
+    </a>
     
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}
@@ -290,6 +294,6 @@ let currentRandomQuestions = [];
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python main.py output.html")
+        print("Usage: python main.py index.html")
     else:
         convert_md_to_html(sys.argv[1])

@@ -255,6 +255,7 @@ Three types of errors
     </tbody>
   </table>
 </answer>
+
 <h2 id='topic-3'> Topic 3: Binary</h2>
 
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
