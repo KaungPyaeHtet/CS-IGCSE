@@ -7,77 +7,81 @@ Answer - html syntax
 
 <div class="toc">
 
-  <a href='#topic-1' class="table-of-contents">Problem Solving</a>
+<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
 
-  <a href="#chap-1" class="table-of-contents subtopic">1. Understanding Algorithms</a>
+<a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
-  <a href="#chap-2" class="table-of-contents subtopic">2. Creating Algorithms</a>
+<a href="#chap-1" class="table-of-contents subtopic">1. Understanding Algorithms</a>
 
-  <a href="#chap-3" class="table-of-contents subtopic">3. Sorting and Searching Algorithms</a>
+<a href="#chap-2" class="table-of-contents subtopic">2. Creating Algorithms</a>
 
-  <a href="#chap-4" class="table-of-contents subtopic">4. Decomposition and Abstraction</a>
+<a href="#chap-3" class="table-of-contents subtopic">3. Sorting and Searching Algorithms</a>
 
-  <a href='#topic-2' class="table-of-contents">Programming</a>
+<a href="#chap-4" class="table-of-contents subtopic">4. Decomposition and Abstraction</a>
 
-  <a href="#chap-5" class="table-of-contents subtopic">5. Develop Code</a>
+<a href='#topic-2' class="table-of-contents">Programming</a>
 
-  <a href="#chap-6" class="table-of-contents subtopic">6. Making Programs Easy to Read</a>
+<a href="#chap-5" class="table-of-contents subtopic">5. Develop Code</a>
 
-  <a href="#chap-7" class="table-of-contents subtopic">7. Strings</a>
+<a href="#chap-6" class="table-of-contents subtopic">6. Making Programs Easy to Read</a>
 
-  <a href="#chap-8" class="table-of-contents subtopic">8. Data Structures</a>
+<a href="#chap-7" class="table-of-contents subtopic">7. Strings</a>
 
-  <a href="#chap-9" class="table-of-contents subtopic">9. Input/Output</a>
+<a href="#chap-8" class="table-of-contents subtopic">8. Data Structures</a>
 
-  <a href="#chap-10" class="table-of-contents subtopic">10. Subprograms</a>
+<a href="#chap-9" class="table-of-contents subtopic">9. Input/Output</a>
 
-  <a href="#chap-11" class="table-of-contents subtopic">11. Testing and Evaluation</a>
+<a href="#chap-10" class="table-of-contents subtopic">10. Subprograms</a>
 
-  <a href='#topic-3' class="table-of-contents">Data</a>
+<a href="#chap-11" class="table-of-contents subtopic">11. Testing and Evaluation</a>
 
-  <a href="#chap-12" class="table-of-contents subtopic">12. Binary</a>
+<a href='#topic-3' class="table-of-contents">Data</a>
 
-  <a href="#chap-13" class="table-of-contents subtopic">13. Data Representation</a>
+<a href="#chap-12" class="table-of-contents subtopic">12. Binary</a>
 
-  <a href="#chap-14" class="table-of-contents subtopic">14. Data Storage and Compression</a>
+<a href="#chap-13" class="table-of-contents subtopic">13. Data Representation</a>
 
-  <a href="#chap-15" class="table-of-contents subtopic">15. Encryption</a>
+<a href="#chap-14" class="table-of-contents subtopic">14. Data Storage and Compression</a>
 
-  <a href='#topic-4' class="table-of-contents">Computers</a>
+<a href="#chap-15" class="table-of-contents subtopic">15. Encryption</a>
 
-  <a href="#chap-16" class="table-of-contents subtopic">16. Machines and Computational Models</a>
+<a href='#topic-4' class="table-of-contents">Computers</a>
 
-  <a href="#chap-17" class="table-of-contents subtopic">17. Hardware</a>
+<a href="#chap-16" class="table-of-contents subtopic">16. Machines and Computational Models</a>
 
-  <a href="#chap-18" class="table-of-contents subtopic">18. Logic</a>
+<a href="#chap-17" class="table-of-contents subtopic">17. Hardware</a>
 
-  <a href="#chap-19" class="table-of-contents subtopic">19. Software</a>
+<a href="#chap-18" class="table-of-contents subtopic">18. Logic</a>
 
-  <a href="#chap-20" class="table-of-contents subtopic">20. Programming Languages</a>
+<a href="#chap-19" class="table-of-contents subtopic">19. Software</a>
 
-  <a href='#topic-5' class="table-of-contents">Communication and The Internet</a>
+<a href="#chap-20" class="table-of-contents subtopic">20. Programming Languages</a>
 
-  <a href="#chap-21" class="table-of-contents subtopic">21. Networks</a>
+<a href='#topic-5' class="table-of-contents">Communication and The Internet</a>
 
-  <a href="#chap-22" class="table-of-contents subtopic">22. Network Security</a>
+<a href="#chap-21" class="table-of-contents subtopic">21. Networks</a>
 
-  <a href="#chap-23" class="table-of-contents subtopic">23. The Internet and The World Wide Web</a>
+<a href="#chap-22" class="table-of-contents subtopic">22. Network Security</a>
 
-  <a href='#topic-6' class="table-of-contents">The Bigger Picture</a>
+<a href="#chap-23" class="table-of-contents subtopic">23. The Internet and The World Wide Web</a>
 
-  <a href="#chap-24" class="table-of-contents subtopic">24. Computing and The Environmental Impact of Technology</a>
+<a href='#topic-6' class="table-of-contents">The Bigger Picture</a>
 
-  <a href="#chap-25" class="table-of-contents subtopic">25. Privacy</a>
+<a href="#chap-24" class="table-of-contents subtopic">24. Computing and The Environmental Impact of Technology</a>
 
-  <a href="#chap-26" class="table-of-contents subtopic">26. Digital Inclusion</a>
+<a href="#chap-25" class="table-of-contents subtopic">25. Privacy</a>
 
-  <a href="#chap-27" class="table-of-contents subtopic">27. Professionalism</a>
+<a href="#chap-26" class="table-of-contents subtopic">26. Digital Inclusion</a>
 
-  <a href="#chap-28" class="table-of-contents subtopic">28. Computing and The Legal Impact of Technology</a>
+<a href="#chap-27" class="table-of-contents subtopic">27. Professionalism</a>
 
-  <a href="#chap-29" class="table-of-contents subtopic">29. Current and Emerging Trends</a>
+<a href="#chap-28" class="table-of-contents subtopic">28. Computing and The Legal Impact of Technology</a>
+
+<a href="#chap-29" class="table-of-contents subtopic">29. Current and Emerging Trends</a>
 
 </div>
+
+# Questions
 
 <h2 id='topic-1'> Topic 1: Algorithms </h2>
 
@@ -87,23 +91,44 @@ What is an algorithm? <span class='mark'>[1 mark]</span>
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
   <ul>
-    <li>It starts at the front of the list</li>
-    <li>It continues till it matches</li>
-    <li>Stops when the item is found</li>
+    <li>Starts at the first item of the list</li>
+    <li>Compare the item with the search item</li>
+    <li>If they are same then stop, else move to the next item until the end of list is reached or the value is found</li>
   </ul>
 </answer>
 
 How does Binary search work? <span class='mark'>[4 marks]</span>
 <answer>
   <ul>
-    <li>It starts at the front of the list</li>
-    <li>It continues till it matches</li>
-    <li>Stops when the item is found</li>
+    <li>Select the median item of the list</li>
+    <li>If median is equal then stops</li>
+    <li>If median is higher, selects the left side of the list and repeat the first two steps</li>
+    <li>If median is lower, selects the right side of the list and repeat the first two steps</li>
+    <li>Repeat these steps until the search is found or all items have been checked</li>
   </ul>
 </answer>
 
+How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
+<answer>
+  <ul>
+    <li>Start at the beginning of the list</li>
+    <li>Compare the values in positions 1 and 2 in the list, if they aren't in ascending order then swap</li>
+    <li>Repeat these steps for positions 2 and 3 until the end of list is reached</li>
+    <li>Check if there would be any swap, if not then end bubble sort</li>
+  </ul>
+</answer>
+
+Define recursion <span class='mark'>[1 mark]</span>
+<answer><p>A process that is repeated again and again until the condition is met</p></answer>
+
+Define bruteforce <span class='mark'>[2 marks]</span>
+<answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
+
+Define bruteforce <span class='mark'>[2 marks]</span>
+<answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
+
 Define algorithm <span class='mark'>[1 mark]</span>
-<answer><p>A set of instructinos to carry out a specific task/problem<p></answer>
+<answer><p>A set of instructions to carry out a specific task/problem<p></answer>
 
 Define abstraction <span class='mark'>[1 mark]</span>
 <answer><p> The process of removing or hiding unnecessary detail so that only the important points remain</p></answer>
@@ -113,7 +138,137 @@ Define decomposition <span class='mark'>[1 mark]</span>
 
 <h2 id='topic-2'> Topic 2: Programming</h2>
 
+<h3 id='chap-9'>Chapter 9: Input/Output</h3>
+
+Implement Range Check (case: make sure the number is between 1 and 10)
+<answer>
+```python
+num = int(input("Enter a number"))
+while num < 1 or num > 10:
+  num = int(input("Enter a number again because number isn't between 1 and 10"))
+print("You have entered", num)
+```
+</answer>
+
+Implement Presence Check (case: check whether username is empty or not)
+<answer>
+```python
+username = ''
+while username == '':
+  username = input("Please enter username:")
+print("Hello", username)
+```
+</answer>
+
+Implement Look up Check (case: check whether an item is in array)
+<answer>
+```python
+arrayForms = ['7AXB', '7PDB', '7ARL', '7JEH']
+form = input("Enter a form:")
+valid = False
+index = 0
+length = len(arrayForms)
+while valid = False and index < length:
+  if form = arrayForms[index]:
+    valid = True
+  index = index + 1
+if valid == True:
+  print("Valid Form")
+else:
+  print("The form you have entered doesn't exist")
+```
+</answer>
+
+Implement Length Check (Case: Enter a string of length 8)
+<answer>
+```python
+binaryString = input("Enter a string of 8 bit binary: ")
+while len(binaryString) != 8:
+  binaryString = input("You must enter a length of 8 binary string: ")
+print("Valid")
+```
+</answer>
+
+Testing Validation Rules (Normal, Boundary, Erroneous datas)
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Normal Data</td>
+            <td>Data that is within the limits of what is accepted by program. Example 7 chars password for validation rules that states password must be between 6 and 8 digits</td>
+        </tr>
+        <tr>
+            <td>Boundary Data</td>
+            <td>Data that is at the extreme limits of what is <strong>accepted</strong> by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
+        </tr>
+        <tr>
+            <td>Erroneous</td>
+            <td>Data that will not be accepted. If validation rules state number is > 0 then erroneous data is -1</td>
+        </tr>
+    </tbody>
+</table>
+</answer>
+
+<h3 id='chap-10'>Chapter 10: Subprograms</h3>
+
+What is meant by built in functions <span class='mark'>[1 mark]</span>
+<answer><p>Functions that are provided by programming languages to perform common tasks</p></answer>
+
+<h3 id='chap-11'>Chapter 11: Testing and Evaluation</h3>
+
+What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>A technique used to identify logic errors in algorithms</li>
+    <li>As we work through all the steps, we can see what values variables hold at a specific step.</li>
+  </ul>
+</answer>
+
+Three types of errors
+<answer>
+  <table>
+    <thead>
+      <tr>
+        <th>Type of Error</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Logic Error</td>
+        <td>An error in algorithm that results in unexpected behaviour</td>
+      </tr>
+      <tr>
+        <td>Runtime Error</td>
+        <td>An error that occurs while the program is running. Common Example is ZeroDivisonError</td>
+      </tr>
+      <tr>
+        <td>Syntax Error</td>
+        <td>An error that occurs when the computer tries to run code that it cannot execute. Example is forgetting to close parenthesis</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
 <h2 id='topic-3'> Topic 3: Binary</h2>
+
+<h3 id='chap-13'>Chapter 13: Data Representation</h3>
+
+Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span>
+<answer>
+<ul>
+  <li>set the sample rate/parameters/bit-depth (1)</li>
+  <li>sample (the analogue sound) (1)</li>
+  <li>measure the sound amplitude/volume/frequency (1)</li>
+  <li>give a (binary) value/number for each measurement (1)</li>
+  <li>store data as sample rate and values / digital signals (1)</li>
+  </ul>
+</answer>
 
 <h2 id='topic-4'> Topic 4: Computers</h2>
 
@@ -123,17 +278,17 @@ Define decomposition <span class='mark'>[1 mark]</span>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
 <answer>
-  <img src='assets/network/bus-topology.png'>
+<img src='assets/network/bus-topology.png'>
 </answer>
 
 Draw A Ring Topology <span class='mark'>[4 marks]</span>
 <answer>
-  <img src='assets/network/ring-topology.png'>
+<img src='assets/network/ring-topology.png'>
 </answer>
 
 Draw A Star Topology <span class='mark'>[4 marks]</span>
 <answer>
-  <img src='assets/network/star-topology.png'>
+<img src='assets/network/star-topology.png'>
 </answer>
 
 Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span>
@@ -152,7 +307,37 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 
 Draw A Mesh Topology <span class='mark'>[4 marks]</span>
 <answer>
-  <img src='assets/network/mesh-topology.png'>
+<img src='assets/network/mesh-topology.png'>
+</answer>
+
+<h3 id='chap-22'>Chapter 22: Network Security </h3>
+
+Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
+<li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
+</ul>
+</answer>
+
+Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<li>shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)</li>
+<li>to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)</li>
+</ul>
+</answer>
+
+Explain why the delay of not updating software to latest version could pose a threat to the security of the network. <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<strong>One method</strong>
+<li>compromised/unpatched software is more vulnerable to attack (1)</li>
+<li>and may allow an attacker control of the whole network (1)</li>
+<strong>Another method</strong>
+<li>unpatched software has known weaknesses (1)</li>
+<li>which can be exploited by a hacker(1)</li>
+</ul>
 </answer>
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
@@ -182,6 +367,9 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
+List two positive impacts of using technology on the environment
+<answer></answer>
+
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
@@ -191,3 +379,62 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
+
+Describe what is meant by Artificial Intelligence <span class='mark'>[2 marks]</span>
+<answer><p>The ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings. Intelligent beings are those that can adapt to changing circumstances.</p></answer>
+
+Describe what is meant by Machine Learning <span class='mark'>[2 marks]</span>
+<answer><p>Machine learning is a form of artificial intelligence (AI) that allows computer systems to carry out complex processes by learning from data, rather than following pre-programmed rules.</p></answer>
+
+What is DNA? <span class='mark'>[1 mark]</span>
+<answer><p>DNA is the material that stores genetic information in all organisms.</p></answer>
+
+Describe differences between normal computer and DNA computers <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+  <li>DNA computers use DNA rather than silicon like normal computers. DNA doesn’t use two bits but four bits (A, T, G and C).Normal computers use binary which is two bits (0 and 1).</li>
+  <li>Like modern storage devices, DNA is digital, but it is not binary. Binary encoding uses two bits (0 and 1) but DNA uses four possible bits named adenine (A), thymine (T), guanine (G) and cytosine (C) after their chemical structure.</li>
+</ul>
+</answer>
+
+Describe the advantages of DNA computers over normal ones <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>There will always be supply of DNA</li>
+    <li>The large supply of DNA makes it cheap resource</li>
+    <li>DNA biochips can be made cleanly unlike toxic materials used to make traditional processors</li>
+    <li>DNA computers are many times smaller than today’s computers.</li>
+  </ul>
+</answer>
+
+Why is DNA suitable for storing data <span class='mark'>[2 marks]</span>
+<answer><p>Because DNA consists of 4 digits which are arranged in groups of 3, it can encode information represented by the bits and bytes of computer systems.</p></answer>
+
+Define what is meant by nanotechnology <span class='mark'>[1 mark]</span>
+<answer><p>The manipulation of matter with a size of from 1 to 100 nanometres.</p></answer>
+
+Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span>
+<answer>
+  <ul>
+    <li>Self cleaning windows</li>
+    <li>Clothing</li>
+    <li>Scratch-Resistant coating</li>
+    <li>Medicine</li>
+  </ul>
+</answer>
+
+What is meant by quantum computing <span class='mark'>[2 marks]</span>
+<answer><p>
+Quantum computing is based on quantum mechanics. Quantum mechanics is the branch of physics that describes the behviour of very small subatomic particles, which can exist as both particles and waves. Quantum computers use qubits, which can represent both 1 and 0 at the same time.</p></answer>
+
+Define the term superposition <span class='mark'>[1 mark]</span>
+<answer><p>The ability of a quantum system to be in multiple states at the same time until it is measured.</p></answer>
+
+Define the term entanglement <span class='mark'>[1 mark]</span>
+<answer><p>Co-dependence of the quantum states of pairs or groups of particles.</p></answer>
+
+Define the term qubit <span class='mark'>[1 mark]</span>
+<answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
+
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class='mark'>[2 marks]</span>
+<answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>

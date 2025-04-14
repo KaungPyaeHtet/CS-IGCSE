@@ -72,15 +72,32 @@ def convert_md_to_html(output_html):
     <meta charset="UTF-8">
     <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="prism-theme-light" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
+    
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
     {html}
+    <div class="random-questions-container" id='random-question'>
+        <h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
+        <div class="random-questions-controls">
+            <input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
+            <button onclick="startRandomQuestions()" class="random-questions-button">
+                <span data-translate="Start Random Questions">Start Random Questions</span>
+            </button>
+            <button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
+                <span data-translate="Stop Practice">Stop Practice</span>
+            </button>
+        </div>
+        <div id="random-questions-display"></div>
+    </div>
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
         <div style="margin-top: 0.5rem;">
@@ -88,18 +105,24 @@ def convert_md_to_html(output_html):
             <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;"><span data-translate='Submit a pull request on GitHub or contact me directly.'>Submit a pull request on GitHub or contact me directly.</span></a>
         </div>
     </footer>
-
     <script>
         function toggleTheme() {{
             const html = document.documentElement;
-            const current = html.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', next);
+  const current = html.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  html.setAttribute("data-theme", next);
 
-            const prismLink = document.getElementById('prism-theme');
-            if (prismLink) {{
-                prismLink.href = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-${{next}}.min.css`;
-            }}
+  // Update Prism theme
+  const lightTheme = document.getElementById("prism-theme-light");
+  const darkTheme = document.getElementById("prism-theme-dark");
+  
+  if (next === "light") {{
+    lightTheme.disabled = false;
+    darkTheme.disabled = true;
+  }} else {{
+    lightTheme.disabled = true;
+    darkTheme.disabled = false;
+  }}
         }}
 function toggleLanguage(lang) {{
             document.documentElement.setAttribute('data-lang', lang);
@@ -153,9 +176,110 @@ function toggleLanguage(lang) {{
                 localStorage.setItem(key, detail.open ? 'open' : 'closed');
             }});
         }});
+
+let currentRandomQuestions = [];
+        let score = {{ correct: 0, wrong: 0 }};
+
+        function getAllQuestions() {{
+            return Array.from(document.querySelectorAll('details')).filter(detail => {{
+                return !detail.closest('.random-questions-container');
+            }});
+        }}
+
+        function startRandomQuestions() {{
+            const countInput = document.getElementById('question-count');
+            const count = parseInt(countInput.value) || 5;
+            const allQuestions = getAllQuestions();
+            
+            if (allQuestions.length === 0) {{
+                alert('No questions found!');
+                return;
+            }}
+            
+            // Reset score and clear previous session
+            score = {{ correct: 0, wrong: 0 }};
+            stopRandomQuestions();
+            
+            // Shuffle and select questions
+            const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+            currentRandomQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
+            
+            // Display the questions
+            const display = document.getElementById('random-questions-display');
+            display.innerHTML = '';
+            
+            currentRandomQuestions.forEach((question, index) => {{
+                const clone = question.cloneNode(true);
+                clone.id = `random-question-${{index}}`;
+                clone.dataset.answered = "unanswered";
+                clone.open = false;
+                
+                // Create buttons container
+                const buttonsDiv = document.createElement('div');
+                buttonsDiv.className = 'question-buttons';
+                
+                // Correct button
+                const correctBtn = document.createElement('button');
+                correctBtn.className = 'correct-button';
+                correctBtn.textContent = 'Correct ✅';
+                correctBtn.onclick = function() {{
+                    clone.dataset.answered = "correct";
+                    score.correct++;
+                    updateScoreDisplay();
+                    buttonsDiv.remove();
+                }};
+                
+                // Wrong button
+                const wrongBtn = document.createElement('button');
+                wrongBtn.className = 'wrong-button';
+                wrongBtn.textContent = 'Wrong ❌';
+                wrongBtn.onclick = function() {{
+                    clone.dataset.answered = "wrong";
+                    score.wrong++;
+                    updateScoreDisplay();
+                    buttonsDiv.remove();
+                }};
+                
+                buttonsDiv.appendChild(correctBtn);
+                buttonsDiv.appendChild(wrongBtn);
+                clone.appendChild(buttonsDiv);
+                display.appendChild(clone);
+            }});
+            
+            // Create score display
+            const scoreDisplay = document.createElement('div');
+            scoreDisplay.className = 'score-display';
+            scoreDisplay.id = 'score-display';
+            display.appendChild(scoreDisplay);
+            
+            updateScoreDisplay();
+            display.scrollIntoView({{ behavior: 'smooth' }});
+        }}
+
+        function updateScoreDisplay() {{
+            const total = currentRandomQuestions.length;
+            const unanswered = total - score.correct - score.wrong;
+            const scoreDisplay = document.getElementById('score-display');
+            
+            if (scoreDisplay) {{
+                scoreDisplay.innerHTML = `
+                    Score: ${{score.correct}}/${{total}} | 
+                    Correct: ${{score.correct}} | 
+                    Wrong: ${{score.wrong}} | 
+                    Unanswered: ${{unanswered}}
+                `;
+            }}
+        }}
+
+        function stopRandomQuestions() {{
+            currentRandomQuestions = [];
+            document.getElementById('random-questions-display').innerHTML = '';
+        }}
+
     </script>
 </body>
 </html>
+
 """
 
     # Write the generated HTML to the output file
