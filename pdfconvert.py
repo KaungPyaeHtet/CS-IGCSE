@@ -29,7 +29,7 @@ def convert(path):
             });
             
             // Remove interactive elements that might cause issues
-            document.querySelectorAll('.theme-toggle, .close-all, .contributor-link, .language-toggle').forEach(el => el.remove());
+            document.querySelectorAll('.theme-toggle, .close-all, .contributor-link, .language-toggle, .toggle-download').forEach(el => el.remove());
             
             // Force visibility of all answer content
             document.querySelectorAll('details > div').forEach(div => {

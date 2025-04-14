@@ -83,7 +83,7 @@ def convert_md_to_html(output_html):
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" title="Close All Toggles">x Close All Sections</button>
-    <a href="output.pdf" download>
+    <a href="output.pdf" download class='toggle-download'>
         <button class='download-pdf'>Download PDF Version</button>
     </a>
     
@@ -294,6 +294,9 @@ let currentRandomQuestions = [];
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python main.py index.html")
+        print("Usage: python main.py index.html [convert]")
     else:
         convert_md_to_html(sys.argv[1])
+
+    if 'convert' in sys.argv:
+        convert(sys.argv[1])

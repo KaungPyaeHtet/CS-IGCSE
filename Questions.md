@@ -5,7 +5,7 @@ Answer - html syntax
 
 ## Table of Contents
 
-<div class="toc">
+<div id='toc' class="toc">
 
 <a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
 
@@ -83,7 +83,7 @@ Answer - html syntax
 
 # Questions
 
-<h2 id='topic-1'> Topic 1: Algorithms </h2>
+<h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
 
 What is an algorithm? <span class='mark'>[1 mark]</span>
 <answer><p>An algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
@@ -136,7 +136,7 @@ Define abstraction <span class='mark'>[1 mark]</span>
 Define decomposition <span class='mark'>[1 mark]</span>
 <answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
 
-<h2 id='topic-2'> Topic 2: Programming</h2>
+<h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
 <h3 id='chap-9'>Chapter 9: Input/Output</h3>
 
@@ -256,9 +256,19 @@ Three types of errors
   </table>
 </answer>
 
-<h2 id='topic-3'> Topic 3: Binary</h2>
+<h2 id='topic-3'><a href='#toc'> Topic 3: Binary</a></h2>
 
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
+
+Explain why Unicode was developed <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Before Unicode, there were hundreds of different encoding systems, and no single encoding system could contain enough characters to represent all major languages</li>
+    <li>Standard ASCII only provides 128 different patterns, which can’t represent all major languages</li>
+    <li>Unicode uses a minimum of 16 bits, so it can represent at least 2^16 characters.</li>
+    <li>Unicode has a very large number of characters that can represent all languages/ ASCII was developed for English</li>
+  </ul>
+</answer>
 
 Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span>
 <answer>
@@ -271,11 +281,63 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
   </ul>
 </answer>
 
-<h2 id='topic-4'> Topic 4: Computers</h2>
+<h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
-<h2 id='topic-5'> Topic 5: Networking</h2>
+<h3 id='chap-17'>Chapter 17: Hardware</h3>
+
+Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
+<answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
+
+<h3 id='chap-19'>Chapter 19: Software</h3>
+
+What is an application software <span class='mark'>[2 marks]</span>
+
+Describe how an operating system manages the storage of a file on random-access secondary storage.
+<answer>
+  <ul>
+    <li>OS checks whether there is space on disk</li>
+    <li>The file is broken into blocks</li>
+    <li>Blocks are stored in spaces large enough</li>
+    <li>Blocks can reside anywhere on the storage</li>
+    <li>Meta data about file is created and separately stored</li>
+  </ul>
+</answer>
+
+List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span>
+<answer>
+  <ul>
+    <li>User Interface</li>
+    <li>User management</li>
+    <li>Hardware management</li>
+    <li>File management</li>
+    <li>Process management</li>
+  </ul>
+</answer>
+
+What is scheduling <span class='mark'>[2 marks]</span>
+<answer><p>The algorithm that the OS uses to allow each running processes to use CPU</p></answer>
+
+<h3 id='chap-20'>Chapter 20: Programming Languages </h3>
+
+What is a low level programming language? <span>[1 mark]</span>
+<answer><p>The language that is closer to computer and CPU</p></answer>
+
+Describe differences between interpreter and compiler <span>[4 marks]</span>
+<answer></answer>
+
+<h2 id='topic-5'><a href='#toc'>Topic 5: Networking</a></h2>
 
 <h3 id='chap-21'>Chapter 21: Networks</h3>
+
+Why do people connect the network <span class='mark'>[2 marks]</span>
+<answer>  
+  <ul>  
+    <li>To share access to the internet/WWW/broadband connection</li>  
+    <li>To enable internal communication using email, instant messaging, and calendar</li>  
+    <li>To share files/data across multiple devices</li>  
+    <li>To share peripherals like printers and other hardware</li>  
+  </ul>  
+</answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
 <answer>
@@ -364,7 +426,7 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-<h2 id='topic-6'> Topic 6: The Bigger Picture</h2>
+<h2 id='topic-6'><a href='#toc'>Topic 6: The Bigger Picture</a></h2>
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
