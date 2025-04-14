@@ -124,7 +124,7 @@ Define recursion <span class='mark'>[1 mark]</span>
 Define bruteforce <span class='mark'>[2 marks]</span>
 <answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
 
-Define bruteforce <span class='mark'>[2 marks]</span>
+Define divide and conqueror <span class='mark'>[2 marks]</span>
 <answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
 
 Define algorithm <span class='mark'>[1 mark]</span>
@@ -137,6 +137,44 @@ Define decomposition <span class='mark'>[1 mark]</span>
 <answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
 
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
+
+Implement Linear Search
+<answer>
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7]
+found = False
+target = int(input("Enter a number:"))
+while index < len(numbers) and not found:
+  if num == target:
+    found = True
+if found:
+  print("Found")
+else:
+  print("Not found")
+```
+</answer>
+
+Implement Binary Search
+<answer>
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7]
+low = 0
+high = len(numbers) - 1
+found = False
+while low < high and not found:
+  mid = (low + high) // 2
+  if numbers[mid] > high:
+    high = mid - 1
+  else if numbers[mid] < low:
+    low = mid + 1
+  else:
+    found = True
+if found:
+  print("Found")
+else:
+  print("Not Found")
+```
+</answer>
 
 <h3 id='chap-9'>Chapter 9: Input/Output</h3>
 
@@ -285,12 +323,104 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
+Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span>
+<answer><ul><li>Data</li><li>Instructions</li></ul></answer>
+
+Explain how virtual memory works <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
+<li>Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)</li>
+<li>Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)</li>
+<li>Virtual memory is used as temporary storage. (1)</li>
+<li>Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)</li>
+<li>When needed again, instructions and data are transferred back to RAM. (1)</li>
+</ul>
+</answer>
+
+how does HDD work? <span class='mark'>[3 marks]</span>
+<answer>
+  <ul>
+    <li>Made up of several metal discs coated with magnetic materials (Platters)</li>
+    <li>Platter is divided into sector and tracks</li>
+    <li>Each iron particles on platter are magnetized to represent 1 or 0 using read/write head</li>
+  </ul>
+</answer>
+
+How does SSD work? <span class='mark'>[3 marks]</span>  
+<answer>  
+  <ul>  
+    <li>Uses electronic circuits that can store binary values (1 or 0) <strong>(1 mark)</strong></li>  
+    <li>Uses NAND/NOR flash memory to persistently control electron flow <strong>(1 mark)</strong></li>  
+    <li>Applies high voltage to trap electrons in the floating gate (data storage) <strong>(1 mark)</strong></li>  
+  </ul>  
+</answer>
+
+How does an optical drive work? <span class='mark'>[2 marks]</span>  
+<answer>  
+  <ul>  
+    <li>Uses a disc with a polycarbonate surface layer <strong>(1 mark)</strong></li>  
+    <li>A laser beam reads/writes data by targeting the disc surface <strong>(1 mark)</strong></li>  
+    <li>Creates physical pits (indentations) and lands (flat areas) on the disc <strong>(1 mark)</strong></li>  
+    <li>Pits represent binary 0, lands represent binary 1<strong>(1 mark)</strong></li>  
+  </ul>  
+</answer>  
+
+What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span>
+<answer><p>Stores the address of the next instruction to be fetched.</p></answer>
+
+What does the Memory Address Register (MAR) hold? <span class='mark'>[1 mark]</span>
+<answer><p>Stores the address of the instruction/data to be fetched from memory.</p></answer>
+
+Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks]</span>
+<answer>
+<ul> <li>Stores the data fetched from memory <strong>(1 mark)</strong>.</li> <li>Transfers this data to the Arithmetic Logic Unit (ALU) for execution <strong>(1 mark)</strong>.</li> </ul> </answer>
+
+What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span>
+<answer><p>Stores the instruction currently being decoded by the CPU.</p></answer>
+
+Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
+<answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
+
 Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
+
+Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span>
+<answer>
+<ol type="1"> <li><strong>Fetch Stage (3 marks)</strong> <ul> <li>Memory Address Register (MAR) holds the address of the next instruction, sent via the <em>address bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction/data is fetched from memory to the Memory Data Register (MDR) via the <em>data bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction is copied to the Current Instruction Register (CIR); Program Counter (PC) increments <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Decode Stage (1 mark)</strong> <ul> <li>Control Unit decodes the instruction in CIR into <em>opcode</em> (operation) and <em>operand</em> (data) <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Execute Stage (2 marks)</strong> <ul> <li>Arithmetic Logic Unit (ALU) performs the operation (opcode) on the operand <strong>(1 mark)</strong>.</li> <li>Result is stored in the <em>accumulator</em> or written back to memory <strong>(1 mark)</strong>.</li> </ul> </li> </ol> <img src='assets/computer/fetch-decode-execute.png' /></answer>
+
+Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span>
+<answer>
+<div class="comparison"> <div class="benefits"> <h4>Benefits</h4> <ul> <li><strong>Accessibility</strong>: <ul> <li>Access files from any location with WAN connectivity</li> <li>Collaborate in real-time with permission controls</li> <li>Device-agnostic access (any internet-enabled device)</li> </ul> </li> <li><strong>Scalability</strong>: <ul> <li>Flexible storage capacity adjustments (pay-as-you-grow)</li> </ul> </li> <li><strong>Reliability</strong>: <ul> <li>Redundant server backups minimize data loss risks</li> </ul> </li> <li><strong>Cost Efficiency</strong>: <ul> <li>Reduces local hardware/staff costs (provider-managed IT)</li> </ul> </li> </ul> </div>
+<div class="drawbacks">  <h4>Drawbacks</h4>  <ul>  <li><strong>Security Risks</strong>:  <ul><li>Potential for external breaches or unauthorized access</li>  
+        <li>Jurisdictional challenges in data protection laws</li>  
+      </ul>  
+    </li>  
+    <li><strong>Dependency</strong>:  
+      <ul>  
+        <li>Requires consistent high-speed internet</li>  
+        <li>Reliance on provider's service continuity</li>  
+      </ul>  
+    </li>  
+    <li><strong>Hidden Costs</strong>:  
+      <ul>  
+        <li>Recurring subscription fees</li>  
+        <li>Potential overuse charges for bandwidth/storage</li>  
+      </ul>  
+    </li>  
+    <li><strong>Environmental Impact</strong>:  
+      <ul>  
+        <li>High energy consumption for servers and cooling</li>  
+      </ul>  
+    </li>  
+  </ul>  
+</div>  
+</div></answer>
 
 <h3 id='chap-19'>Chapter 19: Software</h3>
 
 What is an application software <span class='mark'>[2 marks]</span>
+<answer></answer>
 
 Describe how an operating system manages the storage of a file on random-access secondary storage.
 <answer>
@@ -319,17 +449,19 @@ What is scheduling <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
-What is a low level programming language? <span>[1 mark]</span>
+What is a low level programming language? <span class='mark'>[1 mark]</span>
 <answer><p>The language that is closer to computer and CPU</p></answer>
 
-Describe differences between interpreter and compiler <span>[4 marks]</span>
-<answer></answer>
+Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span>
+<answer>
+<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td><strong>Execution</strong> <em>(1 mark)</em></td> <td>Translates entire code into machine language <strong>before</strong> execution.</td> <td>Translates and executes code <strong>line-by-line</strong>.</td> </tr> <tr> <td><strong>Speed</strong> <em>(1 mark)</em></td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td><strong>Error Handling</strong> <em>(1 mark)</em></td> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td><strong>Portability</strong> <em>(1 mark)</em></td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
+
 
 <h2 id='topic-5'><a href='#toc'>Topic 5: Networking</a></h2>
 
 <h3 id='chap-21'>Chapter 21: Networks</h3>
 
-Why do people connect the network <span class='mark'>[2 marks]</span>
+Why do people connect to network?<span class='mark'>[2 marks]</span>
 <answer>  
   <ul>  
     <li>To share access to the internet/WWW/broadband connection</li>  
@@ -372,6 +504,10 @@ Draw A Mesh Topology <span class='mark'>[4 marks]</span>
 <answer>
 <img src='assets/network/mesh-topology.png'>
 </answer>
+
+Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
+<answer>
+<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th> </tr> </thead> <tbody> <tr> <td><strong>Speed</strong></td> <td>Faster data transmission (e.g., fiber optic cables)</td> <td>Slower due to signal interference</td> </tr> <tr> <td><strong>Security</strong></td> <td>Harder to intercept (physical access required)</td> <td>Requires encryption to prevent eavesdropping</td> </tr> <tr> <td><strong>Installation</strong></td> <td>Expensive/cumbersome (cables, ports)</td> <td>Flexible but prone to interference (walls/devices)</td> </tr> </tbody> </table> </answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
