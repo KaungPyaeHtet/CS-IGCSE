@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install markdown
+        run: pip install playwright
 
       - name: Generate HTML
         run: python3 main.py index.html dark
