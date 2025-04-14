@@ -85,14 +85,14 @@ Answer - html syntax
 
 <h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
 
-What is an algorithm? <span class='mark'>[1 mark]</span>
-<answer><p>An algorithm is a step-by-step method for solving a problem or completing a task.</p></answer>
+What is meant by an algorithm? <span class='mark'>[1 mark]</span>
+<answer><p>An algorithm is a precise step-by-step method for solving a problem or completing a task.</p></answer>
 
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
   <ul>
     <li>Starts at the first item of the list</li>
-    <li>Compare the item with the search item</li>
+    <li>Compare the current item with the searching item</li>
     <li>If they are same then stop, else move to the next item until the end of list is reached or the value is found</li>
   </ul>
 </answer>
@@ -104,7 +104,7 @@ How does Binary search work? <span class='mark'>[4 marks]</span>
     <li>If median is equal then stops</li>
     <li>If median is higher, selects the left side of the list and repeat the first two steps</li>
     <li>If median is lower, selects the right side of the list and repeat the first two steps</li>
-    <li>Repeat these steps until the search is found or all items have been checked</li>
+    <li>Repeat these steps until the search is found or all median items have been checked</li>
   </ul>
 </answer>
 
@@ -112,36 +112,33 @@ How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
 <answer>
   <ul>
     <li>Start at the beginning of the list</li>
-    <li>Compare the values in positions 1 and 2 in the list, if they aren't in ascending order then swap</li>
-    <li>Repeat these steps for positions 2 and 3 until the end of list is reached</li>
-    <li>Check if there would be any swap, if not then end bubble sort</li>
+    <li>Compare two adjacent values, if they are not in ascending order then swap</li>
+    <li>if they are in ascending order then move on to next value</li>
+    <li>Repeat these steps until there are no swaps in the whole pass</li>
   </ul>
 </answer>
 
-Define recursion <span class='mark'>[1 mark]</span>
+What is meant by recursion <span class='mark'>[1 mark]</span>
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
 
-Define bruteforce <span class='mark'>[2 marks]</span>
+What is meant by bruteforce <span class='mark'>[2 marks]</span>
 <answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
 
-Define divide and conqueror <span class='mark'>[2 marks]</span>
+What is meant by divide and conqueror <span class='mark'>[2 marks]</span>
 <answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
 
-Define algorithm <span class='mark'>[1 mark]</span>
-<answer><p>A set of instructions to carry out a specific task/problem<p></answer>
+What is meant by abstraction <span class='mark'>[1 mark]</span>
+<answer><p> The process of removing or hiding unnecessary detail and highlighting only main points</p></answer>
 
-Define abstraction <span class='mark'>[1 mark]</span>
-<answer><p> The process of removing or hiding unnecessary detail so that only the important points remain</p></answer>
-
-Define decomposition <span class='mark'>[1 mark]</span>
-<answer><p> Breaking a problem down into smaller, more managable parts, which are then easier to solve</p></answer>
+What is meant by decomposition <span class='mark'>[1 mark]</span>
+<answer><p> Breaking a problem down into smaller and more managable parts, which are then easier to solve</p></answer>
 
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
 Implement Linear Search
 <answer>
 ```python
-numbers = [1, 2, 3, 4, 5, 6, 7]
+numbers = [1, 2, 3, 4, 5, 6, 7] # Note that the array does not have to be sorted in linear search
 found = False
 target = int(input("Enter a number:"))
 while index < len(numbers) and not found:
@@ -157,7 +154,7 @@ else:
 Implement Binary Search
 <answer>
 ```python
-numbers = [1, 2, 3, 4, 5, 6, 7]
+numbers = [1, 2, 3, 4, 5, 6, 7] # Note that the array has to be sorted in binary search
 low = 0
 high = len(numbers) - 1
 found = False
@@ -420,14 +417,14 @@ Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 
 <h3 id='chap-19'>Chapter 19: Software</h3>
 
 What is an application software <span class='mark'>[2 marks]</span>
-<answer></answer>
+<answer><p>Software that is designed to perform specific task for the user. For instance, word processing software, photo editing software, etc</p></answer>
 
-Describe how an operating system manages the storage of a file on random-access secondary storage.
+Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span>
 <answer>
   <ul>
     <li>OS checks whether there is space on disk</li>
     <li>The file is broken into blocks</li>
-    <li>Blocks are stored in spaces large enough</li>
+    <li>Blocks are stored in any spaces that are large enough to store each block</li>
     <li>Blocks can reside anywhere on the storage</li>
     <li>Meta data about file is created and separately stored</li>
   </ul>
@@ -436,26 +433,28 @@ Describe how an operating system manages the storage of a file on random-access 
 List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span>
 <answer>
   <ul>
-    <li>User Interface</li>
+    <li>Providing User Interface</li>
     <li>User management</li>
     <li>Hardware management</li>
     <li>File management</li>
     <li>Process management</li>
+    <li>Resource management</li>
+    <li>Memory management</li>
+    <li>Print Spooling</li>
   </ul>
 </answer>
 
 What is scheduling <span class='mark'>[2 marks]</span>
-<answer><p>The algorithm that the OS uses to allow each running processes to use CPU</p></answer>
+<answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
 
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
 What is a low level programming language? <span class='mark'>[1 mark]</span>
-<answer><p>The language that is closer to computer and CPU</p></answer>
+<answer><p>The language that is closer to machine code (binary)</p></answer>
 
 Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span>
 <answer>
 <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td><strong>Execution</strong> <em>(1 mark)</em></td> <td>Translates entire code into machine language <strong>before</strong> execution.</td> <td>Translates and executes code <strong>line-by-line</strong>.</td> </tr> <tr> <td><strong>Speed</strong> <em>(1 mark)</em></td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td><strong>Error Handling</strong> <em>(1 mark)</em></td> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td><strong>Portability</strong> <em>(1 mark)</em></td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
-
 
 <h2 id='topic-5'><a href='#toc'>Topic 5: Networking</a></h2>
 
