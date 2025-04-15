@@ -23,7 +23,7 @@ jobs:
         run: pip install playwright
 
       - name: Generate HTML
-        run: python3 main.py index.html dark
+        run: python3 main.py index.html convert
 
       - name: Commit and push
         env:

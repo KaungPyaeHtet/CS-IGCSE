@@ -143,7 +143,7 @@ Answer - html syntax
 
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
 
-<question>Implement Linear Search</question>
+<question>Implement Linear Search <span class='mark'>[3 marks]</span></question>
 <answer>
 ```python
 numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -157,10 +157,9 @@ if found:
 else:
   print("Not found")
 ```
-
 </answer>
 
-<question>Implement Binary Search</question>
+<question>Implement Binary Search <span class='mark'>[6 marks]</span></question>
 <answer>
 ```python
 numbers = [1, 2, 3, 4, 5, 6, 7]
@@ -180,12 +179,11 @@ if found:
 else:
   print("Not Found")
 ```
-
 </answer>
 
 <h3 id='chap-6'>Chapter 6: Making Programs Easier To Read</h3>
 
-<question>4 Techniques</question>
+<question>4 Techniques For making codes easier to read <span class='mark'>[4 marks]</span></question>
 <answer><table border="1" cellspacing="0" cellpadding="8">
   <thead>
     <tr>
@@ -214,9 +212,14 @@ else:
 </table>
 </answer>
 
+<h3 id='chap-8'>Chapter 8: Data Structures </h3>
+
+<question>Describe a record <span class='mark'>[2 marks]</span></question>
+<answer><!-- TODO --></answer>
+
 <h3 id='chap-9'>Chapter 9: Input/Output</h3>
 
-<question>Implement Range Check (case: make sure the number is between 1 and 10)</question>
+<question>Implement Range Check (case: make sure the number is between 1 and 10) <span class='mark'>[2 marks]</span></question>
 <answer>
 ```python
 num = int(input("Enter a number"))
@@ -224,10 +227,9 @@ while num < 1 or num > 10:
   num = int(input("Enter a number again because number isn't between 1 and 10"))
 print("You have entered", num)
 ```
-
 </answer>
 
-<question>Implement Presence Check (case: check whether username is empty or not)</question>
+<question>Implement Presence Check (case: check whether username is empty or not)<span class='mark'>[2 marks]</span></question>
 <answer>
 ```python
 username = ''
@@ -235,10 +237,9 @@ while username == '':
   username = input("Please enter username:")
 print("Hello", username)
 ```
-
 </answer>
 
-<question>Implement Look up Check (case: check whether an item is in array)</question>
+<question>Implement Look up Check (case: check whether an item is in array) <span class='mark'>[2 marks]</span></question>
 <answer>
 ```python
 arrayForms = ['7AXB', '7PDB', '7ARL', '7JEH']
@@ -255,10 +256,9 @@ if valid == True:
 else:
   print("The form you have entered doesn't exist")
 ```
-
 </answer>
 
-<question>Implement Length Check (Case: Enter a string of length 8)</question>
+<question>Implement Length Check (Case: Enter a string of length 8) <span class='mark'>[2 marks]</span></question>
 <answer>
 ```python
 binaryString = input("Enter a string of 8 bit binary: ")
@@ -266,10 +266,9 @@ while len(binaryString) != 8:
   binaryString = input("You must enter a length of 8 binary string: ")
 print("Valid")
 ```
-
 </answer>
 
-<question>Testing Validation Rules (Normal, Boundary, Erroneous datas)</question>
+<question>Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span class='mark'>[3 marks]</span></question>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <thead>
@@ -310,7 +309,7 @@ print("Valid")
   </ul>
 </answer>
 
-<question>Three types of errors</question>
+<question>Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span></question>
 <answer>
   <table>
     <thead>
@@ -340,6 +339,9 @@ print("Valid")
 
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
+<question> Explain why binary is used to represent data <span class='mark'>[2 marks]</span></question>
+<answer><p>Binary can represent two states (1) because computer circuits uses transistors which can either be on or off (1)</p></answer>
+
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
 
 <question>Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span></question>
@@ -368,13 +370,50 @@ print("Valid")
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
-<h3 id='chap-15'>Chapter 15: Encryption </h3>
+<question>Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span></question>
+<answer>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bit (b)</td>
+        <td>A single binary digit</td>
+      </tr>
+      <tr>
+        <td>Nibble</td>
+        <td>4 bits</td>
+      </tr>
+      <tr>
+        <td>Kilobyte (kB)</td>
+        <td>1000 bytes</td>
+      </tr>
+      <tr>
+        <td>Megabytte (MB)</td>
+        <td>1000 kilobytes</td>
+      </tr>
+      <tr>
+        <td>Gigabyte (GB)</td>
+        <td>1000 megabytes</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
 
+<h3 id='chap-15'>Chapter 15: Encryption </h3>
+`
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
 <h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
+
+<question>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></question>
+<answer></answer>
 
 <question>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></question>
 <answer><ul><li>Data</li><li>Instructions</li></ul></answer>
@@ -406,7 +445,7 @@ print("Valid")
     <li>Uses electronic circuits that can store binary values (1 or 0) <strong>(1 mark)</strong></li>  
     <li>Uses NAND/NOR flash memory to persistently control electron flow <strong>(1 mark)</strong></li>  
     <li>Applies high voltage to trap electrons in the floating gate (data storage) <strong>(1 mark)</strong></li>  
-  </ul>  
+  </ul> 
 </answer>
 
 <question>How does an optical drive work? <span class='mark'>[2 marks]</span></question>  
@@ -416,7 +455,7 @@ print("Valid")
     <li>A laser beam reads/writes data by targeting the disc surface <strong>(1 mark)</strong></li>  
     <li>Creates physical pits (indentations) and lands (flat areas) on the disc <strong>(1 mark)</strong></li>  
     <li>Pits represent binary 0, lands represent binary 1<strong>(1 mark)</strong></li>  
-  </ul>  
+  </ul> 
 </answer>
 
 <question>What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span></question>
@@ -470,6 +509,9 @@ print("Valid")
 </div>  
 </div></answer>
 
+<question>Describe an embedded system <span class='mark'>[2 marks]</span></question>
+<answer><p>Embedded system is a combination of software and hardware (1) that is designed specifically to tackle a specific problem. (1) For example, usage in washing machine.</p></answer>
+
 <h3 id='chap-18'>Chapter 18: Logic </h3>
 
 <h3 id='chap-19'>Chapter 19: Software</h3>
@@ -505,10 +547,83 @@ print("Valid")
 <question>What is scheduling? <span class='mark'>[2 marks]</span></question>
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
 
+<question>A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disc drive is fragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span></question>
+<answer><ul>
+<li> Orders have been saved onto the system as they order food and then deleted once processed (1)</li>
+<li>Once other orders have been made, new files are created (1) which may be bigger than the spaces left by the deleted files (1) </li>
+<li>The order files are split up (1)</li>
+</ul></answer>
+
+<question>Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span></question>
+<answer><ul>
+<li> Files on the hard disk drive are moved (1)</li>
+<li>Empty spaces collected together (1) </li>
+<li>Files are moved to be stored together (1)</li>
+<li>Fewer disc accesses are needed (1)</li>
+</ul></answer>
+
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
 <question>What is a low level programming language? <span class='mark'>[1 mark]</span></question>
 <answer><p>The language that is closer to machine code (binary)</p></answer>
+
+<question>What is an instruction set? <span class='mark'>[1 mark]</span></question>
+<answer><p>Something that tells CPU what to do</p></answer>
+
+<question>Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span></question>
+<answer>
+<ul>
+<li>A very limited range of instructinos available</li>
+<li>Have to manage all data and decide how to store them in memory manually</li>
+<li>Debugging is challenging and can make machine crash</li>
+</ul>
+</answer>
+
+<question> Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span></question>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>High Level Languages</th>
+      <th>Low Level Languages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>One instruction of high level code represents many instructions of machine code</td>
+      <td>One instruction of assembly code only represents one instruction of machine code</td>
+    </tr>
+    <tr>
+      <td>The same code will work for many different machines and processors</td>
+      <td>Usually written for specific machine and won't work on others</td>
+    </tr>
+    <tr>
+      <td>Code is easy to read, understand, and modify</td>
+      <td>Code is very difficult to read, understand, and modify</td>
+    </tr>
+    <tr>
+      <td>Don't have much control over CPU can do so programs are less memory efficient</td>
+      <td>Full control of CPU and can uses memory wisely to make programs more efficient</td>
+    </tr>
+    <tr>
+      <td>Programmer can easily store data in lots of different structures</td>
+      <td>Programmer needs to know about internal structure of CPU and how it manages the memory.</td>
+    </tr>
+  </tbody>
+</table>
+</answer>
+
+<question>Identify 3 features that IDE might be used when programming<span class='mark'>[3 marks]</span></question>
+<answer>
+<ul>
+<li>Run time Environment</li>
+<li>Editor (any feature such as auto-correct, auto-indent)</li>
+<li>Translator</li>
+<li>Version Control</li>
+<li>Breaking points</li>
+<li>Stepping</li>
+</ul>
+</answer>
 
 <question>Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span></question>
 <answer>
@@ -518,6 +633,9 @@ print("Valid")
 
 <h3 id='chap-21'>Chapter 21: Networks</h3>
 
+<question>What is a network protocol? <span class='mark'>[1 mark]</span></question>
+<answer><p>A set of rules for communication</p></answer>
+
 <question>Why do people connect to network?<span class='mark'>[2 marks]</span></question>
 <answer>
   <ul>  
@@ -525,7 +643,7 @@ print("Valid")
     <li>To enable internal communication using email, instant messaging, and calendar</li>  
     <li>To share files/data across multiple devices</li>  
     <li>To share peripherals like printers and other hardware</li>  
-  </ul>  
+  </ul> 
 </answer>
 
 <question>Draw A Bus Topology <span class='mark'>[4 marks]</span></question>
@@ -555,12 +673,18 @@ print("Valid")
 </answer>
 
 <question>Draw A Mesh Topology <span class='mark'>[4 marks]</span></question>
-<answer><img src='assets/network/mesh-topology.png'>
+<answer><img src='assets/network/mesh-topology.png'
 </answer>
 
 <question>Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span></question>
 <answer>
 <table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th> </tr> </thead> <tbody> <tr> <td><strong>Speed</strong></td> <td>Faster data transmission (e.g., fiber optic cables)</td> <td>Slower due to signal interference</td> </tr> <tr> <td><strong>Security</strong></td> <td>Harder to intercept (physical access required)</td> <td>Requires encryption to prevent eavesdropping</td> </tr> <tr> <td><strong>Installation</strong></td> <td>Expensive/cumbersome (cables, ports)</td> <td>Flexible but prone to interference (walls/devices)</td> </tr> </tbody> </table> </answer>
+
+<question> State two types of connectivity media <span class='mark'> [2 marks]</span></question>
+<answer><ul><li>Copper wire</li><li>Optical fibre</li></ul></answer>
+
+<question> Describe how a router directs data on the internet<span>[5 marks]</span></question>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
@@ -619,8 +743,11 @@ print("Valid")
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
-<question>List two positive impacts of using technology on the environment</question>
+<question>List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span></question>
 <answer></answer>
+
+<question>Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class='mark'> [3 marks]</question>
+<answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
