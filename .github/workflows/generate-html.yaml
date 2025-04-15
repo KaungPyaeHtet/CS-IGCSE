@@ -19,8 +19,9 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install markdown
-        run: pip install playwright
+        run: |
+          pip install markdown
+          pip install playwright
 
       - name: Generate HTML
         run: python3 main.py index.html convert
