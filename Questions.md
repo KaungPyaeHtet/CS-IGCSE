@@ -413,7 +413,14 @@ print("Valid")
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
 <question>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></question>
-<answer></answer>
+<answer>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</answer>
 
 <question>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></question>
 <answer><ul><li>Data</li><li>Instructions</li></ul></answer>
