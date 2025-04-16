@@ -252,8 +252,31 @@ Testing Validation Rules (Normal, Boundary, Erroneous datas)
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
+What are two types of subprograms? <span class="mark">[2 marks]</span>
+<answer>
+  <ul>
+    <li>Functions</li>
+    <li>Procedures</li>
+  </ul>
+</answer>
+
+What is the difference between function and procedure? <span class="mark">[2 marks]</span>
+<answer><p>Functions perform a task and return a value whereas procedure perform the task without returning a value.</p></answer>
+
+Define local variables <span class="mark">[1 mark]</span>
+<answer><p>Variables that are defined under the subprograms.</p></answer>
+
+Define global variables <span class="mark">[1 mark]</span>
+<answer><p>Variables that are defined outside the subprograms.</p></answer>
+
+What is the difference between local variables and global variables <span class="mark">[2 marks]</span>
+<answer><p>Local variables are only accessible within the subprogram in which they are defined whereas global variables are accessible at everywhere throughout the program</p></answer>
+
 What is meant by built in functions <span class='mark'>[1 mark]</span>
 <answer><p>Functions that are provided by programming languages to perform common tasks</p></answer>
+
+List two benefits of using subprograms <span class="mark">[2 marks]</span>
+<answer></answer>
 
 <h3 id='chap-11'>Chapter 11: Testing and Evaluation</h3>
 
@@ -565,8 +588,25 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
-List two positive impacts of using technology on the environment
-<answer></answer>
+List two positive impacts of using technology on the environment <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Reduction in paper use</li>
+    <li>Energy efficiency due to smart systems</li>
+    <li>Disaster warnings</li>
+    <li>Protection of endangered animals and habitats</li>
+  </ul>
+</answer>
+
+List two negative impacts of using technology on the environment <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Climate change due to greenhouse effect and carbon emissions</li>
+    <li>Increase in Earth temperature</li>
+    <li>Material shortages (excessive usage of non-renewable resources)</li>
+    <li>Pollutions (toxic materials)</li>
+  </ul>
+</answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
