@@ -283,3 +283,26 @@
       right: 20px;
   }
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.home-nav, .theme-toggle {
+  z-index: 1;
+}

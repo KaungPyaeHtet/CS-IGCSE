@@ -14,11 +14,32 @@ def translate_text(text, lang):
         return text
     return TRANSLATIONS.get(text, text)
 
+def preprocess_markdown(md_text):
+    """Convert markdown-style code blocks and lists to HTML before processing"""
+    # Convert ```code``` blocks to <pre><code>
+    md_text = re.sub(r'```(\w+)?\n(.*?)```', 
+                    r'<pre><code class="language-\1">\2</code></pre>',
+                    md_text, flags=re.DOTALL)
+    
+    # Convert markdown lists to HTML lists
+    md_text = re.sub(r'^\s*-\s+(.*)$', r'<li>\1</li>', md_text, flags=re.MULTILINE)
+    md_text = re.sub(r'(<li>.*<\/li>\n?)+', r'<ul>\g<0></ul>', md_text)
+    
+    return md_text
+
 def convert_custom_questions(md_text):
     """
     Convert ## to <span data-translate> {text} </span>
     Convert questions answer lines to <details><summary>{question}</summary>{answer}</details
     """
+
+    md_text = preprocess_markdown(md_text)
+    md_text = re.sub(
+    r'<question>(.*?)<span class=\'mark\'>(.*?)</span></question>',
+    r'<question><span class="question-text">\1</span><span class="mark">\2</span></question>',
+    md_text
+)
+    
     md_text = re.sub(
         r'^(#+ )(.+?)$',
         lambda m: f'{m.group(1)}<span data-translate="{m.group(2)}">{m.group(2)}</span>',
@@ -77,7 +98,7 @@ def convert_md_to_html(output_html):
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-
+    <link rel="icon" type="image/x-icon" href="/assets/logo/tau.png">
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
@@ -109,6 +130,7 @@ def convert_md_to_html(output_html):
             <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;"><span data-translate='Submit a pull request on GitHub or contact me directly.'>Submit a pull request on GitHub or contact me directly.</span></a>
         </div>
     </footer>
+
     <script>
         function toggleTheme() {{
             const html = document.documentElement;
@@ -279,6 +301,65 @@ let currentRandomQuestions = [];
             currentRandomQuestions = [];
             document.getElementById('random-questions-display').innerHTML = '';
         }}
+
+document.addEventListener('DOMContentLoaded', function() {{
+    const tocContainer = document.getElementById('toc');
+    const tocItems = Array.from(tocContainer.children);
+    const newToc = document.createElement('div');
+    
+    let currentTopic = null;
+    
+    tocItems.forEach(item => {{
+        if (item.className === 'table-of-contents' && !item.classList.contains('subtopic')) {{
+            if (currentTopic) {{
+                newToc.appendChild(currentTopic);
+            }}
+            
+            currentTopic = document.createElement('div');
+            currentTopic.className = 'toc-topic';
+            
+            const topicLink = item.cloneNode(true);
+            topicLink.className = 'toc-main';
+            
+            const subtopics = document.createElement('div');
+            subtopics.className = 'toc-subtopics';
+            
+            currentTopic.appendChild(topicLink);
+            currentTopic.appendChild(subtopics);
+        }} else if (item.className.includes('subtopic') && currentTopic) {{
+            // This is a subtopic
+            const subtopicLink = item.cloneNode(true);
+            subtopicLink.className = 'toc-subtopic';
+            currentTopic.querySelector('.toc-subtopics').appendChild(subtopicLink);
+        }} else {{
+            // Standalone item (like "Practice with Random Questions")
+            newToc.appendChild(item.cloneNode(true));
+        }}
+    }});
+    
+    if (currentTopic) {{
+        newToc.appendChild(currentTopic);
+    }}
+    
+    tocContainer.innerHTML = '';
+    tocContainer.appendChild(newToc);
+    
+    document.querySelectorAll('.toc-topic').forEach(topic => {{
+        if (topic.querySelector('.toc-subtopics').children.length > 0) {{
+            topic.querySelector('.toc-main').classList.add('has-subtopics');
+        }}
+    }});
+    
+    // Mobile touch support
+    if ('ontouchstart' in window) {{
+        document.querySelectorAll('.toc-main.has-subtopics').forEach(topic => {{
+            topic.addEventListener('click', function(e) {{
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }});
+        }});
+    }}
+}});
 
     </script>
 </body>

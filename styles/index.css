@@ -163,7 +163,6 @@ a {
 
 a:hover {
   color: var(--primary);
-  text-decoration: underline;
 }
 
 ul,
@@ -282,62 +281,6 @@ answer img {
 
 [data-theme="dark"] answer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.toc .table-of-contents::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: var(--primary);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.toc .table-of-contents:hover::before {
-  opacity: 1;
-}
-
-.toc {
-  background: var(--code-bg);
-  border-radius: 18px;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border-left: 4px solid var(--primary);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.toc .table-of-contents {
-  display: block;
-  color: var(--text);
-  text-decoration: none;
-  padding: 0.7rem 1rem;
-  margin: 0.2rem 0;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-  font-weight: 600;
-}
-
-.toc .table-of-contents:hover {
-  background: rgba(var(--primary), 0.1);
-  color: var(--primary);
-  transform: translateX(4px);
-}
-
-.toc .table-of-contents.subtopic {
-  padding-left: 2rem;
-  font-size: 0.9em;
-  border-radius: 4px;
-}
-
-.toc .table-of-contents:first-child {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.toc .table-of-contents:last-child {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .language-toggle {
@@ -509,4 +452,89 @@ details[data-answered="wrong"] {
 
 img{
   width : 750px
+}
+
+/* Improved Table of Contents */
+.toc {
+  background: var(--code-bg);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-left: 4px solid var(--primary);
+}
+
+.toc-main {
+  display: block;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.toc-main:hover {
+  background: rgba(var(--primary), 0.1);
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.toc-subtopics {
+  display: none;
+  padding-left: 1.5rem;
+}
+
+.toc-topic:hover .toc-subtopics {
+  display: block;
+}
+
+.toc-subtopic {
+  display: block;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem 0;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.toc-subtopic:hover {
+  background: rgba(var(--primary), 0.1);
+  color: var(--primary);
+}
+
+/* Arrow indicator for topics with subtopics */
+.toc-main.has-subtopics::after {
+  content: "▸";
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.toc-topic:hover .toc-main.has-subtopics::after {
+  transform: rotate(90deg);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .toc-main.has-subtopics::after {
+      content: "▾";
+  }
+  
+  .toc-topic:hover .toc-main.has-subtopics::after,
+  .toc-topic.active .toc-main.has-subtopics::after {
+      transform: rotate(0);
+  }
+  
+  .toc-subtopics {
+      display: none;
+      padding-left: 1rem;
+  }
+  
+  .toc-topic.active .toc-subtopics {
+      display: block;
+  }
 }
