@@ -758,6 +758,9 @@ print("Valid")
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
+<question>Define professionalism <span class='mark'>[2 marks]</span></question>
+<answer></answer>
+
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
 
 <h3 id='chap-27'>Chapter 27: Professionalism</h3>
