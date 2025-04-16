@@ -610,11 +610,125 @@ List two negative impacts of using technology on the environment <span class='ma
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
+List two privacy enhancing tools. <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Encryption</li>
+    <li>Password manager</li>
+    <li>VPN (Virtual Private Network)</li>
+    <li>Privacy-enhanced browsers (Brave, Firefox)</li>
+    <li>Cookies cleaner</li>
+    <li>Private browsing mode, incognito mode</li>
+    <li>Trackers blockers</li>
+  </ul>
+</answer>
+
+List two benefits of giving away personal information <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Personalized experience </li>
+    <li>Faster user experiences due to autofill forms</li>
+  </ul>
+</answer>
+
+List two benefits of analyzing Big Data <span class='mark'>[2 marks]</span>
+<answer></answer>
+
+State why it is important to protect personal information 
+<answer></answer>
+
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
+
+Define Technology-empowered <span class='mark'>[1 mark]</span>
+<answer><p>Not being accessible to computer technology</p></answer>
+
+Define Technology-excluded <span class='mark'>[1 mark]</span>
+<answer><p>Being able to access to computer technology</p></answer>
+
+Define Digital Divide <span class='mark'>[1 mark]</span>
+<answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
+
+List two benefits of being technology-empowered <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>More job opportunities</li>
+    <li>Access to online information and resources</li>
+    <li>Social interactions and communication</li>
+  </ul>
+</answer>
+
+List two disadvantages of being technology-excluded <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Less job opportunities</li>
+    <li>Limited to online information and resources</li>
+    <li>Less social interaction and communication</li>
+  </ul>
+</answer>
+
+List two things that contribute to digital inclusion <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Not being to access to the internet</li>
+    <li>Poor landline infrastructure</li>
+    <li>Lack of knowledge or skills</li>
+    <li>Privacy concerns</li>
+    <li>Not being able to afford</li>
+  </ul>
+</answer>
+
+
+List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Building more infrastructure to promote internet access</li>
+    <li>Offering more budget-friendly internet plans</li>
+    <li>Providing public wi-fi areas</li>
+    <li>Giving free tech training programs</li>
+  </ul>
+</answer>
 
 <h3 id='chap-27'>Chapter 27: Professionalism</h3>
 
+Define professionalism
+<answer><p></p></answer>
+
+List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Giving respect user's privacy</li>
+    <li>Always keep learning and up-to-date with new technologies</li>
+  </ul>
+</answer>
+
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
+
+Define intellectual property <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
+
+List two ways to protect intellectual property <span class='mark'>[2 marks]</span>
+<answer><p></p></answer>
+
+Difference between copyright and patent <span class='mark'>[2 marks]</span>
+<answer><p></p></answer>
+
+Define proprietary software <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
+
+Define open-source software <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
+
+List two benefits of proprietary software <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
+
+List two benefits of open-source software <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
+
+Difference between proprietary software and open-source software <span class='mark'>[2 mark]</span>
+<answer><p></p></answer>
+
+Define the purpose of licensing <span class='mark'>[1 mark]</span>
+<answer><p></p></answer>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
