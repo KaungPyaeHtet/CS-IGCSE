@@ -1,8 +1,3 @@
-<!-- Syntax For Questions
-Question - simple line
-Answer - html syntax
- -->
-
 ## Table of Contents
 
 <div id='toc' class="toc">
