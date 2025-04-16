@@ -410,10 +410,7 @@ print("Valid")
 <question>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></question>
 <answer>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+<!-- TODO -->
 </ul>
 </answer>
 
