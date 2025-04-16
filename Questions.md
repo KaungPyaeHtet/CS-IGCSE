@@ -339,6 +339,9 @@ print("Valid")
 
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
+<question>Define overflow error <span class='mark'>[2 marks]</span></question>
+<answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
+
 <question> Explain why binary is used to represent data <span class='mark'>[2 marks]</span></question>
 <answer><p>Binary can represent two states (1) because computer circuits uses transistors which can either be on or off (1)</p></answer>
 
@@ -405,7 +408,7 @@ print("Valid")
 </answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
-`
+
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
 <h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
@@ -566,6 +569,9 @@ print("Valid")
 <li>Fewer disc accesses are needed (1)</li>
 </ul></answer>
 
+<question>Define 'What if' questions<span class='mark'>[2 marks]</span></question>
+<answer><p>running a computer model with a given set of inputs to see what the model produces as an output or prediction</p></answer>
+
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
 <question>What is a low level programming language? <span class='mark'>[1 mark]</span></question>
@@ -687,8 +693,12 @@ print("Valid")
 <question> State two types of connectivity media <span class='mark'> [2 marks]</span></question>
 <answer><ul><li>Copper wire</li><li>Optical fibre</li></ul></answer>
 
-<question> Describe how a router directs data on the internet<span>[5 marks]</span></question>
+<question> Describe how a router directs data on the internet<span class='mark'>[5 marks]</span></question>
 <answer><!-- TODO --></answer>
+
+<question>Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>C 4.1GHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span></question>
+<answer><p>A 2.4 GHz</p></answer>
+
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
@@ -719,6 +729,9 @@ print("Valid")
 <li>which can be exploited by a hacker(1)</li>
 </ul>
 </answer>
+
+<question>Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li>Ethical Hacking</li><li>Commericial analysis tools</li><li>Review of network and user policies</li></ul><span class='mark'>[6 marks]</span></question>
+<answer><!--TODO--></answer>
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
 
