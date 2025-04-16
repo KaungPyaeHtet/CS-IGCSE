@@ -400,18 +400,46 @@ print("Valid")
 </answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
-`
+
+<question>Define asymmetric encryption <span class='mark'>[1 mark]</question>
+<answer><!-- TODO --></answer>
+
+<question>Define symmetric encryption <span class='mark'>[1 mark]</question>
+<answer><!-- TODO --></answer>
+
+<question>What is the difference between asymmetric encryption and symmetric encryption <span class='mark'>[2 marks]</question>
+<answer><!-- TODO --></answer>
+
+<question>What are four types of encryption <span class='mark'>[4 marks]</question> 
+<answer><!-- TODO --></answer>
+
+<question>What is the disadvantage of using caesar cipher <span class='mark'>[2 marks]</question>
+<answer><!-- TODO --></answer>
+
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
 <h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
+
+<question>Define sequential processing <span class='mark'>[1 mark]</question>
+<answer><!-- TODO --></answer>
+
+<question>Define parallel processing <span class='mark'>[1 mark]</question>
+<answer><!-- TODO --></answer>
+
+<question>Define multi-agent processing <span class='mark'>[1 mark]</question>
+<answer><!-- TODO --></answer>
+
+<question>What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</question>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
 <question>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></question>
 <answer>
-<ul>
-<!-- TODO -->
-</ul>
+  <ul>
+    <li>RAM is volatile whereas ROM is non-volatile. Data stored in RAM get lost when the computer is turned off but data is kept in ROM after power-off.</li>
+    <li>The size of RAM can be upgraded. However, the size of ROM can be not increased typically.</li>
+  </ul>
 </answer>
 
 <question>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></question>
@@ -750,14 +778,140 @@ print("Valid")
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
-<question>Define professionalism <span class='mark'>[2 marks]</span></question>
+<question>List two privacy enhancing tools <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Encryption</li>
+    <li>Password manager</li>
+    <li>VPN (Virtual Private Network)</li>
+    <li>Privacy-enhanced browsers (Brave, Firefox)</li>
+    <li>Cookies cleaner</li>
+    <li>Private browsing mode, incognito mode</li>
+    <li>Trackers blockers </li>
+  </ul>
+</answer>
+
+<question>List two benefits of giving away personal information <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Personalized experience</li>
+    <li>Faster user experiences due to autofill forms</li>
+  </ul>
+</answer>
+
+<question>List two benefits of analyzing Big Data <span class='mark'>[2 marks]</span></question>
+<answer><!-- TODO --></answer>
+
+<question>State why it is important to protect personal information</question>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
 
+<question>Define Technology-empowered <span class='mark'>[1 mark]</span></question>
+<answer><p>Not being accessible to computer technology</p></answer>
+
+<question>Define Technology-excluded <span class='mark'>[1 mark]</span></question>
+<answer><p>Being able to access to computer technology</p></answer>
+
+<question>Define Digital Divide <span class='mark'>[1 mark]</span></question>
+<answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
+
+<question>List two benefits of being technology-empowered <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>More job opportunities</li>
+    <li>Access to online information and resources</li>
+    <li>Social interactions and communication</li>
+  </ul>
+</answer>
+
+<question>List two disadvantages of being technology-excluded <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Less job opportunities</li>
+    <li>Limited to online information and resources</li>
+    <li>Less social interaction and communication</li>
+  </ul>
+</answer>
+
+<question>List two things that contribute to digital inclusion <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Not being to able to access to the internet</li>
+    <li>Poor landline infrastructure</li>
+    <li>Lack of knowledge or skills</li>
+    <li>Privacy concerns</li>
+    <li>Not being able to afford</li>
+  </ul>
+</answer>
+
+<question>List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Building more infrastructure to promote internet access</li>
+    <li>Offering more budget-friendly internet plans</li>
+    <li>Providing public wi-fi areas</li>
+    <li>Giving free tech training programs</li>
+  </ul>
+</answer>
+
 <h3 id='chap-27'>Chapter 27: Professionalism</h3>
 
+<question>Define professionalism <span class='mark'>[2 marks]</span></question>
+<answer><!-- TODO --></answer>
+
+<question>List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Giving respect user's privacy</li>
+    <li>Always keep learning and up-to-date with new technologies</li>
+  </ul>
+</answer>
+
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
+
+<question>Define intellectual property <span class='mark'>[1 mark]</span></question>
+<answer><p>An unique humankind creation that has a commercial value</p></answer>
+
+<question>List two ways to protect intellectual property <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Copyright</li>
+    <li>Patent</li>
+  </ul>
+</answer>
+
+<question>Difference between copyright and patent <span class='mark'>[2 marks]</span></question>
+<answer><p>Copyright only protects the expression of the product whereas patent protects the idea or design of the product</p></answer>
+
+<question>Define proprietary software <span class='mark'>[1 mark]</span></question>
+<answer><p>Non-free software that restricts access of the source code</p></answer>
+
+<question>Define open-source software <span class='mark'>[1 mark]</span></question>
+<answer><p>Free software that gives certain permissions of the source code to the users</p></answer>
+
+<question>List two benefits of proprietary software <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Available technical support</li>
+    <li>Better security</li>
+    <li>More user-friendly</li>
+  </ul>
+</answer>
+
+<question>List two benefits of open-source software <span class='mark'>[2 marks]</span></question>
+<answer>
+  <ul>
+    <li>Highly customizable</li>
+    <li>Typically free, does not required to purchase the software</li>
+  </ul>
+</answer>
+
+<question>Difference between proprietary software and open-source software <span class='mark'>[2 marks]</span></question>
+<answer><!-- TODO --></answer>
+
+<question>Define the purpose of licensing <span class='mark'>[2 marks]</span></question>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
