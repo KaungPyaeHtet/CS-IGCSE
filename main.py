@@ -80,7 +80,6 @@ def convert_md_to_html(output_html):
 
 </head>
 <body>
-    <a href='exam.html'>Exam</a>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" data-translate='🙌 Close all questions' title="Close All Toggles">🙌 Close all questions</button>

@@ -680,7 +680,7 @@ print("Valid")
 </answer>
 
 <question>Draw A Mesh Topology <span class='mark'>[4 marks]</span></question>
-<answer><img src='assets/network/mesh-topology.png'
+<answer><img src='assets/network/mesh-topology.png'>
 </answer>
 
 <question>Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span></question>
@@ -751,7 +751,7 @@ print("Valid")
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
 <question>List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span></question>
-<answer></answer>
+<answer><!-- TODO --></answer>
 
 <question>Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class='mark'> [3 marks]</question>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
@@ -759,7 +759,7 @@ print("Valid")
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
 <question>Define professionalism <span class='mark'>[2 marks]</span></question>
-<answer></answer>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
 
