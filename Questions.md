@@ -428,7 +428,7 @@ Represent  -67 with 8 bit two complement form.
 Define overflow error <span class='mark'>[2 marks]</span>
 <answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
 
- Explain why binary is used to represent data <span class='mark'>[2 marks]</span>
+Explain why binary is used to represent data <span class='mark'>[2 marks]</span>
 <answer><p>Binary can represent two states (1) because computer circuits uses transistors which can either be on or off (1)</p></answer>
 
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
@@ -448,26 +448,31 @@ Explain why Unicode was developed <span class='mark'>[2 marks]</span>
   </ul>
 </answer>
 
-List two factors that affect the fidelity of the sound
+List two factors that affect the fidelity of the sound <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Bit depth</li>
+    <li>Sampling rate</li>
+  </ul>
+</answer>
+
+Explain how increasing sample rate improves the fidelity of the sound <span class='mark'>[1 mark]</span>
 <answer><!-- TODO --></answer>
 
-Explain how increasing sample rate improves the fidelity of the sound
-<answer><!-- TODO --></answer>
+Explain how increasing bit depth improves the fidelity of the sound <span class='mark'>[1 mark]</span>
+<answer><p>With bigger bit depth, higher level of amplitude can be measured adding more details</p></answer>
 
-Explain how increasing bit depth improves the fidelity of the sound
-<answer><!-- TODO --></answer>
+State how to calculate the file size of an audio file <span class='mark'>[1 mark]</span>
+<answer><p>sample rate(Hz) x bit depth(bits) x duration(seconds) x channel(mono or stereo)</p></answer>
 
-State how to calculate the file size of an audio file
-<answer><!-- TODO --></answer>
+Define pixel <span class='mark'>[1 mark]</span> 
+<answer><p>the smallest point of a bit-map image that displays a single point of color</p></answer>
 
-Define pixel
-<answer><!-- TODO --></answer>
+Define image resolution <span class='mark'>[1 mark]</span>
+<answer><p>pixels width x pixels height</p></answer>
 
-Define image resolution
-<answer><!-- TODO --></answer>
-
-State how to calculate the file size of an image
-<answer><!-- TODO --></answer>
+State how to calculate the file size of an image <span class='mark'>[1 mark]</span>
+<answer><p>pixels width x pixels height x bit depth</p></answer>
 
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
@@ -484,11 +489,11 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
 </answer>
 
 Explain what is meant by colour depth. <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>the number of bits that is used to encode each pixel</p></answer>
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
-Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span>
+Table of unit of data in computer from b to GB(decimal prefix)<span class='mark'>[6 marks]</span>
 <answer>
 <table>
     <thead>
@@ -522,25 +527,76 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
   </table>
 </answer>
 
+Table of unit of data in computer from b to GB(binary prefix)<span class='mark'>[6 marks]</span>
+<answer>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bit (b)</td>
+        <td>A single binary digit</td>
+      </tr>
+      <tr>
+        <td>Nibble</td>
+        <td>4 bits</td>
+      </tr>
+      <tr>
+        <td>Kibibyte (KiB)</td>
+        <td>1024 bytes</td>
+      </tr>
+      <tr>
+        <td>Mebibytes (MiB)</td>
+        <td>1024 kilobytes</td>
+      </tr>
+      <tr>
+        <td>Gigibyte (GiB)</td>
+        <td>1024 mebibytes</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
+
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+<answer><p>Some of the data is permanently lost during lossy compression. Texts or documents can not be understood if words/letters are missing.</p></answer>
 
-Define Run-Length Encoding (RLE) 
-<answer><!-- TODO --></answer>
+Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
+<answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
 
-Explain how Run-Length Encoding (RLE) works
-<answer><!-- TODO --></answer>
+Explain how Run-Length Encoding (RLE) works <span class='mark'>[2 marks]</span>
+<answer>It encodes the count of repetitions along with the character. For instance, "FFFASS" as "3F1A2S".</answer>
 
-State when Run-Length Encoding (RLE) might not be efficient 
-<answer><!-- TODO --></answer>
+State when Run-Length Encoding (RLE) might not be efficient <span class='mark'>[2 marks]</span>
+<answer>The efficiency of the algorithm is low when there are only a few repeated characters</answer>
 
 List two types of compression
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Lossless</li>
+    <li>Lossy</li>
+  </ul>
+</answer>
 
 What is the difference between lossless compression and lossy compression
-<answer><!-- TODO --></answer>
+<answer>Lossless compression does not delete any data during compression state whereas lossy compression deletes some of the data to reduce the file size</answer>
 
 What is the advantage and disadvantage of using lossless compression
-<answer><!-- TODO --></answer>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Advantage</strong></td>
+      <td>All the data can be recovered restoring original quality</td>
+    </tr>
+    <tr>
+      <td><strong>Disadvantage</strong></td>
+      <td></td>
+    </tr>
+  </table>
+</answer>
 
 What is the advantage and disadvantage of using lossy compression
 <answer><!-- TODO --></answer>
@@ -1556,5 +1612,5 @@ Define the term entanglement <span class='mark'>[1 mark]</span>
 Define the term qubit <span class='mark'>[1 mark]</span>
 <answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
