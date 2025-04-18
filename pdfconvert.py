@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 
+
 def convert(path):
     html_path = Path(path).resolve()
     pdf_path = "output.pdf"
@@ -8,10 +9,10 @@ def convert(path):
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
-        
+
         # Set larger viewport for better rendering
         page.set_viewport_size({"width": 1920, "height": 1080})
-        
+
         # Load the HTML file
         page.goto(f"file://{html_path}", wait_until="networkidle")
 

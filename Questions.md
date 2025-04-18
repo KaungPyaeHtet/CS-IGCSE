@@ -78,9 +78,6 @@
 
 # Questions
 
-Q[1]: Question with **formatting**?
-A: Answer with *emphasis* and `code`
-
 <h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
 
 <h3 id='chap-1'>Chapter 1: Understanding Algorithms</h3>
@@ -164,20 +161,40 @@ numbers = [1, 2, 3, 4, 5, 6, 7]
 low = 0
 high = len(numbers) - 1
 found = False
-while low < high and not found:
-  mid = (low + high) // 2
-  if numbers[mid] > high:
-    high = mid - 1
-  else if numbers[mid] < low:
-    low = mid + 1
-  else:
-    found = True
+target = int(input("Enter a number: "))
+while low <= high and not found:
+    mid = (low + high) // 2
+    if numbers[mid] == target:
+        found = True
+    elif numbers[mid] > target:
+        high = mid - 1
+    else:
+        low = mid + 1
 if found:
-  print("Found")
+    print("Found")
 else:
-  print("Not Found")
+    print("Not Found")
 ```
 </answer>
+
+Implement Bubble Sort <span class='mark'>[6 marks]</span>
+```python
+unsortedArr = [4, 2, 6, 1, 3, 2, 8]
+def bubbleSort(arr):
+    for i in range(len(arr)):
+        checked = False
+        for j in range(len(arr) - i - 1):
+            if arr[j] > arr[j + 1]:
+                cache = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = cache
+                checked = True
+        if (not checked):
+            break
+        print(arr)
+    return arr
+bubbleSort(unsortedArr)
+```
 
 <h3 id='chap-6'>Chapter 6: Making Programs Easier To Read</h3>
 
@@ -213,7 +230,7 @@ else:
 <h3 id='chap-8'>Chapter 8: Data Structures </h3>
 
 Describe a record <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>A data structure that stores a set of related values of different data types</p></answer>
 
 <h3 id='chap-9'>Chapter 9: Input/Output</h3>
 
@@ -337,6 +354,9 @@ Three types of Errors that occur when constructing an algorithm <span class='mar
 
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
+Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span>
+<answer><!-- TODO --></answer>
+
 Define overflow error <span class='mark'>[2 marks]</span>
 <answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
 
@@ -368,6 +388,9 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
   <li>store data as sample rate and values / digital signals (1)</li>
   </ul>
 </answer>
+
+Explain what is meant by colour depth. <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
@@ -405,31 +428,37 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
   </table>
 </answer>
 
+Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
+
+Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
 <h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
 
-Define sequential processing <span class='mark'>[1 mark]
-<answer><!-- TODO --></answer>
+Define sequential processing <span class='mark'>[1 mark]</span>
+<answer>Process instructions step by step in order from step to finish</answer>
 
-Define parallel processing <span class='mark'>[1 mark]
-<answer><!-- TODO --></answer>
+Define parallel processing <span class='mark'>[1 mark]</span>
+<answer>Uses multiple processors to computer multiple instructinos simultaneously</answer>
 
-Define multi-agent processing <span class='mark'>[1 mark]
-<answer><!-- TODO --></answer>
-
-What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
-<answer><!-- TODO --></answer>
+Define multi-agent processing <span class='mark'>[1 mark]</span>
+<answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
+
+Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span>
 
 Identify differences between RAM and ROM <span class='mark'>[4 marks]</span>
 <answer>
   <ul>
     <li>RAM is volatile whereas ROM is non-volatile. Data stored in RAM get lost when the computer is turned off but data is kept in ROM after power-off.</li>
     <li>The size of RAM can be upgraded. However, the size of ROM can be not increased typically.</li>
+    <li>RAM stores currently used data while ROM stores data necessary for booting up computer like BIOS.</li>
   </ul>
 </answer>
 
@@ -499,33 +528,31 @@ Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span>
 <answer>
 <ol type="1"> <li><strong>Fetch Stage (3 marks)</strong> <ul> <li>Memory Address Register (MAR) holds the address of the next instruction, sent via the <em>address bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction/data is fetched from memory to the Memory Data Register (MDR) via the <em>data bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction is copied to the Current Instruction Register (CIR); Program Counter (PC) increments <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Decode Stage (1 mark)</strong> <ul> <li>Control Unit decodes the instruction in CIR into <em>opcode</em> (operation) and <em>operand</em> (data) <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Execute Stage (2 marks)</strong> <ul> <li>Arithmetic Logic Unit (ALU) performs the operation (opcode) on the operand <strong>(1 mark)</strong>.</li> <li>Result is stored in the <em>accumulator</em> or written back to memory <strong>(1 mark)</strong>.</li> </ul> </li> </ol> <img src='assets/computer/fetch-decode-execute.png' /></answer>
 
+Which bus is uni-directional? <span class='mark'>[1 mark]</span>
+<answer><p>Address Bus</p></answer>
+
 Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span>
 <answer>
-<div class="comparison"> <div class="benefits"> <h4>Benefits</h4> <ul> <li><strong>Accessibility</strong>: <ul> <li>Access files from any location with WAN connectivity</li> <li>Collaborate in real-time with permission controls</li> <li>Device-agnostic access (any internet-enabled device)</li> </ul> </li> <li><strong>Scalability</strong>: <ul> <li>Flexible storage capacity adjustments (pay-as-you-grow)</li> </ul> </li> <li><strong>Reliability</strong>: <ul> <li>Redundant server backups minimize data loss risks</li> </ul> </li> <li><strong>Cost Efficiency</strong>: <ul> <li>Reduces local hardware/staff costs (provider-managed IT)</li> </ul> </li> </ul> </div>
-<div class="drawbacks">  <h4>Drawbacks</h4>  <ul>  <li><strong>Security Risks</strong>:  <ul><li>Potential for external breaches or unauthorized access</li>  
-        <li>Jurisdictional challenges in data protection laws</li>  
-      </ul>  
-    </li>  
-    <li><strong>Dependency</strong>:  
-      <ul>  
-        <li>Requires consistent high-speed internet</li>  
-        <li>Reliance on provider's service continuity</li>  
-      </ul>  
-    </li>  
-    <li><strong>Hidden Costs</strong>:  
-      <ul>  
-        <li>Recurring subscription fees</li>  
-        <li>Potential overuse charges for bandwidth/storage</li>  
-      </ul>  
-    </li>  
-    <li><strong>Environmental Impact</strong>:  
-      <ul>  
-        <li>High energy consumption for servers and cooling</li>  
-      </ul>  
-    </li>  
-  </ul>  
-</div>  
-</div></answer>
+<h4>Benefits and Drawbacks</h4>
+<ul>
+  <li><strong>Benefits</strong>
+    <ul>
+      <li><strong>Accessibility</strong>: Access files from any location with WAN connectivity, collaborate in real-time with permission controls, and device-agnostic access (any internet-enabled device).</li>
+      <li><strong>Scalability</strong>: Flexible storage capacity adjustments (pay-as-you-grow).</li>
+      <li><strong>Reliability</strong>: Redundant server backups minimize data loss risks.</li>
+      <li><strong>Cost Efficiency</strong>: Reduces local hardware/staff costs (provider-managed IT).</li>
+    </ul>
+  </li>
+  <li><strong>Drawbacks</strong>
+    <ul>
+      <li><strong>Security Risks</strong>: Potential for external breaches or unauthorized access, and jurisdictional challenges in data protection laws.</li>
+      <li><strong>Dependency</strong>: Requires consistent high-speed internet and reliance on the provider's service continuity.</li>
+      <li><strong>Hidden Costs</strong>: Recurring subscription fees and potential overuse charges for bandwidth/storage.</li>
+      <li><strong>Environmental Impact</strong>: High energy consumption for servers and cooling.</li>
+    </ul>
+  </li>
+</ul>
+</answer>
 
 Describe an embedded system <span class='mark'>[2 marks]</span>
 <answer><p>Embedded system is a combination of software and hardware (1) that is designed specifically to tackle a specific problem. (1) For example, usage in washing machine.</p></answer>
@@ -565,14 +592,14 @@ List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</spa
 What is scheduling? <span class='mark'>[2 marks]</span>
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
 
-A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span></question>
+A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span>
 <answer><ul>
 <li> Orders have been saved onto the system as they order food and then deleted once processed (1)</li>
 <li>Once other orders have been made, new files are created (1) which may be bigger than the spaces left by the deleted files (1) </li>
 <li>The order files are split up (1)</li>
 </ul></answer>
 
-Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>span></question>
+Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span>
 <answer><ul>
 <li> Files on the hard disk drive are moved (1)</li>
 <li>Empty spaces collected together (1) </li>
@@ -600,7 +627,7 @@ Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span>
 </ul>
 </answer>
 
- Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
+Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
   <thead>
@@ -705,10 +732,28 @@ Compare three features between wired and wireless connectivity. <span class='mar
 <answer><ul><li>Copper wire</li><li>Optical fibre</li></ul></answer>
 
  Describe how a router directs data on the internet<span class='mark'>[5 marks]</span>
+<answer>
+<ol>
+<li> Reads the data/packet to find the recipient's address (1)</li>
+<li> Has physical connections to >=2 different networks (1)</li>
+<li> Holds a routing table (1)</li>
+<li> Stores information about (IP) addresses (1)</li>
+<li> Keeps packets inside a network by not forwarding them (1)</li>
+<li> Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]</li>
+<li> Chooses the most efficient path to the next node (1)</li>
+</ol></answer>
+
+Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
+<answer><p>A 2.4 GHz</p></answer>
+
+Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
 <answer><!-- TODO --></answer>
 
-Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><lili><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span></question>
-<answer><p>A 2.4 GHz</p></answer>
+Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
+Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
@@ -728,7 +773,7 @@ Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-Explain why the delay of not updating software to latest version could pose a threat to the security of the netwclass='mark'>[2 marks]</span></question>
+Explain why the delay of not updating software to latest version could pose a threat to the security of the network <span class='mark'>[2 marks]</span>
 <answer>
 <ul>
 <strong>One method</strong>
@@ -740,10 +785,24 @@ Explain why the delay of not updating software to latest version could pose a th
 </ul>
 </answer>
 
-Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li>Ethical Hacking><li>Commericial analysis tools</li><li>Review of network and user policies</li></ul><span class='mark'>[6 marks]</span></question>
-<answer><!--TODO--></answer>
+Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
+Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li>Ethical Hacking<li>Commericial analysis tools</li><li>Review of network and user policies</li></ul><span class='mark'>[6 marks]</span>
+<answer><img src='assets/network/identifying-vulnerabilities.png' /></answer>
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
+
+How do you access the web pages on internet? <span class='mark'>[4 marks]</span>
+<answer>
+<ul>
+  <li>First user has to enter a URL of the website</li>
+  <li>Domain name from URL has to be checked with DNS to find IP address</li>
+  <li>Web browser connects to web server using IP address found from DNS</li>
+  <li>A web page is transferred using HTTP(s) protocol</li>
+  <li>Web browser displayed the web page described by HTML</li>
+</ul>
+</answer>
 
 Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span>
 <answer>
@@ -758,6 +817,17 @@ Describe the difference between the Internet and the World Wide Web. <span class
 </ul>
 </answer>
 
+How many bits do IPv4 and IPv6 use for each address <span class='mark'>[2 marks]</span>
+<answer>
+<ul><li>IPv4 - 32 bits</li><li>IPv6 - 128 bits</li></ul>
+</answer>
+
+Why does IPv6 uses 128 bits? <span class='mark'>[2 marks]</span>
+<answer>
+<ul><li>IPv6 has 8 group of 4 hexadecimal digits </li><li>Each hexadecimal can represented using 4 bits</li><li>since they are in 4 hexadecimal digits, each group can be represented using 16 bits</li><li>It has total of 8 groups thus, 128 bits</li>
+</ul>
+</answer>
+
 Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 <answer>
 <ul>
@@ -766,14 +836,25 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
+What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span>
+<answer><!-- TODO --></answer>
+
+Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span>
+<answer><img src='assets/network/access-internet.png' /></answer>
+
 <h2 id='topic-6'><a href='#toc'>Topic 6: The Bigger Picture</a></h2>
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
 List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><ul>
+<li>Tracking endangered animals using GPS trackers</li>
+<li>Warning systems to alert approaching tsunamis</li>
+<li>Measuring sea surface temperatures to learn more about climate change</li>
+<li>Using sensors to turn off wasteful electrical resources</li>
+</ul></answer>
 
-Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span cla[3 marks]</question>
+Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class='mark'>[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
@@ -800,23 +881,22 @@ List two benefits of giving away personal information <span class='mark'>[2 mark
 </answer>
 
 List two benefits of analyzing Big Data <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><ul>
+<li>Identify side effects of drug</li>
+<li>Recommending good resources to users that align with their interests</li>
+<li>Notify the spread of diseases</li>
+<li>Governments use Big Data to monitor traffic flows, energy usage, or public transport needs to improve urban planning</li>
+</ul></answer>
 
 State why it is important to protect personal information
-<answer><!-- TODO --></answer>
+<answer><ul><li>Could fall into identify theft</li><li>which they can use our details to imitate behaviours of us to manipulate others.</li></ul></answer>
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
-
-Define Technology-empowered <span class='mark'>[1 mark]</span>
-<answer><p>Not being accessible to computer technology</p></answer>
-
-Define Technology-excluded <span class='mark'>[1 mark]</span>
-<answer><p>Being able to access to computer technology</p></answer>
 
 Define Digital Divide <span class='mark'>[1 mark]</span>
 <answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
 
-List two benefits of being technology-empowered <span class='mark'>[2 marks]</span>
+List two benefits of being digitally included <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>More job opportunities</li>
@@ -825,7 +905,7 @@ List two benefits of being technology-empowered <span class='mark'>[2 marks]</sp
   </ul>
 </answer>
 
-List two disadvantages of being technology-excluded <span class='mark'>[2 marks]</span>
+List two disadvantages of being digitally excluded <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Less job opportunities</li>
@@ -850,15 +930,15 @@ List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span>
   <ul>
     <li>Building more infrastructure to promote internet access</li>
     <li>Offering more budget-friendly internet plans</li>
-    <li>Providing public wi-fi areas</li>
+    <li>Providing public Wi-Fi areas</li>
     <li>Giving free tech training programs</li>
   </ul>
 </answer>
 
 <h3 id='chap-27'>Chapter 27: Professionalism</h3>
 
-Define professionalism <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+Define professionalism <span class='mark'>[1 mark]</span>
+<answer><p>The skills and competence expected of a person in a professional setting</p></answer>
 
 List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span>
 <answer>
@@ -867,6 +947,9 @@ List two ways that computer scientists can demonstrate professionalism <span cla
     <li>Always keep learning and up-to-date with new technologies</li>
   </ul>
 </answer>
+
+Airtest produces exhaust emissions testing software. A programmer discovers that there is a bug in the software that produces inaccurate results under particular circumstances. Discuss What course of action the programmer should take and explain why. <span class='mark'>[4 marks]</span>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
 
@@ -908,9 +991,12 @@ List two benefits of open-source software <span class='mark'>[2 marks]</span>
 </answer>
 
 Difference between proprietary software and open-source software <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><ul>
+<li>Open source software is free and able to edit and redistribute</li>
+<li>Proprietary software belongs to an individual or a compnay. Its license specifies that users aren't allowed to modify source code</li>
+</ul></answer>
 
-Define the purpose of licensing <span class='mark'>[2 marks]</span>
+Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
@@ -971,5 +1057,5 @@ Define the term entanglement <span class='mark'>[1 mark]</span>
 Define the term qubit <span class='mark'>[1 mark]</span>
 <answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span classmarks]</span></question>
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class='mark'>[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
