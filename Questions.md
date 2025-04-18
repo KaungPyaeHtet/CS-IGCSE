@@ -178,23 +178,23 @@ else:
 </answer>
 
 Implement Bubble Sort <span class='mark'>[6 marks]</span>
-```python
+<answer>```python
 unsortedArr = [4, 2, 6, 1, 3, 2, 8]
 def bubbleSort(arr):
-    for i in range(len(arr)):
-        checked = False
-        for j in range(len(arr) - i - 1):
-            if arr[j] > arr[j + 1]:
-                cache = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = cache
-                checked = True
-        if (not checked):
-            break
-        print(arr)
-    return arr
+  for i in range(len(arr)):
+      checked = False
+      for j in range(len(arr) - i - 1):
+          if arr[j] > arr[j + 1]:
+              cache = arr[j]
+              arr[j] = arr[j + 1]
+              arr[j + 1] = cache
+              checked = True
+      if (not checked):
+          break
+      print(arr)
+  return arr
 bubbleSort(unsortedArr)
-```
+```</answer>
 
 <h3 id='chap-6'>Chapter 6: Making Programs Easier To Read</h3>
 

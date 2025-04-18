@@ -10,13 +10,11 @@ def convert(path):
         browser = p.chromium.launch()
         page = browser.new_page()
 
-        # Set larger viewport for better rendering
         page.set_viewport_size({"width": 1920, "height": 1080})
 
-        # Load the HTML file
         page.goto(f"file://{html_path}", wait_until="networkidle")
 
-        # Force all details elements to open and ensure visibility
+        # Remove links
         page.evaluate("""() => {
             // Force dark theme
             document.documentElement.setAttribute('data-theme', 'dark');
@@ -94,7 +92,7 @@ def convert(path):
             }
         """)
 
-        # Generate PDF with optimal settings
+        # Generate PDF
         page.pdf(
             path=pdf_path,
             format="A4",
