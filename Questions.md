@@ -171,9 +171,9 @@ while low <= high and not found:
     else:
         low = mid + 1
 if found:
-    print("Found")
+  print("Found")
 else:
-    print("Not Found")
+  print("Not Found")
 ```
 </answer>
 
@@ -311,6 +311,36 @@ Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span cla
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
+List two types of subprograms <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Function</li>
+    <li>Procedure</li>
+  </ul>
+</answer>
+
+What is the difference between function and procedure <span class='mark'>[2 marks]</span>
+<answer><p>Functions return a value after performing a specific task while procedures does not return a value after executing the code</p></answer>
+
+Define Local Variables <span class='mark'>[1 mark]</span>
+<answer><p>Variables that are defined inside the subprograms</p></answer>
+
+Define Global Variables <span class='mark'>[1 mark]</span>
+<answer><p>Variables that are defined outside the subprograms</p></answer>
+
+Where local variables are accessible <span class='mark'>[1 mark]</span>
+<answer><p>Only accessiable inside the subprogram in which it is defined</p></answer>
+
+Where global variables are accessible <span class='mark'>[1 mark]</span>
+<answer><p>Accessiable everywhere throughout the program</p></answer>
+
+List two benefits of using subprograms <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li></li>
+  </ul>
+</answer>
+
 What is meant by built in functions <span class='mark'>[1 mark]</span>
 <answer><p>Functions that are provided by programming languages to perform common tasks</p></answer>
 
@@ -355,6 +385,44 @@ Three types of Errors that occur when constructing an algorithm <span class='mar
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
 Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span>
+
+Convert 0101 0001 into decimal form. 
+<answer><!-- TODO --></answer>
+
+Convert 234 into binary form.
+<answer><!-- TODO --></answer>
+
+Convert 1101 0010 into hexadecimal form.
+<answer><!-- TODO --></answer>
+
+Convert 4FAD into decimal form
+<answer><!-- TODO --></answer>
+
+Add 0011 1001 with 1110 0100.
+<answer><!-- TODO --></answer>
+
+Difference between logical shift and arithmetic shift
+<answer><!-- TODO --></answer>
+
+Perform logical left shift by two (+2) for 1001 0110.
+<answer><!-- TODO --></answer>
+
+Perform logical right shift by five (-5) for 0110 1001
+<answer><!-- TODO --></answer>
+
+Perform arithmetic shift left by three (+3) for 1101 0011
+<answer><!-- TODO --></answer>
+
+Perform arithmetic shift right by four (-4) for 1010 0101
+<answer><!-- TODO --></answer>
+
+Represent -83 with sign and magnitude method
+<answer><!-- TODO --></answer>
+
+Represent 0111 1011 with 8 bit two complement form.
+<answer><!-- TODO --></answer>
+
+Represent  -67 with 8 bit two complement form. 
 <answer><!-- TODO --></answer>
 
 Define overflow error <span class='mark'>[2 marks]</span>
@@ -368,6 +436,8 @@ Define overflow error <span class='mark'>[2 marks]</span>
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
+List two benefits of using ASCII encoding
+
 Explain why Unicode was developed <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
@@ -377,6 +447,30 @@ Explain why Unicode was developed <span class='mark'>[2 marks]</span>
     <li>Unicode has a very large number of characters that can represent all languages/ ASCII was developed for English</li>
   </ul>
 </answer>
+
+List two factors that affect the fidelity of the sound
+<answer><!-- TODO --></answer>
+
+Explain how increasing sample rate improves the fidelity of the sound
+<answer><!-- TODO --></answer>
+
+Explain how increasing bit depth improves the fidelity of the sound
+<answer><!-- TODO --></answer>
+
+State how to calculate the file size of an audio file
+<answer><!-- TODO --></answer>
+
+Define pixel
+<answer><!-- TODO --></answer>
+
+Define image resolution
+<answer><!-- TODO --></answer>
+
+State how to calculate the file size of an image
+<answer><!-- TODO --></answer>
+
+Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
+<answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
 Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span>
 <answer>
@@ -429,11 +523,60 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
 </answer>
 
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+
+Define Run-Length Encoding (RLE) 
+<answer><!-- TODO --></answer>
+
+Explain how Run-Length Encoding (RLE) works
+<answer><!-- TODO --></answer>
+
+State when Run-Length Encoding (RLE) might not be efficient 
+<answer><!-- TODO --></answer>
+
+List two types of compression
+<answer><!-- TODO --></answer>
+
+What is the difference between lossless compression and lossy compression
+<answer><!-- TODO --></answer>
+
+What is the advantage and disadvantage of using lossless compression
+<answer><!-- TODO --></answer>
+
+What is the advantage and disadvantage of using lossy compression
+<answer><!-- TODO --></answer>
+
+Why quality decrease is acceptable when using lossy compression
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
+
+Define encryption
+<answer><!-- TODO --></answer>
+
+Write down the purpose of encryption
+<answer><!-- TODO --></answer>
+
+State two types of encryption method
+<answer><!-- TODO --></answer>
+
+Define asymmetric encryption
+<answer><!-- TODO --></answer>
+
+Define symmetric encryption
+<answer><!-- TODO --></answer>
+
+What is the difference between asymmetric and symmetric encryption
+<answer><!-- TODO --></answer>
+
+List at least two types of ciphers
+<answer><!-- TODO --></answer>
+
+Describe how caesar cipher works
+<answer><!-- TODO --></answer>
+
+State disadvantage of using caesar cipher
 <answer><!-- TODO --></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
@@ -448,6 +591,15 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
+
+Define agents
+<answer><!-- TODO --></answer>
+
+List two features of agents in multi-agent model
+<answer><!-- TODO --></answer>
+
+What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
@@ -520,6 +672,51 @@ What is the purpose of the Current Instruction Register (CIR)? <span class='mark
 
 Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
+
+Define address bus
+<answer><!-- TODO --></answer>
+
+Define data bus
+<answer><!-- TODO --></answer>
+
+Define control bus
+<answer><!-- TODO --></answer>
+
+List three types of bus
+<answer><!-- TODO --></answer>
+
+How increasing address bus width affect
+<answer><!-- TODO --></answer>
+
+How increasing data bus width affect
+<answer><!-- TODO --></answer>
+
+Define cache
+<answer><!-- TODO --></answer>
+
+Define cache miss
+<answer><!-- TODO --></answer>
+
+What are three levels of cache
+<answer><!-- TODO --></answer>
+
+List three factors that affect the performance of the CPU
+<answer><!-- TODO --></answer>
+
+Define clock speed
+<answer><!-- TODO --></answer>
+
+State how increasing clock speed affect the performance of the CPU
+<answer><!-- TODO --></answer>
+
+State how increased number of cores affect the performance of the CPU
+<answer><!-- TODO --></answer>
+
+List two benefits of increasing computing power
+<answer><!-- TODO --></answer>
+
+List two disadvantages of increasing computing power
+<answer><!-- TODO --></answer>
 
 Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
@@ -627,38 +824,38 @@ Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span>
 </ul>
 </answer>
 
-Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
+ Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
-  <thead>
-    <tr>
-      <th>High Level Languages</th>
-      <th>Low Level Languages</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>One instruction of high level code represents many instructions of machine code</td>
-      <td>One instruction of assembly code only represents one instruction of machine code</td>
-    </tr>
-    <tr>
-      <td>The same code will work for many different machines and processors</td>
-      <td>Usually written for specific machine and won't work on others</td>
-    </tr>
-    <tr>
-      <td>Code is easy to read, understand, and modify</td>
-      <td>Code is very difficult to read, understand, and modify</td>
-    </tr>
-    <tr>
-      <td>Don't have much control over CPU can do so programs are less memory efficient</td>
-      <td>Full control of CPU and can uses memory wisely to make programs more efficient</td>
-    </tr>
-    <tr>
-      <td>Programmer can easily store data in lots of different structures</td>
-      <td>Programmer needs to know about internal structure of CPU and how it manages the memory.</td>
-    </tr>
-  </tbody>
-</table>
+    <thead>
+      <tr>
+        <th>High Level Languages</th>
+        <th>Low Level Languages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>One instruction of high level code represents many instructions of machine code</td>
+        <td>One instruction of assembly code only represents one instruction of machine code</td>
+      </tr>
+      <tr>
+        <td>The same code will work for many different machines and processors</td>
+        <td>Usually written for specific machine and won't work on others</td>
+      </tr>
+      <tr>
+        <td>Code is easy to read, understand, and modify</td>
+        <td>Code is very difficult to read, understand, and modify</td>
+      </tr>
+      <tr>
+        <td>Don't have much control over CPU can do so programs are less memory efficient</td>
+        <td>Full control of CPU and can uses memory wisely to make programs more efficient</td>
+      </tr>
+      <tr>
+        <td>Programmer can easily store data in lots of different structures</td>
+        <td>Programmer needs to know about internal structure of CPU and how it manages the memory.</td>
+      </tr>
+    </tbody>
+  </table>
 </answer>
 
 Identify 3 features that IDE might be used when programming<span class='mark'>[3 marks]</span>
@@ -681,6 +878,9 @@ Compare four features between a compiler and an interpreter. <span class='mark'>
 
 <h3 id='chap-21'>Chapter 21: Networks</h3>
 
+Define network <span class='mark'>[1 mark]</span>
+<answer><p>A network is formed when two or more devices are connected each other</p></answer>
+
 What is a network protocol? <span class='mark'>[1 mark]</span>
 <answer><p>A set of rules for communication</p></answer>
 
@@ -694,6 +894,86 @@ Why do people connect to network?<span class='mark'>[2 marks]</span>
   </ul> 
 </answer>
 
+Define LAN <span class='mark'>[1 mark]</span>
+<answer><p>A network that covers a small geographical area</p></answer>
+
+Define WAN <span class='mark'>[1 mark]</span>
+<answer><p></p>A combination of networks (LANs) that covers a large geographical area</answer>
+
+Define PAN <span class='mark'>[1 mark]</span>
+<answer><p>A short-range network that forms near a single user connecting personal devices</p></answer>
+
+Write the difference between LAN and WAN <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>LAN only covers a small geographical area whereas WAN covers a large geographical area</li>
+    <li>LAN is a single network but WAN is a collection of networks(LANs)</li>
+    <li>LAN is typically home network or owned by single organization. However, WAN is usually owned by multiple organizations</li>
+  </ul>
+</answer>
+
+Write the difference between LAN and PAN <span class='mark'>[2 marks]</span>
+<answer><p><!--TODO--></p></answer>
+
+Define server <span class='mark'>[1 mark]</span>
+<answer><p>A powerful computer that provides services to other computers(clients) connected to the network</p></answer>
+
+Define client <span class='mark'>[1 mark]</span>
+<answer><p>A computer that is connected to the network</p></answer>
+
+Define client-server <span class='mark'>[2 marks]</span>
+<answer><p>A network that has a centralized server connected to it.</p></answer>
+
+Define peer-to-peer network <span class='mark'>[2 marks]</span>
+<answer><p>A network that does not have any centralized device</p></answer>
+
+Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span>
+<answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
+
+Explain why performance is not decreased as increasing devices in peer-to-peer network <span class='mark'>[2 marks]</span>
+<answer><p>In peer-to-peer networks, the network load is shared, and new devices add resources like bandwidth, storage, and processing power.</p></answer>
+
+Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span>
+<answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
+
+List two benefits of using client-server network <span class='mark'>[2 marks]</span>
+<table border="1" cellspacing="0" cellpadding="8">
+  <tr>
+    <th colspan="2">Benefits of Client-server network</th>
+  </tr>
+  <tr>
+    <td><strong>Performance</strong></td>
+    <td>Performance is high when server is not overloaded</td>
+  </tr>
+  <tr>
+    <td><strong>Security</strong></td>
+    <td>Can perform central-controlled patches/updates and forces user authentication</td>
+  </tr>
+  <tr>
+    <td><strong>Maintenance</strong></td>
+    <td>Easier trouble-shooting and efficient backups</td>
+  </tr>
+</table>
+
+List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
+<table border="1" cellspacing="0" cellpadding="8">
+  <tr>
+    <th colspan="2">Benefits of peer-to-peer network</th>
+  </tr>
+  <tr>
+    <td><strong>Scalability</strong></td>
+    <td>Performance is usually increased when number of connected devices gets bigger</td>
+  </tr>
+  <tr>
+    <td><strong>Reliability</strong></td>
+    <td>Resources or services are still available even when devices disconnect</td>
+  </tr>
+  <tr>
+    <td><strong>Privacy</strong></td>
+    <td>There is no centralized device that stores log, monitors or spys.</td>
+  </tr>
+</table>
+
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
 <answer><img src='assets/network/bus-topology.png'>
 </answer>
@@ -704,6 +984,39 @@ Draw A Ring Topology <span class='mark'>[4 marks]</span>
 
 Draw A Star Topology <span class='mark'>[4 marks]</span>
 <answer><img src='assets/network/star-topology.png'>
+</answer>
+
+Draw A Mesh Topology <span class='mark'>[4 marks]</span>
+<answer><img src='assets/network/mesh-topology.png'>
+</answer>
+
+Describe advantages and disadvantages of Bus Topology <span class='mark'>[3 marks]</span>
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <li>Easy to install</li>
+  <li>Cheap cabling cost compared to star and mesh</li>
+  <li>Easy to add new devices</li>
+  <strong>Disadvantages</strong>
+  <li>Not secure</li>
+  <li>Hard to find faults</li>
+  <li>Single Failure Point (main cable/terminitor)</li>
+  <li>Poor Performance due to data collisions</li>
+</ul>
+</answer>
+
+Describe advantages and disadvantages of Ring Topology <span class='mark'>[3 marks]</span>
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <li>less cabling compared to other topologies</li>
+  <li>no data collisions as data flow in only one direction</li>
+  <strong>Disadvantages</strong>
+  <li>hard to add new devices</li>
+  <li>hard to find faults</li>
+  <li>single failure point</li>
+  <li>not secure</li>
+</ul>
 </answer>
 
 Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span>
@@ -720,28 +1033,139 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 </ul>
 </answer>
 
-Draw A Mesh Topology <span class='mark'>[4 marks]</span>
-<answer><img src='assets/network/mesh-topology.png'>
+<question>Describe advantages and disadvantages of Mesh Topology <span class='mark'>[3 marks]</span></question>
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <li>High performance</li>
+  <li>High fault tolerant</li>
+  <strong>Disadvantages</strong>
+  <li>Excessive cabling</li>
+  <li>Expensive</li>
+  <li>Hard maintenance</li>
+</ul>
 </answer>
+
+List four layers of TCP/IP protocol stack
+<answer><!-- TODO --></answer>
+
+Function of application layer
+<answer><!-- TODO --></answer>
+
+Function of transport layer
+<answer><!-- TODO --></answer>
+
+Function of internet layer
+<answer><!-- TODO --></answer>
+
+Function of data link layer
+<answer><!-- TODO --></answer>
+
+What is the purpose of using checksums
+<answer><!-- TODO --></answer>
+
+Write function of TCP protocol
+<answer><!-- TODO --></answer>
+
+List two protocols that work in application layer
+<answer><!-- TODO --></answer>
+
+List three email protocols
+<answer><!-- TODO --></answer>
+
+What is the difference between POP3 and IMAP
+<answer><!-- TODO --></answer>
+
+Function of CSMA/CD algorithm in bus topology
+<answer><!-- TODO --></answer>
+
+Function of DNS
+<answer><!-- TODO --></answer>
+
+Describe the process of accessing a web page
+<answer><!-- TODO --></answer>
+
+List types of GSM
+<answer><!-- TODO --></answer>
+
+List two examples of wireless connectivity
+<answer><!-- TODO --></answer>
+
+List ways to identify devices on the network
+<answer><!-- TODO --></answer>
+
+What is the difference between IP addresses and MAC addresses
+<answer><!-- TODO --></answer>
+
+Define authentication
+<answer><!-- TODO --></answer>
+
+Define validation
+<answer><!-- TODO --></answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
-<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th> </tr> </thead> <tbody> <tr> <td><strong>Speed</strong></td> <td>Faster data transmission (e.g., fiber optic cables)</td> <td>Slower due to signal interference</td> </tr> <tr> <td><strong>Security</strong></td> <td>Harder to intercept (physical access required)</td> <td>Requires encryption to prevent eavesdropping</td> </tr> <tr> <td><strong>Installation</strong></td> <td>Expensive/cumbersome (cables, ports)</td> <td>Flexible but prone to interference (walls/devices)</td> </tr> </tbody> </table> </answer>
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Faster data transmission (e.g., fiber optic cables)</td>
+      <td>Slower due to signal interference</td>
+    </tr>
+    <tr>
+      <td><strong>Security</strong></td>
+      <td>Harder to intercept (physical access required)</td>
+      <td>Requires encryption to prevent eavesdropping</td>
+    </tr>
+    <tr>
+      <td><strong>Installation</strong></td>
+      <td>Expensive/cumbersome (cables, ports)</td>
+      <td>Flexible but prone to interference (walls/devices)</td>
+    </tr>
+    <tr>
+      <td><strong>Portability</strong></td>
+      <td>Not portable due to cabling hazards</td>
+      <td>Ultimate portability within the WAP range</td>
+    </tr>
+  </tbody>
+</table>
+</answer>
 
- State two types of connectivity media <span class='mark'> [2 marks]</span>
+State two types of connectivity media <span class='mark'>[2 marks]</span>
 <answer><ul><li>Copper wire</li><li>Optical fibre</li></ul></answer>
 
- Describe how a router directs data on the internet<span class='mark'>[5 marks]</span>
+List two examples of networking devices <span class='mark'>[2 marks]</span>
 <answer>
-<ol>
-<li> Reads the data/packet to find the recipient's address (1)</li>
-<li> Has physical connections to >=2 different networks (1)</li>
-<li> Holds a routing table (1)</li>
-<li> Stores information about (IP) addresses (1)</li>
-<li> Keeps packets inside a network by not forwarding them (1)</li>
-<li> Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]</li>
-<li> Chooses the most efficient path to the next node (1)</li>
-</ol></answer>
+  <ul>
+    <li>Router</li> 
+    <li>Switch</li> 
+    <li>Modem</li> 
+  </ul>
+</answer>
+
+Write down the function of the switch <span class='mark'>[3 marks]</span>
+<answer><p>Switch connects devices and transfer data within a LAN. It does this by looking at destination MAC address and forwarding to the correct port to the intended device.</p></answer>
+
+Write down the function of the modem <span class='mark'>[2 marks]</span>
+<answer><p>Modem is a device that converts digital signals to analogue signals and vice versa</p></answer>
+
+Describe how a router directs data on the internet<span class='mark'>[5 marks]</span>
+<answer>
+    <ol>
+        <li> Reads the data/packet to find the recipient's address (1)</li>
+        <li> Has physical connections to >=2 different networks (1)</li>
+        <li> Holds a routing table (1)</li>
+        <li> Stores information about (IP) addresses (1)</li>
+        <li> Keeps packets inside a network by not forwarding them (1)</li>
+        <li> Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]</li>
+        <li> Chooses the most efficient path to the next node (1)</li>
+    </ol>
+</answer>
+
+Difference between switch and hub
+
+Difference between switch and router
 
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
@@ -757,6 +1181,12 @@ Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</s
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
+Define phishing
+<answer><!-- TODO --></answer>
+
+Define pharming
+<answer><!-- TODO --></answer>
+
 Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
 <answer>
 <ul>
@@ -764,6 +1194,69 @@ Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
 <li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
 </ul>
 </answer>
+
+List two ways to protect from phishing
+<answer><!-- TODO --></answer>
+
+List two ways to protect from pharming
+<answer><!-- TODO --></answer>
+
+Define malware
+<answer><!-- TODO --></answer>
+
+List three types of malware
+<answer><!-- TODO --></answer>
+
+Function of virus
+<answer><!-- TODO --></answer>
+
+Function of worm
+<answer><!-- TODO --></answer>
+
+Function of ransomware
+<answer><!-- TODO --></answer>
+
+Function of firewall
+<answer><!-- TODO --></answer>
+
+List two ways to improve physical security
+<answer><!-- TODO --></answer>
+
+Define eavesdropping
+<answer><!-- TODO --></answer>
+
+State how to protect from eavesdropping
+<answer><!-- TODO --></answer>
+
+List two features of a strong password
+<answer><!-- TODO --></answer>
+
+Define audit trailing
+<answer><!-- TODO --></answer>
+
+Write down the purpose of audit trailing
+<answer><!-- TODO --></answer>
+
+Define modular testing
+<answer><!-- TODO --></answer>
+
+Define penetration testing
+<answer><!-- TODO --></answer>
+
+Define two-factor authentication (2FA)
+<answer><!-- TODO --></answer>
+
+Define access contro
+<answer><!-- TODO --></answer>
+
+Write down the purpose of using access control
+<answer><!-- TODO --></answer>
+
+Define NAS device
+<answer><!-- TODO --></answer>
+
+List at least two examples of software vulnerabilities
+<answer><!-- TODO --></answer>
 
 Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
 <answer>
@@ -773,16 +1266,16 @@ Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
 </ul>
 </answer>
 
-Explain why the delay of not updating software to latest version could pose a threat to the security of the network <span class='mark'>[2 marks]</span>
+Explain why the delay of not updating software to latest version could pose a threat to the security of the network<span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<strong>One method</strong>
-<li>compromised/unpatched software is more vulnerable to attack (1)</li>
-<li>and may allow an attacker control of the whole network (1)</li>
-<strong>Another method</strong>
-<li>unpatched software has known weaknesses (1)</li>
-<li>which can be exploited by a hacker(1)</li>
-</ul>
+  <ul>
+    <strong>One method</strong>
+    <li>compromised/unpatched software is more vulnerable to attack (1)</li>
+    <li>and may allow an attacker control of the whole network (1)</li>
+    <strong>Another method</strong>
+    <li>unpatched software has known weaknesses (1)</li>
+    <li>which can be exploited by a hacker(1)</li>
+  </ul>
 </answer>
 
 Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span>
@@ -854,7 +1347,7 @@ List two positive impacts of using technology on the environment<span class='mar
 <li>Using sensors to turn off wasteful electrical resources</li>
 </ul></answer>
 
-Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class='mark'>[3 marks]</span>
+Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
@@ -893,6 +1386,12 @@ State why it is important to protect personal information
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
 
+Define Technology-empowered <span class='mark'>[1 mark]</span>
+<answer><p>Not being accessible to computer technology</p></answer>
+
+Define Technology-excluded <span class='mark'>[1 mark]</span>
+<answer><p>Being able to access to computer technology</p></answer>
+
 Define Digital Divide <span class='mark'>[1 mark]</span>
 <answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
 
@@ -930,7 +1429,7 @@ List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span>
   <ul>
     <li>Building more infrastructure to promote internet access</li>
     <li>Offering more budget-friendly internet plans</li>
-    <li>Providing public Wi-Fi areas</li>
+    <li>Providing public wi-fi areas</li>
     <li>Giving free tech training programs</li>
   </ul>
 </answer>
@@ -1057,5 +1556,5 @@ Define the term entanglement <span class='mark'>[1 mark]</span>
 Define the term qubit <span class='mark'>[1 mark]</span>
 <answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class='mark'>[2 marks]</span>
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
