@@ -336,9 +336,7 @@ Where global variables are accessible <span class='mark'>[1 mark]</span>
 
 List two benefits of using subprograms <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li></li>
-  </ul>
+<!-- TODO -->
 </answer>
 
 What is meant by built in functions <span class='mark'>[1 mark]</span>
@@ -385,6 +383,7 @@ Three types of Errors that occur when constructing an algorithm <span class='mar
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
 Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span>
+<answer><!-- TODO --></answer>
 
 Convert 0101 0001 into decimal form. 
 <answer><!-- TODO --></answer>
@@ -436,7 +435,8 @@ Define overflow error <span class='mark'>[2 marks]</span>
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
-List two benefits of using ASCII encoding
+List two benefits of using ASCII encoding <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 Explain why Unicode was developed <span class='mark'>[2 marks]</span>
 <answer>
@@ -518,6 +518,10 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
         <td>Gigabyte (GB)</td>
         <td>1000 megabytes</td>
       </tr>
+      <tr>
+        <td>Terabyte (TB)</td>
+        <td>1000 gigabytes</td>
+      </tr>
     </tbody>
   </table>
 </answer>
@@ -548,9 +552,12 @@ What is the advantage and disadvantage of using lossy compression
 Why quality decrease is acceptable when using lossy compression
 <answer><!-- TODO --></answer>
 
+What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
+
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 Define encryption
 <answer><!-- TODO --></answer>
@@ -619,14 +626,14 @@ Two types of items stored in Von Neumann Architecture <span class='mark'>[2 mark
 
 Explain how virtual memory works <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
-<li>Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)</li>
-<li>Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)</li>
-<li>Virtual memory is used as temporary storage. (1)</li>
-<li>Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)</li>
-<li>When needed again, instructions and data are transferred back to RAM. (1)</li>
-</ul>
+  <ul>
+    <li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
+    <li>Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)</li>
+    <li>Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)</li>
+    <li>Virtual memory is used as temporary storage. (1)</li>
+    <li>Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)</li>
+    <li>When needed again, instructions and data are transferred back to RAM. (1)</li>
+  </ul>
 </answer>
 
 how does HDD work? <span class='mark'>[3 marks]</span>
@@ -692,12 +699,6 @@ How increasing data bus width affect
 <answer><!-- TODO --></answer>
 
 Define cache
-<answer><!-- TODO --></answer>
-
-Define cache miss
-<answer><!-- TODO --></answer>
-
-What are three levels of cache
 <answer><!-- TODO --></answer>
 
 List three factors that affect the performance of the CPU
@@ -798,10 +799,10 @@ A restaurant has a computer-based ordering system which is running slowly. A tec
 
 Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span>
 <answer><ul>
-<li> Files on the hard disk drive are moved (1)</li>
-<li>Empty spaces collected together (1) </li>
-<li>Files are moved to be stored together (1)</li>
-<li>Fewer disc accesses are needed (1)</li>
+  <li> Files on the hard disk drive are moved (1)</li>
+  <li>Empty spaces collected together (1) </li>
+  <li>Files are moved to be stored together (1)</li>
+  <li>Fewer disc accesses are needed (1)</li>
 </ul></answer>
 
 Define 'What if' questions<span class='mark'>[2 marks]</span>
@@ -818,7 +819,7 @@ What is an instruction set? <span class='mark'>[1 mark]</span>
 Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span>
 <answer>
 <ul>
-<li>A very limited range of instructinos available</li>
+<li>A very limited range of instructions available</li>
 <li>Have to manage all data and decide how to store them in memory manually</li>
 <li>Debugging is challenging and can make machine crash</li>
 </ul>
@@ -1076,9 +1077,6 @@ List three email protocols
 What is the difference between POP3 and IMAP
 <answer><!-- TODO --></answer>
 
-Function of CSMA/CD algorithm in bus topology
-<answer><!-- TODO --></answer>
-
 Function of DNS
 <answer><!-- TODO --></answer>
 
@@ -1097,11 +1095,6 @@ List ways to identify devices on the network
 What is the difference between IP addresses and MAC addresses
 <answer><!-- TODO --></answer>
 
-Define authentication
-<answer><!-- TODO --></answer>
-
-Define validation
-<answer><!-- TODO --></answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1163,9 +1156,6 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
     </ol>
 </answer>
 
-Difference between switch and hub
-
-Difference between switch and router
 
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
@@ -1180,6 +1170,12 @@ Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</s
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
+
+Define authentication
+<answer><!-- TODO --></answer>
+
+Define validation
+<answer><!-- TODO --></answer>
 
 Define phishing
 <answer><!-- TODO --></answer>
