@@ -1328,6 +1328,8 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span>
 <answer><!-- TODO --></answer>
 
+<!-- TODO -->
+
 Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/access-internet.png' /></answer>
 
