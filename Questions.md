@@ -85,6 +85,11 @@
 What is meant by an algorithm? <span class='mark'>[1 mark]</span>
 <answer><p>An algorithm is a precise step-by-step method for solving a problem or completing a task.</p></answer>
 
+<h3 id='chap-2'>Chapter 2: Creating Algorithms</h3>
+
+Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <img src='assets/algorithms/guess-question.png' />
+<answer><img src='assets/algorithms/guess-answer.png' /></answer>
+
 <h3 id='chap-3'>Chapter 3: Sorting and Searching Algorithms</h3>
 
 How does Linear search work? <span class='mark'>[3 marks]</span>
@@ -227,6 +232,75 @@ bubbleSort(unsortedArr)
 </table>
 </answer>
 
+<h3 id='chap-7'>Chapter 7: Strings </h3>
+
+How to concatenate string in Python? <span class='mark'>[1 mark]</span>
+<answer>
+```python
+str1 = "hello"
+str2 = "world"
+finalString = str1 + " " + str2
+print(finalString)
+```
+</answer>
+
+How to lowercase, uppercase string in Python?<span class='mark'>[1 mark]</span>
+<answer>
+```python
+str1 = "hello"
+str2 = "world"
+str1 = str1.lower()
+str2 = str.upper()
+print(str1 + " " + str2)
+```
+</answer>
+
+How to extract characters from string (Case: extract 'cation' from 'education')<span class='mark'>[2 marks]</span>
+<answer>
+```python
+sampleString = 'education'
+extractedString = sampleString[3:9]
+print(extractedString)
+```
+</answer>
+
+How to check if the some characters are in a particular string? (Case: Check string 'convert' in inputWord)<span class='mark'>[2 marks]</span>
+<answer>
+```python
+print('convert' in input())
+```
+</answer>
+
+How to separate "," from this string "1,2,3,4,5,6,7,8" and turn it into list? <span class='mark'>[2 marks]</span>
+<answer>
+```python
+sampleString = "1,2,3,4,5,6,7,8"
+print(sampleString.split(","))
+```
+</answer>
+
+How to transverse a string? <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>
+      ```python
+      # Using Method 1: For index loop
+      sampleString = "sample"
+      for i in range(len(sampleString)):
+        print(sampleString[i])
+      ```
+    </li>
+    <li>
+    ```python
+    # Using method 2: For each loop
+    sampleString = "sample"
+    for letter in sampleString:
+      print(letter)
+    ```
+    </li>
+  </ul>
+</answer>
+
 <h3 id='chap-8'>Chapter 8: Data Structures </h3>
 
 Describe a record <span class='mark'>[2 marks]</span>
@@ -283,31 +357,6 @@ print("Valid")
 ```
 </answer>
 
-Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span class='mark'>[3 marks]</span>
-<answer>
-  <table border="1" cellspacing="0" cellpadding="8">
-    <thead>
-        <tr>
-            <th>Data</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Normal Data</td>
-            <td>Data that is within the limits of what is accepted by program. Example 7 chars password for validation rules that states password must be between 6 and 8 digits</td>
-        </tr>
-        <tr>
-            <td>Boundary Data</td>
-            <td>Data that is at the extreme limits of what is <strong>accepted</strong> by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
-        </tr>
-        <tr>
-            <td>Erroneous</td>
-            <td>Data that will not be accepted. If validation rules state number is > 0 then erroneous data is -1</td>
-        </tr>
-    </tbody>
-</table>
-</answer>
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
@@ -323,16 +372,10 @@ What is the difference between function and procedure <span class='mark'>[2 mark
 <answer><p>Functions return a value after performing a specific task while procedures does not return a value after executing the code</p></answer>
 
 Define Local Variables <span class='mark'>[1 mark]</span>
-<answer><p>Variables that are defined inside the subprograms</p></answer>
+<answer><p>Variables that are defined inside the subprograms and are accessible only in the subprograms created </p></answer>
 
 Define Global Variables <span class='mark'>[1 mark]</span>
-<answer><p>Variables that are defined outside the subprograms</p></answer>
-
-Where local variables are accessible <span class='mark'>[1 mark]</span>
-<answer><p>Only accessiable inside the subprogram in which it is defined</p></answer>
-
-Where global variables are accessible <span class='mark'>[1 mark]</span>
-<answer><p>Accessiable everywhere throughout the program</p></answer>
+<answer><p>Variables that are defined outside the subprograms and are accessible everywhere in the program</p></answer>
 
 List two benefits of using subprograms <span class='mark'>[2 marks]</span>
 <answer>
@@ -376,6 +419,32 @@ Three types of Errors that occur when constructing an algorithm <span class='mar
       </tr>
     </tbody>
   </table>
+</answer>
+
+Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span class='mark'>[3 marks]</span>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Normal Data</td>
+            <td>Data that is within the limits of what is accepted by program. Example 7 chars password for validation rules that states password must be between 6 and 8 digits</td>
+        </tr>
+        <tr>
+            <td>Boundary Data</td>
+            <td>Data that is at the extreme limits of what is <strong>accepted</strong> by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
+        </tr>
+        <tr>
+            <td>Erroneous</td>
+            <td>Data that will not be accepted. If validation rules state number is > 0 then erroneous data is -1</td>
+        </tr>
+    </tbody>
+</table>
 </answer>
 
 <h2 id='topic-3'><a href='#toc'> Topic 3: Binary</a></h2>
@@ -461,7 +530,7 @@ State how to calculate the file size of an audio file
 <answer><!-- TODO --></answer>
 
 Define pixel
-<answer><!-- TODO --></answer>
+<answer><p>A smallest element in a image (1) / A picture element (1)</p></answer>
 
 Define image resolution
 <answer><!-- TODO --></answer>
@@ -808,6 +877,25 @@ Explain how defragmentation software could overcome the issue of the slow comput
 Define 'What if' questions<span class='mark'>[2 marks]</span>
 <answer><p>running a computer model with a given set of inputs to see what the model produces as an output or prediction</p></answer>
 
+Explain one problem using simulation to predict the effect of changes <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>If the data is incomplete/inaccurate (1) the answers from the model might not be right (1)</li>
+    <li>If the assumptions the model is based on are inaccurate (1) the answers from the model might be incomplete/inaccurate (1)</li>
+  </ul>
+</answer>
+
+Describe how the operating system enables processes to share a single CPU. <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>The operating system uses a scheduler to control processes (1)</li>
+    <li>The operating system holds processes in a queue (1)</li>
+    <li>Some processes may be given higher priorities than others (1)</li>
+    <li>Each process gains accesses to the CPU for a short time / time slice to execute (1)</li>
+    <li>Processes are swapped to/from (the queue / CPU)</li>
+  </ul>
+</answer>
+
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
 
 What is a low level programming language? <span class='mark'>[1 mark]</span>
@@ -955,6 +1043,18 @@ List two benefits of using client-server network <span class='mark'>[2 marks]</s
     <td>Easier trouble-shooting and efficient backups</td>
   </tr>
 </table>
+
+Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>A protocol (suite/group/family) (1)</li>
+    <li>Used on a wired network / wired connection (1)</li>
+    <li>Defines physical parts/type of cable(twisted pair, CAT6)/type of connector (1)</li>
+    <li>Defines how packets are checked for errors (1)</li>
+    <li>Defines the speed of transmission (1)</li>
+    <li>Operates at the link layer of the TCP/IP stack (1)</li>
+  </ul>
+</answer>
 
 List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
 <table border="1" cellspacing="0" cellpadding="8">
@@ -1328,10 +1428,11 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span>
 <answer><!-- TODO --></answer>
 
-<!-- TODO -->
-
 Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/access-internet.png' /></answer>
+
+Accessing Internet Diagram <span class='mark'>[3 marks]</span> <img src='assets/network/internetaccess-ques.png' /> 
+<answer><img src='assets/network/internetaccess-ans.png' /></answer>
 
 <h2 id='topic-6'><a href='#toc'>Topic 6: The Bigger Picture</a></h2>
 
@@ -1440,8 +1541,13 @@ Define professionalism <span class='mark'>[1 mark]</span>
 List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
-    <li>Giving respect user's privacy</li>
-    <li>Always keep learning and up-to-date with new technologies</li>
+    <li>Belong to/have membership in a professional society (1)</li>
+    <li>Attend computer science related conferences/gatherings (1)</li>
+    <li>Attaining/gaining training/educational opportunities (1)</li>
+    <li>Behave in ethical/legal/moral ways (1)</li>
+    <li>Stay up to date with changes in the field/read up-to-date publications (1)</li>
+    <li>Use responsible programming practices e.g. due diligence/testing/ commenting code for maintainability (1)</li>
+    <li>Avoid bias when making design choices (1)</li>
   </ul>
 </answer>
 
@@ -1556,3 +1662,13 @@ Define the term qubit <span class='mark'>[1 mark]</span>
 
 How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
+
+Describe how artificial intelligence could identify what is wrong with patients by symptons. <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>It will interpret/analyse patient input to identify symptoms (1) and match the symptoms to (possible) illnesses (1)</li>
+    <li>It will match symptoms to possible illnesses (1) and give the most likely/probable illness (1)</li>
+    <li>It will match symptoms to possible illnesses (1) and ask further questions to narrow it down (1)</li>
+    <li>It will match symptoms to possible illnesses (1) by searching/using a database/other data store (1)</li>
+  </ul>
+</answer>
