@@ -597,16 +597,27 @@ What is the advantage and disadvantage of using lossless compression
     </tr>
     <tr>
       <td><strong>Disadvantage</strong></td>
-      <td></td>
+      <td>Takes longer time and more processing power due to complex algorithms</td>
     </tr>
   </table>
 </answer>
 
 What is the advantage and disadvantage of using lossy compression
-<answer><!-- TODO --></answer>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Advantage</strong></td>
+      <td>It reduces the file more significantly compared to lossless compression</td>
+    </tr>
+    <tr>
+      <td><strong>Disadvantage</strong></td>
+      <td>Data is lost permanenely, it can not be recovered back</td>
+    </tr>
+  </table>
+</answer>
 
 Why quality decrease is acceptable when using lossy compression
-<answer><!-- TODO --></answer>
+<answer><p>Some changs can not be noticed by humans</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
 
