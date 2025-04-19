@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="prism-theme-light" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/logo/tau.png">
+</head>
+<body>
+    <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
+    <a href="contributors.html" class='contributor-link'>Contributors</a>
+    <button onclick="closeAllToggles()" class="close-all" data-translate='🙌 Close all questions' title="Close All Toggles">🙌 Close all questions</button>
+    <a href="output.pdf" download class='download'>
+        <button class='download-pdf'><span data-translate='Download PDF Version'>Download PDF Version</span></button>
+    </a>
+    
+    <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
+    <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
+<div id='toc' class="toc">
+
+<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
+
+<a href='#topic-1' class="table-of-contents">Problem Solving</a>
+
+<a href="#chap-1" class="table-of-contents subtopic">1. Understanding Algorithms</a>
+
+<a href="#chap-2" class="table-of-contents subtopic">2. Creating Algorithms</a>
+
+<a href="#chap-3" class="table-of-contents subtopic">3. Sorting and Searching Algorithms</a>
+
+<a href="#chap-4" class="table-of-contents subtopic">4. Decomposition and Abstraction</a>
+
+<a href='#topic-2' class="table-of-contents">Programming</a>
+
+<a href="#chap-5" class="table-of-contents subtopic">5. Develop Code</a>
+
+<a href="#chap-6" class="table-of-contents subtopic">6. Making Programs Easy to Read</a>
+
+<a href="#chap-7" class="table-of-contents subtopic">7. Strings</a>
+
+<a href="#chap-8" class="table-of-contents subtopic">8. Data Structures</a>
+
+<a href="#chap-9" class="table-of-contents subtopic">9. Input/Output</a>
+
+<a href="#chap-10" class="table-of-contents subtopic">10. Subprograms</a>
+
+<a href="#chap-11" class="table-of-contents subtopic">11. Testing and Evaluation</a>
+
+<a href='#topic-3' class="table-of-contents">Data</a>
+
+<a href="#chap-12" class="table-of-contents subtopic">12. Binary</a>
+
+<a href="#chap-13" class="table-of-contents subtopic">13. Data Representation</a>
+
+<a href="#chap-14" class="table-of-contents subtopic">14. Data Storage and Compression</a>
+
+<a href="#chap-15" class="table-of-contents subtopic">15. Encryption</a>
+
+<a href='#topic-4' class="table-of-contents">Computers</a>
+
+<a href="#chap-16" class="table-of-contents subtopic">16. Machines and Computational Models</a>
+
+<a href="#chap-17" class="table-of-contents subtopic">17. Hardware</a>
+
+<a href="#chap-18" class="table-of-contents subtopic">18. Logic</a>
+
+<a href="#chap-19" class="table-of-contents subtopic">19. Software</a>
+
+<a href="#chap-20" class="table-of-contents subtopic">20. Programming Languages</a>
+
+<a href='#topic-5' class="table-of-contents">Communication and The Internet</a>
+
+<a href="#chap-21" class="table-of-contents subtopic">21. Networks</a>
+
+<a href="#chap-22" class="table-of-contents subtopic">22. Network Security</a>
+
+<a href="#chap-23" class="table-of-contents subtopic">23. The Internet and The World Wide Web</a>
+
+<a href='#topic-6' class="table-of-contents">The Bigger Picture</a>
+
+<a href="#chap-24" class="table-of-contents subtopic">24. Computing and The Environmental Impact of Technology</a>
+
+<a href="#chap-25" class="table-of-contents subtopic">25. Privacy</a>
+
+<a href="#chap-26" class="table-of-contents subtopic">26. Digital Inclusion</a>
+
+<a href="#chap-27" class="table-of-contents subtopic">27. Professionalism</a>
+
+<a href="#chap-28" class="table-of-contents subtopic">28. Computing and The Legal Impact of Technology</a>
+
+<a href="#chap-29" class="table-of-contents subtopic">29. Current and Emerging Trends</a>
+
+</div>
+
+<h1 id="questions"><span data-translate="Questions">Questions</span></h1>
+<h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
+
+<h3 id='chap-1'>Chapter 1: Understanding Algorithms</h3>
+
+<details>
+<summary>What is meant by an algorithm? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>An algorithm is a precise step-by-step method for solving a problem or completing a task.</p></answer>
+
+</details>
+
+<h3 id='chap-2'>Chapter 2: Creating Algorithms</h3>
+
+<details>
+<summary>Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <img src='assets/algorithms/guess-question.png' /></summary>
+
+<answer><img src='assets/algorithms/guess-answer.png' /></answer>
+
+</details>
+
+<h3 id='chap-3'>Chapter 3: Sorting and Searching Algorithms</h3>
+
+<details>
+<summary>How does Linear search work? <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Starts at the first item of the list</li>
+</ul>    <ul><li>Compare the current item with the searching item</li>
+</ul>    <ul><li>If they are same then stop, else move to the next item until the end of list is reached or the value is found</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>How does Binary search work? <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Select the median item of the list</li>
+</ul>    <ul><li>If median is equal then stops</li>
+</ul>    <ul><li>If median is higher, selects the left side of the list and repeat the first two steps</li>
+</ul>    <ul><li>If median is lower, selects the right side of the list and repeat the first two steps</li>
+</ul>    <ul><li>Repeat these steps until the search is found or all median items have been checked</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Start at the beginning of the list</li>
+</ul>    <ul><li>Compare two adjacent values, if they are not in ascending order then swap</li>
+</ul>    <ul><li>if they are in ascending order then move on to next value</li>
+</ul>    <ul><li>Repeat these steps until there are no swaps in the whole pass</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Define recursion <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A process that is repeated again and again until the condition is met</p></answer>
+
+</details>
+
+<details>
+<summary>Define bruteforce <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
+
+</details>
+
+<details>
+<summary>Define divide and conqueror <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
+
+</details>
+
+<h3 id='chap-4'>Chapter 4: Decomposition and Abstractions</h3>
+
+<details>
+<summary>Define abstraction <span class='mark'>[1 mark]</span></summary>
+
+<answer><p> The process of removing or hiding unnecessary detail and highlighting only main points</p></answer>
+
+</details>
+
+<details>
+<summary>Define decomposition <span class='mark'>[1 mark]</span></summary>
+
+<answer><p> Breaking a problem down into smaller and more managable parts, which are then easier to solve</p></answer>
+
+</details>
+
+<h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
+
+<h3 id='chap-5'>Chapter 5: Developing Code</h3>
+
+<details>
+<summary>Implement Linear Search <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6, 7]
+found = False
+target = int(input("Enter a number:"))
+while index < len(numbers) and not found:
+  if num == target:
+    found = True
+if found:
+  print("Found")
+else:
+  print("Not found")
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>Implement Binary Search <span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6, 7]
+low = 0
+high = len(numbers) - 1
+found = False
+target = int(input("Enter a number: "))
+while low <= high and not found:
+    mid = (low + high) // 2
+    if numbers[mid] == target:
+        found = True
+    elif numbers[mid] > target:
+        high = mid - 1
+    else:
+        low = mid + 1
+if found:
+  print("Found")
+else:
+  print("Not Found")
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>Implement Bubble Sort <span class='mark'>[6 marks]</span></summary>
+
+<answer><pre><code class="language-python">unsortedArr = [4, 2, 6, 1, 3, 2, 8]
+def bubbleSort(arr):
+  for i in range(len(arr)):
+      checked = False
+      for j in range(len(arr) - i - 1):
+          if arr[j] > arr[j + 1]:
+              cache = arr[j]
+              arr[j] = arr[j + 1]
+              arr[j + 1] = cache
+              checked = True
+      if (not checked):
+          break
+      print(arr)
+  return arr
+bubbleSort(unsortedArr)
+</code></pre></answer>
+
+</details>
+
+<h3 id='chap-6'>Chapter 6: Making Programs Easier To Read</h3>
+
+<details>
+<summary>4 Techniques For making codes easier to read <span class='mark'>[4 marks]</span></summary>
+
+<answer><table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Technique</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Comments</td>
+      <td>Comments should be used to explain what each part of the program does.</td>
+    </tr>
+    <tr>
+      <td>Descriptive Names</td>
+      <td>Using descriptive identifiers for variables, constants, and subprograms helps make their purpose clear.</td>
+    </tr>
+    <tr>
+      <td>Indentation</td>
+      <td>Indentations make it easier to see where code starts and finishes.</td>
+    </tr>
+    <tr>
+      <td>White Space</td>
+      <td>Adding blank lines between different blocks of code makes them stand out.</td>
+    </tr>
+  </tbody>
+</table>
+</answer>
+
+</details>
+
+<h3 id='chap-7'>Chapter 7: Strings </h3>
+
+<details>
+<summary>How to concatenate string in Python? <span class='mark'>[1 mark]</span></summary>
+
+<answer>
+<pre><code class="language-python">str1 = "hello"
+str2 = "world"
+finalString = str1 + " " + str2
+print(finalString)
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>How to lowercase, uppercase string in Python?<span class='mark'>[1 mark]</span></summary>
+
+<answer>
+<pre><code class="language-python">str1 = "hello"
+str2 = "world"
+str1 = str1.lower()
+str2 = str.upper()
+print(str1 + " " + str2)
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>How to extract characters from string (Case: extract 'cation' from 'education')<span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">sampleString = 'education'
+extractedString = sampleString[3:9]
+print(extractedString)
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>How to check if the some characters are in a particular string? (Case: Check string 'convert' in inputWord)<span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">print('convert' in input())
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>How to separate "," from this string "1,2,3,4,5,6,7,8" and turn it into list? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">sampleString = "1,2,3,4,5,6,7,8"
+print(sampleString.split(","))
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>How to transverse a string? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <li>
+      <pre><code class="language-python">      # Using Method 1: For index loop
+      sampleString = "sample"
+      for i in range(len(sampleString)):
+        print(sampleString[i])
+      </code></pre>
+    </li>
+    <li>
+    <pre><code class="language-python">    # Using method 2: For each loop
+    sampleString = "sample"
+    for letter in sampleString:
+      print(letter)
+    </code></pre>
+    </li>
+  </ul>
+</answer>
+
+</details>
+
+<h3 id='chap-8'>Chapter 8: Data Structures </h3>
+
+<details>
+<summary>Describe a record <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>A data structure that stores a set of related values of different data types</p></answer>
+
+</details>
+
+<h3 id='chap-9'>Chapter 9: Input/Output</h3>
+
+<details>
+<summary>Implement Range Check (case: make sure the number is between 1 and 10) <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">num = int(input("Enter a number"))
+while num < 1 or num > 10:
+  num = int(input("Enter a number again because number isn't between 1 and 10"))
+print("You have entered", num)
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>Implement Presence Check (case: check whether username is empty or not)<span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">username = ''
+while username == '':
+  username = input("Please enter username:")
+print("Hello", username)
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>Implement Look up Check (case: check whether an item is in array) <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">arrayForms = ['7AXB', '7PDB', '7ARL', '7JEH']
+form = input("Enter a form:")
+valid = False
+index = 0
+length = len(arrayForms)
+while valid = False and index < length:
+  if form = arrayForms[index]:
+    valid = True
+  index = index + 1
+if valid == True:
+  print("Valid Form")
+else:
+  print("The form you have entered doesn't exist")
+</code></pre>
+</answer>
+
+</details>
+
+<details>
+<summary>Implement Length Check (Case: Enter a string of length 8) <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<pre><code class="language-python">binaryString = input("Enter a string of 8 bit binary: ")
+while len(binaryString) != 8:
+  binaryString = input("You must enter a length of 8 binary string: ")
+print("Valid")
+</code></pre>
+</answer>
+
+</details>
+
+<h3 id='chap-10'>Chapter 10: Subprograms</h3>
+
+<details>
+<summary>List two types of subprograms <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Function</li>
+</ul>    <ul><li>Procedure</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>What is the difference between function and procedure <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Functions return a value after performing a specific task while procedures does not return a value after executing the code</p></answer>
+
+</details>
+
+<details>
+<summary>Define Local Variables <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Variables that are defined inside the subprograms and are accessible only in the subprograms created </p></answer>
+
+</details>
+
+<details>
+<summary>Define Global Variables <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Variables that are defined outside the subprograms and are accessible everywhere in the program</p></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of using subprograms <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<!-- TODO -->
+</answer>
+
+</details>
+
+<details>
+<summary>What is meant by built in functions <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Functions that are provided by programming languages to perform common tasks</p></answer>
+
+</details>
+
+<h3 id='chap-11'>Chapter 11: Testing and Evaluation</h3>
+
+<details>
+<summary>What is trace table and why do we use it? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>A technique used to identify logic errors in algorithms</li>
+</ul>    <ul><li>As we work through all the steps, we can see what values variables hold at a specific step.</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <table>
+    <thead>
+      <tr>
+        <th>Type of Error</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Logic Error</td>
+        <td>An error in algorithm that results in unexpected behaviour</td>
+      </tr>
+      <tr>
+        <td>Runtime Error</td>
+        <td>An error that occurs while the program is running. Common Example is ZeroDivisonError</td>
+      </tr>
+      <tr>
+        <td>Syntax Error</td>
+        <td>An error that occurs when the computer tries to run code that it cannot execute. Example is forgetting to close parenthesis</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Normal Data</td>
+            <td>Data that is within the limits of what is accepted by program. Example 7 chars password for validation rules that states password must be between 6 and 8 digits</td>
+        </tr>
+        <tr>
+            <td>Boundary Data</td>
+            <td>Data that is at the extreme limits of what is <strong>accepted</strong> by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
+        </tr>
+        <tr>
+            <td>Erroneous</td>
+            <td>Data that will not be accepted. If validation rules state number is > 0 then erroneous data is -1</td>
+        </tr>
+    </tbody>
+</table>
+</answer>
+
+</details>
+
+<h2 id='topic-3'><a href='#toc'> Topic 3: Binary</a></h2>
+
+<h3 id='chap-12'>Chapter 12: Binary </h3>
+
+<details>
+<summary>Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Convert 0101 0001 into decimal form.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Convert 234 into binary form.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Convert 1101 0010 into hexadecimal form.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Convert 4FAD into decimal form</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Add 0011 1001 with 1110 0100.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Difference between logical shift and arithmetic shift</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Perform logical left shift by two (+2) for 1001 0110.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Perform logical right shift by five (-5) for 0110 1001</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Perform arithmetic shift left by three (+3) for 1101 0011</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Perform arithmetic shift right by four (-4) for 1010 0101</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Represent -83 with sign and magnitude method</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Represent 0111 1011 with 8 bit two complement form.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Represent  -67 with 8 bit two complement form.</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define overflow error <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
+
+</details>
+
+<details>
+<summary>Explain why binary is used to represent data <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Binary can represent two states (1) because computer circuits uses transistors which can either be on or off (1)</p></answer>
+
+</details>
+
+<h3 id='chap-13'>Chapter 13: Data Representation</h3>
+
+<details>
+<summary>Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></ul></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of using ASCII encoding <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain why Unicode was developed <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Before Unicode, there were hundreds of different encoding systems, and no single encoding system could contain enough characters to represent all major languages</li>
+</ul>    <ul><li>Standard ASCII only provides 128 different patterns, which can’t represent all major languages</li>
+</ul>    <ul><li>Unicode uses a minimum of 16 bits, so it can represent at least 2^16 characters.</li>
+</ul>    <ul><li>Unicode has a very large number of characters that can represent all languages/ ASCII was developed for English</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two factors that affect the fidelity of the sound</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain how increasing sample rate improves the fidelity of the sound</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain how increasing bit depth improves the fidelity of the sound</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State how to calculate the file size of an audio file</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define pixel</summary>
+
+<answer><p>A smallest element in a image (1) / A picture element (1)</p></answer>
+
+</details>
+
+<details>
+<summary>Define image resolution</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State how to calculate the file size of an image</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+  <ul><li>set the sample rate/parameters/bit-depth (1)</li>
+</ul>  <ul><li>sample (the analogue sound) (1)</li>
+</ul>  <ul><li>measure the sound amplitude/volume/frequency (1)</li>
+</ul>  <ul><li>give a (binary) value/number for each measurement (1)</li>
+</ul>  <ul><li>store data as sample rate and values / digital signals (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Explain what is meant by colour depth. <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
+
+<details>
+<summary>Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bit (b)</td>
+        <td>A single binary digit</td>
+      </tr>
+      <tr>
+        <td>Nibble</td>
+        <td>4 bits</td>
+      </tr>
+      <tr>
+        <td>Kilobyte (kB)</td>
+        <td>1000 bytes</td>
+      </tr>
+      <tr>
+        <td>Megabytte (MB)</td>
+        <td>1000 kilobytes</td>
+      </tr>
+      <tr>
+        <td>Gigabyte (GB)</td>
+        <td>1000 megabytes</td>
+      </tr>
+      <tr>
+        <td>Terabyte (TB)</td>
+        <td>1000 gigabytes</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
+
+</details>
+
+<p>Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>Define Run-Length Encoding (RLE)</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain how Run-Length Encoding (RLE) works</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State when Run-Length Encoding (RLE) might not be efficient</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two types of compression</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between lossless compression and lossy compression</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the advantage and disadvantage of using lossless compression</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the advantage and disadvantage of using lossy compression</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Why quality decrease is acceptable when using lossy compression</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<p>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></p>
+<h3 id='chap-15'>Chapter 15: Encryption </h3>
+
+<details>
+<summary>Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define encryption</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Write down the purpose of encryption</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State two types of encryption method</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define asymmetric encryption</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define symmetric encryption</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between asymmetric and symmetric encryption</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List at least two types of ciphers</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Describe how caesar cipher works</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State disadvantage of using caesar cipher</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
+
+<h3 id='chap-16'>Chapter 16: Machine And Computational Models</h3>
+
+<details>
+<summary>Define sequential processing <span class='mark'>[1 mark]</span></summary>
+
+<answer>Process instructions step by step in order from step to finish</answer>
+
+</details>
+
+<details>
+<summary>Define parallel processing <span class='mark'>[1 mark]</span></summary>
+
+<answer>Uses multiple processors to computer multiple instructinos simultaneously</answer>
+
+</details>
+
+<details>
+<summary>Define multi-agent processing <span class='mark'>[1 mark]</span></summary>
+
+<answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
+
+</details>
+
+<details>
+<summary>Define agents</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two features of agents in multi-agent model</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h3 id='chap-17'>Chapter 17: Hardware</h3>
+
+<p>Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>RAM is volatile whereas ROM is non-volatile. Data stored in RAM get lost when the computer is turned off but data is kept in ROM after power-off.</li>
+</ul>    <ul><li>The size of RAM can be upgraded. However, the size of ROM can be not increased typically.</li>
+</ul>    <ul><li>RAM stores currently used data while ROM stores data necessary for booting up computer like BIOS.</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul><ul><li>Data</li><li>Instructions</li></ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Explain how virtual memory works <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
+</ul>    <ul><li>Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)</li>
+</ul>    <ul><li>Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)</li>
+</ul>    <ul><li>Virtual memory is used as temporary storage. (1)</li>
+</ul>    <ul><li>Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)</li>
+</ul>    <ul><li>When needed again, instructions and data are transferred back to RAM. (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>how does HDD work? <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Made up of several metal discs coated with magnetic materials (Platters)</li>
+</ul>    <ul><li>Platter is divided into sector and tracks</li>
+</ul>    <ul><li>Each iron particles on platter are magnetized to represent 1 or 0 using read/write head</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>How does SSD work? <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+  <ul>  
+    <ul><li>Uses electronic circuits that can store binary values (1 or 0) <strong>(1 mark)</strong></li></ul>  
+    <ul><li>Uses NAND/NOR flash memory to persistently control electron flow <strong>(1 mark)</strong></li></ul>  
+    <ul><li>Applies high voltage to trap electrons in the floating gate (data storage) <strong>(1 mark)</strong></li></ul>  
+  </ul> 
+</answer>
+
+</details>
+
+<details>
+<summary>How does an optical drive work? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>  
+    <ul><li>Uses a disc with a polycarbonate surface layer <strong>(1 mark)</strong></li></ul>  
+    <ul><li>A laser beam reads/writes data by targeting the disc surface <strong>(1 mark)</strong></li></ul>  
+    <ul><li>Creates physical pits (indentations) and lands (flat areas) on the disc <strong>(1 mark)</strong></li></ul>  
+    <ul><li>Pits represent binary 0, lands represent binary 1<strong>(1 mark)</strong></li></ul>  
+  </ul> 
+</answer>
+
+</details>
+
+<details>
+<summary>What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Stores the address of the next instruction to be fetched.</p></answer>
+
+</details>
+
+<details>
+<summary>What does the Memory Address Register (MAR) hold? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Stores the address of the instruction/data to be fetched from memory.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul> <ul><li>Stores the data fetched from memory <strong>(1 mark)</strong>.</li> <li>Transfers this data to the Arithmetic Logic Unit (ALU) for execution <strong>(1 mark)</strong>.</li></ul> </ul> </answer>
+
+</details>
+
+<details>
+<summary>What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Stores the instruction currently being decoded by the CPU.</p></answer>
+
+</details>
+
+<details>
+<summary>Explain the function of the Accumulator. <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
+
+</details>
+
+<details>
+<summary>Define address bus</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define data bus</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define control bus</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List three types of bus</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>How increasing address bus width affect</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>How increasing data bus width affect</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define cache</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List three factors that affect the performance of the CPU</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define clock speed</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State how increasing clock speed affect the performance of the CPU</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State how increased number of cores affect the performance of the CPU</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of increasing computing power</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two disadvantages of increasing computing power</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<ol type="1"> <ul><li><strong>Fetch Stage (3 marks)</strong> <ul> <li>Memory Address Register (MAR) holds the address of the next instruction, sent via the <em>address bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction/data is fetched from memory to the Memory Data Register (MDR) via the <em>data bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction is copied to the Current Instruction Register (CIR); Program Counter (PC) increments <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Decode Stage (1 mark)</strong> <ul> <li>Control Unit decodes the instruction in CIR into <em>opcode</em> (operation) and <em>operand</em> (data) <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Execute Stage (2 marks)</strong> <ul> <li>Arithmetic Logic Unit (ALU) performs the operation (opcode) on the operand <strong>(1 mark)</strong>.</li> <li>Result is stored in the <em>accumulator</em> or written back to memory <strong>(1 mark)</strong>.</li> </ul> </li></ul> </ol> <img src='assets/computer/fetch-decode-execute.png' /></answer>
+
+</details>
+
+<details>
+<summary>Which bus is uni-directional? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Address Bus</p></answer>
+
+</details>
+
+<details>
+<summary>Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<h4>Benefits and Drawbacks</h4>
+<ul>
+  <li><strong>Benefits</strong>
+    <ul>
+      <ul><li><strong>Accessibility</strong>: Access files from any location with WAN connectivity, collaborate in real-time with permission controls, and device-agnostic access (any internet-enabled device).</li>
+</ul>      <ul><li><strong>Scalability</strong>: Flexible storage capacity adjustments (pay-as-you-grow).</li>
+</ul>      <ul><li><strong>Reliability</strong>: Redundant server backups minimize data loss risks.</li>
+</ul>      <ul><li><strong>Cost Efficiency</strong>: Reduces local hardware/staff costs (provider-managed IT).</li>
+</ul>    </ul>
+  </li>
+  <li><strong>Drawbacks</strong>
+    <ul>
+      <ul><li><strong>Security Risks</strong>: Potential for external breaches or unauthorized access, and jurisdictional challenges in data protection laws.</li>
+</ul>      <ul><li><strong>Dependency</strong>: Requires consistent high-speed internet and reliance on the provider's service continuity.</li>
+</ul>      <ul><li><strong>Hidden Costs</strong>: Recurring subscription fees and potential overuse charges for bandwidth/storage.</li>
+</ul>      <ul><li><strong>Environmental Impact</strong>: High energy consumption for servers and cooling.</li>
+</ul>    </ul>
+  </li>
+</ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe an embedded system <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Embedded system is a combination of software and hardware (1) that is designed specifically to tackle a specific problem. (1) For example, usage in washing machine.</p></answer>
+
+</details>
+
+<h3 id='chap-18'>Chapter 18: Logic </h3>
+
+<h3 id='chap-19'>Chapter 19: Software</h3>
+
+<details>
+<summary>What is an application software? <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Software that is designed to perform specific task for the user. For instance, word processing software, photo editing software, etc</p></answer>
+
+</details>
+
+<details>
+<summary>Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>OS checks whether there is space on disk</li>
+</ul>    <ul><li>The file is broken into blocks</li>
+</ul>    <ul><li>Blocks are stored in any spaces that are large enough to store each block</li>
+</ul>    <ul><li>Blocks can reside anywhere on the storage</li>
+</ul>    <ul><li>Meta data about file is created and separately stored</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Providing User Interface</li>
+</ul>    <ul><li>User management</li>
+</ul>    <ul><li>Hardware management</li>
+</ul>    <ul><li>File management</li>
+</ul>    <ul><li>Process management</li>
+</ul>    <ul><li>Resource management</li>
+</ul>    <ul><li>Memory management</li>
+</ul>    <ul><li>Print Spooling</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>What is scheduling? <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
+
+</details>
+
+<details>
+<summary>A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span></summary>
+
+<answer><ul>
+<ul><li> Orders have been saved onto the system as they order food and then deleted once processed (1)</li>
+<li>Once other orders have been made, new files are created (1) which may be bigger than the spaces left by the deleted files (1) </li>
+<li>The order files are split up (1)</li>
+</ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span></summary>
+
+<answer><ul>
+  <ul><li> Files on the hard disk drive are moved (1)</li>
+</ul>  <ul><li>Empty spaces collected together (1) </li>
+</ul>  <ul><li>Files are moved to be stored together (1)</li>
+</ul>  <ul><li>Fewer disc accesses are needed (1)</li>
+</ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Define 'What if' questions<span class='mark'>[2 marks]</span></summary>
+
+<answer><p>running a computer model with a given set of inputs to see what the model produces as an output or prediction</p></answer>
+
+</details>
+
+<details>
+<summary>Explain one problem using simulation to predict the effect of changes <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>If the data is incomplete/inaccurate (1) the answers from the model might not be right (1)</li>
+</ul>    <ul><li>If the assumptions the model is based on are inaccurate (1) the answers from the model might be incomplete/inaccurate (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe how the operating system enables processes to share a single CPU. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>The operating system uses a scheduler to control processes (1)</li>
+</ul>    <ul><li>The operating system holds processes in a queue (1)</li>
+</ul>    <ul><li>Some processes may be given higher priorities than others (1)</li>
+</ul>    <ul><li>Each process gains accesses to the CPU for a short time / time slice to execute (1)</li>
+</ul>    <ul><li>Processes are swapped to/from (the queue / CPU)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<h3 id='chap-20'>Chapter 20: Programming Languages </h3>
+
+<details>
+<summary>What is a low level programming language? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>The language that is closer to machine code (binary)</p></answer>
+
+</details>
+
+<details>
+<summary>What is an instruction set? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Something that tells CPU what to do</p></answer>
+
+</details>
+
+<details>
+<summary>Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>A very limited range of instructions available</li>
+<li>Have to manage all data and decide how to store them in memory manually</li>
+<li>Debugging is challenging and can make machine crash</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>High Level Languages</th>
+        <th>Low Level Languages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>One instruction of high level code represents many instructions of machine code</td>
+        <td>One instruction of assembly code only represents one instruction of machine code</td>
+      </tr>
+      <tr>
+        <td>The same code will work for many different machines and processors</td>
+        <td>Usually written for specific machine and won't work on others</td>
+      </tr>
+      <tr>
+        <td>Code is easy to read, understand, and modify</td>
+        <td>Code is very difficult to read, understand, and modify</td>
+      </tr>
+      <tr>
+        <td>Don't have much control over CPU can do so programs are less memory efficient</td>
+        <td>Full control of CPU and can uses memory wisely to make programs more efficient</td>
+      </tr>
+      <tr>
+        <td>Programmer can easily store data in lots of different structures</td>
+        <td>Programmer needs to know about internal structure of CPU and how it manages the memory.</td>
+      </tr>
+    </tbody>
+  </table>
+</answer>
+
+</details>
+
+<details>
+<summary>Identify 3 features that IDE might be used when programming<span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>Run time Environment</li>
+<li>Editor (any feature such as auto-correct, auto-indent)</li>
+<li>Translator</li>
+<li>Version Control</li>
+<li>Breaking points</li>
+<li>Stepping</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td><strong>Execution</strong> <em>(1 mark)</em></td> <td>Translates entire code into machine language <strong>before</strong> execution.</td> <td>Translates and executes code <strong>line-by-line</strong>.</td> </tr> <tr> <td><strong>Speed</strong> <em>(1 mark)</em></td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td><strong>Error Handling</strong> <em>(1 mark)</em></td> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td><strong>Portability</strong> <em>(1 mark)</em></td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
+
+</details>
+
+<h2 id='topic-5'><a href='#toc'>Topic 5: Networking</a></h2>
+
+<h3 id='chap-21'>Chapter 21: Networks</h3>
+
+<details>
+<summary>Define network <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A network is formed when two or more devices are connected each other</p></answer>
+
+</details>
+
+<details>
+<summary>What is a network protocol? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A set of rules for communication</p></answer>
+
+</details>
+
+<details>
+<summary>Why do people connect to network?<span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>  
+    <ul><li>To share access to the internet/WWW/broadband connection</li></ul>  
+    <ul><li>To enable internal communication using email, instant messaging, and calendar</li></ul>  
+    <ul><li>To share files/data across multiple devices</li></ul>  
+    <ul><li>To share peripherals like printers and other hardware</li></ul>  
+  </ul> 
+</answer>
+
+</details>
+
+<details>
+<summary>Define LAN <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A network that covers a small geographical area</p></answer>
+
+</details>
+
+<details>
+<summary>Define WAN <span class='mark'>[1 mark]</span></summary>
+
+<answer><p></p>A combination of networks (LANs) that covers a large geographical area</answer>
+
+</details>
+
+<details>
+<summary>Define PAN <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A short-range network that forms near a single user connecting personal devices</p></answer>
+
+</details>
+
+<details>
+<summary>Write the difference between LAN and WAN <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>LAN only covers a small geographical area whereas WAN covers a large geographical area</li>
+</ul>    <ul><li>LAN is a single network but WAN is a collection of networks(LANs)</li>
+</ul>    <ul><li>LAN is typically home network or owned by single organization. However, WAN is usually owned by multiple organizations</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Write the difference between LAN and PAN <span class='mark'>[2 marks]</span></summary>
+
+<answer><p><!--TODO--></p></answer>
+
+</details>
+
+<details>
+<summary>Define server <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A powerful computer that provides services to other computers(clients) connected to the network</p></answer>
+
+</details>
+
+<details>
+<summary>Define client <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A computer that is connected to the network</p></answer>
+
+</details>
+
+<details>
+<summary>Define client-server <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>A network that has a centralized server connected to it.</p></answer>
+
+</details>
+
+<details>
+<summary>Define peer-to-peer network <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>A network that does not have any centralized device</p></answer>
+
+</details>
+
+<details>
+<summary>Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
+
+</details>
+
+<details>
+<summary>Explain why performance is not decreased as increasing devices in peer-to-peer network <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>In peer-to-peer networks, the network load is shared, and new devices add resources like bandwidth, storage, and processing power.</p></answer>
+
+</details>
+
+<details>
+<summary>Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of using client-server network <span class='mark'>[2 marks]</span></summary>
+
+<table border="1" cellspacing="0" cellpadding="8">
+  <tr>
+    <th colspan="2">Benefits of Client-server network</th>
+  </tr>
+  <tr>
+    <td><strong>Performance</strong></td>
+    <td>Performance is high when server is not overloaded</td>
+  </tr>
+  <tr>
+    <td><strong>Security</strong></td>
+    <td>Can perform central-controlled patches/updates and forces user authentication</td>
+  </tr>
+  <tr>
+    <td><strong>Maintenance</strong></td>
+    <td>Easier trouble-shooting and efficient backups</td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>A protocol (suite/group/family) (1)</li>
+</ul>    <ul><li>Used on a wired network / wired connection (1)</li>
+</ul>    <ul><li>Defines physical parts/type of cable(twisted pair, CAT6)/type of connector (1)</li>
+</ul>    <ul><li>Defines how packets are checked for errors (1)</li>
+</ul>    <ul><li>Defines the speed of transmission (1)</li>
+</ul>    <ul><li>Operates at the link layer of the TCP/IP stack (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span></summary>
+
+<table border="1" cellspacing="0" cellpadding="8">
+  <tr>
+    <th colspan="2">Benefits of peer-to-peer network</th>
+  </tr>
+  <tr>
+    <td><strong>Scalability</strong></td>
+    <td>Performance is usually increased when number of connected devices gets bigger</td>
+  </tr>
+  <tr>
+    <td><strong>Reliability</strong></td>
+    <td>Resources or services are still available even when devices disconnect</td>
+  </tr>
+  <tr>
+    <td><strong>Privacy</strong></td>
+    <td>There is no centralized device that stores log, monitors or spys.</td>
+  </tr>
+</table>
+
+</details>
+
+<details>
+<summary>Draw A Bus Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer><img src='assets/network/bus-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Ring Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer><img src='assets/network/ring-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Star Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer><img src='assets/network/star-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Draw A Mesh Topology <span class='mark'>[4 marks]</span></summary>
+
+<answer><img src='assets/network/mesh-topology.png'>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe advantages and disadvantages of Bus Topology <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <ul><li>Easy to install</li>
+</ul>  <ul><li>Cheap cabling cost compared to star and mesh</li>
+</ul>  <ul><li>Easy to add new devices</li>
+</ul>  <strong>Disadvantages</strong>
+  <ul><li>Not secure</li>
+</ul>  <ul><li>Hard to find faults</li>
+</ul>  <ul><li>Single Failure Point (main cable/terminitor)</li>
+</ul>  <ul><li>Poor Performance due to data collisions</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe advantages and disadvantages of Ring Topology <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <ul><li>less cabling compared to other topologies</li>
+</ul>  <ul><li>no data collisions as data flow in only one direction</li>
+</ul>  <strong>Disadvantages</strong>
+  <ul><li>hard to add new devices</li>
+</ul>  <ul><li>hard to find faults</li>
+</ul>  <ul><li>single failure point</li>
+</ul>  <ul><li>not secure</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <ul><li>Easy to connect/ remove new nodes</li>
+</ul>  <ul><li>Failure of one node/link does not affect the rest of the network</li>
+</ul>  <ul><li>Easy to detect the failure of one node/link</li>
+</ul>  <strong>Disadvantages</strong>
+  <ul><li>If the central switch/hub fails, then the whole network fails</li>
+</ul>  <ul><li>Performance and the number of nodes that can be added depend on the capacity of the central switch/hub</li>
+</ul>  <ul><li>Can require more cable than some of the other topologies</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary><question><span class="question-text">Describe advantages and disadvantages of Mesh Topology </span><span class="mark">[3 marks]</span></question></summary>
+
+<answer>
+<ul>
+  <strong>Advantages</strong>
+  <ul><li>High performance</li>
+</ul>  <ul><li>High fault tolerant</li>
+</ul>  <strong>Disadvantages</strong>
+  <ul><li>Excessive cabling</li>
+</ul>  <ul><li>Expensive</li>
+</ul>  <ul><li>Hard maintenance</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List four layers of TCP/IP protocol stack</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of application layer</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of transport layer</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of internet layer</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of data link layer</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the purpose of using checksums</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Write function of TCP protocol</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two protocols that work in application layer</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List three email protocols</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between POP3 and IMAP</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of DNS</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Describe the process of accessing a web page</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List types of GSM</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two examples of wireless connectivity</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List ways to identify devices on the network</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between IP addresses and MAC addresses</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<table border="1" cellspacing="0" cellpadding="8">
+  <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Faster data transmission (e.g., fiber optic cables)</td>
+      <td>Slower due to signal interference</td>
+    </tr>
+    <tr>
+      <td><strong>Security</strong></td>
+      <td>Harder to intercept (physical access required)</td>
+      <td>Requires encryption to prevent eavesdropping</td>
+    </tr>
+    <tr>
+      <td><strong>Installation</strong></td>
+      <td>Expensive/cumbersome (cables, ports)</td>
+      <td>Flexible but prone to interference (walls/devices)</td>
+    </tr>
+    <tr>
+      <td><strong>Portability</strong></td>
+      <td>Not portable due to cabling hazards</td>
+      <td>Ultimate portability within the WAP range</td>
+    </tr>
+  </tbody>
+</table>
+</answer>
+
+</details>
+
+<details>
+<summary>State two types of connectivity media <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul><ul><li>Copper wire</li><li>Optical fibre</li></ul></ul></answer>
+
+</details>
+
+<details>
+<summary>List two examples of networking devices <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Router</li></ul> 
+    <ul><li>Switch</li></ul> 
+    <ul><li>Modem</li></ul> 
+  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Write down the function of the switch <span class='mark'>[3 marks]</span></summary>
+
+<answer><p>Switch connects devices and transfer data within a LAN. It does this by looking at destination MAC address and forwarding to the correct port to the intended device.</p></answer>
+
+</details>
+
+<details>
+<summary>Write down the function of the modem <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Modem is a device that converts digital signals to analogue signals and vice versa</p></answer>
+
+</details>
+
+<details>
+<summary>Describe how a router directs data on the internet<span class='mark'>[5 marks]</span></summary>
+
+<answer>
+    <ol>
+        <ul><li> Reads the data/packet to find the recipient's address (1)</li>
+</ul>        <ul><li> Has physical connections to >=2 different networks (1)</li>
+</ul>        <ul><li> Holds a routing table (1)</li>
+</ul>        <ul><li> Stores information about (IP) addresses (1)</li>
+</ul>        <ul><li> Keeps packets inside a network by not forwarding them (1)</li>
+</ul>        <ul><li> Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]</li>
+</ul>        <ul><li> Chooses the most efficient path to the next node (1)</li>
+</ul>    </ol>
+</answer>
+
+</details>
+
+<details>
+<summary>Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul></ul><span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A 2.4 GHz</p></answer>
+
+</details>
+
+<details>
+<summary>Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h3 id='chap-22'>Chapter 22: Network Security </h3>
+
+<details>
+<summary>Define authentication</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define validation</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define phishing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define pharming</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li></ul> 
+<ul><li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two ways to protect from phishing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two ways to protect from pharming</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define malware</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List three types of malware</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of virus</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of worm</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of ransomware</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Function of firewall</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two ways to improve physical security</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define eavesdropping</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>State how to protect from eavesdropping</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List two features of a strong password</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define audit trailing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Write down the purpose of audit trailing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define modular testing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define penetration testing</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define two-factor authentication (2FA)</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define access contro</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Write down the purpose of using access control</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Define NAS device</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>List at least two examples of software vulnerabilities</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)</li>
+<li>to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Explain why the delay of not updating software to latest version could pose a threat to the security of the network<span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <strong>One method</strong>
+    <ul><li>compromised/unpatched software is more vulnerable to attack (1)</li>
+</ul>    <ul><li>and may allow an attacker control of the whole network (1)</li>
+</ul>    <strong>Another method</strong>
+    <ul><li>unpatched software has known weaknesses (1)</li>
+</ul>    <ul><li>which can be exploited by a hacker(1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><ul><li>Ethical Hacking<li>Commericial analysis tools</li><li>Review of network and user policies</li></ul></ul><span class='mark'>[6 marks]</span></summary>
+
+<answer><img src='assets/network/identifying-vulnerabilities.png' /></answer>
+
+</details>
+
+<h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
+
+<details>
+<summary>How do you access the web pages on internet? <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+<ul>
+  <ul><li>First user has to enter a URL of the website</li>
+</ul>  <ul><li>Domain name from URL has to be checked with DNS to find IP address</li>
+</ul>  <ul><li>Web browser connects to web server using IP address found from DNS</li>
+</ul>  <ul><li>A web page is transferred using HTTP(s) protocol</li>
+</ul>  <ul><li>Web browser displayed the web page described by HTML</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+  <strong>Internet</strong>
+  <ul><li>The internet is a global network of networks</li>
+</ul>  <ul><li>The internet is the most well known WAN (Wide Area Network)</li>
+</ul>  <ul><li>The internet is a infrastructure used to provide connectivity to WWW</li>
+</ul>  <strong>World Wide Web</strong>
+  <ul><li>Collection of websites and web pages that are accessed using internet</li>
+</ul>  <ul><li>Web pages are accessed using a web browser, which communicates with web servers to retrieve and display the content.</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>How many bits do IPv4 and IPv6 use for each address <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul><ul><li>IPv4 - 32 bits</li><li>IPv6 - 128 bits</li></ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Why does IPv6 uses 128 bits? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul><ul><li>IPv6 has 8 group of 4 hexadecimal digits </li><li>Each hexadecimal can represented using 4 bits</li><li>since they are in 4 hexadecimal digits, each group can be represented using 16 bits</li><li>It has total of 8 groups thus, 128 bits</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>IPv4 addresses are running out</li>
+<li>IPv6 can represent more devices using 128 bits per address compared to 32 bits per address</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span></summary>
+
+<answer><img src='assets/network/access-internet.png' /></answer>
+
+</details>
+
+<details>
+<summary>Accessing Internet Diagram <span class='mark'>[3 marks]</span> <img src='assets/network/internetaccess-ques.png' /></summary>
+
+<answer><img src='assets/network/internetaccess-ans.png' /></answer>
+
+</details>
+
+<h2 id='topic-6'><a href='#toc'>Topic 6: The Bigger Picture</a></h2>
+
+<h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
+
+<details>
+<summary>List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span></summary>
+
+<answer><ul>
+<ul><li>Tracking endangered animals using GPS trackers</li>
+<li>Warning systems to alert approaching tsunamis</li>
+<li>Measuring sea surface temperatures to learn more about climate change</li>
+<li>Using sensors to turn off wasteful electrical resources</li>
+</ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span></summary>
+
+<answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
+
+</details>
+
+<h3 id='chap-25'>Chapter 25: Privacy</h3>
+
+<details>
+<summary>List two privacy enhancing tools <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Encryption</li>
+</ul>    <ul><li>Password manager</li>
+</ul>    <ul><li>VPN (Virtual Private Network)</li>
+</ul>    <ul><li>Privacy-enhanced browsers (Brave, Firefox)</li>
+</ul>    <ul><li>Cookies cleaner</li>
+</ul>    <ul><li>Private browsing mode, incognito mode</li>
+</ul>    <ul><li>Trackers blockers </li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two benefits of giving away personal information <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Personalized experience</li>
+</ul>    <ul><li>Faster user experiences due to autofill forms</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two benefits of analyzing Big Data <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul>
+<ul><li>Identify side effects of drug</li>
+<li>Recommending good resources to users that align with their interests</li>
+<li>Notify the spread of diseases</li>
+<li>Governments use Big Data to monitor traffic flows, energy usage, or public transport needs to improve urban planning</li>
+</ul></ul></answer>
+
+</details>
+
+<details>
+<summary>State why it is important to protect personal information</summary>
+
+<answer><ul><ul><li>Could fall into identify theft</li><li>which they can use our details to imitate behaviours of us to manipulate others.</li></ul></ul></answer>
+
+</details>
+
+<h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
+
+<details>
+<summary>Define Technology-empowered <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Not being accessible to computer technology</p></answer>
+
+</details>
+
+<details>
+<summary>Define Technology-excluded <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Being able to access to computer technology</p></answer>
+
+</details>
+
+<details>
+<summary>Define Digital Divide <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of being digitally included <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>More job opportunities</li>
+</ul>    <ul><li>Access to online information and resources</li>
+</ul>    <ul><li>Social interactions and communication</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two disadvantages of being digitally excluded <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Less job opportunities</li>
+</ul>    <ul><li>Limited to online information and resources</li>
+</ul>    <ul><li>Less social interaction and communication</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two things that contribute to digital inclusion <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Not being to able to access to the internet</li>
+</ul>    <ul><li>Poor landline infrastructure</li>
+</ul>    <ul><li>Lack of knowledge or skills</li>
+</ul>    <ul><li>Privacy concerns</li>
+</ul>    <ul><li>Not being able to afford</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Building more infrastructure to promote internet access</li>
+</ul>    <ul><li>Offering more budget-friendly internet plans</li>
+</ul>    <ul><li>Providing public wi-fi areas</li>
+</ul>    <ul><li>Giving free tech training programs</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<h3 id='chap-27'>Chapter 27: Professionalism</h3>
+
+<details>
+<summary>Define professionalism <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>The skills and competence expected of a person in a professional setting</p></answer>
+
+</details>
+
+<details>
+<summary>List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Belong to/have membership in a professional society (1)</li>
+</ul>    <ul><li>Attend computer science related conferences/gatherings (1)</li>
+</ul>    <ul><li>Attaining/gaining training/educational opportunities (1)</li>
+</ul>    <ul><li>Behave in ethical/legal/moral ways (1)</li>
+</ul>    <ul><li>Stay up to date with changes in the field/read up-to-date publications (1)</li>
+</ul>    <ul><li>Use responsible programming practices e.g. due diligence/testing/ commenting code for maintainability (1)</li>
+</ul>    <ul><li>Avoid bias when making design choices (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Airtest produces exhaust emissions testing software. A programmer discovers that there is a bug in the software that produces inaccurate results under particular circumstances. Discuss What course of action the programmer should take and explain why. <span class='mark'>[4 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
+
+<details>
+<summary>Define intellectual property <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>An unique humankind creation that has a commercial value</p></answer>
+
+</details>
+
+<details>
+<summary>List two ways to protect intellectual property <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Copyright</li>
+</ul>    <ul><li>Patent</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Difference between copyright and patent <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Copyright only protects the expression of the product whereas patent protects the idea or design of the product</p></answer>
+
+</details>
+
+<details>
+<summary>Define proprietary software <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Non-free software that restricts access of the source code</p></answer>
+
+</details>
+
+<details>
+<summary>Define open-source software <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Free software that gives certain permissions of the source code to the users</p></answer>
+
+</details>
+
+<details>
+<summary>List two benefits of proprietary software <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Available technical support</li>
+</ul>    <ul><li>Better security</li>
+</ul>    <ul><li>More user-friendly</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>List two benefits of open-source software <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Highly customizable</li>
+</ul>    <ul><li>Typically free, does not required to purchase the software</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Difference between proprietary software and open-source software <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul>
+<ul><li>Open source software is free and able to edit and redistribute</li>
+<li>Proprietary software belongs to an individual or a compnay. Its license specifies that users aren't allowed to modify source code</li>
+</ul></ul></answer>
+
+</details>
+
+<details>
+<summary>Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
+
+<details>
+<summary>Describe what is meant by Artificial Intelligence <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>The ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings. Intelligent beings are those that can adapt to changing circumstances.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe what is meant by Machine Learning <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Machine learning is a form of artificial intelligence (AI) that allows computer systems to carry out complex processes by learning from data, rather than following pre-programmed rules.</p></answer>
+
+</details>
+
+<details>
+<summary>What is DNA? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>DNA is the material that stores genetic information in all organisms.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe differences between normal computer and DNA computers <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+  <ul><li>DNA computers use DNA rather than silicon like normal computers. DNA doesn’t use two bits but four bits (A, T, G and C).Normal computers use binary which is two bits (0 and 1).</li>
+</ul>  <ul><li>Like modern storage devices, DNA is digital, but it is not binary. Binary encoding uses two bits (0 and 1) but DNA uses four possible bits named adenine (A), thymine (T), guanine (G) and cytosine (C) after their chemical structure.</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Describe the advantages of DNA computers over normal ones <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>There will always be supply of DNA</li>
+</ul>    <ul><li>The large supply of DNA makes it cheap resource</li>
+</ul>    <ul><li>DNA biochips can be made cleanly unlike toxic materials used to make traditional processors</li>
+</ul>    <ul><li>DNA computers are many times smaller than today’s computers.</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>Why is DNA suitable for storing data? <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>Because DNA consists of 4 digits which are arranged in groups of 3, it can encode information represented by the bits and bytes of computer systems.</p></answer>
+
+</details>
+
+<details>
+<summary>Define what is meant by nanotechnology <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>The manipulation of matter with a size of from 1 to 100 nanometres.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>Self cleaning windows</li>
+</ul>    <ul><li>Clothing</li>
+</ul>    <ul><li>Scratch-Resistant coating</li>
+</ul>    <ul><li>Medicine</li>
+</ul>  </ul>
+</answer>
+
+</details>
+
+<details>
+<summary>What is meant by quantum computing <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>
+Quantum computing is based on quantum mechanics. Quantum mechanics is the branch of physics that describes the behviour of very small subatomic particles, which can exist as both particles and waves. Quantum computers use qubits, which can represent both 1 and 0 at the same time.</p></answer>
+
+</details>
+
+<details>
+<summary>Define the term superposition <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>The ability of a quantum system to be in multiple states at the same time until it is measured.</p></answer>
+
+</details>
+
+<details>
+<summary>Define the term entanglement <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Co-dependence of the quantum states of pairs or groups of particles.</p></answer>
+
+</details>
+
+<details>
+<summary>Define the term qubit <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
+
+</details>
+
+<details>
+<summary>How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span></summary>
+
+<answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
+
+</details>
+
+<details>
+<summary>Describe how artificial intelligence could identify what is wrong with patients by symptons. <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+  <ul>
+    <ul><li>It will interpret/analyse patient input to identify symptoms (1) and match the symptoms to (possible) illnesses (1)</li>
+</ul>    <ul><li>It will match symptoms to possible illnesses (1) and give the most likely/probable illness (1)</li>
+</ul>    <ul><li>It will match symptoms to possible illnesses (1) and ask further questions to narrow it down (1)</li>
+</ul>    <ul><li>It will match symptoms to possible illnesses (1) by searching/using a database/other data store (1)</li>
+</ul>  </ul>
+</answer>
+
+</details>
+    <div class="random-questions-container" id='random-question'>
+        <h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
+        <div class="random-questions-controls">
+            <input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
+            <button onclick="startRandomQuestions()" class="random-questions-button">
+                <span data-translate="Start Random Questions">Start Random Questions</span>
+            </button>
+            <button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
+                <span data-translate="Stop Practice">Stop Practice</span>
+            </button>
+        </div>
+        <div id="random-questions-display"></div>
+    </div>
+    <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
+        <div>&copy; 2025 Ozzy</div>
+        <div style="margin-top: 0.5rem;">
+            <span data-translate='Contributions are welcome!'>Contributions are welcome!</span><br>
+            <a href="https://github.com/kaungpyaehtet/CS-IGCSE" target="_blank" style="color: var(--primary); text-decoration: underline;"><span data-translate='Submit a pull request on GitHub or contact me directly.'>Submit a pull request on GitHub or contact me directly.</span></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+  const current = html.getAttribute("data-theme");
+  const next = current === "dark" ? "light" : "dark";
+  html.setAttribute("data-theme", next);
+
+  // Update Prism theme
+  const lightTheme = document.getElementById("prism-theme-light");
+  const darkTheme = document.getElementById("prism-theme-dark");
+  
+  if (next === "light") {
+    lightTheme.disabled = false;
+    darkTheme.disabled = true;
+  } else {
+    lightTheme.disabled = true;
+    darkTheme.disabled = false;
+  }
+        }
+function toggleLanguage(lang) {
+            document.documentElement.setAttribute('data-lang', lang);
+            
+            const burmeseBtn = document.getElementById('burmese-toggle-text');
+            const englishBtn = document.getElementById('english-toggle-text');
+            
+            if (lang === 'burmese') {
+                burmeseBtn.classList.add('language_active');
+                englishBtn.classList.remove('language_active');
+            } else {
+                englishBtn.classList.add('language_active');
+                burmeseBtn.classList.remove('language_active');
+            }
+            
+            // Translate all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (lang === 'burmese') {
+                    el.textContent = translations[key] || el.textContent;
+                } else {
+                    el.textContent = key; // Revert to English
+                }
+            });
+        }
+        
+        // Translations dictionary
+        const translations = {
+    "Table of Contents": "မာတိကာ",
+    "Contributions are welcome!": "Contributions များကို ကြိုဆိုပါသည်။",
+    "Submit a pull request on GitHub or contact me directly.": "GitHub တွင် Pull request တစ်ခု တင်သွင်းပါ သို့မဟုတ် ကျွန်ုပ်ကို တိုက်ရိုက်ဆက်သွယ်ပါ။",
+    "Practice Random Questions": "လေ့ကျင့်ရန် မေးခွန်းများ Random",
+    "Start Random Questions": "Random မေးခွန်းများ စမည်",
+    "Stop Practice": "ရပ်မည်",
+    "Mark as Answered": "ဖြေပြီးပါပြီဟု မှတ်မည်",
+    "Number of questions": "မေးခွန်းအရေအတွက်",
+    "Download PDF Version": "pdf ယူမည်။",
+    "🙌 Close all questions": "🙌 ေမးခွန်းပိတ်မည်"
+};
+
+         function closeAllToggles() {
+            document.querySelectorAll('details').forEach(detail => {
+                // Close the toggle
+                detail.open = false;
+                
+                // Remove from localStorage
+                const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
+                localStorage.removeItem(key);
+            });
+            
+            // Optional: Show a brief confirmation
+            alert('All sections have been closed');
+        }
+
+        // LocalStorage Toggle
+        document.querySelectorAll('details').forEach(detail => {
+            const key = 'detail-' + (detail.id || detail.querySelector('summary').textContent.trim());
+            const saved = localStorage.getItem(key);
+            if (saved === 'open') detail.open = true;
+
+            detail.addEventListener('toggle', () => {
+                localStorage.setItem(key, detail.open ? 'open' : 'closed');
+            });
+        });
+
+let currentRandomQuestions = [];
+        let score = { correct: 0, wrong: 0 };
+
+        function getAllQuestions() {
+            return Array.from(document.querySelectorAll('details')).filter(detail => {
+                return !detail.closest('.random-questions-container');
+            });
+        }
+
+        function startRandomQuestions() {
+            const countInput = document.getElementById('question-count');
+            const count = parseInt(countInput.value) || 5;
+            const allQuestions = getAllQuestions();
+            
+            if (allQuestions.length === 0) {
+                alert('No questions found!');
+                return;
+            }
+            
+            // Reset score and clear previous session
+            score = { correct: 0, wrong: 0 };
+            stopRandomQuestions();
+            
+            // Shuffle and select questions
+            const shuffled = [...allQuestions].sort(() => 0.5 - Math.random());
+            currentRandomQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
+            
+            // Display the questions
+            const display = document.getElementById('random-questions-display');
+            display.innerHTML = '';
+            
+            currentRandomQuestions.forEach((question, index) => {
+                const clone = question.cloneNode(true);
+                clone.id = `random-question-${index}`;
+                clone.dataset.answered = "unanswered";
+                clone.open = false;
+                
+                // Create buttons container
+                const buttonsDiv = document.createElement('div');
+                buttonsDiv.className = 'question-buttons';
+                
+                // Correct button
+                const correctBtn = document.createElement('button');
+                correctBtn.className = 'correct-button';
+                correctBtn.textContent = 'Correct ✅';
+                correctBtn.onclick = function() {
+                    clone.dataset.answered = "correct";
+                    score.correct++;
+                    updateScoreDisplay();
+                    buttonsDiv.remove();
+                };
+                
+                // Wrong button
+                const wrongBtn = document.createElement('button');
+                wrongBtn.className = 'wrong-button';
+                wrongBtn.textContent = 'Wrong ❌';
+                wrongBtn.onclick = function() {
+                    clone.dataset.answered = "wrong";
+                    score.wrong++;
+                    updateScoreDisplay();
+                    buttonsDiv.remove();
+                };
+                
+                buttonsDiv.appendChild(correctBtn);
+                buttonsDiv.appendChild(wrongBtn);
+                clone.appendChild(buttonsDiv);
+                display.appendChild(clone);
+            });
+            
+            // Create score display
+            const scoreDisplay = document.createElement('div');
+            scoreDisplay.className = 'score-display';
+            scoreDisplay.id = 'score-display';
+            display.appendChild(scoreDisplay);
+            
+            updateScoreDisplay();
+            display.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function updateScoreDisplay() {
+            const total = currentRandomQuestions.length;
+            const unanswered = total - score.correct - score.wrong;
+            const scoreDisplay = document.getElementById('score-display');
+            
+            if (scoreDisplay) {
+                scoreDisplay.innerHTML = `
+                    Score: ${score.correct}/${total} | 
+                    Correct: ${score.correct} | 
+                    Wrong: ${score.wrong} | 
+                    Unanswered: ${unanswered}
+                `;
+            }
+        }
+
+        function stopRandomQuestions() {
+            currentRandomQuestions = [];
+            document.getElementById('random-questions-display').innerHTML = '';
+        }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const tocContainer = document.getElementById('toc');
+    const tocItems = Array.from(tocContainer.children);
+    const newToc = document.createElement('div');
+    
+    let currentTopic = null;
+    
+    tocItems.forEach(item => {
+        if (item.className === 'table-of-contents' && !item.classList.contains('subtopic')) {
+            if (currentTopic) {
+                newToc.appendChild(currentTopic);
+            }
+            
+            currentTopic = document.createElement('div');
+            currentTopic.className = 'toc-topic';
+            
+            const topicLink = item.cloneNode(true);
+            topicLink.className = 'toc-main';
+            
+            const subtopics = document.createElement('div');
+            subtopics.className = 'toc-subtopics';
+            
+            currentTopic.appendChild(topicLink);
+            currentTopic.appendChild(subtopics);
+        } else if (item.className.includes('subtopic') && currentTopic) {
+            // This is a subtopic
+            const subtopicLink = item.cloneNode(true);
+            subtopicLink.className = 'toc-subtopic';
+            currentTopic.querySelector('.toc-subtopics').appendChild(subtopicLink);
+        } else {
+            // Standalone item (like "Practice with Random Questions")
+            newToc.appendChild(item.cloneNode(true));
+        }
+    });
+    
+    if (currentTopic) {
+        newToc.appendChild(currentTopic);
+    }
+    
+    tocContainer.innerHTML = '';
+    tocContainer.appendChild(newToc);
+    
+    document.querySelectorAll('.toc-topic').forEach(topic => {
+        if (topic.querySelector('.toc-subtopics').children.length > 0) {
+            topic.querySelector('.toc-main').classList.add('has-subtopics');
+        }
+    });
+    
+    // Mobile touch support
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.toc-main.has-subtopics').forEach(topic => {
+            topic.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            });
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
+
