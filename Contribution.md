@@ -51,7 +51,7 @@ The syntax are important to follow, especially spaces and lines are sensitive in
 * Your format should be
     * Simple sentence for question
         ```md
-        What is a question?
+        What is a question? <span class='mark'>[1 mark]</span>
         ```
     * HTML tag for answer
         ```html
@@ -63,7 +63,7 @@ The syntax are important to follow, especially spaces and lines are sensitive in
         * p for simple paragraph
 * Images
     * your images should be in assets/ folder
-    * assets/ will contain 6 subfolders with respect to their topics.
+    * assets/ will contain subfolders with respect to their topics.
     * Your image should be at least 750px or similar as I have set width of image to 750px hard coded.
     * Use consistent naming conventions
 

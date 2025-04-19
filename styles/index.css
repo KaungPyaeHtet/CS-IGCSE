@@ -451,7 +451,8 @@ details[data-answered="wrong"] {
 }
 
 img{
-  width : 750px
+  width : 750px;
+  border-radius: 8px
 }
 
 /* Improved Table of Contents */
