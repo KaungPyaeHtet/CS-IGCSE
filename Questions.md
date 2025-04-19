@@ -624,34 +624,43 @@ What are some differences between kilobyte and kibibyte <span class='mark'>[2 ma
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>It uses limited number of keys so it can be cracked by guessing different keys until right one is found (brute-force method)</p></answer>
 
 Define encryption
-<answer><!-- TODO --></answer>
+<answer><p>The process of converting plain text into cipher text</p></answer>
 
 Write down the purpose of encryption
-<answer><!-- TODO --></answer>
+<answer><p>to make data unreadable by unauthorized users</p></answer>
 
 State two types of encryption method
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Asymmetric encryption</li>
+    <li>Symmetric encryption</li>
+  </ul>
+</answer>
 
 Define asymmetric encryption
-<answer><!-- TODO --></answer>
+<answer><p>Encryption method that uses two differnet keys to decrypt and encrypt the data</p></answer>
 
 Define symmetric encryption
-<answer><!-- TODO --></answer>
+<answer><p>Encryption method that uses the same key to decrypt and encrypt the data</p></answer>
 
 What is the difference between asymmetric and symmetric encryption
 <answer><!-- TODO --></answer>
 
 List at least two types of ciphers
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Pigphen cipher</li>
+    <li>Caesar cipher</li>
+    <li>Vigenere cipher</li>
+    <li>Rail Fence cipher</li>
+  </ul>
+</answer>
 
 Describe how caesar cipher works
-<answer><!-- TODO --></answer>
-
-State disadvantage of using caesar cipher
-<answer><!-- TODO --></answer>
+<answer><p>It works by shifting the order of alphabets according to the key</p></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
@@ -667,13 +676,18 @@ Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
 Define agents
-<answer><!-- TODO --></answer>
+<answer><p>Computer systems that can operate autonomously without explictly programmed</p></answer>
 
 List two features of agents in multi-agent model
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Each agent is autonomous, can operate without being explicted programmed</li>
+    <li>Agents can communicate with each other through negotiation and cooperation</li>
+  </ul>
+</answer>
 
 What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
-<answer><!-- TODO --></answer>
+<answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
@@ -747,44 +761,58 @@ What is the purpose of the Current Instruction Register (CIR)? <span class='mark
 Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
 
-Define address bus
-<answer><!-- TODO --></answer>
+Define address bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries memory address</answer>
 
-Define data bus
-<answer><!-- TODO --></answer>
+Define data bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries data value stored in a specific memory address</answer>
 
-Define control bus
-<answer><!-- TODO --></answer>
+Define control bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries control signals</answer>
 
-List three types of bus
-<answer><!-- TODO --></answer>
+How increasing address bus width affect <span class='mark'>[1 mark]</span>
+<answer>More memory addresses can be carried</answer>
 
-How increasing address bus width affect
-<answer><!-- TODO --></answer>
+How increasing data bus width affect <span class='mark'>[1 mark]</span>
+<answer><p>Bigger size of instruction can be carried</p></answer>
 
-How increasing data bus width affect
-<answer><!-- TODO --></answer>
+Define cache <span class='mark'>[1 mark]</span>
+<answer><p>Cache stores frequently used data by CPU</p></answer>
 
-Define cache
-<answer><!-- TODO --></answer>
+List three factors that affect the performance of the CPU <span class='mark'>[3 marks]</span>
+<answer>
+  <ul>
+    <li>Clock speed</li>
+    <li>Number of cores</li>
+    <li>Cache size</li>
+  </ul>
+</answer>
 
-List three factors that affect the performance of the CPU
-<answer><!-- TODO --></answer>
+Define clock speed <span class='mark'>[1 mark]</span>
+<answer><p>The number of cycles per second</p></answer>
 
-Define clock speed
-<answer><!-- TODO --></answer>
+State how increasing clock speed affect the performance of the CPU <span class='mark'>[2 marks]</span>
+<answer><p>When clock speed is increased, more instructions can be executed per second reducing loading time and increasing computing power</p></answer>
 
-State how increasing clock speed affect the performance of the CPU
-<answer><!-- TODO --></answer>
-
-State how increased number of cores affect the performance of the CPU
-<answer><!-- TODO --></answer>
+State how increased number of cores affect the performance of the CPU <span class='mark'>[2 marks]</span>
+<answer><p>Better parallel processing as more tasks are executed by different cores</p></answer>
 
 List two benefits of increasing computing power
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Improve multi-tasking</li>
+    <li>Reduce loading time</li>
+  </ul>
+</answer>
 
 List two disadvantages of increasing computing power
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Higher cost due to better quality</li>
+    <li>Higher enery consumptions leading to environmental impacts</li>
+    <li>Higher heat generation causing electrical components burns or even melts</li>
+  </ul>
+</answer>
 
 Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
