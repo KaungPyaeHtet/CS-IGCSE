@@ -1199,7 +1199,7 @@ Define network <span class='mark'>[1 mark]</span>
 What is a network protocol? <span class='mark'>[1 mark]</span>
 <answer><p>A set of rules for communication</p></answer>
 
-Why do people connect to network?<span class='mark'>[2 marks]</span>
+Why do people connect to network? <span class='mark'>[2 marks]</span>
 <answer>
   <ul>  
     <li>To share access to the internet/WWW/broadband connection</li>  
@@ -1254,14 +1254,7 @@ Define peer-to-peer network <span class='mark'>[2 marks]</span>
 Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span>
 <answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
 
-Explain why performance is not decreased as increasing devices in peer-to-peer network <span class='mark'>[2 marks]</span>
-<answer><p>In peer-to-peer networks, the network load is shared, and new devices add resources like bandwidth, storage, and processing power.</p></answer>
-
-Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span>
-<answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
-
 List features of client-server and peer-to-peer network <span class='mark'>[6 marks]</span>
-
 <answer>
 	<table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -1271,65 +1264,41 @@ List features of client-server and peer-to-peer network <span class='mark'>[6 ma
 		</tr>
 		<tr>
 			<td><strong>Performance</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Usually high performance when the serve is not drained</li></ul></td>
+			<td><ul><li>Depends on the number of devices connected as the network load is shared between nodes</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Centralization</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Has at least one centralized server</li></ul></td>
+			<td><ul><li>Does not have any centralized servers. All devices have equal access on files and resources</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Security</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Can perform centralized patches/updates and reinforces user authentication</li></ul></td>
+			<td><ul><li>Usually not secure as peers can distribute malware easily</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Maintenance</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Easy of maintenance as network is centralized</li></ul></td>
+			<td><ul><li>Hard to maintain the network as each peer/node is independent</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Scalability</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Easy to add new devices but might need additional server upgrades due to increased loads</li></ul></td>
+			<td><ul><li>Easy to add new devices without affecting the performance of the network</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Reliability</strong></td>
-			<td></td>
+			<td><ul><li>Services/Resources is not available when server goes down unless there are backup servers</li></ul></td>
+			<td><ul><li>Other nodes/devices can still contribute the resources even when the device disconnect</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Privacy</strong></td>
-			<td></td>
+			<td><ul><li>Has Privacy concerns as servers can monitor, spy and keep logs of the clients</li></ul></td>
+			<td><ul><li>Hard to track or identify peers on the network as there is no centralized device</li></ul></td>
 		</tr>
 	</table>
 </answer>
-
-
-
-
-
-
-
-
-List two benefits of using client-server network <span class='mark'>[2 marks]</span>
-<table border="1" cellspacing="0" cellpadding="8">
-  <tr>
-    <th colspan="2">Benefits of Client-server network</th>
-  </tr>
-  <tr>
-    <td><strong>Performance</strong></td>
-    <td>Performance is high when server is not overloaded</td>
-  </tr>
-  <tr>
-    <td><strong>Security</strong></td>
-    <td>Can perform central-controlled patches/updates and forces user authentication</td>
-  </tr>
-  <tr>
-    <td><strong>Maintenance</strong></td>
-    <td>Easier trouble-shooting and efficient backups</td>
-  </tr>
-</table>
 
 Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</span>
 <answer>
@@ -1341,27 +1310,6 @@ Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</spa
     <li>Defines the speed of transmission (1)</li>
     <li>Operates at the link layer of the TCP/IP stack (1)</li>
   </ul>
-</answer>
-
-List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
-<answer>
-  <table border="1" cellspacing="0" cellpadding="8">
-  <tr>
-    <th colspan="2">Benefits of peer-to-peer network</th>
-  </tr>
-  <tr>
-    <td><strong>Scalability</strong></td>
-    <td>Performance is usually increased when number of connected devices gets bigger</td>
-  </tr>
-  <tr>
-    <td><strong>Reliability</strong></td>
-    <td>Resources or services are still available even when devices disconnect</td>
-  </tr>
-  <tr>
-    <td><strong>Privacy</strong></td>
-    <td>There is no centralized device that stores log, monitors or spys.</td>
-  </tr>
-</table>
 </answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
@@ -1533,22 +1481,33 @@ List two protocols that work in application layer and function of each protocol 
   </table>
 </answer>
 
-List three email protocols
-<answer><!-- TODO --></answer>
+List three email protocols <span class='mark'>[3 marks]</span>
+<answer>
+	<ul>
+		<li>SMTP</li>
+		<li>IMAP</li>
+		<li>POP3</li>
+	</ul>
+</answer>
 
-What is the difference between POP3 and IMAP
-<answer><!-- TODO --></answer>
+What is the difference between POP3 and IMAP <span class='mark'>[2 mark]</span>
+<answer><p>POP3 downloads the email to the user local storage once it is viewed and deletes on the mail server but IMAP keeps the email on mail server instead of downloading and deleting</p></answer>
 
-Function of DNS server
+Function of DNS server <span class='mark'>[2 marks]</span>
 <answer><p>To give the corresponding IP address of domain name to the web broswer</p></answer>
 
-Describe the process of accessing a web page
-<answer><!-- TODO --></answer>
+Describe the process of accessing a web page <span class='mark'>[4 marks]</span>
+<answer>
+- domain name or URL is entered to the search bar
+- browser connects to the DNS server
+- DNS gives corresponding IP address of the domain name
+- browser connects to the web server using that IP address
+- requests the web page
+- if the request is successful, web page is transferred to the browser
+- browser displays it
+</answer>
 
-List types of GSM
-<answer><!-- TODO --></answer>
-
-List two examples of wireless connectivity
+List two examples of wireless connectivity <span class='mark'>[3 marks]</span>
 <answer>
 	<ul>
 		<li>Wi-Fi</li>
@@ -1557,7 +1516,7 @@ List two examples of wireless connectivity
 	</ul>
 </answer>
 
-List ways to identify devices on the network
+List ways to identify devices on the network <span class='mark'>[3 marks]</span>
 <answer>
 	<ul>
 		<li>Device name</li>
@@ -1566,9 +1525,8 @@ List ways to identify devices on the network
 	</ul>
 </answer>
 
-What is the difference between IP addresses and MAC addresses
-<answer><!-- TODO --></answer>
-
+What is the difference between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
+<answer><p>IP address is assigned by ISP and can be changed whereas MAC address is assigned by NIC card manufacturer and can be not changed</p></answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1633,13 +1591,7 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
 
-Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
-<answer><!-- TODO --></answer>
-
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
