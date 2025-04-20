@@ -362,17 +362,10 @@ print("Valid")
 
 List two types of subprograms and difference between them<span class='mark'>[2 marks]</span>
 <answer>
-  <table>
-    <tbody>
-      <tr>
-        <td>Function</td>
-        <td colspan="2">Functions return a value after performing a specific task while procedures does not return a value after executing the code</td>
-      </tr>
-      <tr>
-        <td>Procedure</td>
-      </tr>
-    </tbody>
-  </table>
+  <ul>
+    <li>Function</li>
+    <li>Procedure</li>
+  </ul>
 </answer>
 
 What is the difference between function and procedure <span class='mark'>[2 marks]</span>
@@ -386,7 +379,10 @@ Define Global Variables <span class='mark'>[1 mark]</span>
 
 List two benefits of using subprograms <span class='mark'>[2 marks]</span>
 <answer>
-<!-- TODO -->
+  <ul>
+    <li>Better Code Readability as subprograms reduce code repeatation</li>
+    <li>Code Reusability. It can reused by calling the function instead of writing the same code again.</li>
+  </ul>
 </answer>
 
 What is meant by built in functions <span class='mark'>[1 mark]</span>
@@ -459,46 +455,71 @@ Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span cla
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
 Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>It can represent larger values with fewer digits compared to decimal or binary making it easy to understand and read</p></answer>
 
-Convert 0101 0001 into decimal form. 
-<answer><!-- TODO --></answer>
+Convert 0101 0001 into decimal form. <span class='mark'> [1 mark]</span>
+<answer><p>81</p></answer>
 
-Convert 234 into binary form.
-<answer><!-- TODO --></answer>
+Convert 234 into binary form. <span class='mark'> [1 mark]</span>
+<answer><p>1110 1010</p></answer>
 
-Convert 1101 0010 into hexadecimal form.
-<answer><!-- TODO --></answer>
+Convert 1101 0010 into hexadecimal form. <span class='mark'> [2 marks]</span>
+<answer>
+  <ul>
+    <li>1101 = 13 = D</li>
+    <li>0010 = 2  = 2</li>
+    <li>2D</li>
+  </ul>
+</answer>
 
-Convert 4FAD into decimal form
-<answer><!-- TODO --></answer>
+Convert 4FAD into binary form <span class='mark'> [4 marks]</span>
+<answer>
+	<ul>
+		<li>4 = 0010</li>
+		<li>F = 15 = 1111</li>
+		<li>A = 10 = 1010</li>
+		<li>D = 13 = 1101</li>
+		<li>0010 1111 1010 1101</li>
+	</ul>
+</answer>
 
-Add 0011 1001 with 1110 0100.
-<answer><!-- TODO --></answer>
+Add 0011 1001 with 0110 0100. <span class='mark'> [2 marks]</span>
+<answer><p>1001 1101</p></answer>
 
-Difference between logical shift and arithmetic shift
-<answer><!-- TODO --></answer>
+Difference between logical shift and arithmetic shift <span class='mark'> [2 marks]</span>
+<answer><p>Logical shifts are performed on positive binary numbers whereas arithmetic shifts are performed on negative binary numbers</p></answer>
 
-Perform logical left shift by two (+2) for 1001 0110.
-<answer><!-- TODO --></answer>
+Perform logical left shift by two (+2) for 1001 0110. <span class='mark'> [2 marks]</span>
+<answer><p>0101 1000</p></answer>
 
-Perform logical right shift by five (-5) for 0110 1001
-<answer><!-- TODO --></answer>
+Perform logical right shift by five (-5) for 0110 1001 <span class='mark'> [2 marks]</span>
+<answer><p>0000 0011</p></answer>
 
-Perform arithmetic shift left by three (+3) for 1101 0011
-<answer><!-- TODO --></answer>
+Perform arithmetic shift left by three (+3) for 1101 0011 <span class='mark'> [2 marks]</span>
+<answer><p>1100 1100</p></answer>
 
-Perform arithmetic shift right by four (-4) for 1010 0101
-<answer><!-- TODO --></answer>
+Perform arithmetic shift right by four (-4) for 1010 0101 <span class='mark'> [2 marks]</span>
+<answer><p>1111 1010</p></answer>
 
-Represent -83 with sign and magnitude method
-<answer><!-- TODO --></answer>
+Represent -83 with sign and magnitude method <span class='mark'> [2 marks]</span>
+<answer><p>1101 0011</p></answer>
 
-Represent 0111 1011 with 8 bit two complement form.
-<answer><!-- TODO --></answer>
+Represent 0111 1011 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
+<answer>
+	<ul>
+		<li>flip: 1000 0100</li>
+		<li>add 1: 1000 0101</li> 
+	</ul>
+</answer>
 
-Represent  -67 with 8 bit two complement form. 
-<answer><!-- TODO --></answer>
+Represent -67 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
+<answer>
+	<ul>
+		<li>67: 0100 0011</li>
+		<li>flip: 1011 1100</li>
+		<li>add 1: 1011 1101</li>
+	</ul>
+</answer>
 
 Define overflow error <span class='mark'>[2 marks]</span>
 <answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
@@ -512,7 +533,12 @@ Give the impacts of increasing the sampling frequency. <span class='mark'>[2 mar
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
 List two benefits of using ASCII encoding <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>Simplicity and Easy to understand</li>
+		<li>Memory Efficiency as it only uses 7 bits (standard ASCII)</li>
+	</ul>
+</answer>
 
 Explain why Unicode was developed <span class='mark'>[2 marks]</span>
 <answer>
@@ -653,7 +679,7 @@ Explain how Run-Length Encoding (RLE) works <span class='mark'>[2 marks]</span>
 State when Run-Length Encoding (RLE) might not be efficient <span class='mark'>[2 marks]</span>
 <answer>The efficiency of the algorithm is low when there are only a few repeated characters</answer>
 
-List two types of compression
+List two types of compression <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Lossless</li>
@@ -661,10 +687,10 @@ List two types of compression
   </ul>
 </answer>
 
-What is the difference between lossless compression and lossy compression
+What is the difference between lossless compression and lossy compression <span class='mark'>[2 marks]</span>
 <answer>Lossless compression does not delete any data during compression state whereas lossy compression deletes some of the data to reduce the file size</answer>
 
-What is the advantage and disadvantage of using lossless compression
+What is the advantage and disadvantage of using lossless compression <span class='mark'>[2 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -678,7 +704,7 @@ What is the advantage and disadvantage of using lossless compression
   </table>
 </answer>
 
-What is the advantage and disadvantage of using lossy compression
+What is the advantage and disadvantage of using lossy compression <span class='mark'>[2 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -692,23 +718,24 @@ What is the advantage and disadvantage of using lossy compression
   </table>
 </answer>
 
-Why quality decrease is acceptable when using lossy compression
-<answer><p>Some changs can not be noticed by humans</p></answer>
+Why quality decrease is acceptable when using lossy compression <span class='mark'>[2 marks]</span>
+<answer><p>Small changes can not be noticed by humans</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
+<answer><p><!--TODO--></p></answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
 <answer><p>It uses limited number of keys so it can be cracked by guessing different keys until right one is found (brute-force method)</p></answer>
 
-Define encryption
+Define encryption <span class='mark'>[1 mark]</span>
 <answer><p>The process of converting plain text into cipher text</p></answer>
 
-Write down the purpose of encryption
+Write down the purpose of encryption <span class='mark'>[1 mark]</span>
 <answer><p>to make data unreadable by unauthorized users</p></answer>
 
-State two types of encryption method
+State two types of encryption method <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Asymmetric encryption</li>
@@ -716,16 +743,37 @@ State two types of encryption method
   </ul>
 </answer>
 
-Define asymmetric encryption
+Define asymmetric encryption <span class='mark'>[2 marks]</span>
 <answer><p>Encryption method that uses two differnet keys to decrypt and encrypt the data</p></answer>
 
-Define symmetric encryption
+Define symmetric encryption <span class='mark'>[2 marks]</span>
 <answer><p>Encryption method that uses the same key to decrypt and encrypt the data</p></answer>
 
-What is the difference between asymmetric and symmetric encryption
-<answer><!-- TODO --></answer>
+List at least two benefits of asymmetric encryption and symmetric encryption <span class='mark'>[4 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td>Asymmetric Encryption</td>
+			<td>
+        <ul>
+		        <li>No need key-sharing</li>
+		        <li>Better security as it uses different keys to encrypt and decrypt the data</li>
+	      </ul>
+      </td>
+		</tr>
+		<tr>
+			<td>Symmetric encryption</td>
+			<td>
+        <ul>
+		        <li>Faster due to less complex calculations</li>
+		        <li>Efficient for encrypting large set of data</li>
+	      </ul>
+      </td>
+		</tr>
+	</table>
+</answer>
 
-List at least two types of ciphers
+List at least two types of ciphers <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Pigphen cipher</li>
@@ -735,7 +783,7 @@ List at least two types of ciphers
   </ul>
 </answer>
 
-Describe how caesar cipher works
+Describe how caesar cipher works <span class='mark'>[2 marks]</span>
 <answer><p>It works by shifting the order of alphabets according to the key</p></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
@@ -751,10 +799,10 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
-Define agents
+Define agents <span class='mark'>[1 mark]</span>
 <answer><p>Computer systems that can operate autonomously without explictly programmed</p></answer>
 
-List two features of agents in multi-agent model
+List two features of agents in multi-agent model  <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Each agent is autonomous, can operate without being explicted programmed</li>
@@ -873,7 +921,7 @@ State how increasing clock speed affect the performance of the CPU <span class='
 State how increased number of cores affect the performance of the CPU <span class='mark'>[2 marks]</span>
 <answer><p>Better parallel processing as more tasks are executed by different cores</p></answer>
 
-List two benefits of increasing computing power
+List two benefits of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Improve multi-tasking</li>
@@ -881,7 +929,7 @@ List two benefits of increasing computing power
   </ul>
 </answer>
 
-List two disadvantages of increasing computing power
+List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Higher cost due to better quality</li>
@@ -1251,7 +1299,7 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 </ul>
 </answer>
 
-List four layers of TCP/IP protocol stack and write function of each layer
+List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -1292,7 +1340,7 @@ List four layers of TCP/IP protocol stack and write function of each layer
   </table>
 </answer>
 
-Write function of TCP protocol
+Write function of TCP protocol <span class='mark'>[4 marks]
 <answer>
   <ul>
     <li>Works under transport layer</li>
@@ -1302,54 +1350,46 @@ Write function of TCP protocol
   </ul>
 </answer>
 
-List two protocols that work in application layer and function of each protocol
+List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
-      <td><strong>HTTP</strong></td>
+      <td><strong>HTTP (Hyper-text Transfer Protocol)</strong></td>
       <td>
         <ul>
-          <li></li>
+          <li>used for transferring html documents</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>HTTPS</strong></td>
+      <td><strong>HTTPS (Hyper-text Transfer Protocol Secure)</strong></td>
       <td>
         <ul>
-          <li></li>
+          <li>used for transferring html documents<strong>securely</strong></li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>FTP</strong></td>
+      <td><strong>FTP (File Transfer Protocol)</strong></td>
       <td>
         <ul>
-          <li></li>
+          <li>used for transferring files</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>SMTP</strong></td>
+      <td><strong>SMTP (Simple Message Transfer Protocol)</strong></td>
       <td>
         <ul>
-          <li></li>
+          <li>used for sending emails to mail servers and between mail servers</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>POP3</strong></td>
+      <td><strong>POP3 (Post Office Version 3) and IMAP (Internet Message Access Protocol)</strong></td>
       <td>
         <ul>
-          <li></li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td><strong>IMAP</strong></td>
-      <td>
-        <ul>
-          <li></li>
+          <li>used for receiving and reading emails from mail servers</li>
         </ul>
       </td>
     </tr>
@@ -1357,29 +1397,58 @@ List two protocols that work in application layer and function of each protocol
 </answer>
 
 List three email protocols
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>SMTP</li>
+		<li>IMAP</li>
+		<li>POP3</li>
+	</ul>
+</answer>
 
 What is the difference between POP3 and IMAP
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>POP3 downloads the email to the user local storage and deletes on the mail sever once it is viewed</li>
+		<li>IMAP does not delete or downloads the email but keeps on the mail server</li>
+	</ul>
+</answer>
 
-Function of DNS
-<answer><!-- TODO --></answer>
+Function of DNS server
+<answer><p>To give the corresponding IP address of domain name to the web broswer</p></answer>
 
-Describe the process of accessing a web page
-<answer><!-- TODO --></answer>
-
-List types of GSM
-<answer><!-- TODO --></answer>
+Describe the process of accessing a web page 
+<answer>
+	<ul>
+		<li>Domain name or URL is entered to the web browser search bar</li>
+		<li>Web browser connects to the DNS server</li>
+		<li>DNS gives the corresponding IP address of the domain name</li>
+		<li>Web browser connects to the web server using that IP address</li>
+		<li>Requests the web page</li> 
+		<li>If the request is successful, web page is transferred</li>
+		<li>Web browser reads it and displays to the user</li>
+	</ul>
+</answer>
 
 List two examples of wireless connectivity
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>Wi-Fi</li>
+		<li>Bluetooth</li>
+		<li>Infra-red</li>
+	</ul>
+</answer>
 
 List ways to identify devices on the network
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>Device name</li>
+		<li>IP address</li>
+		<li>MAC address</li>
+	</ul>
+</answer>
 
 What is the difference between IP addresses and MAC addresses
-<answer><!-- TODO --></answer>
-
+<answer><p>IP address is assigned by ISP and can be changed whereas MAC address is assigned by NIC card manufacturer and can not be changed</p></answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1441,17 +1510,10 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
     </ol>
 </answer>
 
-
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
 
-Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
-<answer><!-- TODO --></answer>
-
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
@@ -1527,7 +1589,7 @@ Define penetration testing
 Define two-factor authentication (2FA)
 <answer><!-- TODO --></answer>
 
-Define access contro
+Define access control
 <answer><!-- TODO --></answer>
 
 Write down the purpose of using access control
