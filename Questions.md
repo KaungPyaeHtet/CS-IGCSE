@@ -454,10 +454,10 @@ What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
 </answer>
 
 Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span>  <ul><li>length</li><li>count</li><li>index</li><li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
-<answer><!-- TODO --></answer>
+<answer><img src='assets/programming/tracetable-answer.png'></answer>
 
 Answer these questions about the code. <ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
-<answer><!-- TODO --></answer>
+<answer><ul><li>Rectangle</li><li></li><li></li><li></li></ul></answer>
 
 Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span>
 <answer>
