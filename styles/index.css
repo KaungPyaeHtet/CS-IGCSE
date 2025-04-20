@@ -31,7 +31,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Futura", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
   background: var(--bg);
   color: var(--text);
@@ -451,8 +451,13 @@ details[data-answered="wrong"] {
 }
 
 img{
-  width : 750px;
+  width : 700px;
   border-radius: 8px
+}
+.question-image-container{
+  width: 100%;
+  text-align: center;
+  margin: 10px
 }
 
 /* Improved Table of Contents */
@@ -538,4 +543,20 @@ img{
   .toc-topic.active .toc-subtopics {
       display: block;
   }
+}
+
+.practice-button, .back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    z-index: 1000;
+}
+.back-button {
+    right: auto;
+    left: 20px;
 }

@@ -2,7 +2,7 @@
 
 <div id='toc' class="toc">
 
-<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
+<a href='practice.html' class="table-of-contents">Practice with Random Questions</a>
 
 <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
@@ -87,7 +87,10 @@ What is meant by an algorithm? <span class='mark'>[1 mark]</span>
 
 <h3 id='chap-2'>Chapter 2: Creating Algorithms</h3>
 
-Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <img src='assets/algorithms/guess-question.png' />
+What is the difference between a constant and a variable <span class='mark'>[1 mark]</span>
+<answer><p>A variable can change while a constant cannot</p></answer>
+
+Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <div class='question-image-container'><img src='assets/algorithms/guess-question.png' /></div>
 <answer><img src='assets/algorithms/guess-answer.png' /></answer>
 
 <h3 id='chap-3'>Chapter 3: Sorting and Searching Algorithms</h3>
@@ -122,6 +125,9 @@ How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
   </ul>
 </answer>
 
+A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
 Define recursion <span class='mark'>[1 mark]</span>
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
 
@@ -136,12 +142,59 @@ Define divide and conqueror <span class='mark'>[2 marks]</span>
 Define abstraction <span class='mark'>[1 mark]</span>
 <answer><p> The process of removing or hiding unnecessary detail and highlighting only main points</p></answer>
 
+Example of using abstraction in coding <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<li>Using API/libraries</li>
+<li>
+```python
+class Car:
+  def __init__(self, make, model):
+    self.make = make
+    self.model = model
+    self._engine_on = False  # Implementation detail (protected)
+  def start_engine(self):
+    """Starts the car's engine."""
+    self._engine_on = True
+    print("Engine started.")
+  def stop_engine(self):
+    """Stops the car's engine."""
+    self._engine_on = False
+    print("Engine stopped.")
+  def drive(self, distance):
+    """Drives the car for a given distance."""
+    if self._engine_on:
+      print(f"Driving the {self.make} {self.model} for {distance} miles.")
+      # Complex internal logic for driving (not shown)
+    else:
+      print("Please start the engine first.")
+```
+</li>
+<li>
+In the above code we just car the function start_engine() or drive() but we don't need to know how it works behind so it is essentially example of abstraction which simply reduces complex information into essential ones.
+</li>
+</ul>
+</answer>
+
 Define decomposition <span class='mark'>[1 mark]</span>
 <answer><p> Breaking a problem down into smaller and more managable parts, which are then easier to solve</p></answer>
+
+List two benefits of using decompositions <span class='mark'>[2 marks]</span>
+<answer>
+<ul>
+<li>Smaller problems are easier to solve</li>
+<li>Each smaller problem can be solved independently of the others</li>
+<li>Smaller problems can be tested independently</li>
+<li>Smaller problems can be combined to produce a solution to the full problem</li>
+</ul>
+</answer>
 
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
+
+Common Data types
+<answer><!-- TODO --></answer>
 
 Implement Linear Search <span class='mark'>[3 marks]</span>
 <answer>
@@ -379,7 +432,12 @@ Define Global Variables <span class='mark'>[1 mark]</span>
 
 List two benefits of using subprograms <span class='mark'>[2 marks]</span>
 <answer>
-<!-- TODO -->
+<ul>
+<li>Making bigger problems easier to break down (decompose) and code</li>
+<li>Allows team members to be able to work on different parts of a problem</li>
+<li>Makes the program easier to debug</li>
+<li>Makes programs more efficient as code is not duplicated</li>
+</ul>
 </answer>
 
 What is meant by built in functions <span class='mark'>[1 mark]</span>
@@ -394,6 +452,12 @@ What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
     <li>As we work through all the steps, we can see what values variables hold at a specific step.</li>
   </ul>
 </answer>
+
+Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span>  <ul><li>length</li><li>count</li><li>index</li><li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
+<answer><!-- TODO --></answer>
+
+Answer these questions about the code. <ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
+<answer><!-- TODO --></answer>
 
 Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span>
 <answer>
@@ -501,6 +565,17 @@ Define overflow error <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
 
+What is a bitmap image? <span class='mark'>[2 marks]</span>
+<answer>
+<!-- TODO -->
+</answer>
+
+What is a unit of resolution? <span class='mark'>[1 mark]</span>
+<answer><p>pixels per inch</p></answer>
+
+What is a metadata <span class='mark'>[1 mark]</span>
+<answer><p>A data that represents other data</p></answer>
+
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
@@ -555,6 +630,15 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
 Explain what is meant by colour depth. <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
+How many bits does standard ASCII uses to represent character <span class='mark'>[1 mark]</span>
+<answer><p>7 bits</p></answer>
+
+How many bits does extended ASCII uses to represent character <span class='mark'>[1 mark]</span>
+<answer><p>8 bits</p></answer>
+
+How many bits does Unicode uses to represent character <span class='mark'>[1 mark]</span>
+<answer><p>2 bytes or 4 bytes</p></answer>
+
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
 Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span>
@@ -576,6 +660,10 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
         <td>4 bits</td>
       </tr>
       <tr>
+        <td>Byte</td>
+        <td>8 bits</td>
+      </tr>
+      <tr>
         <td>Kilobyte (kB)</td>
         <td>1000 bytes</td>
       </tr>
@@ -595,7 +683,11 @@ Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span
   </table>
 </answer>
 
+Define compression <span class='mark'>[1 mark]</span>
+<answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
+
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 Define Run-Length Encoding (RLE) 
 <answer><!-- TODO --></answer>
@@ -604,9 +696,6 @@ Explain how Run-Length Encoding (RLE) works
 <answer><!-- TODO --></answer>
 
 State when Run-Length Encoding (RLE) might not be efficient 
-<answer><!-- TODO --></answer>
-
-List two types of compression
 <answer><!-- TODO --></answer>
 
 What is the difference between lossless compression and lossy compression
@@ -622,6 +711,7 @@ Why quality decrease is acceptable when using lossy compression
 <answer><!-- TODO --></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
@@ -646,9 +736,6 @@ Define symmetric encryption
 What is the difference between asymmetric and symmetric encryption
 <answer><!-- TODO --></answer>
 
-List at least two types of ciphers
-<answer><!-- TODO --></answer>
-
 Describe how caesar cipher works
 <answer><!-- TODO --></answer>
 
@@ -668,18 +755,15 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
-Define agents
-<answer><!-- TODO --></answer>
-
-List two features of agents in multi-agent model
-<answer><!-- TODO --></answer>
-
 What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
 Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span>
+<answer></answer>
+
+
 
 Identify differences between RAM and ROM <span class='mark'>[4 marks]</span>
 <answer>
@@ -692,6 +776,9 @@ Identify differences between RAM and ROM <span class='mark'>[4 marks]</span>
 
 Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span>
 <answer><ul><li>Data</li><li>Instructions</li></ul></answer>
+
+What is a stored program concept? <span class='mark'>[2 marks]</span>
+<answer><ul><li>A computer in which instructions and data are stored in same memory</li><li>and are executed sequentially</li></ul></answer>
 
 Explain how virtual memory works <span class='mark'>[2 marks]</span>
 <answer>
@@ -831,6 +918,19 @@ Describe an embedded system <span class='mark'>[2 marks]</span>
 What is an application software? <span class='mark'>[2 marks]</span>
 <answer><p>Software that is designed to perform specific task for the user. For instance, word processing software, photo editing software, etc</p></answer>
 
+The operating system controls the scheduling of processes. Describe how the operating system uses scheduling to allocate processor time <span class='mark'>[4 marks]</span>
+<answer>
+<ul>
+<li>All processes are held in a queue</li>
+<li>Processes are prioritised</li>
+<li>Processes are allocated time slices</li>
+<li>Length of time slice depends on priority</li>
+<li>(and) processes are switched (at the end of their time slice)</li>
+<li>Unfinished processes are put to the back of the queue</li>
+<li>During the time slice the process has exclusive use of the processor</li>
+</ul>
+</answer>
+
 Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span>
 <answer>
   <ul>
@@ -856,8 +956,23 @@ List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</spa
   </ul>
 </answer>
 
+What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span>
+<answer><!-- TODO --></answer>
+
 What is scheduling? <span class='mark'>[2 marks]</span>
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
+
+What is paging? <span class='mark'>[2 marks]</span>
+<answer><p>The algorithm that the OS uses to move programs from RAM to disk and back again when needed once main memory is full</p></answer>
+
+Why do users need back-up? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
+What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
+
+What is the difference between virtual memory and scheduling? <span class='mark'>[2 marks]</span>
+<answer><!-- TODO --></answer>
 
 A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span>
 <answer><ul>
@@ -866,7 +981,7 @@ A restaurant has a computer-based ordering system which is running slowly. A tec
 <li>The order files are split up (1)</li>
 </ul></answer>
 
-Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span>
+Explain how defragmentation software could overcome the issue of the slow computer system.<span class='mark'>[3 marks]</span>
 <answer><ul>
   <li> Files on the hard disk drive are moved (1)</li>
   <li>Empty spaces collected together (1) </li>
@@ -913,7 +1028,7 @@ Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span>
 </ul>
 </answer>
 
- Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
+Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <thead>
@@ -1174,16 +1289,10 @@ List two protocols that work in application layer
 List three email protocols
 <answer><!-- TODO --></answer>
 
-What is the difference between POP3 and IMAP
-<answer><!-- TODO --></answer>
-
 Function of DNS
 <answer><!-- TODO --></answer>
 
 Describe the process of accessing a web page
-<answer><!-- TODO --></answer>
-
-List types of GSM
 <answer><!-- TODO --></answer>
 
 List two examples of wireless connectivity
@@ -1194,7 +1303,6 @@ List ways to identify devices on the network
 
 What is the difference between IP addresses and MAC addresses
 <answer><!-- TODO --></answer>
-
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1256,17 +1364,16 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
     </ol>
 </answer>
 
-
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
 
-Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
+Explain the purposes of following layers: application, transport, internet, and data link layer <span class='mark'>[6 marks]</span>
 <answer><!-- TODO --></answer>
 
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
-Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
+Difference between IMAP and POP3 email protocols <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
@@ -1342,13 +1449,7 @@ Define penetration testing
 Define two-factor authentication (2FA)
 <answer><!-- TODO --></answer>
 
-Define access contro
-<answer><!-- TODO --></answer>
-
 Write down the purpose of using access control
-<answer><!-- TODO --></answer>
-
-Define NAS device
 <answer><!-- TODO --></answer>
 
 List at least two examples of software vulnerabilities
