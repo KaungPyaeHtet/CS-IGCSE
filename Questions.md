@@ -360,12 +360,19 @@ print("Valid")
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
-List two types of subprograms <span class='mark'>[2 marks]</span>
+List two types of subprograms and difference between them<span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Function</li>
-    <li>Procedure</li>
-  </ul>
+  <table>
+    <tbody>
+      <tr>
+        <td>Function</td>
+        <td colspan="2">Functions return a value after performing a specific task while procedures does not return a value after executing the code</td>
+      </tr>
+      <tr>
+        <td>Procedure</td>
+      </tr>
+    </tbody>
+  </table>
 </answer>
 
 What is the difference between function and procedure <span class='mark'>[2 marks]</span>
@@ -1152,7 +1159,8 @@ Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</spa
 </answer>
 
 List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
-<table border="1" cellspacing="0" cellpadding="8">
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
   <tr>
     <th colspan="2">Benefits of peer-to-peer network</th>
   </tr>
@@ -1169,6 +1177,7 @@ List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</sp
     <td>There is no centralized device that stores log, monitors or spys.</td>
   </tr>
 </table>
+</answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
 <answer><img src='assets/network/bus-topology.png'>
@@ -1242,29 +1251,110 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 </ul>
 </answer>
 
-List four layers of TCP/IP protocol stack
-<answer><!-- TODO --></answer>
-
-Function of application layer
-<answer><!-- TODO --></answer>
-
-Function of transport layer
-<answer><!-- TODO --></answer>
-
-Function of internet layer
-<answer><!-- TODO --></answer>
-
-Function of data link layer
-<answer><!-- TODO --></answer>
-
-What is the purpose of using checksums
-<answer><!-- TODO --></answer>
+List four layers of TCP/IP protocol stack and write function of each layer
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Application</strong></td>
+      <td>
+        <ul>
+          <li>provides an user interface interacting with the user</li>
+          <li>hosts the application layer protocols such as email protocols</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Transport</strong></td>
+      <td>
+        <ul>
+          <li>provides an end-to-end communication between devices</li>
+          <li>breaks down the data into packets</li>
+          <li>adds packets number in packets headers</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Internet</strong></td>
+      <td>
+        <ul>
+          <li>Adds source IP address and destination IP address</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Data link</strong></td>
+      <td>
+        <ul>
+          <li>connects with physical components</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</answer>
 
 Write function of TCP protocol
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>Works under transport layer</li>
+    <li>Ensures a reliable data transmission between devices</li>
+    <li>It uses error handling methods such as handshakes and checksums</li>
+    <li>It requests retransmission if it is necessary (when some of the data is missing or damanged)</li>
+  </ul>
+</answer>
 
-List two protocols that work in application layer
-<answer><!-- TODO --></answer>
+List two protocols that work in application layer and function of each protocol
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>HTTP</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>HTTPS</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>FTP</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>SMTP</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>POP3</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>IMAP</strong></td>
+      <td>
+        <ul>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</answer>
 
 List three email protocols
 <answer><!-- TODO --></answer>
