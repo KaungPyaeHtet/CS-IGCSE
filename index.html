@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/assets/logo/tau.png">
+    <link rel="icon" type="image/x-icon" href="assets/logo/tau.png">
 </head>
 <body>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
@@ -22,7 +22,7 @@
     <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
 <div id='toc' class="toc">
 
-<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
+<a href='practice.html' class="table-of-contents">Practice with Random Questions</a>
 
 <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
@@ -111,7 +111,14 @@
 <h3 id='chap-2'>Chapter 2: Creating Algorithms</h3>
 
 <details>
-<summary>Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <img src='assets/algorithms/guess-question.png' /></summary>
+<summary>What is the difference between a constant and a variable <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A variable can change while a constant cannot</p></answer>
+
+</details>
+
+<details>
+<summary>Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <div class='question-image-container'><img src='assets/algorithms/guess-question.png' /></div></summary>
 
 <answer><img src='assets/algorithms/guess-answer.png' /></answer>
 
@@ -162,6 +169,13 @@
 </details>
 
 <details>
+<summary>A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
 <summary>Define recursion <span class='mark'>[1 mark]</span></summary>
 
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
@@ -192,15 +206,73 @@
 </details>
 
 <details>
+<summary>Example of using abstraction in coding <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>Using API/libraries</li>
+</ul><li>
+<pre><code class="language-python">class Car:
+  def __init__(self, make, model):
+    self.make = make
+    self.model = model
+    self._engine_on = False  # Implementation detail (protected)
+  def start_engine(self):
+    """Starts the car's engine."""
+    self._engine_on = True
+    print("Engine started.")
+  def stop_engine(self):
+    """Stops the car's engine."""
+    self._engine_on = False
+    print("Engine stopped.")
+  def drive(self, distance):
+    """Drives the car for a given distance."""
+    if self._engine_on:
+      print(f"Driving the {self.make} {self.model} for {distance} miles.")
+      # Complex internal logic for driving (not shown)
+    else:
+      print("Please start the engine first.")
+</code></pre>
+</li>
+<li>
+In the above code we just car the function start_engine() or drive() but we don't need to know how it works behind so it is essentially example of abstraction which simply reduces complex information into essential ones.
+</li>
+</ul>
+</answer>
+
+</details>
+
+<details>
 <summary>Define decomposition <span class='mark'>[1 mark]</span></summary>
 
 <answer><p> Breaking a problem down into smaller and more managable parts, which are then easier to solve</p></answer>
 
 </details>
 
+<details>
+<summary>List two benefits of using decompositions <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>Smaller problems are easier to solve</li>
+<li>Each smaller problem can be solved independently of the others</li>
+<li>Smaller problems can be tested independently</li>
+<li>Smaller problems can be combined to produce a solution to the full problem</li>
+</ul></ul>
+</answer>
+
+</details>
+
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
+
+<details>
+<summary>Common Data types</summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
 
 <details>
 <summary>Implement Linear Search <span class='mark'>[3 marks]</span></summary>
@@ -501,7 +573,12 @@ print("Valid")
 <summary>List two benefits of using subprograms <span class='mark'>[2 marks]</span></summary>
 
 <answer>
-<!-- TODO -->
+<ul>
+<ul><li>Making bigger problems easier to break down (decompose) and code</li>
+<li>Allows team members to be able to work on different parts of a problem</li>
+<li>Makes the program easier to debug</li>
+<li>Makes programs more efficient as code is not duplicated</li>
+</ul></ul>
 </answer>
 
 </details>
@@ -524,6 +601,20 @@ print("Valid")
 </ul>    <ul><li>As we work through all the steps, we can see what values variables hold at a specific step.</li>
 </ul>  </ul>
 </answer>
+
+</details>
+
+<details>
+<summary>Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span>  <ul><ul><li>length</li><li>count</li><li>index</li><li>scores[index]</li></ul></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>Answer these questions about the code. <ul><ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div></summary>
+
+<answer><!-- TODO --></answer>
 
 </details>
 
@@ -706,6 +797,29 @@ print("Valid")
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
 
 <details>
+<summary>What is a bitmap image? <span class='mark'>[2 marks]</span></summary>
+
+<answer>
+<!-- TODO -->
+</answer>
+
+</details>
+
+<details>
+<summary>What is a unit of resolution? <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>pixels per inch</p></answer>
+
+</details>
+
+<details>
+<summary>What is a metadata <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>A data that represents other data</p></answer>
+
+</details>
+
+<details>
 <summary>Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span></summary>
 
 <answer><ul><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></ul></answer>
@@ -811,6 +925,27 @@ print("Valid")
 
 </details>
 
+<details>
+<summary>How many bits does standard ASCII uses to represent character <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>7 bits</p></answer>
+
+</details>
+
+<details>
+<summary>How many bits does extended ASCII uses to represent character <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>8 bits</p></answer>
+
+</details>
+
+<details>
+<summary>How many bits does Unicode uses to represent character <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>2 bytes or 4 bytes</p></answer>
+
+</details>
+
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
 <details>
@@ -834,6 +969,10 @@ print("Valid")
         <td>4 bits</td>
       </tr>
       <tr>
+        <td>Byte</td>
+        <td>8 bits</td>
+      </tr>
+      <tr>
         <td>Kilobyte (kB)</td>
         <td>1000 bytes</td>
       </tr>
@@ -855,7 +994,20 @@ print("Valid")
 
 </details>
 
-<p>Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>Define compression <span class='mark'>[1 mark]</span></summary>
+
+<answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
+
+</details>
+
+<details>
+<summary>Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
 <details>
 <summary>Define Run-Length Encoding (RLE)</summary>
 
@@ -872,13 +1024,6 @@ print("Valid")
 
 <details>
 <summary>State when Run-Length Encoding (RLE) might not be efficient</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>List two types of compression</summary>
 
 <answer><!-- TODO --></answer>
 
@@ -912,7 +1057,13 @@ print("Valid")
 
 </details>
 
-<p>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 <details>
@@ -965,13 +1116,6 @@ print("Valid")
 </details>
 
 <details>
-<summary>List at least two types of ciphers</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
 <summary>Describe how caesar cipher works</summary>
 
 <answer><!-- TODO --></answer>
@@ -1011,20 +1155,6 @@ print("Valid")
 </details>
 
 <details>
-<summary>Define agents</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>List two features of agents in multi-agent model</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
 <summary>What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</summary>
 
 <answer><!-- TODO --></answer>
@@ -1033,7 +1163,13 @@ print("Valid")
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
-<p>Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span></summary>
+
+<answer></answer>
+
+</details>
+
 <details>
 <summary>Identify differences between RAM and ROM <span class='mark'>[4 marks]</span></summary>
 
@@ -1051,6 +1187,13 @@ print("Valid")
 <summary>Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span></summary>
 
 <answer><ul><ul><li>Data</li><li>Instructions</li></ul></ul></answer>
+
+</details>
+
+<details>
+<summary>What is a stored program concept? <span class='mark'>[2 marks]</span></summary>
+
+<answer><ul><ul><li>A computer in which instructions and data are stored in same memory</li><li>and are executed sequentially</li></ul></ul></answer>
 
 </details>
 
@@ -1305,6 +1448,23 @@ print("Valid")
 </details>
 
 <details>
+<summary>The operating system controls the scheduling of processes. Describe how the operating system uses scheduling to allocate processor time <span class='mark'>[4 marks]</span></summary>
+
+<answer>
+<ul>
+<ul><li>All processes are held in a queue</li>
+<li>Processes are prioritised</li>
+<li>Processes are allocated time slices</li>
+<li>Length of time slice depends on priority</li>
+<li>(and) processes are switched (at the end of their time slice)</li>
+<li>Unfinished processes are put to the back of the queue</li>
+<li>During the time slice the process has exclusive use of the processor</li>
+</ul></ul>
+</answer>
+
+</details>
+
+<details>
 <summary>Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span></summary>
 
 <answer>
@@ -1338,9 +1498,44 @@ print("Valid")
 </details>
 
 <details>
+<summary>What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
 <summary>What is scheduling? <span class='mark'>[2 marks]</span></summary>
 
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
+
+</details>
+
+<details>
+<summary>What is paging? <span class='mark'>[2 marks]</span></summary>
+
+<answer><p>The algorithm that the OS uses to move programs from RAM to disk and back again when needed once main memory is full</p></answer>
+
+</details>
+
+<details>
+<summary>Why do users need back-up? <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
+<details>
+<summary>What is the difference between virtual memory and scheduling? <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
 
 </details>
 
@@ -1356,7 +1551,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>Explain how defragmentation software could overcome the issue of the slow computer system.      <span class='mark'>[3 marks]</span></summary>
+<summary>Explain how defragmentation software could overcome the issue of the slow computer system.<span class='mark'>[3 marks]</span></summary>
 
 <answer><ul>
   <ul><li> Files on the hard disk drive are moved (1)</li>
@@ -1844,13 +2039,6 @@ print("Valid")
 </details>
 
 <details>
-<summary>What is the difference between POP3 and IMAP</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
 <summary>Function of DNS</summary>
 
 <answer><!-- TODO --></answer>
@@ -1859,13 +2047,6 @@ print("Valid")
 
 <details>
 <summary>Describe the process of accessing a web page</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>List types of GSM</summary>
 
 <answer><!-- TODO --></answer>
 
@@ -1984,7 +2165,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span></summary>
+<summary>Explain the purposes of following layers: application, transport, internet, and data link layer <span class='mark'>[6 marks]</span></summary>
 
 <answer><!-- TODO --></answer>
 
@@ -1998,7 +2179,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span></summary>
+<summary>Difference between IMAP and POP3 email protocols <span class='mark'>[2 marks]</span></summary>
 
 <answer><!-- TODO --></answer>
 
@@ -2166,21 +2347,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>Define access contro</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
 <summary>Write down the purpose of using access control</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>Define NAS device</summary>
 
 <answer><!-- TODO --></answer>
 
