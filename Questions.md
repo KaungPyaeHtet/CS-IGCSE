@@ -1209,14 +1209,23 @@ Why do people connect to network?<span class='mark'>[2 marks]</span>
   </ul> 
 </answer>
 
-Define LAN <span class='mark'>[1 mark]</span>
-<answer><p>A network that covers a small geographical area</p></answer>
-
-Define WAN <span class='mark'>[1 mark]</span>
-<answer><p></p>A combination of networks (LANs) that covers a large geographical area</answer>
-
-Define PAN <span class='mark'>[1 mark]</span>
-<answer><p>A short-range network that forms near a single user connecting personal devices</p></answer>
+List three types of network and define each one <span class='mark'>[3 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td><strong>LAN</strong></td>
+			<td>A network that covers a small geographical area</td>
+		</tr>
+		<tr>
+			<td><strong>WAN</strong></td>
+			<td>A combination of networks (LANs) that covers a large geographical area</td>
+		</tr>
+		<tr>
+			<td><strong>PAN</strong></td>
+			<td>A short-range network that forms near a single user connecting personal devices</td>
+		</tr>
+	</table>
+</answer>
 
 Write the difference between LAN and WAN <span class='mark'>[2 marks]</span>
 <answer>
@@ -1250,6 +1259,58 @@ Explain why performance is not decreased as increasing devices in peer-to-peer n
 
 Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span>
 <answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
+
+List features of client-server and peer-to-peer network <span class='mark'>[6 marks]</span>
+
+<answer>
+	<table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Field</th>
+      <th>Client-server</th>
+      <th>Peer-to-peer</th>
+		</tr>
+		<tr>
+			<td><strong>Performance</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Centralization</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Security</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Maintenance</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Scalability</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Reliability</strong></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Privacy</strong></td>
+			<td></td>
+		</tr>
+	</table>
+</answer>
+
+
+
+
+
+
+
 
 List two benefits of using client-server network <span class='mark'>[2 marks]</span>
 <table border="1" cellspacing="0" cellpadding="8">
