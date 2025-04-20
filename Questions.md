@@ -413,7 +413,7 @@ print("Valid")
 
 <h3 id='chap-10'>Chapter 10: Subprograms</h3>
 
-List two types of subprograms <span class='mark'>[2 marks]</span>
+List two types of subprograms and difference between them<span class='mark'>[2 marks]</span>
 <answer>
   <ul>
     <li>Function</li>
@@ -516,51 +516,76 @@ Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span cla
 <h3 id='chap-12'>Chapter 12: Binary </h3>
 
 Explain why a programmer might prefer to use hexadecimal <span class='mark'> [2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>It can represent larger values with fewer digits compared to decimal or binary making it easy to understand and read</p></answer>
 
-Convert 0101 0001 into decimal form. 
-<answer><!-- TODO --></answer>
+Convert 0101 0001 into decimal form. <span class='mark'> [1 mark]</span>
+<answer><p>81</p></answer>
 
-Convert 234 into binary form.
-<answer><!-- TODO --></answer>
+Convert 234 into binary form. <span class='mark'> [1 mark]</span>
+<answer><p>1110 1010</p></answer>
 
-Convert 1101 0010 into hexadecimal form.
-<answer><!-- TODO --></answer>
+Convert 1101 0010 into hexadecimal form. <span class='mark'> [2 marks]</span>
+<answer>
+  <ul>
+    <li>1101 = 13 = D</li>
+    <li>0010 = 2  = 2</li>
+    <li>2D</li>
+  </ul>
+</answer>
 
-Convert 4FAD into decimal form
-<answer><!-- TODO --></answer>
+Convert 4FAD into binary form <span class='mark'> [4 marks]</span>
+<answer>
+	<ul>
+		<li>4 = 0010</li>
+		<li>F = 15 = 1111</li>
+		<li>A = 10 = 1010</li>
+		<li>D = 13 = 1101</li>
+		<li>0010 1111 1010 1101</li>
+	</ul>
+</answer>
 
-Add 0011 1001 with 1110 0100.
-<answer><!-- TODO --></answer>
+Add 0011 1001 with 0110 0100. <span class='mark'> [2 marks]</span>
+<answer><p>1001 1101</p></answer>
 
-Difference between logical shift and arithmetic shift
-<answer><!-- TODO --></answer>
+Difference between logical shift and arithmetic shift <span class='mark'> [2 marks]</span>
+<answer><p>Logical shifts are performed on positive binary numbers whereas arithmetic shifts are performed on negative binary numbers</p></answer>
 
-Perform logical left shift by two (+2) for 1001 0110.
-<answer><!-- TODO --></answer>
+Perform logical left shift by two (+2) for 1001 0110. <span class='mark'> [2 marks]</span>
+<answer><p>0101 1000</p></answer>
 
-Perform logical right shift by five (-5) for 0110 1001
-<answer><!-- TODO --></answer>
+Perform logical right shift by five (-5) for 0110 1001 <span class='mark'> [2 marks]</span>
+<answer><p>0000 0011</p></answer>
 
-Perform arithmetic shift left by three (+3) for 1101 0011
-<answer><!-- TODO --></answer>
+Perform arithmetic shift left by three (+3) for 1101 0011 <span class='mark'> [2 marks]</span>
+<answer><p>1100 1100</p></answer>
 
-Perform arithmetic shift right by four (-4) for 1010 0101
-<answer><!-- TODO --></answer>
+Perform arithmetic shift right by four (-4) for 1010 0101 <span class='mark'> [2 marks]</span>
+<answer><p>1111 1010</p></answer>
 
-Represent -83 with sign and magnitude method
-<answer><!-- TODO --></answer>
+Represent -83 with sign and magnitude method <span class='mark'> [2 marks]</span>
+<answer><p>1101 0011</p></answer>
 
-Represent 0111 1011 with 8 bit two complement form.
-<answer><!-- TODO --></answer>
+Represent 0111 1011 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
+<answer>
+	<ul>
+		<li>flip: 1000 0100</li>
+		<li>add 1: 1000 0101</li> 
+	</ul>
+</answer>
 
-Represent  -67 with 8 bit two complement form. 
-<answer><!-- TODO --></answer>
+Represent -67 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
+<answer>
+	<ul>
+		<li>67: 0100 0011</li>
+		<li>flip: 1011 1100</li>
+		<li>add 1: 1011 1101</li>
+	</ul>
+</answer>
 
 Define overflow error <span class='mark'>[2 marks]</span>
 <answer><p>this condition occurs when a calculation produces a result that is greater than the computer can deal with or store. When this happens, the microprocessor is informed that an error has occurred.</p></answer>
 
- Explain why binary is used to represent data <span class='mark'>[2 marks]</span>
+Explain why binary is used to represent data <span class='mark'>[2 marks]</span>
 <answer><p>Binary can represent two states (1) because computer circuits uses transistors which can either be on or off (1)</p></answer>
 
 <h3 id='chap-13'>Chapter 13: Data Representation</h3>
@@ -580,7 +605,12 @@ Give the impacts of increasing the sampling frequency. <span class='mark'>[2 mar
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
 
 List two benefits of using ASCII encoding <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>Simplicity and Easy to understand</li>
+		<li>Memory Efficiency as it only uses 7 bits (standard ASCII)</li>
+	</ul>
+</answer>
 
 Explain why Unicode was developed <span class='mark'>[2 marks]</span>
 <answer>
@@ -592,26 +622,31 @@ Explain why Unicode was developed <span class='mark'>[2 marks]</span>
   </ul>
 </answer>
 
-List two factors that affect the fidelity of the sound
+List two factors that affect the fidelity of the sound <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Bit depth</li>
+    <li>Sampling rate</li>
+  </ul>
+</answer>
+
+Explain how increasing sample rate improves the fidelity of the sound <span class='mark'>[1 mark]</span>
 <answer><!-- TODO --></answer>
 
-Explain how increasing sample rate improves the fidelity of the sound
-<answer><!-- TODO --></answer>
+Explain how increasing bit depth improves the fidelity of the sound <span class='mark'>[1 mark]</span>
+<answer><p>With bigger bit depth, higher level of amplitude can be measured adding more details</p></answer>
 
-Explain how increasing bit depth improves the fidelity of the sound
-<answer><!-- TODO --></answer>
+State how to calculate the file size of an audio file <span class='mark'>[1 mark]</span>
+<answer><p>sample rate(Hz) x bit depth(bits) x duration(seconds) x channel(mono or stereo)</p></answer>
 
-State how to calculate the file size of an audio file
-<answer><!-- TODO --></answer>
+Define pixel <span class='mark'>[1 mark]</span> 
+<answer><p>the smallest point of a bit-map image that displays a single point of color</p></answer>
 
-Define pixel
-<answer><p>A smallest element in a image (1) / A picture element (1)</p></answer>
+Define image resolution <span class='mark'>[1 mark]</span>
+<answer><p>pixels width x pixels height</p></answer>
 
-Define image resolution
-<answer><!-- TODO --></answer>
-
-State how to calculate the file size of an image
-<answer><!-- TODO --></answer>
+State how to calculate the file size of an image <span class='mark'>[1 mark]</span>
+<answer><p>pixels width x pixels height x bit depth</p></answer>
 
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
 <answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
@@ -628,7 +663,7 @@ Describe the steps taken to convert the analogue sound to a digital sound file <
 </answer>
 
 Explain what is meant by colour depth. <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>the number of bits that is used to encode each pixel</p></answer>
 
 How many bits does standard ASCII uses to represent character <span class='mark'>[1 mark]</span>
 <answer><p>7 bits</p></answer>
@@ -641,7 +676,7 @@ How many bits does Unicode uses to represent character <span class='mark'>[1 mar
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
-Table of unit of data in computer from b to GB<span class='mark'>[6 marks]</span>
+Table of unit of data in computer from b to GB(decimal prefix)<span class='mark'>[6 marks]</span>
 <answer>
 <table>
     <thead>
@@ -687,60 +722,116 @@ Define compression <span class='mark'>[1 mark]</span>
 <answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
 
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
 
-Define Run-Length Encoding (RLE) 
-<answer><!-- TODO --></answer>
+Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
+<answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
 
-Explain how Run-Length Encoding (RLE) works
-<answer><!-- TODO --></answer>
+Explain how Run-Length Encoding (RLE) works <span class='mark'>[2 marks]</span>
+<answer>It encodes the count of repetitions along with the character. For instance, "FFFASS" as "3F1A2S".</answer>
 
 State when Run-Length Encoding (RLE) might not be efficient 
 <answer><!-- TODO --></answer>
 
-What is the difference between lossless compression and lossy compression
+List two types of compression
 <answer><!-- TODO --></answer>
 
-What is the advantage and disadvantage of using lossless compression
-<answer><!-- TODO --></answer>
+What is the difference between lossless compression and lossy compression <span class='mark'>[2 marks]</span>
+<answer>Lossless compression does not delete any data during compression state whereas lossy compression deletes some of the data to reduce the file size</answer>
 
-What is the advantage and disadvantage of using lossy compression
-<answer><!-- TODO --></answer>
+What is the advantage and disadvantage of using lossless compression <span class='mark'>[2 marks]</span>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Advantage</strong></td>
+      <td>All the data can be recovered restoring original quality</td>
+    </tr>
+    <tr>
+      <td><strong>Disadvantage</strong></td>
+      <td>Takes longer time and more processing power due to complex algorithms</td>
+    </tr>
+  </table>
+</answer>
 
-Why quality decrease is acceptable when using lossy compression
-<answer><!-- TODO --></answer>
+What is the advantage and disadvantage of using lossy compression <span class='mark'>[2 marks]</span>
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Advantage</strong></td>
+      <td>It reduces the file more significantly compared to lossless compression</td>
+    </tr>
+    <tr>
+      <td><strong>Disadvantage</strong></td>
+      <td>Data is lost permanenely, it can not be recovered back</td>
+    </tr>
+  </table>
+</answer>
+
+Why quality decrease is acceptable when using lossy compression <span class='mark'>[2 marks]</span>
+<answer><p>Small changes can not be noticed by humans</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>It uses limited number of keys so it can be cracked by guessing different keys until right one is found (brute-force method)</p></answer>
 
-Define encryption
-<answer><!-- TODO --></answer>
+Define encryption <span class='mark'>[1 mark]</span>
+<answer><p>The process of converting plain text into cipher text</p></answer>
 
-Write down the purpose of encryption
-<answer><!-- TODO --></answer>
+Write down the purpose of encryption <span class='mark'>[1 mark]</span>
+<answer><p>to make data unreadable by unauthorized users</p></answer>
 
-State two types of encryption method
-<answer><!-- TODO --></answer>
+State two types of encryption method <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Asymmetric encryption</li>
+    <li>Symmetric encryption</li>
+  </ul>
+</answer>
 
-Define asymmetric encryption
-<answer><!-- TODO --></answer>
+Define asymmetric encryption <span class='mark'>[2 marks]</span>
+<answer><p>Encryption method that uses two differnet keys to decrypt and encrypt the data</p></answer>
 
-Define symmetric encryption
-<answer><!-- TODO --></answer>
+Define symmetric encryption <span class='mark'>[2 marks]</span>
+<answer><p>Encryption method that uses the same key to decrypt and encrypt the data</p></answer>
 
-What is the difference between asymmetric and symmetric encryption
-<answer><!-- TODO --></answer>
+List at least two benefits of asymmetric encryption and symmetric encryption <span class='mark'>[4 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td>Asymmetric Encryption</td>
+			<td>
+        <ul>
+		        <li>No need key-sharing</li>
+		        <li>Better security as it uses different keys to encrypt and decrypt the data</li>
+	      </ul>
+      </td>
+		</tr>
+		<tr>
+			<td>Symmetric encryption</td>
+			<td>
+        <ul>
+		        <li>Faster due to less complex calculations</li>
+		        <li>Efficient for encrypting large set of data</li>
+	      </ul>
+      </td>
+		</tr>
+	</table>
+</answer>
 
-Describe how caesar cipher works
-<answer><!-- TODO --></answer>
+List at least two types of ciphers <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Pigphen cipher</li>
+    <li>Caesar cipher</li>
+    <li>Vigenere cipher</li>
+    <li>Rail Fence cipher</li>
+  </ul>
+</answer>
 
-State disadvantage of using caesar cipher
-<answer><!-- TODO --></answer>
+Describe how caesar cipher works <span class='mark'>[2 marks]</span>
+<answer><p>It works by shifting the order of alphabets according to the key</p></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
 
@@ -755,8 +846,14 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
-What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
+Define agents
 <answer><!-- TODO --></answer>
+
+List two features of agents in multi-agent model
+<answer><!-- TODO --></answer>
+
+What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
+<answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
@@ -836,44 +933,58 @@ What is the purpose of the Current Instruction Register (CIR)? <span class='mark
 Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
 
-Define address bus
-<answer><!-- TODO --></answer>
+Define address bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries memory address</answer>
 
-Define data bus
-<answer><!-- TODO --></answer>
+Define data bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries data value stored in a specific memory address</answer>
 
-Define control bus
-<answer><!-- TODO --></answer>
+Define control bus <span class='mark'>[1 mark]</span>
+<answer>The bus that carries control signals</answer>
 
-List three types of bus
-<answer><!-- TODO --></answer>
+How increasing address bus width affect <span class='mark'>[1 mark]</span>
+<answer>More memory addresses can be carried</answer>
 
-How increasing address bus width affect
-<answer><!-- TODO --></answer>
+How increasing data bus width affect <span class='mark'>[1 mark]</span>
+<answer><p>Bigger size of instruction can be carried</p></answer>
 
-How increasing data bus width affect
-<answer><!-- TODO --></answer>
+Define cache <span class='mark'>[1 mark]</span>
+<answer><p>Cache stores frequently used data by CPU</p></answer>
 
-Define cache
-<answer><!-- TODO --></answer>
+List three factors that affect the performance of the CPU <span class='mark'>[3 marks]</span>
+<answer>
+  <ul>
+    <li>Clock speed</li>
+    <li>Number of cores</li>
+    <li>Cache size</li>
+  </ul>
+</answer>
 
-List three factors that affect the performance of the CPU
-<answer><!-- TODO --></answer>
+Define clock speed <span class='mark'>[1 mark]</span>
+<answer><p>The number of cycles per second</p></answer>
 
-Define clock speed
-<answer><!-- TODO --></answer>
+State how increasing clock speed affect the performance of the CPU <span class='mark'>[2 marks]</span>
+<answer><p>When clock speed is increased, more instructions can be executed per second reducing loading time and increasing computing power</p></answer>
 
-State how increasing clock speed affect the performance of the CPU
-<answer><!-- TODO --></answer>
+State how increased number of cores affect the performance of the CPU <span class='mark'>[2 marks]</span>
+<answer><p>Better parallel processing as more tasks are executed by different cores</p></answer>
 
-State how increased number of cores affect the performance of the CPU
-<answer><!-- TODO --></answer>
+List two benefits of increasing computing power <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Improve multi-tasking</li>
+    <li>Reduce loading time</li>
+  </ul>
+</answer>
 
-List two benefits of increasing computing power
-<answer><!-- TODO --></answer>
-
-List two disadvantages of increasing computing power
-<answer><!-- TODO --></answer>
+List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span>
+<answer>
+  <ul>
+    <li>Higher cost due to better quality</li>
+    <li>Higher enery consumptions leading to environmental impacts</li>
+    <li>Higher heat generation causing electrical components burns or even melts</li>
+  </ul>
+</answer>
 
 Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
@@ -1098,14 +1209,23 @@ Why do people connect to network?<span class='mark'>[2 marks]</span>
   </ul> 
 </answer>
 
-Define LAN <span class='mark'>[1 mark]</span>
-<answer><p>A network that covers a small geographical area</p></answer>
-
-Define WAN <span class='mark'>[1 mark]</span>
-<answer><p></p>A combination of networks (LANs) that covers a large geographical area</answer>
-
-Define PAN <span class='mark'>[1 mark]</span>
-<answer><p>A short-range network that forms near a single user connecting personal devices</p></answer>
+List three types of network and define each one <span class='mark'>[3 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td><strong>LAN</strong></td>
+			<td>A network that covers a small geographical area</td>
+		</tr>
+		<tr>
+			<td><strong>WAN</strong></td>
+			<td>A combination of networks (LANs) that covers a large geographical area</td>
+		</tr>
+		<tr>
+			<td><strong>PAN</strong></td>
+			<td>A short-range network that forms near a single user connecting personal devices</td>
+		</tr>
+	</table>
+</answer>
 
 Write the difference between LAN and WAN <span class='mark'>[2 marks]</span>
 <answer>
@@ -1140,6 +1260,58 @@ Explain why performance is not decreased as increasing devices in peer-to-peer n
 Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span>
 <answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
 
+List features of client-server and peer-to-peer network <span class='mark'>[6 marks]</span>
+
+<answer>
+	<table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Field</th>
+      <th>Client-server</th>
+      <th>Peer-to-peer</th>
+		</tr>
+		<tr>
+			<td><strong>Performance</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Centralization</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Security</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Maintenance</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Scalability</strong></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Reliability</strong></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><strong>Privacy</strong></td>
+			<td></td>
+		</tr>
+	</table>
+</answer>
+
+
+
+
+
+
+
+
 List two benefits of using client-server network <span class='mark'>[2 marks]</span>
 <table border="1" cellspacing="0" cellpadding="8">
   <tr>
@@ -1172,7 +1344,8 @@ Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</spa
 </answer>
 
 List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
-<table border="1" cellspacing="0" cellpadding="8">
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
   <tr>
     <th colspan="2">Benefits of peer-to-peer network</th>
   </tr>
@@ -1189,6 +1362,7 @@ List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</sp
     <td>There is no centralized device that stores log, monitors or spys.</td>
   </tr>
 </table>
+</answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
 <answer><img src='assets/network/bus-topology.png'>
@@ -1262,47 +1436,139 @@ Describe advantages and disadvantages of Star Topology <span class='mark'>[3 mar
 </ul>
 </answer>
 
-List four layers of TCP/IP protocol stack
-<answer><!-- TODO --></answer>
+List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>Application</strong></td>
+      <td>
+        <ul>
+          <li>provides an user interface interacting with the user</li>
+          <li>hosts the application layer protocols such as email protocols</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Transport</strong></td>
+      <td>
+        <ul>
+          <li>provides an end-to-end communication between devices</li>
+          <li>breaks down the data into packets</li>
+          <li>adds packets number in packets headers</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Internet</strong></td>
+      <td>
+        <ul>
+          <li>Adds source IP address and destination IP address</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Data link</strong></td>
+      <td>
+        <ul>
+          <li>connects with physical components</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</answer>
 
-Function of application layer
-<answer><!-- TODO --></answer>
+Write function of TCP protocol <span class='mark'>[4 marks]
+<answer>
+  <ul>
+    <li>Works under transport layer</li>
+    <li>Ensures a reliable data transmission between devices</li>
+    <li>It uses error handling methods such as handshakes and checksums</li>
+    <li>It requests retransmission if it is necessary (when some of the data is missing or damanged)</li>
+  </ul>
+</answer>
 
-Function of transport layer
-<answer><!-- TODO --></answer>
-
-Function of internet layer
-<answer><!-- TODO --></answer>
-
-Function of data link layer
-<answer><!-- TODO --></answer>
-
-What is the purpose of using checksums
-<answer><!-- TODO --></answer>
-
-Write function of TCP protocol
-<answer><!-- TODO --></answer>
-
-List two protocols that work in application layer
-<answer><!-- TODO --></answer>
+List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]
+<answer>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <td><strong>HTTP (Hyper-text Transfer Protocol)</strong></td>
+      <td>
+        <ul>
+          <li>used for transferring html documents</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>HTTPS (Hyper-text Transfer Protocol Secure)</strong></td>
+      <td>
+        <ul>
+          <li>used for transferring html documents<strong>securely</strong></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>FTP (File Transfer Protocol)</strong></td>
+      <td>
+        <ul>
+          <li>used for transferring files</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>SMTP (Simple Message Transfer Protocol)</strong></td>
+      <td>
+        <ul>
+          <li>used for sending emails to mail servers and between mail servers</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>POP3 (Post Office Version 3) and IMAP (Internet Message Access Protocol)</strong></td>
+      <td>
+        <ul>
+          <li>used for receiving and reading emails from mail servers</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</answer>
 
 List three email protocols
 <answer><!-- TODO --></answer>
 
-Function of DNS
+What is the difference between POP3 and IMAP
 <answer><!-- TODO --></answer>
+
+Function of DNS server
+<answer><p>To give the corresponding IP address of domain name to the web broswer</p></answer>
 
 Describe the process of accessing a web page
 <answer><!-- TODO --></answer>
 
-List two examples of wireless connectivity
+List types of GSM
 <answer><!-- TODO --></answer>
 
+List two examples of wireless connectivity
+<answer>
+	<ul>
+		<li>Wi-Fi</li>
+		<li>Bluetooth</li>
+		<li>Infra-red</li>
+	</ul>
+</answer>
+
 List ways to identify devices on the network
-<answer><!-- TODO --></answer>
+<answer>
+	<ul>
+		<li>Device name</li>
+		<li>IP address</li>
+		<li>MAC address</li>
+	</ul>
+</answer>
 
 What is the difference between IP addresses and MAC addresses
 <answer><!-- TODO --></answer>
+
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1367,13 +1633,13 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
 
-Explain the purposes of following layers: application, transport, internet, and data link layer <span class='mark'>[6 marks]</span>
+Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
 <answer><!-- TODO --></answer>
 
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
-Difference between IMAP and POP3 email protocols <span class='mark'>[2 marks]</span>
+Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
@@ -1447,6 +1713,9 @@ Define penetration testing
 <answer><!-- TODO --></answer>
 
 Define two-factor authentication (2FA)
+<answer><!-- TODO --></answer>
+
+Define access contro
 <answer><!-- TODO --></answer>
 
 Write down the purpose of using access control
@@ -1760,6 +2029,9 @@ Define the term entanglement <span class='mark'>[1 mark]</span>
 
 Define the term qubit <span class='mark'>[1 mark]</span>
 <answer><p>A quantum bit, the counterpart in quantum computing to the binary digit or bit of classical computing.</p></answer>
+
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
+<answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
 
 How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
