@@ -29,9 +29,64 @@
   --code-bg: var(--code-bg-dark);
   --border: var(--border-dark);
 }
+.font-selector {
+  top: 20px;
+}
+
+#font-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Add tooltip showing font name when hovering */
+.font-selector {
+  position: fixed;
+  top: 20px;
+  right: 70px; /* Position to the left of the theme toggle */
+  z-index: 1000;
+  background: var(--primary);
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#font-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
 
 body {
-  font-family: "Futura", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: normal;
   background: var(--bg);
   color: var(--text);

@@ -454,10 +454,19 @@ What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
 </answer>
 
 Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span>  <ul><li>length</li><li>count</li><li>index</li><li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
-<answer><!-- TODO --></answer>
+<answer><img src='assets/programming/tracetable-answer.png'></answer>
 
 Answer these questions about the code. <ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
-<answer><!-- TODO --></answer>
+<answer>
+  <ul>
+    <li>rectangle</li>
+    <li>print</li>
+    <li>length or width</li>
+    <li>length, width, area or perimeter</li>
+    <li>ar or per</li>
+    <li>8</li>
+  </ul>
+</answer>
 
 Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span>
 <answer>
@@ -592,7 +601,7 @@ Explain why binary is used to represent data <span class='mark'>[2 marks]</span>
 
 What is a bitmap image? <span class='mark'>[2 marks]</span>
 <answer>
-<!-- TODO -->
+  <p>A grid of pixels that uses unique binary codes for each color and has a fixed resolution</p>
 </answer>
 
 What is a unit of resolution? <span class='mark'>[1 mark]</span>
@@ -730,11 +739,8 @@ Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
 Explain how Run-Length Encoding (RLE) works <span class='mark'>[2 marks]</span>
 <answer>It encodes the count of repetitions along with the character. For instance, "FFFASS" as "3F1A2S".</answer>
 
-State when Run-Length Encoding (RLE) might not be efficient 
-<answer><!-- TODO --></answer>
-
-List two types of compression
-<answer><!-- TODO --></answer>
+State when Run-Length Encoding (RLE) might not be efficient <span class='mark'>[2 marks]</span>
+<answer><p>When the file doesn't have repeated characters, and so the file size increased.</p></answer>
 
 What is the difference between lossless compression and lossy compression <span class='mark'>[2 marks]</span>
 <answer>Lossless compression does not delete any data during compression state whereas lossy compression deletes some of the data to reduce the file size</answer>
@@ -771,7 +777,6 @@ Why quality decrease is acceptable when using lossy compression <span class='mar
 <answer><p>Small changes can not be noticed by humans</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
-<answer><p></p><answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
@@ -847,12 +852,6 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
-
-Define agents
-<answer><!-- TODO --></answer>
-
-List two features of agents in multi-agent model
-<answer><!-- TODO --></answer>
 
 What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
 <answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
@@ -1070,7 +1069,38 @@ List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</spa
 </answer>
 
 What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- Interface
+- Advantages
+- Disadvantages
+- Command line (CLI)
+- Uses less system resources
+- Useful for automation of tasks
+- Commands are often faster to type than navigating menus
+- equires users to remember commands
+- Typing errors are common
+Less intuitive than GUI
+- Graphical (GUI)
+
+- Intuitive and user-friendly
+- Requires no previous knowledge to use
+- Information is visual, making it easier to understand
+- Uses more system resources
+- Can be slower to find and execute commands
+- Can be frustrating when doing repetitive tasks
+- Menu
+
+Simplicity
+Efficiency
+Limited flexibility
+Accessibility issues
+Natural language (NLI)
+
+Can be used by people with disabilities
+Intuitive
+Not always reliable
+Privacy concerns
+</answer>
 
 What is scheduling? <span class='mark'>[2 marks]</span>
 <answer><p>The algorithm that the OS uses to share a portion of CPU time to each programs which are currently running</p></answer>
@@ -1079,7 +1109,12 @@ What is paging? <span class='mark'>[2 marks]</span>
 <answer><p>The algorithm that the OS uses to move programs from RAM to disk and back again when needed once main memory is full</p></answer>
 
 Why do users need back-up? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><ul>
+To protect against loss of data from 
+<li>natural diseases</li>
+<li>Hardware failure</li>
+<li>Cyberattacks</li>
+</ul></answer>
 
 What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
