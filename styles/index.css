@@ -29,6 +29,75 @@
   --code-bg: var(--code-bg-dark);
   --border: var(--border-dark);
 }
+.font-selector {
+  position: fixed;
+  top: 20px;
+  right: 120px; /* Adjust this to not overlap with other buttons */
+  z-index: 1001;
+  margin-left: 10px;
+}
+
+#font-select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Add tooltip showing font name when hovering */
+.font-selector {
+  position: relative;
+}
+
+.font-selector::after {
+  content: attr(data-current-font);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background);
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  border: 1px solid var(--border);
+}
+
+.font-selector:hover::after {
+  opacity: 1;
+}
+
+#font-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

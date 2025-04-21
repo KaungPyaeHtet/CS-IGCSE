@@ -5,3 +5,4 @@ exam_generator.html
 .vscode
 practice.html
 .DS_Store
+__pycache__

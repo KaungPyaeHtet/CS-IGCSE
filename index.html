@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
     <link rel="stylesheet" href="styles/index.css">
+    <!-- Add this to your <head> section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="prism-theme-light" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
@@ -11,6 +15,15 @@
     <link rel="icon" type="image/x-icon" href="assets/logo/tau.png">
 </head>
 <body>
+    <div class="font-selector">
+    <select id="font-select" title="Change Font">
+        <option value="inter">Inter (Default)</option>
+        <option value="roboto">Roboto</option>
+        <option value="open-sans">Open Sans</option>
+        <option value="source-code-pro">Source Code Pro</option>
+        <option value="lora">Lora</option>
+    </select>
+    </div>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" data-translate='🙌 Close all questions' title="Close All Toggles">🙌 Close all questions</button>
@@ -614,7 +627,16 @@ print("Valid")
 <details>
 <summary>Answer these questions about the code. <ul><ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div></summary>
 
-<answer><ul><ul><li>Rectangle</li><li></li><li></li><li></li></ul></ul></answer>
+<answer>
+  <ul>
+    <ul><li>rectangle</li>
+</ul>    <ul><li>print</li>
+</ul>    <ul><li>length or width</li>
+</ul>    <ul><li>length, width, area or perimeter</li>
+</ul>    <ul><li>ar or per</li>
+</ul>    <ul><li>8</li>
+</ul>  </ul>
+</answer>
 
 </details>
 
@@ -825,7 +847,7 @@ print("Valid")
 <summary>What is a bitmap image? <span class='mark'>[2 marks]</span></summary>
 
 <answer>
-<!-- TODO -->
+  <p>A grid of pixels that uses unique binary codes for each color and has a fixed resolution</p>
 </answer>
 
 </details>
@@ -1036,7 +1058,6 @@ print("Valid")
 
 </details>
 
-<p>Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span></p>
 <details>
 <summary>Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span></summary>
 
@@ -1052,16 +1073,9 @@ print("Valid")
 </details>
 
 <details>
-<summary>State when Run-Length Encoding (RLE) might not be efficient</summary>
+<summary>State when Run-Length Encoding (RLE) might not be efficient <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>List two types of compression</summary>
-
-<answer><!-- TODO --></answer>
+<answer><p>When the file doesn't have repeated characters, and so the file size increased.</p></answer>
 
 </details>
 
@@ -1115,7 +1129,13 @@ print("Valid")
 
 </details>
 
-<p>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></p>
+<details>
+<summary>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></summary>
+
+<answer><!-- TODO --></answer>
+
+</details>
+
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 <details>
@@ -1236,20 +1256,6 @@ print("Valid")
 <summary>Define multi-agent processing <span class='mark'>[1 mark]</span></summary>
 
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
-
-</details>
-
-<details>
-<summary>Define agents</summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>List two features of agents in multi-agent model</summary>
-
-<answer><!-- TODO --></answer>
 
 </details>
 
@@ -1609,7 +1615,41 @@ print("Valid")
 <details>
 <summary>What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>Interface</li>
+<li>Advantages</li>
+<li>Disadvantages</li>
+<li>Command line (CLI)</li>
+<li>Uses less system resources</li>
+<li>Useful for automation of tasks</li>
+<li>Commands are often faster to type than navigating menus</li>
+<li>equires users to remember commands</li>
+<li>Typing errors are common</li>
+</ul>Less intuitive than GUI
+<ul><li>Graphical (GUI)</li>
+<li>Intuitive and user-friendly</li>
+<li>Requires no previous knowledge to use</li>
+<li>Information is visual, making it easier to understand</li>
+<li>Uses more system resources</li>
+<li>Can be slower to find and execute commands</li>
+<li>Can be frustrating when doing repetitive tasks</li>
+<li>Menu</li>
+</ul>
+Simplicity
+Efficiency
+Limited flexibility
+Accessibility issues
+Natural language (NLI)
+
+</details>
+
+<details>
+<summary>Can be used by people with disabilities</summary>
+
+Intuitive
+Not always reliable
+Privacy concerns
+</answer>
 
 </details>
 
@@ -1630,7 +1670,12 @@ print("Valid")
 <details>
 <summary>Why do users need back-up? <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer><ul>
+To protect against loss of data from 
+<ul><li>natural diseases</li>
+<li>Hardware failure</li>
+<li>Cyberattacks</li>
+</ul></ul></answer>
 
 </details>
 
@@ -3396,6 +3441,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+function changeFont(font) {
+  document.body.className = ''; // Clear existing font classes
+  document.body.classList.add(`font-${font}`);
+  localStorage.setItem('selectedFont', font);
+}
+
+// Initialize font from localStorage
+const savedFont = localStorage.getItem('selectedFont') || 'inter';
+changeFont(savedFont);
+
+// Set up the font selector
+document.getElementById('font-select').addEventListener('change', (e) => {
+  changeFont(e.target.value);
+});
+
+// Set the selected option in dropdown
+document.getElementById('font-select').value = savedFont;
+
+// Update the data attribute when font changes
+function updateFontTooltip(font) {
+  const selector = document.querySelector('.font-selector');
+  const fontNames = {
+    'inter': 'Inter',
+    'roboto': 'Roboto',
+    'open-sans': 'Open Sans',
+    'source-code-pro': 'Source Code Pro',
+    'lora': 'Lora'
+};
+  selector.setAttribute('data-current-font', `Current: ${fontNames[font]}`);
+}
+
+// Call this when initializing and when font changes
+updateFontTooltip(savedFont);
 
     </script>
 </body>

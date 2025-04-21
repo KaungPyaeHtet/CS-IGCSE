@@ -94,6 +94,10 @@ def convert_md_to_html(output_html):
     <meta charset="UTF-8">
     <title>IGCSE Edexcel (9-1) Commonly Asked Questions</title>
     <link rel="stylesheet" href="styles/index.css">
+    <!-- Add this to your <head> section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="prism-theme-light" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
@@ -101,6 +105,15 @@ def convert_md_to_html(output_html):
     <link rel="icon" type="image/x-icon" href="assets/logo/tau.png">
 </head>
 <body>
+    <div class="font-selector">
+    <select id="font-select" title="Change Font">
+        <option value="inter">Inter (Default)</option>
+        <option value="roboto">Roboto</option>
+        <option value="open-sans">Open Sans</option>
+        <option value="source-code-pro">Source Code Pro</option>
+        <option value="lora">Lora</option>
+    </select>
+    </div>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
     <a href="contributors.html" class='contributor-link'>Contributors</a>
     <button onclick="closeAllToggles()" class="close-all" data-translate='🙌 Close all questions' title="Close All Toggles">🙌 Close all questions</button>
@@ -360,6 +373,39 @@ document.addEventListener('DOMContentLoaded', function() {{
         }});
     }}
 }});
+function changeFont(font) {{
+  document.body.className = ''; // Clear existing font classes
+  document.body.classList.add(`font-${{font}}`);
+  localStorage.setItem('selectedFont', font);
+}}
+
+// Initialize font from localStorage
+const savedFont = localStorage.getItem('selectedFont') || 'inter';
+changeFont(savedFont);
+
+// Set up the font selector
+document.getElementById('font-select').addEventListener('change', (e) => {{
+  changeFont(e.target.value);
+}});
+
+// Set the selected option in dropdown
+document.getElementById('font-select').value = savedFont;
+
+// Update the data attribute when font changes
+function updateFontTooltip(font) {{
+  const selector = document.querySelector('.font-selector');
+  const fontNames = {{
+    'inter': 'Inter',
+    'roboto': 'Roboto',
+    'open-sans': 'Open Sans',
+    'source-code-pro': 'Source Code Pro',
+    'lora': 'Lora'
+}};
+  selector.setAttribute('data-current-font', `Current: ${{fontNames[font]}}`);
+}}
+
+// Call this when initializing and when font changes
+updateFontTooltip(savedFont);
 
     </script>
 </body>
