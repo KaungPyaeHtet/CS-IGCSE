@@ -1596,92 +1596,155 @@ Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
-Define authentication
-<answer><!-- TODO --></answer>
+Define authentication <span class='mark'>[2 marks]</span>
+<answer><p>The process of verifying someone's identity</p></answer>
 
-Define validation
-<answer><!-- TODO --></answer>
+Define validation <span class='mark'>[2 marks]</span>
+<answer><p>The process of checking whether data fits in certain requirements or rules</p></answer>
 
-Define phishing
-<answer><!-- TODO --></answer>
-
-Define pharming
-<answer><!-- TODO --></answer>
-
-Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
+Define Social Engineering and three types of it <span class='mark'>[6 marks]</span>
 <answer>
-<ul>
-<li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
-<li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
-</ul>
+	<table>
+		<tr>
+			<td><strong>Social Engineering</strong></td>
+			<td>Exploiting the human behaviour/faults to steal sensitive/confidential information</td>
+		</tr>
+		<tr>
+			<td><strong>Phishing</strong></td>
+			<td>Process of tricking the user to enter their personal information themselves. Attackers pretend to be from legitimate/original source</td>
+		</tr>
+		<tr>
+			<td><strong>Pharming</strong></td>
+			<td>Process of redirecting the user to fake website by poisoning DNS server or browser DNS setting</td>
+		</tr>
+		<tr>
+			<td><strong>Shoulder Surfing</strong></td>
+			<td>
+        <li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
+        <li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
+      </td>
+		</tr>
+	</table>
 </answer>
 
-List two ways to protect from phishing
-<answer><!-- TODO --></answer>
-
-List two ways to protect from pharming
-<answer><!-- TODO --></answer>
-
-Define malware
-<answer><!-- TODO --></answer>
-
-List three types of malware
-<answer><!-- TODO --></answer>
-
-Function of virus
-<answer><!-- TODO --></answer>
-
-Function of worm
-<answer><!-- TODO --></answer>
-
-Function of ransomware
-<answer><!-- TODO --></answer>
-
-Function of firewall
-<answer><!-- TODO --></answer>
-
-List two ways to improve physical security
-<answer><!-- TODO --></answer>
-
-Define eavesdropping
-<answer><!-- TODO --></answer>
-
-State how to protect from eavesdropping
-<answer><!-- TODO --></answer>
-
-List two features of a strong password
-<answer><!-- TODO --></answer>
-
-Define audit trailing
-<answer><!-- TODO --></answer>
-
-Write down the purpose of audit trailing
-<answer><!-- TODO --></answer>
-
-Define modular testing
-<answer><!-- TODO --></answer>
-
-Define penetration testing
-<answer><!-- TODO --></answer>
-
-Define two-factor authentication (2FA)
-<answer><!-- TODO --></answer>
-
-Define access contro
-<answer><!-- TODO --></answer>
-
-Write down the purpose of using access control
-<answer><!-- TODO --></answer>
-
-List at least two examples of software vulnerabilities
-<answer><!-- TODO --></answer>
-
-Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
+Explain one way to protect from three types of social engineering <span class='mark'>[6 marks]</span>
 <answer>
-<ul>
-<li>shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)</li>
-<li>to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)</li>
-</ul>
+	<table>
+		<tr>
+			<td><strong>Phishing</strong></td>
+			<td>
+        - enabling email spam
+        - not clicking suspious/malicious links
+        - keeping up to date with lastest anti-malware software
+      </td>
+		</tr>
+		<tr>
+			<td><strong>Pharming</strong></td>
+			<td>
+        - using secure DNS provider
+        - looks for HTTPS protocol in site URL
+      </td>
+		</tr>
+		<tr>
+			<td><strong>Shoulder Surfing</strong></td>
+			<td>
+        - shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)
+        - to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)
+      </td>
+		</tr>
+	</table>
+</answer>
+
+Define malware <span class='mark'>[2 marks]</span>
+<answer><p>Any software that has malicious purpose/code to get unauthorized access or steal sensitive/personal/confidential information</p></answer>
+
+List three types of malware <span class='mark'>[3 marks]</span>
+<answer>
+- virus
+- worm
+- ransomware
+- trojan
+- spyware
+- adware
+</answer>
+
+Write down function of three malware types <span class='mark'>[6 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td><strong>Virus</strong></td>
+			<td>self-replicating software that is designed to harm the computer by draining computing power/deletes files</td>
+		</tr>
+		<tr>
+			<td><strong>Worm</strong></td>
+			<td>self-replicating software that functions the same as virus but it does not need host file or human interactions to spread</td>
+		</tr>
+		<tr>
+			<td><strong>Ramsomware</strong></td>
+			<td>encrypts/locks the user files and demands a payment to decrypt/unlock it back</td>
+		</tr>
+		<tr>
+			<td><strong>Spyware</strong></td>
+			<td>spys/monitors the screen to steal personal/sensitive/confidential information</td>
+		</tr>
+	</table>
+</answer>
+
+Function of firewall <span class='mark'>[2 marks]</span>
+<answer><p>Monitors ingoing and outgoing data traffic deciding which data to be allowed to pass through according to a set of rules known as firewall porlicy</p><answer>
+
+List two ways to improve physical security <span class='mark'>[2 marks]</span>
+<answer>
+- CCTVs
+- electronic locks
+- biometric systems
+- security guards
+- alarm systems
+- laser 
+</answer>
+
+Define eavesdropping <span class='mark'>[2 marks]</span>
+<answer><p>process of intercepting or sniffing data traffic to steal personal/sensitive/confidential information</p><answer>
+
+State how to protect from eavesdropping <span class='mark'>[2 marks]</span>
+<answer>
+- encryption
+- using VPNs
+</answer>
+
+List two features of a strong password <span class='mark'>[2 marks]</span>
+<answer>
+- at least 12 characters or more
+- mixed up with numbers, upper cases, lower cases and special symbols
+- uncommon/unique words
+</answer>
+
+Define audit trail <span class='mark'>[2 marks]</span>
+<answer><p>a detail record that keeps activity logs that contain who did changes, when happened and what changed</p><answer>
+
+Write down the purpose of audit trailing <span class='mark'>[2 marks]</span>
+<answer><p>to detect/find/analyze any suspicious activity that trys to get unauthorized access</p><answer>
+
+Define modular testing <span class='mark'>[2 marks]</span>
+<answer><p>to encure each section/part is working accurately by testing</p><answer>
+
+Define penetration testing <span class='mark'>[2 marks]</span>
+<answer><p>process that is performed by ethical hackers for the sake of finding and fixing security vulnerabilities before getting exploiting by hackers</p><answer>
+
+Define two-factor authentication (2FA) <span class='mark'>[2 marks]</span>
+<answer><p>an authentication method that sends one-time security code (usually PIN) to authentication app or device</p><answer>
+
+Define access control <span class='mark'>[2 marks]</span>
+<answer><p>the ability to perform something with the data. For instance, modify, edit and copy.</p><answer>
+
+Write down the purpose of using access control <span class='mark'>[2 marks]</span>
+<answer><p>to limit/prevent unauthorized access</p><answer>
+
+List at least two examples of software vulnerabilities <span class='mark'>[2 marks]</span>
+<answer>
+- program bugs
+- program crashes
+- security vulnerabilities 
 </answer>
 
 Explain why the delay of not updating software to latest version could pose a threat to the security of the network<span class='mark'>[2 marks]</span>
