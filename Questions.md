@@ -722,6 +722,7 @@ Define compression <span class='mark'>[1 mark]</span>
 <answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
 
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+<answer><p></p><answer>
 
 Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
 <answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
@@ -770,6 +771,7 @@ Why quality decrease is acceptable when using lossy compression <span class='mar
 <answer><p>Small changes can not be noticed by humans</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
+<answer><p></p><answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
