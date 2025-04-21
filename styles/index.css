@@ -30,11 +30,7 @@
   --border: var(--border-dark);
 }
 .font-selector {
-  position: fixed;
   top: 20px;
-  right: 120px; /* Adjust this to not overlap with other buttons */
-  z-index: 1001;
-  margin-left: 10px;
 }
 
 #font-select {
@@ -49,29 +45,15 @@
 
 /* Add tooltip showing font name when hovering */
 .font-selector {
-  position: relative;
-}
-
-.font-selector::after {
-  content: attr(data-current-font);
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--background);
-  color: var(--text);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-  white-space: nowrap;
+  position: fixed;
+  top: 20px;
+  right: 70px; /* Position to the left of the theme toggle */
+  z-index: 1000;
+  background: var(--primary);
+  padding: 8px;
+  border-radius: 6px;
   border: 1px solid var(--border);
-}
-
-.font-selector:hover::after {
-  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #font-select:focus {
@@ -81,6 +63,10 @@
 
 .font-inter {
   font-family: 'Inter', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
 
 .font-roboto {

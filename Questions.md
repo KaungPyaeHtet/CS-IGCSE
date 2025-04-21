@@ -194,7 +194,7 @@ List two benefits of using decompositions <span class='mark'>[2 marks]</span>
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
 
 Common Data types
-<answer>Hello</answer>
+<answer><!-- TODO --></answer>
 
 Implement Linear Search <span class='mark'>[3 marks]</span>
 <answer>

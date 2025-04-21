@@ -98,6 +98,7 @@ def convert_md_to_html(output_html):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="prism-theme-light" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" id="prism-theme-dark"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
@@ -112,6 +113,7 @@ def convert_md_to_html(output_html):
         <option value="open-sans">Open Sans</option>
         <option value="source-code-pro">Source Code Pro</option>
         <option value="lora">Lora</option>
+        <option value="poppins">Poppins</option>
     </select>
     </div>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
@@ -380,7 +382,7 @@ function changeFont(font) {{
 }}
 
 // Initialize font from localStorage
-const savedFont = localStorage.getItem('selectedFont') || 'inter';
+const savedFont = localStorage.getItem('selectedFont') || 'poppins';
 changeFont(savedFont);
 
 // Set up the font selector
@@ -399,7 +401,8 @@ function updateFontTooltip(font) {{
     'roboto': 'Roboto',
     'open-sans': 'Open Sans',
     'source-code-pro': 'Source Code Pro',
-    'lora': 'Lora'
+    'lora': 'Lora',
+    'poppins':"Poppins",
 }};
   selector.setAttribute('data-current-font', `Current: ${{fontNames[font]}}`);
 }}
