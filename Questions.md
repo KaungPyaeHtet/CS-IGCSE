@@ -1234,7 +1234,7 @@ Define network <span class='mark'>[1 mark]</span>
 What is a network protocol? <span class='mark'>[1 mark]</span>
 <answer><p>A set of rules for communication</p></answer>
 
-Why do people connect to network?<span class='mark'>[2 marks]</span>
+Why do people connect to network? <span class='mark'>[2 marks]</span>
 <answer>
   <ul>  
     <li>To share access to the internet/WWW/broadband connection</li>  
@@ -1289,14 +1289,7 @@ Define peer-to-peer network <span class='mark'>[2 marks]</span>
 Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span>
 <answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
 
-Explain why performance is not decreased as increasing devices in peer-to-peer network <span class='mark'>[2 marks]</span>
-<answer><p>In peer-to-peer networks, the network load is shared, and new devices add resources like bandwidth, storage, and processing power.</p></answer>
-
-Explain why performance is decreased as increasing devices in client-server network <span class='mark'>[2 marks]</span>
-<answer><p>More devices mean more server requests leading to increasing server load and causing server drain or slowdown</p></answer>
-
 List features of client-server and peer-to-peer network <span class='mark'>[6 marks]</span>
-
 <answer>
 	<table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -1306,65 +1299,41 @@ List features of client-server and peer-to-peer network <span class='mark'>[6 ma
 		</tr>
 		<tr>
 			<td><strong>Performance</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Usually high performance when the serve is not drained</li></ul></td>
+			<td><ul><li>Depends on the number of devices connected as the network load is shared between nodes</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Centralization</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Has at least one centralized server</li></ul></td>
+			<td><ul><li>Does not have any centralized servers. All devices have equal access on files and resources</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Security</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Can perform centralized patches/updates and reinforces user authentication</li></ul></td>
+			<td><ul><li>Usually not secure as peers can distribute malware easily</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Maintenance</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Easy of maintenance as network is centralized</li></ul></td>
+			<td><ul><li>Hard to maintain the network as each peer/node is independent</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Scalability</strong></td>
-			<td></td>
-			<td></td>
+			<td><ul><li>Easy to add new devices but might need additional server upgrades due to increased loads</li></ul></td>
+			<td><ul><li>Easy to add new devices without affecting the performance of the network</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Reliability</strong></td>
-			<td></td>
+			<td><ul><li>Services/Resources is not available when server goes down unless there are backup servers</li></ul></td>
+			<td><ul><li>Other nodes/devices can still contribute the resources even when the device disconnect</li></ul></td>
 		</tr>
 		<tr>
 			<td><strong>Privacy</strong></td>
-			<td></td>
+			<td><ul><li>Has Privacy concerns as servers can monitor, spy and keep logs of the clients</li></ul></td>
+			<td><ul><li>Hard to track or identify peers on the network as there is no centralized device</li></ul></td>
 		</tr>
 	</table>
 </answer>
-
-
-
-
-
-
-
-
-List two benefits of using client-server network <span class='mark'>[2 marks]</span>
-<table border="1" cellspacing="0" cellpadding="8">
-  <tr>
-    <th colspan="2">Benefits of Client-server network</th>
-  </tr>
-  <tr>
-    <td><strong>Performance</strong></td>
-    <td>Performance is high when server is not overloaded</td>
-  </tr>
-  <tr>
-    <td><strong>Security</strong></td>
-    <td>Can perform central-controlled patches/updates and forces user authentication</td>
-  </tr>
-  <tr>
-    <td><strong>Maintenance</strong></td>
-    <td>Easier trouble-shooting and efficient backups</td>
-  </tr>
-</table>
 
 Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</span>
 <answer>
@@ -1376,27 +1345,6 @@ Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</spa
     <li>Defines the speed of transmission (1)</li>
     <li>Operates at the link layer of the TCP/IP stack (1)</li>
   </ul>
-</answer>
-
-List two benefits of using peer-to-peer network <span class='mark'>[2 marks]</span>
-<answer>
-  <table border="1" cellspacing="0" cellpadding="8">
-  <tr>
-    <th colspan="2">Benefits of peer-to-peer network</th>
-  </tr>
-  <tr>
-    <td><strong>Scalability</strong></td>
-    <td>Performance is usually increased when number of connected devices gets bigger</td>
-  </tr>
-  <tr>
-    <td><strong>Reliability</strong></td>
-    <td>Resources or services are still available even when devices disconnect</td>
-  </tr>
-  <tr>
-    <td><strong>Privacy</strong></td>
-    <td>There is no centralized device that stores log, monitors or spys.</td>
-  </tr>
-</table>
 </answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
@@ -1568,22 +1516,33 @@ List two protocols that work in application layer and function of each protocol 
   </table>
 </answer>
 
-List three email protocols
-<answer><!-- TODO --></answer>
+List three email protocols <span class='mark'>[3 marks]</span>
+<answer>
+	<ul>
+		<li>SMTP</li>
+		<li>IMAP</li>
+		<li>POP3</li>
+	</ul>
+</answer>
 
-What is the difference between POP3 and IMAP
-<answer><!-- TODO --></answer>
+What is the difference between POP3 and IMAP <span class='mark'>[2 mark]</span>
+<answer><p>POP3 downloads the email to the user local storage once it is viewed and deletes on the mail server but IMAP keeps the email on mail server instead of downloading and deleting</p></answer>
 
-Function of DNS server
+Function of DNS server <span class='mark'>[2 marks]</span>
 <answer><p>To give the corresponding IP address of domain name to the web broswer</p></answer>
 
-Describe the process of accessing a web page
-<answer><!-- TODO --></answer>
+Describe the process of accessing a web page <span class='mark'>[4 marks]</span>
+<answer>
+- domain name or URL is entered to the search bar
+- browser connects to the DNS server
+- DNS gives corresponding IP address of the domain name
+- browser connects to the web server using that IP address
+- requests the web page
+- if the request is successful, web page is transferred to the browser
+- browser displays it
+</answer>
 
-List types of GSM
-<answer><!-- TODO --></answer>
-
-List two examples of wireless connectivity
+List two examples of wireless connectivity <span class='mark'>[3 marks]</span>
 <answer>
 	<ul>
 		<li>Wi-Fi</li>
@@ -1592,7 +1551,7 @@ List two examples of wireless connectivity
 	</ul>
 </answer>
 
-List ways to identify devices on the network
+List ways to identify devices on the network <span class='mark'>[3 marks]</span>
 <answer>
 	<ul>
 		<li>Device name</li>
@@ -1601,9 +1560,8 @@ List ways to identify devices on the network
 	</ul>
 </answer>
 
-What is the difference between IP addresses and MAC addresses
-<answer><!-- TODO --></answer>
-
+What is the difference between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
+<answer><p>IP address is assigned by ISP and can be changed whereas MAC address is assigned by NIC card manufacturer and can be not changed</p></answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1668,103 +1626,160 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
 Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
 <answer><p>A 2.4 GHz</p></answer>
 
-Explain the purposes of following layers: application, transport, and data link layer <span class='mark'>[6 marks]</span>
-<answer><!-- TODO --></answer>
-
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-Difference between IMTP and POP3 email protocols <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
-Define authentication
-<answer><!-- TODO --></answer>
+Define authentication <span class='mark'>[2 marks]</span>
+<answer><p>The process of verifying someone's identity</p></answer>
 
-Define validation
-<answer><!-- TODO --></answer>
+Define validation <span class='mark'>[2 marks]</span>
+<answer><p>The process of checking whether data fits in certain requirements or rules</p></answer>
 
-Define phishing
-<answer><!-- TODO --></answer>
-
-Define pharming
-<answer><!-- TODO --></answer>
-
-Describe what is meant by shoulder surfing <span class='mark'>[2 marks]</span>
+Define Social Engineering and three types of it <span class='mark'>[6 marks]</span>
 <answer>
-<ul>
-<li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
-<li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
-</ul>
+	<table>
+		<tr>
+			<td><strong>Social Engineering</strong></td>
+			<td>Exploiting the human behaviour/faults to steal sensitive/confidential information</td>
+		</tr>
+		<tr>
+			<td><strong>Phishing</strong></td>
+			<td>Process of tricking the user to enter their personal information themselves. Attackers pretend to be from legitimate/original source</td>
+		</tr>
+		<tr>
+			<td><strong>Pharming</strong></td>
+			<td>Process of redirecting the user to fake website by poisoning DNS server or browser DNS setting</td>
+		</tr>
+		<tr>
+			<td><strong>Shoulder Surfing</strong></td>
+			<td>
+        <li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
+        <li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
+      </td>
+		</tr>
+	</table>
 </answer>
 
-List two ways to protect from phishing
-<answer><!-- TODO --></answer>
-
-List two ways to protect from pharming
-<answer><!-- TODO --></answer>
-
-Define malware
-<answer><!-- TODO --></answer>
-
-List three types of malware
-<answer><!-- TODO --></answer>
-
-Function of virus
-<answer><!-- TODO --></answer>
-
-Function of worm
-<answer><!-- TODO --></answer>
-
-Function of ransomware
-<answer><!-- TODO --></answer>
-
-Function of firewall
-<answer><!-- TODO --></answer>
-
-List two ways to improve physical security
-<answer><!-- TODO --></answer>
-
-Define eavesdropping
-<answer><!-- TODO --></answer>
-
-State how to protect from eavesdropping
-<answer><!-- TODO --></answer>
-
-List two features of a strong password
-<answer><!-- TODO --></answer>
-
-Define audit trailing
-<answer><!-- TODO --></answer>
-
-Write down the purpose of audit trailing
-<answer><!-- TODO --></answer>
-
-Define modular testing
-<answer><!-- TODO --></answer>
-
-Define penetration testing
-<answer><!-- TODO --></answer>
-
-Define two-factor authentication (2FA)
-<answer><!-- TODO --></answer>
-
-Define access contro
-<answer><!-- TODO --></answer>
-
-Write down the purpose of using access control
-<answer><!-- TODO --></answer>
-
-List at least two examples of software vulnerabilities
-<answer><!-- TODO --></answer>
-
-Explain one way to prevent shoulder surfing <span class='mark'>[2 marks]</span>
+Explain one way to protect from three types of social engineering <span class='mark'>[6 marks]</span>
 <answer>
-<ul>
-<li>shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)</li>
-<li>to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)</li>
-</ul>
+	<table>
+		<tr>
+			<td><strong>Phishing</strong></td>
+			<td>
+        - enabling email spam
+        - not clicking suspious/malicious links
+        - keeping up to date with lastest anti-malware software
+      </td>
+		</tr>
+		<tr>
+			<td><strong>Pharming</strong></td>
+			<td>
+        - using secure DNS provider
+        - looks for HTTPS protocol in site URL
+      </td>
+		</tr>
+		<tr>
+			<td><strong>Shoulder Surfing</strong></td>
+			<td>
+        - shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)
+        - to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)
+      </td>
+		</tr>
+	</table>
+</answer>
+
+Define malware <span class='mark'>[2 marks]</span>
+<answer><p>Any software that has malicious purpose/code to get unauthorized access or steal sensitive/personal/confidential information</p></answer>
+
+List three types of malware <span class='mark'>[3 marks]</span>
+<answer>
+- virus
+- worm
+- ransomware
+- trojan
+- spyware
+- adware
+</answer>
+
+Write down function of three malware types <span class='mark'>[6 marks]</span>
+<answer>
+	<table>
+		<tr>
+			<td><strong>Virus</strong></td>
+			<td>self-replicating software that is designed to harm the computer by draining computing power/deletes files</td>
+		</tr>
+		<tr>
+			<td><strong>Worm</strong></td>
+			<td>self-replicating software that functions the same as virus but it does not need host file or human interactions to spread</td>
+		</tr>
+		<tr>
+			<td><strong>Ramsomware</strong></td>
+			<td>encrypts/locks the user files and demands a payment to decrypt/unlock it back</td>
+		</tr>
+		<tr>
+			<td><strong>Spyware</strong></td>
+			<td>spys/monitors the screen to steal personal/sensitive/confidential information</td>
+		</tr>
+	</table>
+</answer>
+
+Function of firewall <span class='mark'>[2 marks]</span>
+<answer><p>Monitors ingoing and outgoing data traffic deciding which data to be allowed to pass through according to a set of rules known as firewall porlicy</p><answer>
+
+List two ways to improve physical security <span class='mark'>[2 marks]</span>
+<answer>
+- CCTVs
+- electronic locks
+- biometric systems
+- security guards
+- alarm systems
+- laser 
+</answer>
+
+Define eavesdropping <span class='mark'>[2 marks]</span>
+<answer><p>process of intercepting or sniffing data traffic to steal personal/sensitive/confidential information</p><answer>
+
+State how to protect from eavesdropping <span class='mark'>[2 marks]</span>
+<answer>
+- encryption
+- using VPNs
+</answer>
+
+List two features of a strong password <span class='mark'>[2 marks]</span>
+<answer>
+- at least 12 characters or more
+- mixed up with numbers, upper cases, lower cases and special symbols
+- uncommon/unique words
+</answer>
+
+Define audit trail <span class='mark'>[2 marks]</span>
+<answer><p>a detail record that keeps activity logs that contain who did changes, when happened and what changed</p><answer>
+
+Write down the purpose of audit trailing <span class='mark'>[2 marks]</span>
+<answer><p>to detect/find/analyze any suspicious activity that trys to get unauthorized access</p><answer>
+
+Define modular testing <span class='mark'>[2 marks]</span>
+<answer><p>to encure each section/part is working accurately by testing</p><answer>
+
+Define penetration testing <span class='mark'>[2 marks]</span>
+<answer><p>process that is performed by ethical hackers for the sake of finding and fixing security vulnerabilities before getting exploiting by hackers</p><answer>
+
+Define two-factor authentication (2FA) <span class='mark'>[2 marks]</span>
+<answer><p>an authentication method that sends one-time security code (usually PIN) to authentication app or device</p><answer>
+
+Define access control <span class='mark'>[2 marks]</span>
+<answer><p>the ability to perform something with the data. For instance, modify, edit and copy.</p><answer>
+
+Write down the purpose of using access control <span class='mark'>[2 marks]</span>
+<answer><p>to limit/prevent unauthorized access</p><answer>
+
+List at least two examples of software vulnerabilities <span class='mark'>[2 marks]</span>
+<answer>
+- program bugs
+- program crashes
+- security vulnerabilities 
 </answer>
 
 Explain why the delay of not updating software to latest version could pose a threat to the security of the network<span class='mark'>[2 marks]</span>
