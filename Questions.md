@@ -1989,6 +1989,9 @@ Difference between proprietary software and open-source software <span class='ma
 Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span>
 <answer><!-- TODO --></answer>
 
+Discuss how the software can be protected from illegal copying and/or illegal distribution. Consider <ul><li>intellectual property<li>licensing.</li></ul><span class='mark'>[6 marks]</span>
+<answer><p></p><answer>
+
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
 Describe what is meant by Artificial Intelligence <span class='mark'>[2 marks]</span>
