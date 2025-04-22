@@ -34,11 +34,12 @@
     </a>
     
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
+    
     <h2 id="cs-igcse-questions-compilationcs-igcse-questions-compilation"><span data-translate="\<h1>CS IGCSE Questions Compilation\</h1>"><h1>CS IGCSE Questions Compilation</h1></span></h2>
 <h2 id="table-of-contents"><span data-translate="Table of Contents">Table of Contents</span></h2>
 <div id='toc' class="toc">
 
-<a href='practice.html' class="table-of-contents">Practice with Random Questions</a>
+<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
 
 <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
@@ -183,7 +184,10 @@
 <details>
 <summary>A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>Pass 1: 1 2 4 3 5 6</li>
+<li>Pass 2: 1 2 3 4 5 6</li>
+</ul></answer>
 
 </details>
 
@@ -273,9 +277,15 @@
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
 
 <details>
-<summary>Common Data types</summary>
+<summary>Common Data types <span class='mark'>[4 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>String ("hello", "world")</li>
+<li>Character ('a', 'A')</li>
+<li>Boolean (True, False)</li>
+<li>Real (1.02, 3.1415, 2.71828)</li>
+<li>Integer (1, 2, 3, 100, 2000)</li>
+</ul></answer>
 
 </details>
 
@@ -598,7 +608,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span><ul><ul><li>length </li><li>count </li><li>index </li> <li>scores[index]</li></ul></li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div></summary>
+<summary>Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span><ul><ul><li>length </li><li>count </li><li>index </li> <li>scores[index]</li></ul></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div></summary>
 
 <answer><img src='assets/programming/tracetable-answer.png'></answer>
 
@@ -881,7 +891,7 @@ print("Valid")
 <details>
 <summary>Explain how increasing sample rate improves the fidelity of the sound <span class='mark'>[1 mark]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>More samples can be captured per second which allow computer to take more samples and more audio samples to be included.</answer>
 
 </details>
 
@@ -1090,7 +1100,11 @@ print("Valid")
 <details>
 <summary>What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>Kilobyte is equivalent to 1000 bytes, whereas a kibibyte is equivalent to 1024 bytes (1)</li>
+<li>Kilobyte is equivalent to 103 bytes, whereas a kibibyte is equivalent to 210 bytes (1)</li>
+<li>Kilobyte is a base 10 measurement, whereas a kibibyte is a base 2 measurement (1)</li>
+</ul></answer>
 
 </details>
 
@@ -1210,7 +1224,7 @@ print("Valid")
 </details>
 
 <details>
-<summary>What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</summary>
+<summary>What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</span></summary>
 
 <answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
 
@@ -1434,6 +1448,18 @@ print("Valid")
 </details>
 
 <details>
+<summary>Discuss the positive and negative effects of computer science technology on the environment <span class='mark'>[6 marks]</span></summary>
+
+<answer>
+<ul><li>Energy: Manufacture and use of devices uses energy. Manufacturing involves energy-intensive mining and processing of minerals. The use of devices involves the energy used by the devices themselves, but also by data centres. These data centres generate heat, so energy is needed to keep them cool. Much of the energy used comes from non-renewable sources such as gas and coal. Computer science is used in efficient energy production. Computer software is used to design, model and test efficient devices to produce electricity from wind, wave and solar power. Energy use can be reduced using smart technologies, such as light-sensitive switches that turn off lights when they are not needed. Efficient transport planning using computer modelling and analysis can reduce fuel use.</li>
+<li>Sustainability: Digital devices use many different chemical elements. Some of these are rare and will be in short supply as they are used up. It is difficult to recycle devices to reuse these elements.</li>
+<li>Waste: Electronic devices are difficult to recycle and are often disposed of in landfill sites as e-waste. Landfill sites take up areas of land that could be used for other purposes. Toxic substances such as lead, mercury and cobalt can get into the soil and the water supply from the landfill sites and so cause health problems.</li>
+<li>Data analysis: Computer science technology can be used to monitor environmental factors by transmitting and analysing data. This data can be shared by scientists around the world who can collaborate to find solutions to problems. Computers can be used to develop models to forecast environmental behaviour and identify options for action.</li>
+</ul></answer>
+
+</details>
+
+<details>
 <summary>List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span></summary>
 
 <answer>
@@ -1555,11 +1581,12 @@ Benefits
 </details>
 
 <details>
-<summary>What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span></summary>
+<summary>State 2 differences between Graphical User Interface and Command Line Interface <span class='mark'>[2 marks]</span></summary>
 
 <answer>
-<!-- TODO -->
-</answer>
+<ul><li>A Command Line Interface (CLI) requires users to interact with the operating system using text based commands</li>
+<li>A Graphical User Interface (GUI) requires users to interact with the operating system using visual elements such as windows, icons, menus & pointers (WIMP)</li>
+</ul></answer>
 
 </details>
 
@@ -1586,20 +1613,6 @@ To protect against loss of data from
 <li>Hardware failure</li>
 <li>Cyberattacks</li>
 </ul></answer>
-
-</details>
-
-<details>
-<summary>What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span></summary>
-
-<answer><!-- TODO --></answer>
-
-</details>
-
-<details>
-<summary>What is the difference between virtual memory and scheduling? <span class='mark'>[2 marks]</span></summary>
-
-<answer><!-- TODO --></answer>
 
 </details>
 
@@ -1814,16 +1827,16 @@ To protect against loss of data from
 </details>
 
 <details>
-<summary>Define client-server network model <span class='mark'>[2 marks]</span></summary>
+<summary>Define client-server network model <span class='mark'>[1 marks]</span></summary>
 
-<answer><p><!-- TODO --></p></answer>
+<answer><p>A network that has at least one server to provide services to the client computers.</p></answer>
 
 </details>
 
 <details>
-<summary>Define peer-to-peer network model <span class='mark'>[2 marks]</span></summary>
+<summary>Define peer-to-peer network model <span class='mark'>[1 marks]</span></summary>
 
-<answer><p><!-- TODO --></p></answer>
+<answer><p>A network that does have any dedicated servers. Each device can act as both client and server.</p></answer>
 
 </details>
 
@@ -1994,7 +2007,7 @@ Advantages
 </details>
 
 <details>
-<summary>List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]</summary>
+<summary>List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]</span></summary>
 
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
@@ -2031,16 +2044,19 @@ Advantages
 </details>
 
 <details>
-<summary>Write function of TCP protocol <span class='mark'>[4 marks]</summary>
+<summary>How does TCP protocol work? <span class='mark'>[4 marks]</span></summary>
 
 <answer>
-<!-- TODO -->
-</answer>
+<ul><li>It specifies the receiving computer sends acknowledgements that each section of the data sent has been received</li>
+<li>Using checksums to ensure that the data received is accurate</li>
+<li>Allowing the receiving computer to tell the sending computer to slow down transmission.</li>
+<li>Ensuring data sent up to application layer contains no duplicate and is in correct order.</li>
+</ul></answer>
 
 </details>
 
 <details>
-<summary>List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]</summary>
+<summary>List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]</span></summary>
 
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
@@ -2148,9 +2164,12 @@ Advantages
 </details>
 
 <details>
-<summary>What is the difference between IP addresses and MAC addresses <span class='mark'>[2 marks]</span></summary>
+<summary>What are the differences between IP addresses and MAC addresses <span class='mark'>[2 marks]</span></summary>
 
-<answer><p><!-- TODO --></p></answer>
+<answer>
+<ul><li>IP address is dynamic/can change // MAC address is static/cannot change [1]</li>
+<li>IP address is used to communicate on a WAN/Internet // MAC address is used to communicate on a LAN [1]</li>
+</ul></answer>
 
 </details>
 
@@ -2252,7 +2271,14 @@ Advantages
 <details>
 <summary>Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>It makes the overall model easier to understand by dividing it into functional parts.</li>
+<li>Each layer is specialized to perform a particular function.</li>
+<li>The different layers can be combined in different ways.</li>
+<li>One layer can be developed or changed without affecting the other layers.</li>
+<li>It makes it easier to identify and correct networking errors and problems.</li>
+<li>It provides a universal standard for hardware and software manufacturers to follow.</li>
+</ul></answer>
 
 </details>
 
@@ -2508,7 +2534,14 @@ One method
 <details>
 <summary>Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+One way
+<ul><li>The victim opens the unknown links given by attackers</li>
+<li>and fill in the confidential information which attackers can use.</li>
+</ul>Another way
+<ul><li>An attacker will claim to be from a part of larger organization aiming to fix the issues from victim computer</li>
+<li>Victim will follow through attacker's steps and give out the confidential information.</li>
+</ul></answer>
 
 </details>
 
@@ -2582,9 +2615,14 @@ Internet
 </details>
 
 <details>
-<summary>What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span></summary>
+<summary>What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[4 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>A switch connects multiple devices (computers, printers, etc.) to a single network, allowing them to communicate with each other. It operates at the data link layer, forwarding data packets based on MAC addresses. </li>
+<li>The router manages the flow of data between your devices and the internet, assigning IP addresses and routing traffic appropriately. It ensures that data is sent to the right devices and destinations. </li>
+<li>The WAP extends the network's reach by enabling wireless devices to connect to the network. It acts as a "hub" for wireless communication, allowing devices like smartphones and laptops to connect without the need for wired connections. </li>
+<li>The modem acts as the gateway between your home network and the internet, converting digital signals into analog signals for transmission and back. It's essentially the device that connects your network to your Internet Service Provider (ISP). </li>
+</ul></answer>
 
 </details>
 
@@ -2757,7 +2795,7 @@ Internet
 <details>
 <summary>Airtest produces exhaust emissions testing software. A programmer discovers that there is a bug in the software that produces inaccurate results under particular circumstances. Discuss What course of action the programmer should take and explain why. <span class='mark'>[4 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer><p>The BCS Code of Conduct for computer scientists stipulates that they should not withhold information on the performance of systems. Therefore, the programmer should inform their manager immediately. Furthermore, the code also states that they must avoid injuring others. If the testing software is producing faulty information about exhaust emissions it could also endanger human health, which is another reason for the programmer to take action to flag up the problem.</p></answer>
 
 </details>
 
@@ -2777,6 +2815,13 @@ Internet
 <ul><li>Copyright</li>
 <li>Patent</li>
 </ul></answer>
+
+</details>
+
+<details>
+<summary>Assess the extent to which the patent system is a barrier to the technological innovation. <span class='mark'>[4 marks]</span></summary>
+
+<answer><p>A patent gives the patent holder the exclusive right for 20 years to make, use and sell an invention. This encourages inventiveness by ensuring that the owner of the patent (usually the employer of the inventors) gets recognition and benefits financially from the invention. However, in recent years, big companies such as Apple and Samsung have been embroiled in long and expensive legal battles over alleged patent infringements. To defend a patent is very costly. There is an argument that the money spent on legal fees would be better invested in research and development. Patent law encourages companies to keep new inventions secret and block others from using them for 20 years. If inventions were shared from the outset, the pace of technological progress and innovation would be accelerated.</p></answer>
 
 </details>
 
@@ -2835,7 +2880,10 @@ Internet
 <details>
 <summary>Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span></summary>
 
-<answer><!-- TODO --></answer>
+<answer>
+<ul><li>To give the public permission to share and use their work. </li>
+<li>To allow others to modify and change the original work.</li>
+</ul></answer>
 
 </details>
 
@@ -2964,19 +3012,6 @@ Quantum computing is based on quantum mechanics. Quantum mechanics is the branch
 </ul></answer>
 
 </details>
-    <div class="random-questions-container" id='random-question'>
-        <h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
-        <div class="random-questions-controls">
-            <input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
-            <button onclick="startRandomQuestions()" class="random-questions-button">
-                <span data-translate="Start Random Questions">Start Random Questions</span>
-            </button>
-            <button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
-                <span data-translate="Stop Practice">Stop Practice</span>
-            </button>
-        </div>
-        <div id="random-questions-display"></div>
-    </div>
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
         <div style="margin-top: 0.5rem;">

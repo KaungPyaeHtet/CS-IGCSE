@@ -4,7 +4,7 @@
 
 <div id='toc' class="toc">
 
-<a href='practice.html' class="table-of-contents">Practice with Random Questions</a>
+<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
 
 <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
@@ -123,7 +123,10 @@ How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
 </answer>
 
 A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- Pass 1: 1 2 4 3 5 6
+- Pass 2: 1 2 3 4 5 6
+</answer>
 
 Define recursion <span class='mark'>[1 mark]</span>
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
@@ -184,8 +187,14 @@ List two benefits of using decompositions <span class='mark'>[2 marks]</span>
 
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
 
-Common Data types
-<answer><!-- TODO --></answer>
+Common Data types <span class='mark'>[4 marks]</span>
+<answer>
+- String ("hello", "world")
+- Character ('a', 'A')
+- Boolean (True, False)
+- Real (1.02, 3.1415, 2.71828)
+- Integer (1, 2, 3, 100, 2000)
+</answer>
 
 Implement Linear Search <span class='mark'>[3 marks]</span>
 <answer>
@@ -432,7 +441,7 @@ What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
 - As we work through all the steps, we can see what values variables hold at a specific step.
 </answer>
 
-Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span><ul><li>length </li><li>count </li><li>index </li> <li>scores[index]</li></ul></li> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
+Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span><ul><li>length </li><li>count </li><li>index </li> <li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
 <answer><img src='assets/programming/tracetable-answer.png'></answer>
 
 Answer these questions about the code. <li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable<span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
@@ -606,7 +615,7 @@ List two factors that affect the fidelity of the sound <span class='mark'>[2 mar
 </answer>
 
 Explain how increasing sample rate improves the fidelity of the sound <span class='mark'>[1 mark]</span>
-<answer><!-- TODO --></answer>
+<answer>More samples can be captured per second which allow computer to take more samples and more audio samples to be included.</answer>
 
 Explain how increasing bit depth improves the fidelity of the sound <span class='mark'>[1 mark]</span>
 <answer><p>With bigger bit depth, higher level of amplitude can be measured adding more details</p></answer>
@@ -735,7 +744,11 @@ Why quality decrease is acceptable when using lossy compression to convert audio
 <answer><p>Humans can only see certain ranges of colors and audio (20 - 20000 Hz). Thus removing them doesn't make that much of a difference to human's perception.</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- Kilobyte is equivalent to 1000 bytes, whereas a kibibyte is equivalent to 1024 bytes (1)
+- Kilobyte is equivalent to 103 bytes, whereas a kibibyte is equivalent to 210 bytes (1)
+- Kilobyte is a base 10 measurement, whereas a kibibyte is a base 2 measurement (1)
+</answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
@@ -804,7 +817,7 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
-What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
+What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</span>
 <answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
@@ -928,6 +941,14 @@ List two benefits of increasing computing power <span class='mark'>[2 marks]</sp
 - Reduce loading time
 </answer>
 
+Discuss the positive and negative effects of computer science technology on the environment <span class='mark'>[6 marks]</span>
+<answer>
+- Energy: Manufacture and use of devices uses energy. Manufacturing involves energy-intensive mining and processing of minerals. The use of devices involves the energy used by the devices themselves, but also by data centres. These data centres generate heat, so energy is needed to keep them cool. Much of the energy used comes from non-renewable sources such as gas and coal. Computer science is used in efficient energy production. Computer software is used to design, model and test efficient devices to produce electricity from wind, wave and solar power. Energy use can be reduced using smart technologies, such as light-sensitive switches that turn off lights when they are not needed. Efficient transport planning using computer modelling and analysis can reduce fuel use.
+- Sustainability: Digital devices use many different chemical elements. Some of these are rare and will be in short supply as they are used up. It is difficult to recycle devices to reuse these elements.
+- Waste: Electronic devices are difficult to recycle and are often disposed of in landfill sites as e-waste. Landfill sites take up areas of land that could be used for other purposes. Toxic substances such as lead, mercury and cobalt can get into the soil and the water supply from the landfill sites and so cause health problems.
+- Data analysis: Computer science technology can be used to monitor environmental factors by transmitting and analysing data. This data can be shared by scientists around the world who can collaborate to find solutions to problems. Computers can be used to develop models to forecast environmental behaviour and identify options for action.
+</answer>
+
 List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
 - Higher cost due to better quality
@@ -1009,9 +1030,10 @@ List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</spa
 - Print Spooling
 </answer>
 
-What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span>
+State 2 differences between Graphical User Interface and Command Line Interface <span class='mark'>[2 marks]</span>
 <answer>
-<!-- TODO -->
+- A Command Line Interface (CLI) requires users to interact with the operating system using text based commands
+- A Graphical User Interface (GUI) requires users to interact with the operating system using visual elements such as windows, icons, menus & pointers (WIMP)
 </answer>
 
 What is scheduling? <span class='mark'>[2 marks]</span>
@@ -1027,12 +1049,6 @@ To protect against loss of data from
 - Hardware failure
 - Cyberattacks
 </answer>
-
-What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-What is the difference between virtual memory and scheduling? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
 
 A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span>
 <answer>
@@ -1176,11 +1192,11 @@ Write the difference between LAN and WAN <span class='mark'>[2 marks]</span>
 Define server <span class='mark'>[1 mark]</span>
 <answer><p>A powerful computer that provides services to other computers(clients) connected to the network</p></answer>
 
-Define client-server network model <span class='mark'>[2 marks]</span>
-<answer><p><!-- TODO --></p></answer>
+Define client-server network model <span class='mark'>[1 marks]</span>
+<answer><p>A network that has at least one server to provide services to the client computers.</p></answer>
 
-Define peer-to-peer network model <span class='mark'>[2 marks]</span>
-<answer><p><!-- TODO --></p></answer>
+Define peer-to-peer network model <span class='mark'>[1 marks]</span>
+<answer><p>A network that does have any dedicated servers. Each device can act as both client and server.</p></answer>
 
 Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span>
 <answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
@@ -1304,7 +1320,7 @@ Disadvantages
 - Hard maintenance
 </answer>
 
-List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]
+List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
@@ -1337,12 +1353,15 @@ List four layers of TCP/IP protocol stack and write function of each layer <span
   </table>
 </answer>
 
-Write function of TCP protocol <span class='mark'>[4 marks]
+How does TCP protocol work? <span class='mark'>[4 marks]</span>
 <answer>
-<!-- TODO -->
+- It specifies the receiving computer sends acknowledgements that each section of the data sent has been received
+- Using checksums to ensure that the data received is accurate
+- Allowing the receiving computer to tell the sending computer to slow down transmission.
+- Ensuring data sent up to application layer contains no duplicate and is in correct order.
 </answer>
 
-List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]
+List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <thead>
@@ -1422,8 +1441,11 @@ List ways to identify devices on the network <span class='mark'>[3 marks]</span>
 - MAC address
 </answer>
 
-What is the difference between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
-<answer><p><!-- TODO --></p></answer>
+What are the differences between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
+<answer>
+- IP address is dynamic/can change // MAC address is static/cannot change [1]
+- IP address is used to communicate on a WAN/Internet // MAC address is used to communicate on a LAN [1]
+</answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1493,7 +1515,14 @@ Identify the radio frequency used by smartphones to connect to Wi-Fi - A 2.4 GHz
 <answer><p>A 2.4 GHz</p></answer>
 
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- It makes the overall model easier to understand by dividing it into functional parts.
+- Each layer is specialized to perform a particular function.
+- The different layers can be combined in different ways.
+- One layer can be developed or changed without affecting the other layers.
+- It makes it easier to identify and correct networking errors and problems.
+- It provides a universal standard for hardware and software manufacturers to follow.
+</answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
@@ -1661,7 +1690,14 @@ Another method
 </answer>
 
 Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+One way
+- The victim opens the unknown links given by attackers
+- and fill in the confidential information which attackers can use.
+Another way
+- An attacker will claim to be from a part of larger organization aiming to fix the issues from victim computer
+- Victim will follow through attacker's steps and give out the confidential information.
+</answer>
 
 Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider - Ethical Hacking- Commericial analysis tools- Review of network and user policies<span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/identifying-vulnerabilities.png' /></answer>
@@ -1708,8 +1744,13 @@ Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 - IPv6 can represent more devices using 128 bits per address compared to 32 bits per address
 </answer>
 
-What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span>
-<answer><!-- TODO --></answer>
+What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[4 marks]</span>
+<answer>
+- A switch connects multiple devices (computers, printers, etc.) to a single network, allowing them to communicate with each other. It operates at the data link layer, forwarding data packets based on MAC addresses. 
+- The router manages the flow of data between your devices and the internet, assigning IP addresses and routing traffic appropriately. It ensures that data is sent to the right devices and destinations. 
+- The WAP extends the network's reach by enabling wireless devices to connect to the network. It acts as a "hub" for wireless communication, allowing devices like smartphones and laptops to connect without the need for wired connections. 
+- The modem acts as the gateway between your home network and the internet, converting digital signals into analog signals for transmission and back. It's essentially the device that connects your network to your Internet Service Provider (ISP). 
+</answer>
 
 Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/access-internet.png' /></answer>
@@ -1818,7 +1859,7 @@ List two ways that computer scientists can demonstrate professionalism <span cla
 </answer>
 
 Airtest produces exhaust emissions testing software. A programmer discovers that there is a bug in the software that produces inaccurate results under particular circumstances. Discuss What course of action the programmer should take and explain why. <span class='mark'>[4 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>The BCS Code of Conduct for computer scientists stipulates that they should not withhold information on the performance of systems. Therefore, the programmer should inform their manager immediately. Furthermore, the code also states that they must avoid injuring others. If the testing software is producing faulty information about exhaust emissions it could also endanger human health, which is another reason for the programmer to take action to flag up the problem.</p></answer>
 
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
 
@@ -1830,6 +1871,9 @@ List two ways to protect intellectual property <span class='mark'>[2 marks]</spa
 - Copyright
 - Patent
 </answer>
+
+Assess the extent to which the patent system is a barrier to the technological innovation. <span class='mark'>[4 marks]</span>
+<answer><p>A patent gives the patent holder the exclusive right for 20 years to make, use and sell an invention. This encourages inventiveness by ensuring that the owner of the patent (usually the employer of the inventors) gets recognition and benefits financially from the invention. However, in recent years, big companies such as Apple and Samsung have been embroiled in long and expensive legal battles over alleged patent infringements. To defend a patent is very costly. There is an argument that the money spent on legal fees would be better invested in research and development. Patent law encourages companies to keep new inventions secret and block others from using them for 20 years. If inventions were shared from the outset, the pace of technological progress and innovation would be accelerated.</p></answer>
 
 Difference the main between copyright and patent <span class='mark'>[2 marks]</span>
 <answer><p>Copyright only protects the expression of the product whereas patent protects the idea or design of the product</p></answer>
@@ -1860,7 +1904,10 @@ Difference between proprietary software and open-source software <span class='ma
 </answer>
 
 Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- To give the public permission to share and use their work. 
+- To allow others to modify and change the original work.
+</answer>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
