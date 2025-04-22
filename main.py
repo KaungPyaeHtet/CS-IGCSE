@@ -108,12 +108,12 @@ def convert_md_to_html(output_html):
 <body>
     <div class="font-selector">
     <select id="font-select" title="Change Font">
-        <option value="inter">Inter (Default)</option>
+        <option value="poppins">Poppins (Default)</option>
+        <option value="inter">Inter</option>
         <option value="roboto">Roboto</option>
         <option value="open-sans">Open Sans</option>
         <option value="source-code-pro">Source Code Pro</option>
         <option value="lora">Lora</option>
-        <option value="poppins">Poppins</option>
     </select>
     </div>
     <button onclick="toggleTheme()" class="theme-toggle" title="Toggle Theme">🌓</button>
