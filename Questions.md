@@ -1,5 +1,3 @@
-<h1>CS IGCSE Questions Compilation</h1>
-
 ## Table of Contents
 
 <div id='toc' class="toc">
@@ -76,6 +74,32 @@
 
 <a href="#chap-29" class="table-of-contents subtopic">29. Current and Emerging Trends</a>
 
+</div>
+
+<div class="random-questions-container" id='random-question'>
+
+<h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
+  
+<div class="random-questions-controls">
+
+<input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
+
+<button onclick="startRandomQuestions()" class="random-questions-button">
+
+<span data-translate="Start Random Questions">Start Random Questions</span>
+
+</button>
+
+<button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
+
+<span data-translate="Stop Practice">Stop Practice</span>
+
+</button>
+
+</div>
+
+<div id="random-questions-display"></div>
+  
 </div>
 
 <h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
@@ -655,7 +679,7 @@ How many bits does Unicode uses to represent character <span class='mark'>[1 mar
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
-Table of unit of data in computer from b to GB(decimal prefix)<span class='mark'>[6 marks]</span>
+Table of unit of data in computer from b to TB<span class='mark'>[6 marks]</span>
 <answer>
 <table>
     <thead>
@@ -894,8 +918,14 @@ Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks
 What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span>
 <answer><p>Stores the instruction currently being decoded by the CPU.</p></answer>
 
-Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
+State the function of the Accumulator. <span class='mark'>[1 mark]</span>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
+
+How does Program Counter store the next address? <span class='mark'>[2 marks]</span>
+<answer>
+- Holds the memory address of the next instruction to be executed
+- Increments after each fetch cycle
+</answer>
 
 Define address bus <span class='mark'>[1 mark]</span>
 <answer>The bus that carries memory address which connects MAR to Memory (RAM)</answer>
@@ -906,10 +936,10 @@ Define data bus <span class='mark'>[1 mark]</span>
 Define control bus <span class='mark'>[1 mark]</span>
 <answer>The bus that carries control signals connects from Control Units to other components</answer>
 
-How increasing address bus width affect <span class='mark'>[1 mark]</span>
+State the effects of increasing width of addresses bus <span class='mark'>[1 mark]</span>
 <answer>More memory addresses can be carried at a time</answer>
 
-How increasing data bus width affect <span class='mark'>[1 mark]</span>
+State the effects of increasing width of data bus<span class='mark'>[1 mark]</span>
 <answer><p>Bigger size of instruction can be carried per cycle</p></answer>
 
 Define cache <span class='mark'>[2 marks]</span>
@@ -924,6 +954,7 @@ List three factors that affect the performance of the CPU <span class='mark'>[3 
 - Clock speed
 - Number of cores
 - Cache size
+- Bus width
 </answer>
 
 Define clock speed <span class='mark'>[1 mark]</span>
@@ -935,18 +966,16 @@ State how increasing clock speed affect the performance of the CPU <span class='
 State how increased number of cores affect the performance of the CPU <span class='mark'>[2 marks]</span>
 <answer><p>Better parallel processing as more tasks are executed by different cores</p></answer>
 
+Explain why increasing clock speed can be bad for computer? <span class='mark'>[2 marks]</span>
+<answer>
+- Increasing clock speed increases number of fetch decode execute cycles per second
+- This leads to computer heating up drastically
+</answer>
+
 List two benefits of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
 - Improve multi-tasking
 - Reduce loading time
-</answer>
-
-Discuss the positive and negative effects of computer science technology on the environment <span class='mark'>[6 marks]</span>
-<answer>
-- Energy: Manufacture and use of devices uses energy. Manufacturing involves energy-intensive mining and processing of minerals. The use of devices involves the energy used by the devices themselves, but also by data centres. These data centres generate heat, so energy is needed to keep them cool. Much of the energy used comes from non-renewable sources such as gas and coal. Computer science is used in efficient energy production. Computer software is used to design, model and test efficient devices to produce electricity from wind, wave and solar power. Energy use can be reduced using smart technologies, such as light-sensitive switches that turn off lights when they are not needed. Efficient transport planning using computer modelling and analysis can reduce fuel use.
-- Sustainability: Digital devices use many different chemical elements. Some of these are rare and will be in short supply as they are used up. It is difficult to recycle devices to reuse these elements.
-- Waste: Electronic devices are difficult to recycle and are often disposed of in landfill sites as e-waste. Landfill sites take up areas of land that could be used for other purposes. Toxic substances such as lead, mercury and cobalt can get into the soil and the water supply from the landfill sites and so cause health problems.
-- Data analysis: Computer science technology can be used to monitor environmental factors by transmitting and analysing data. This data can be shared by scientists around the world who can collaborate to find solutions to problems. Computers can be used to develop models to forecast environmental behaviour and identify options for action.
 </answer>
 
 List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span>
@@ -992,6 +1021,9 @@ Describe an embedded system <span class='mark'>[2 marks]</span>
 <answer><p>Embedded system is a combination of software and hardware (1) that is designed specifically to tackle a specific problem. (1) For example, usage in washing machine.</p></answer>
 
 <h3 id='chap-18'>Chapter 18: Logic </h3>
+
+Define truth table <span class='mark'>[1 mark]</span>
+<answer><p>A table showing all possible combinations of the inputs and outputs of an operator.</p></answer>
 
 <h3 id='chap-19'>Chapter 19: Software</h3>
 
@@ -1309,7 +1341,7 @@ Disadvantages
 - Can require more cable than some of the other topologies
 </answer>
 
-<question>Describe advantages and disadvantages of Mesh Topology <span class='mark'>[3 marks]</span></question>
+Describe advantages and disadvantages of Mesh Topology <span class='mark'>[3 marks]</span>
 <answer>
 Advantages
 - High performance
@@ -1476,17 +1508,10 @@ Compare three features between wired and wireless connectivity. <span class='mar
 </table>
 </answer>
 
-State two types of connectivity media <span class='mark'>[2 marks]</span>
+State two types of connectivity media for wired communication <span class='mark'>[2 marks]</span>
 <answer>
 - Copper wire
 - Optical fibre
-</answer>
-
-List two examples of networking devices <span class='mark'>[2 marks]</span>
-<answer>
-- Router 
-- Switch 
-- Modem   
 </answer>
 
 Write down the function of the switch <span class='mark'>[2 marks]</span>
@@ -1511,7 +1536,7 @@ Describe how a router directs data on the internet<span class='mark'>[5 marks]</
     </ol>
 </answer>
 
-Identify the radio frequency used by smartphones to connect to Wi-Fi - A 2.4 GHz- B 3 KHz- D 5 KHz<span class='mark'>[1 mark]</span>
+Identify the radio frequency used by smartphones to connect to Wi-Fi <span class='mark'>[1 mark]</span> <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>C. 4.1 GHz</li><li> D 5 KHz</li></ul>
 <answer><p>A 2.4 GHz</p></answer>
 
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
@@ -1699,7 +1724,7 @@ Another way
 - Victim will follow through attacker's steps and give out the confidential information.
 </answer>
 
-Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider - Ethical Hacking- Commericial analysis tools- Review of network and user policies<span class='mark'>[6 marks]</span>
+Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li> Ethical Hacking</li><li> Commericial analysis tools</li><li> Review of network and user policies</li></ul><span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/identifying-vulnerabilities.png' /></answer>
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
@@ -1724,7 +1749,7 @@ World Wide Web
 - Web pages are accessed using a web browser, which communicates with web servers to retrieve and display the content.
 </answer>
 
-How many bits do IPv4 and IPv6 use for each address <span class='mark'>[2 marks]</span>
+How many bits do IPv4 and IPv6 use for each address? <span class='mark'>[2 marks]</span>
 <answer>
 - IPv4 - 32 bits
 - IPv6 - 128 bits
@@ -1768,6 +1793,14 @@ List two positive impacts of using technology on the environment<span class='mar
 - Warning systems to alert approaching tsunamis
 - Measuring sea surface temperatures to learn more about climate change
 - Using sensors to turn off wasteful electrical resources
+</answer>
+
+Discuss the positive and negative effects of computer science technology on the environment <span class='mark'>[6 marks]</span>
+<answer>
+- Energy: Manufacture and use of devices uses energy. Manufacturing involves energy-intensive mining and processing of minerals. The use of devices involves the energy used by the devices themselves, but also by data centres. These data centres generate heat, so energy is needed to keep them cool. Much of the energy used comes from non-renewable sources such as gas and coal. Computer science is used in efficient energy production. Computer software is used to design, model and test efficient devices to produce electricity from wind, wave and solar power. Energy use can be reduced using smart technologies, such as light-sensitive switches that turn off lights when they are not needed. Efficient transport planning using computer modelling and analysis can reduce fuel use.
+- Sustainability: Digital devices use many different chemical elements. Some of these are rare and will be in short supply as they are used up. It is difficult to recycle devices to reuse these elements.
+- Waste: Electronic devices are difficult to recycle and are often disposed of in landfill sites as e-waste. Landfill sites take up areas of land that could be used for other purposes. Toxic substances such as lead, mercury and cobalt can get into the soil and the water supply from the landfill sites and so cause health problems.
+- Data analysis: Computer science technology can be used to monitor environmental factors by transmitting and analysing data. This data can be shared by scientists around the world who can collaborate to find solutions to problems. Computers can be used to develop models to forecast environmental behaviour and identify options for action.
 </answer>
 
 Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
@@ -1964,7 +1997,7 @@ Define the term qubit <span class='mark'>[1 mark]</span>
 How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
 
 Describe how artificial intelligence could identify what is wrong with patients by symptons. <span class='mark'>[2 marks]</span>

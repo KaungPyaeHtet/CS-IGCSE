@@ -22,13 +22,12 @@ def convert(path):
             // Open ALL details elements and ensure they stay open
             document.querySelectorAll("details").forEach(detail => {
                 detail.open = true;
-                // Remove any toggle event listeners that might interfere
                 detail.onclick = null;
                 detail.ontoggle = null;
             });
             
             // Remove interactive elements that might cause issues
-            document.querySelectorAll('.theme-toggle, .close-all, .contributor-link, .language-toggle, .toggle-download').forEach(el => el.remove());
+            document.querySelectorAll('.theme-toggle, .close-all, .contributor-link, .language-toggle, .toggle-download, .font-selector').forEach(el => el.remove());
             
             // Force visibility of all answer content
             document.querySelectorAll('details > div').forEach(div => {

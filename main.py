@@ -61,6 +61,10 @@ def convert_custom_questions(md_text):
             if not para.strip():
                 continue
                 
+            if para.strip().startswith('<') and para.strip().endswith('>'):
+                processed_text += para + "\n\n"
+                continue
+            
             if '\n' in para:
                 question, answer = para.split('\n', 1)
                 question = question.strip()
@@ -124,21 +128,8 @@ def convert_md_to_html(output_html):
     </a>
     
     <div class='language-toggle'><strong id='burmese-toggle-text' class="language-toggle-text" onclick="toggleLanguage('burmese')">က</strong> | <strong id='english-toggle-text' class='language-active language-toggle-text' onclick="toggleLanguage('english')">A</strong></div>
-    
+    <h1>CS IGCSE Questions Compilation</h1>
     {html}
-        <div class="random-questions-container" id='random-question'>
-        <h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
-        <div class="random-questions-controls">
-            <input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
-            <button onclick="startRandomQuestions()" class="random-questions-button">
-                <span data-translate="Start Random Questions">Start Random Questions</span>
-            </button>
-            <button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
-                <span data-translate="Stop Practice">Stop Practice</span>
-            </button>
-        </div>
-        <div id="random-questions-display"></div>
-    </div>
 
     <footer style="margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.9rem; color: var(--text); opacity: 0.7;">
         <div>&copy; 2025 Ozzy</div>
@@ -367,15 +358,14 @@ document.addEventListener('DOMContentLoaded', function() {{
         }}
     }});
     
-    // Mobile touch support
-    if ('ontouchstart' in window) {{
-        document.querySelectorAll('.toc-main.has-subtopics').forEach(topic => {{
-            topic.addEventListener('click', function(e) {{
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }});
+    // Univeral Touch Support For TOC
+
+    document.querySelectorAll('.toc-main.has-subtopics').forEach(topic => {{
+        topic.addEventListener('click', function(e) {{
+            e.preventDefault();
+            this.parentElement.classList.toggle('active');
         }});
-    }}
+    }});
 }});
 function changeFont(font) {{
   document.body.className = ''; // Clear existing font classes
