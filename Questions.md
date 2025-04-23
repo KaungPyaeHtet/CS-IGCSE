@@ -1,4 +1,4 @@
-## <h1>CS IGCSE Questions Compilation</h1>
+<h1>CS IGCSE Questions Compilation</h1>
 
 ## Table of Contents
 
