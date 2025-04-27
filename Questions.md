@@ -1860,7 +1860,14 @@ Accessing Internet Diagram <span class='mark'>[3 marks]</span> <img src='assets/
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
-List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span>
+List at least two disadvantages of computer technology on the environment <span class='mark'>[2 marks]</span>
+<answer>
+- high energy consumption leading to climate change/global warming as non-renewable/fossil fuels are being used to generate electricity 
+- landfills due to e-waste causing pollutions (water/air) 
+- material shortages as excessive amount of it are being used for manufacturing digital devices
+</answer> 
+
+List two positive impacts of using technology on the environment <span class='mark'>[2 marks]</span>
 <answer><ul>
 <li>Tracking endangered animals using GPS trackers</li>
 <li>Warning systems to alert approaching tsunamis</li>
@@ -1868,8 +1875,24 @@ List two positive impacts of using technology on the environment<span class='mar
 <li>Using sensors to turn off wasteful electrical resources</li>
 </ul></answer>
 
+List two ways to reduce energy consumption <span class='mark'>[2 marks]</span>
+<answer>
+- implementing automative lighting systems to reduce unnecessary/wasteful electricity usage
+- choosing digital devices that has a low energy consumption rate/high energy efficiency rate
+- replacing energy efficient materials in manufacturing digital devices
+</answer>
+
+List two ways in which landfills can be harmful for human health <span class='mark'>[2 marks]</span>
+<answer>
+- contribute water/air pollutions due to toxic/radioactive materials
+- 
+</answer>
+
 Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
+
+Discuss the impact of computer technology on the environment. Consider <ul><li>Manufacturing</li><li>Usage</li><li>Disposal</li></ul><span class='mark'>[6 marks]</span>
+<answer><p></p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
