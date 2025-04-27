@@ -2,7 +2,7 @@
 
 <div id='toc' class="toc">
 
-<a href='practice.html' class="table-of-contents">Practice with Random Questions</a>
+<a href='#random-question' class="table-of-contents">Practice with Random Questions</a>
 
 <a href='#topic-1' class="table-of-contents">Problem Solving</a>
 
@@ -76,7 +76,31 @@
 
 </div>
 
-# Questions
+<div class="random-questions-container" id='random-question'>
+
+<h2><span data-translate="Practice Random Questions">Practice Random Questions</span></h2>
+  
+<div class="random-questions-controls">
+
+<input type="number" id="question-count" min="1" value="5" placeholder="Number of questions">
+
+<button onclick="startRandomQuestions()" class="random-questions-button">
+
+<span data-translate="Start Random Questions">Start Random Questions</span>
+
+</button>
+
+<button onclick="stopRandomQuestions()" class="random-questions-button stop-button">
+
+<span data-translate="Stop Practice">Stop Practice</span>
+
+</button>
+
+</div>
+
+<div id="random-questions-display"></div>
+  
+</div>
 
 <h2 id='topic-1'><a href='#toc'>Topic 1: Algorithms </a></h2>
 
@@ -97,36 +121,36 @@ Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <div class='q
 
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
-  <ul>
-    <li>Starts at the first item of the list</li>
-    <li>Compare the current item with the searching item</li>
-    <li>If they are same then stop, else move to the next item until the end of list is reached or the value is found</li>
-  </ul>
+- Starts at the first item of the list
+    - Compare the current item with the searching item
+    - If they are same then stop, else move to the next item until the end of list is reached or the value is found
+  
 </answer>
 
 How does Binary search work? <span class='mark'>[4 marks]</span>
 <answer>
-  <ul>
-    <li>Select the median item of the list</li>
-    <li>If median is equal then stops</li>
-    <li>If median is higher, selects the left side of the list and repeat the first two steps</li>
-    <li>If median is lower, selects the right side of the list and repeat the first two steps</li>
-    <li>Repeat these steps until the search is found or all median items have been checked</li>
-  </ul>
+- Select the median item of the list
+    - If median is equal then stops
+    - If median is higher, selects the left side of the list and repeat the first two steps
+    - If median is lower, selects the right side of the list and repeat the first two steps
+    - Repeat these steps until the search is found or all median items have been checked
+  
 </answer>
 
 How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
 <answer>
-  <ul>
-    <li>Start at the beginning of the list</li>
-    <li>Compare two adjacent values, if they are not in ascending order then swap</li>
-    <li>if they are in ascending order then move on to next value</li>
-    <li>Repeat these steps until there are no swaps in the whole pass</li>
-  </ul>
+- Start at the beginning of the list
+    - Compare two adjacent values, if they are not in ascending order then swap
+    - if they are in ascending order then move on to next value
+    - Repeat these steps until there are no swaps in the whole pass
+  
 </answer>
 
 A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- Pass 1: 1 2 4 3 5 6
+- Pass 2: 1 2 3 4 5 6
+</answer>
 
 Define recursion <span class='mark'>[1 mark]</span>
 <answer><p>A process that is repeated again and again until the condition is met</p></answer>
@@ -144,9 +168,7 @@ Define abstraction <span class='mark'>[1 mark]</span>
 
 Example of using abstraction in coding <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<li>Using API/libraries</li>
-<li>
+- Using API/libraries
 ```python
 class Car:
   def __init__(self, make, model):
@@ -169,11 +191,7 @@ class Car:
     else:
       print("Please start the engine first.")
 ```
-</li>
-<li>
-In the above code we just car the function start_engine() or drive() but we don't need to know how it works behind so it is essentially example of abstraction which simply reduces complex information into essential ones.
-</li>
-</ul>
+- In the above code we just car the function start_engine() or drive() but we don't need to know how it works behind so it is essentially example of abstraction which simply reduces complex information into essential ones.
 </answer>
 
 Define decomposition <span class='mark'>[1 mark]</span>
@@ -181,20 +199,26 @@ Define decomposition <span class='mark'>[1 mark]</span>
 
 List two benefits of using decompositions <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<li>Smaller problems are easier to solve</li>
-<li>Each smaller problem can be solved independently of the others</li>
-<li>Smaller problems can be tested independently</li>
-<li>Smaller problems can be combined to produce a solution to the full problem</li>
-</ul>
+
+- Smaller problems are easier to solve
+- Each smaller problem can be solved independently of the others
+- Smaller problems can be tested independently
+- Smaller problems can be combined to produce a solution to the full problem
+
 </answer>
 
 <h2 id='topic-2'><a href='#toc'>Topic 2: Programming</a></h2>
 
 <h3 id='chap-5'>Chapter 5: Developing Code</h3>
 
-Common Data types
-<answer><!-- TODO --></answer>
+Common Data types <span class='mark'>[4 marks]</span>
+<answer>
+- String ("hello", "world")
+- Character ('a', 'A')
+- Boolean (True, False)
+- Real (1.02, 3.1415, 2.71828)
+- Integer (1, 2, 3, 100, 2000)
+</answer>
 
 Implement Linear Search <span class='mark'>[3 marks]</span>
 <answer>
@@ -334,24 +358,18 @@ print(sampleString.split(","))
 
 How to transverse a string? <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>
-      ```python
-      # Using Method 1: For index loop
-      sampleString = "sample"
-      for i in range(len(sampleString)):
-        print(sampleString[i])
-      ```
-    </li>
-    <li>
-    ```python
-    # Using method 2: For each loop
-    sampleString = "sample"
-    for letter in sampleString:
-      print(letter)
-    ```
-    </li>
-  </ul>
+```python
+# Using Method 1: For index loop
+sampleString = "sample"
+for i in range(len(sampleString)):
+  print(sampleString[i])
+```    
+```python
+# Using method 2: For each loop
+sampleString = "sample"
+for letter in sampleString:
+  print(letter)
+```
 </answer>
 
 <h3 id='chap-8'>Chapter 8: Data Structures </h3>
@@ -415,10 +433,8 @@ print("Valid")
 
 List two types of subprograms and difference between them<span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Function</li>
-    <li>Procedure</li>
-  </ul>
+- Function
+- Procedure
 </answer>
 
 What is the difference between function and procedure <span class='mark'>[2 marks]</span>
@@ -432,12 +448,10 @@ Define Global Variables <span class='mark'>[1 mark]</span>
 
 List two benefits of using subprograms <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<li>Making bigger problems easier to break down (decompose) and code</li>
-<li>Allows team members to be able to work on different parts of a problem</li>
-<li>Makes the program easier to debug</li>
-<li>Makes programs more efficient as code is not duplicated</li>
-</ul>
+- Making bigger problems easier to break down (decompose) and code
+- Allows team members to be able to work on different parts of a problem
+- Makes the program easier to debug
+- Makes programs more efficient as code is not duplicated
 </answer>
 
 What is meant by built in functions <span class='mark'>[1 mark]</span>
@@ -447,25 +461,21 @@ What is meant by built in functions <span class='mark'>[1 mark]</span>
 
 What is trace table and why do we use it? <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>A technique used to identify logic errors in algorithms</li>
-    <li>As we work through all the steps, we can see what values variables hold at a specific step.</li>
-  </ul>
+- A technique used to identify logic errors in algorithms
+- As we work through all the steps, we can see what values variables hold at a specific step.
 </answer>
 
-Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span>  <ul><li>length</li><li>count</li><li>index</li><li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
+Draw and complete a trace table for this algorithm with these columns headings <span class='mark'>[5 marks]</span><ul><li>length </li><li>count </li><li>index </li> <li>scores[index]</li></ul> <div class='question-image-container'><img src="assets/programming/tracetable-question.png" /></div>
 <answer><img src='assets/programming/tracetable-answer.png'></answer>
 
-Answer these questions about the code. <ul><li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable</li></ul><span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
+Answer these questions about the code. <li>State the name of a user-defined subprogram</li><li>State the name of one built-in subprogram.</li><li>State the names of one input parameter</li><li>State the name of a global variable</li><li>State the name of a local variable</li><li>State the line number of the command that 'calls' the variable<span class='mark'>[6 marks]</span><div class='question-image-container'><img src='assets/programming/unitQuestions/Q1.png' /></div>
 <answer>
-  <ul>
-    <li>rectangle</li>
-    <li>print</li>
-    <li>length or width</li>
-    <li>length, width, area or perimeter</li>
-    <li>ar or per</li>
-    <li>8</li>
-  </ul>
+- rectangle
+- print
+- length or width
+- length, width, area or perimeter
+- ar or per
+- 8
 </answer>
 
 Three types of Errors that occur when constructing an algorithm <span class='mark'>[3 marks]</span>
@@ -510,7 +520,7 @@ Describe 3 Testing Validation Rules (Normal, Boundary, Erroneous datas)<span cla
         </tr>
         <tr>
             <td>Boundary Data</td>
-            <td>Data that is at the extreme limits of what is <strong>accepted</strong> by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
+            <td>Data that is at the extreme limits of what is accepted by the program. Example if a rule is >= 75 and <= 100 for accepted values, boundary data are 75 and 100 (both accepted)</td>
         </tr>
         <tr>
             <td>Erroneous</td>
@@ -535,22 +545,18 @@ Convert 234 into binary form. <span class='mark'> [1 mark]</span>
 
 Convert 1101 0010 into hexadecimal form. <span class='mark'> [2 marks]</span>
 <answer>
-  <ul>
-    <li>1101 = 13 = D</li>
-    <li>0010 = 2  = 2</li>
-    <li>2D</li>
-  </ul>
+- 1101 = 13 = D
+- 0010 = 2  = 2
+- 2D
 </answer>
 
 Convert 4FAD into binary form <span class='mark'> [4 marks]</span>
 <answer>
-	<ul>
-		<li>4 = 0010</li>
-		<li>F = 15 = 1111</li>
-		<li>A = 10 = 1010</li>
-		<li>D = 13 = 1101</li>
-		<li>0010 1111 1010 1101</li>
-	</ul>
+- 4 = 0010
+- F = 15 = 1111
+- A = 10 = 1010
+- D = 13 = 1101
+- 0010 1111 1010 1101
 </answer>
 
 Add 0011 1001 with 0110 0100. <span class='mark'> [2 marks]</span>
@@ -576,19 +582,15 @@ Represent -83 with sign and magnitude method <span class='mark'> [2 marks]</span
 
 Represent 0111 1011 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
 <answer>
-	<ul>
-		<li>flip: 1000 0100</li>
-		<li>add 1: 1000 0101</li> 
-	</ul>
+- flip: 1000 0100
+- add 1: 1000 0101 
 </answer>
 
 Represent -67 with 8 bit two complement form. <span class='mark'> [2 marks]</span>
 <answer>
-	<ul>
-		<li>67: 0100 0011</li>
-		<li>flip: 1011 1100</li>
-		<li>add 1: 1011 1101</li>
-	</ul>
+- 67: 0100 0011
+- flip: 1011 1100
+- add 1: 1011 1101
 </answer>
 
 Define overflow error <span class='mark'>[2 marks]</span>
@@ -611,36 +613,33 @@ What is a metadata <span class='mark'>[1 mark]</span>
 <answer><p>A data that represents other data</p></answer>
 
 Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
-<answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
+<answer>
+- The analogue sound wave will be represented more accurately, and the fidelity/quality of the recording will be improved
+- The file size will increase/ more data stored (as each sample takes up disk space)
+</answer>
 
 List two benefits of using ASCII encoding <span class='mark'>[2 marks]</span>
 <answer>
-	<ul>
-		<li>Simplicity and Easy to understand</li>
-		<li>Memory Efficiency as it only uses 7 bits (standard ASCII)</li>
-	</ul>
+- Simplicity and Easy to understand
+- Memory Efficiency as it only uses 7 bits (standard ASCII)
 </answer>
 
 Explain why Unicode was developed <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Before Unicode, there were hundreds of different encoding systems, and no single encoding system could contain enough characters to represent all major languages</li>
-    <li>Standard ASCII only provides 128 different patterns, which can’t represent all major languages</li>
-    <li>Unicode uses a minimum of 16 bits, so it can represent at least 2^16 characters.</li>
-    <li>Unicode has a very large number of characters that can represent all languages/ ASCII was developed for English</li>
-  </ul>
+- Before Unicode, there were hundreds of different encoding systems, and no single encoding system could contain enough characters to represent all major languages
+- Standard ASCII only provides 128 different patterns, which can’t represent all major languages
+- Unicode uses a minimum of 16 bits, so it can represent at least 2^16 characters.
+- Unicode has a very large number of characters that can represent all languages/ ASCII was developed for English
 </answer>
 
 List two factors that affect the fidelity of the sound <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Bit depth</li>
-    <li>Sampling rate</li>
-  </ul>
+- Bit depth
+- Sampling rate
 </answer>
 
 Explain how increasing sample rate improves the fidelity of the sound <span class='mark'>[1 mark]</span>
-<answer><!-- TODO --></answer>
+<answer>More samples can be captured per second which allow computer to take more samples and more audio samples to be included.</answer>
 
 Explain how increasing bit depth improves the fidelity of the sound <span class='mark'>[1 mark]</span>
 <answer><p>With bigger bit depth, higher level of amplitude can be measured adding more details</p></answer>
@@ -657,18 +656,13 @@ Define image resolution <span class='mark'>[1 mark]</span>
 State how to calculate the file size of an image <span class='mark'>[1 mark]</span>
 <answer><p>pixels width x pixels height x bit depth</p></answer>
 
-Give the impacts of increasing the sampling frequency. <span class='mark'>[2 marks]</span>
-<answer><ul><li>The analogue sound wave will be represented more accurately, and the fidelity/ quality of the recording will be improved</li><li>The file size will increase/ more data stored (as each sample takes up disk space)</li></ul></answer>
-
 Describe the steps taken to convert the analogue sound to a digital sound file <span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-  <li>set the sample rate/parameters/bit-depth (1)</li>
-  <li>sample (the analogue sound) (1)</li>
-  <li>measure the sound amplitude/volume/frequency (1)</li>
-  <li>give a (binary) value/number for each measurement (1)</li>
-  <li>store data as sample rate and values / digital signals (1)</li>
-  </ul>
+- set the sample rate/parameters/bit-depth (1)
+- sample (the analogue sound) (1)
+- measure the sound amplitude/volume/frequency (1)
+- give a (binary) value/number for each measurement (1)
+- store data as sample rate and values / digital signals (1)  
 </answer>
 
 Explain what is meant by colour depth. <span class='mark'>[2 marks]</span>
@@ -685,7 +679,7 @@ How many bits does Unicode uses to represent character <span class='mark'>[1 mar
 
 <h3 id='chap-14'>Chapter 14: Data Storage and Compression </h3>
 
-Table of unit of data in computer from b to GB(decimal prefix)<span class='mark'>[6 marks]</span>
+Table of unit of data in computer from b to TB<span class='mark'>[6 marks]</span>
 <answer>
 <table>
     <thead>
@@ -749,11 +743,11 @@ What is the advantage and disadvantage of using lossless compression <span class
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
-      <td><strong>Advantage</strong></td>
+      <td>Advantage</td>
       <td>All the data can be recovered restoring original quality</td>
     </tr>
     <tr>
-      <td><strong>Disadvantage</strong></td>
+      <td>Disadvantage</td>
       <td>Takes longer time and more processing power due to complex algorithms</td>
     </tr>
   </table>
@@ -763,38 +757,41 @@ What is the advantage and disadvantage of using lossy compression <span class='m
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
-      <td><strong>Advantage</strong></td>
+      <td>Advantage</td>
       <td>It reduces the file more significantly compared to lossless compression</td>
     </tr>
     <tr>
-      <td><strong>Disadvantage</strong></td>
+      <td>Disadvantage</td>
       <td>Data is lost permanenely, it can not be recovered back</td>
     </tr>
   </table>
 </answer>
 
-Why quality decrease is acceptable when using lossy compression <span class='mark'>[2 marks]</span>
-<answer><p>Small changes can not be noticed by humans</p></answer>
+Why quality decrease is acceptable when using lossy compression to convert audio and iamges? <span class='mark'>[2 marks]</span>
+<answer><p>Humans can only see certain ranges of colors and audio (20 - 20000 Hz). Thus removing them doesn't make that much of a difference to human's perception.</p></answer>
 
 What are some differences between kilobyte and kibibyte <span class='mark'>[2 marks]</span>
+<answer>
+- Kilobyte is equivalent to 1000 bytes, whereas a kibibyte is equivalent to 1024 bytes (1)
+- Kilobyte is equivalent to 103 bytes, whereas a kibibyte is equivalent to 210 bytes (1)
+- Kilobyte is a base 10 measurement, whereas a kibibyte is a base 2 measurement (1)
+</answer>
 
 <h3 id='chap-15'>Chapter 15: Encryption </h3>
 
 Why is Caeser Cipher easy to crack? <span class='mark'>[2 marks]</span>
-<answer><p>It uses limited number of keys so it can be cracked by guessing different keys until right one is found (brute-force method)</p></answer>
+<answer><p>It uses limited number of keys so it can be cracked by using brute force algorithm</p></answer>
 
 Define encryption <span class='mark'>[1 mark]</span>
 <answer><p>The process of converting plain text into cipher text</p></answer>
 
 Write down the purpose of encryption <span class='mark'>[1 mark]</span>
-<answer><p>to make data unreadable by unauthorized users</p></answer>
+<answer><p>To make data unreadable by unauthorized users</p></answer>
 
 State two types of encryption method <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Asymmetric encryption</li>
-    <li>Symmetric encryption</li>
-  </ul>
+- Asymmetric encryption
+- Symmetric encryption  
 </answer>
 
 Define asymmetric encryption <span class='mark'>[2 marks]</span>
@@ -809,19 +806,15 @@ List at least two benefits of asymmetric encryption and symmetric encryption <sp
 		<tr>
 			<td>Asymmetric Encryption</td>
 			<td>
-        <ul>
-		        <li>No need key-sharing</li>
-		        <li>Better security as it uses different keys to encrypt and decrypt the data</li>
-	      </ul>
+        - No need key-sharing
+        - Better security as it uses different keys to encrypt and decrypt the data
       </td>
 		</tr>
 		<tr>
 			<td>Symmetric encryption</td>
 			<td>
-        <ul>
-		        <li>Faster due to less complex calculations</li>
-		        <li>Efficient for encrypting large set of data</li>
-	      </ul>
+        - Faster due to less complex calculations
+        - Efficient for encrypting large set of data
       </td>
 		</tr>
 	</table>
@@ -829,15 +822,13 @@ List at least two benefits of asymmetric encryption and symmetric encryption <sp
 
 List at least two types of ciphers <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Pigphen cipher</li>
-    <li>Caesar cipher</li>
-    <li>Vigenere cipher</li>
-    <li>Rail Fence cipher</li>
-  </ul>
+- Pigphen cipher
+- Caesar cipher
+- Vigenere cipher
+- Rail Fence cipher
 </answer>
 
-Describe how caesar cipher works <span class='mark'>[2 marks]</span>
+Describe how Caesar cipher works <span class='mark'>[2 marks]</span>
 <answer><p>It works by shifting the order of alphabets according to the key</p></answer>
 
 <h2 id='topic-4'><a href='#toc'> Topic 4: Computers</a></h2>
@@ -853,69 +844,66 @@ Define parallel processing <span class='mark'>[1 mark]</span>
 Define multi-agent processing <span class='mark'>[1 mark]</span>
 <answer>Separate tasks are processed by different systems (agents) to perform a particular function.</answer>
 
-What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]
+What is the difference between parallel processing and multi-agent processing <span class='mark'>[2 marks]</span>
 <answer><p>Parallel processing handles only one single task whereas multi-agent manages several tasks at the same time</p></answer>
 
 <h3 id='chap-17'>Chapter 17: Hardware</h3>
 
 Explain why sequential programs might not run faster with multicore processors <span class='mark'>[2 marks]</span>
-<answer></answer>
-
-
+<answer>
+- Sequential programs can only run one process at a time.
+- Thus even using multicore processors the program will not run faster as it cannot do parallel computing
+</answer>
 
 Identify differences between RAM and ROM <span class='mark'>[4 marks]</span>
 <answer>
-  <ul>
-    <li>RAM is volatile whereas ROM is non-volatile. Data stored in RAM get lost when the computer is turned off but data is kept in ROM after power-off.</li>
-    <li>The size of RAM can be upgraded. However, the size of ROM can be not increased typically.</li>
-    <li>RAM stores currently used data while ROM stores data necessary for booting up computer like BIOS.</li>
-  </ul>
+- RAM is volatile whereas ROM is non-volatile. Data stored in RAM get lost when the computer is turned off but data is kept in ROM after power-off.
+- The size of RAM can be upgraded. However, the size of ROM can be not increased typically.
+- RAM stores currently used data while ROM stores data necessary for booting up computer like BIOS.
 </answer>
 
 Two types of items stored in Von Neumann Architecture <span class='mark'>[2 marks]</span>
-<answer><ul><li>Data</li><li>Instructions</li></ul></answer>
+<answer>
+- Data
+- Instructions
+</answer>
 
 What is a stored program concept? <span class='mark'>[2 marks]</span>
-<answer><ul><li>A computer in which instructions and data are stored in same memory</li><li>and are executed sequentially</li></ul></answer>
+<answer>
+- A computer in which instructions and data are stored in same memory
+- and are executed sequentially
+</answer>
 
 Explain how virtual memory works <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).</li>
-    <li>Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)</li>
-    <li>Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)</li>
-    <li>Virtual memory is used as temporary storage. (1)</li>
-    <li>Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)</li>
-    <li>When needed again, instructions and data are transferred back to RAM. (1)</li>
-  </ul>
+- Virtual memory (VM) is used when RAM becomes full (1) (to hold all programs and data).
+- Virtual memory is used as (an extension to) main memory/RAM / works like RAM. (1)
+- Virtual memory is stored/created on (internal) secondary storage/HDD/SSD. (1)
+- Virtual memory is used as temporary storage. (1)
+- Instructions and data not currently being used are transferred from RAM to VM/HDD. (1)
+- When needed again, instructions and data are transferred back to RAM. (1)
 </answer>
 
 how does HDD work? <span class='mark'>[3 marks]</span>
 <answer>
-  <ul>
-    <li>Made up of several metal discs coated with magnetic materials (Platters)</li>
-    <li>Platter is divided into sector and tracks</li>
-    <li>Each iron particles on platter are magnetized to represent 1 or 0 using read/write head</li>
-  </ul>
+- Made up of several metal discs coated with magnetic materials (Platters)
+- Platter is divided into sector and tracks
+- Each iron particles on platter are magnetized to represent 1 or 0 using read/write head
 </answer>
 
 How does SSD work? <span class='mark'>[3 marks]</span>
 <answer>
-  <ul>  
-    <li>Uses electronic circuits that can store binary values (1 or 0) <strong>(1 mark)</strong></li>  
-    <li>Uses NAND/NOR flash memory to persistently control electron flow <strong>(1 mark)</strong></li>  
-    <li>Applies high voltage to trap electrons in the floating gate (data storage) <strong>(1 mark)</strong></li>  
-  </ul> 
+- Uses electronic circuits that can store binary values (1 or 0) 
+- Uses NAND/NOR flash memory to persistently control electron flow 
+- Applies high voltage to trap electrons in the floating gate (data storage)    
 </answer>
 
 How does an optical drive work? <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>  
-    <li>Uses a disc with a polycarbonate surface layer <strong>(1 mark)</strong></li>  
-    <li>A laser beam reads/writes data by targeting the disc surface <strong>(1 mark)</strong></li>  
-    <li>Creates physical pits (indentations) and lands (flat areas) on the disc <strong>(1 mark)</strong></li>  
-    <li>Pits represent binary 0, lands represent binary 1<strong>(1 mark)</strong></li>  
-  </ul> 
+- Uses a disc with a polycarbonate surface layer 
+- A laser beam reads/writes data by targeting the disc surface 
+- Creates physical pits (indentations) and lands (flat areas) on the disc 
+- Pits represent binary 0, lands represent binary 1    
 </answer>
 
 What is the function of the Program Counter (PC)? <span class='mark'>[1 mark]</span>
@@ -926,43 +914,54 @@ What does the Memory Address Register (MAR) hold? <span class='mark'>[1 mark]</s
 
 Describe the role of the Memory Data Register (MDR). <span class='mark'>[2 marks]</span>
 <answer>
-<ul> <li>Stores the data fetched from memory <strong>(1 mark)</strong>.</li> <li>Transfers this data to the Arithmetic Logic Unit (ALU) for execution <strong>(1 mark)</strong>.</li> </ul> </answer>
+ - Stores the data fetched from memory. 
+ - Transfers this data to the Arithmetic Logic Unit (ALU) for execution.
+</answer>
 
 What is the purpose of the Current Instruction Register (CIR)? <span class='mark'>[1 mark]</span>
 <answer><p>Stores the instruction currently being decoded by the CPU.</p></answer>
 
-Explain the function of the Accumulator. <span class='mark'>[1 mark]</span>
+State the function of the Accumulator. <span class='mark'>[1 mark]</span>
 <answer><p>Temporarily holds the results of calculations performed by the ALU.</p></answer>
 
+How does Program Counter store the next address? <span class='mark'>[2 marks]</span>
+<answer>
+- Holds the memory address of the next instruction to be executed
+- Increments after each fetch cycle
+</answer>
+
 Define address bus <span class='mark'>[1 mark]</span>
-<answer>The bus that carries memory address</answer>
+<answer>The bus that carries memory address which connects MAR to Memory (RAM)</answer>
 
 Define data bus <span class='mark'>[1 mark]</span>
-<answer>The bus that carries data value stored in a specific memory address</answer>
+<answer>The bus that carries data value stored in a specific memory address which connects Memory to MDR</answer>
 
 Define control bus <span class='mark'>[1 mark]</span>
-<answer>The bus that carries control signals</answer>
+<answer>The bus that carries control signals connects from Control Units to other components</answer>
 
-How increasing address bus width affect <span class='mark'>[1 mark]</span>
-<answer>More memory addresses can be carried</answer>
+State the effects of increasing width of addresses bus <span class='mark'>[1 mark]</span>
+<answer>More memory addresses can be carried at a time</answer>
 
-How increasing data bus width affect <span class='mark'>[1 mark]</span>
-<answer><p>Bigger size of instruction can be carried</p></answer>
+State the effects of increasing width of data bus<span class='mark'>[1 mark]</span>
+<answer><p>Bigger size of instruction can be carried per cycle</p></answer>
 
-Define cache <span class='mark'>[1 mark]</span>
-<answer><p>Cache stores frequently used data by CPU</p></answer>
+Define cache <span class='mark'>[2 marks]</span>
+<answer>
+- Cache stores frequently used data by CPU
+- To speed up the processing
+- As it is located near CPU
+</answer>
 
 List three factors that affect the performance of the CPU <span class='mark'>[3 marks]</span>
 <answer>
-  <ul>
-    <li>Clock speed</li>
-    <li>Number of cores</li>
-    <li>Cache size</li>
-  </ul>
+- Clock speed
+- Number of cores
+- Cache size
+- Bus width
 </answer>
 
 Define clock speed <span class='mark'>[1 mark]</span>
-<answer><p>The number of cycles per second</p></answer>
+<answer><p>The clock speed measures the number of fetch-decode-execute cycles that can take place in 1 second.</p></answer>
 
 State how increasing clock speed affect the performance of the CPU <span class='mark'>[2 marks]</span>
 <answer><p>When clock speed is increased, more instructions can be executed per second reducing loading time and increasing computing power</p></answer>
@@ -970,60 +969,64 @@ State how increasing clock speed affect the performance of the CPU <span class='
 State how increased number of cores affect the performance of the CPU <span class='mark'>[2 marks]</span>
 <answer><p>Better parallel processing as more tasks are executed by different cores</p></answer>
 
+Explain why increasing clock speed can be bad for computer? <span class='mark'>[2 marks]</span>
+<answer>
+- Increasing clock speed increases number of fetch decode execute cycles per second
+- This leads to computer heating up drastically
+</answer>
+
 List two benefits of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Improve multi-tasking</li>
-    <li>Reduce loading time</li>
-  </ul>
+- Improve multi-tasking
+- Reduce loading time
 </answer>
 
 List two disadvantages of increasing computing power <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Higher cost due to better quality</li>
-    <li>Higher enery consumptions leading to environmental impacts</li>
-    <li>Higher heat generation causing electrical components burns or even melts</li>
-  </ul>
+- Higher cost due to better quality
+- Higher enery consumptions leading to environmental impacts
+- Higher heat generation causing electrical components burns or even melts
 </answer>
 
 Explain how increasing the size of the cache improves the CPU’s performance. <span class='mark'>[2 marks]</span>
 <answer><p>Caches store frequently used data or instructions to reduce the need to access slower RAM. Since cache is faster and closer to the processor, it speeds up processing by minimizing wait times.</p></answer>
 
-Describe the fetch-decode-execute cycle.<span class='mark'>[6 marks]</span>
+Describe how fetch stage works in fetch-decode-excute cycle <span class='mark'>[6 marks]</span>
 <answer>
-<ol type="1"> <li><strong>Fetch Stage (3 marks)</strong> <ul> <li>Memory Address Register (MAR) holds the address of the next instruction, sent via the <em>address bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction/data is fetched from memory to the Memory Data Register (MDR) via the <em>data bus</em> <strong>(1 mark)</strong>.</li> <li>Instruction is copied to the Current Instruction Register (CIR); Program Counter (PC) increments <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Decode Stage (1 mark)</strong> <ul> <li>Control Unit decodes the instruction in CIR into <em>opcode</em> (operation) and <em>operand</em> (data) <strong>(1 mark)</strong>.</li> </ul> </li> <li><strong>Execute Stage (2 marks)</strong> <ul> <li>Arithmetic Logic Unit (ALU) performs the operation (opcode) on the operand <strong>(1 mark)</strong>.</li> <li>Result is stored in the <em>accumulator</em> or written back to memory <strong>(1 mark)</strong>.</li> </ul> </li> </ol> <img src='assets/computer/fetch-decode-execute.png' /></answer>
+- The Program Counter (PC) holds the address/location of the next instruction to be fetched [1]
+- The address held in the PC is sent to the Memory Address Register (MAR) [1]
+- The memory address is sent using the address bus [1]
+- The Program Counter is incremented [1]
+- The instruction is sent from the address in memory to the Memory Data Register (MDR) [1]
+- The instruction is transferred using the data bus [1]
+- The instruction is sent to the Current Instruction Register (CIR) [1]
+<img src='assets/computer/fetch-decode-execute.png' />
+</answer>
 
 Which bus is uni-directional? <span class='mark'>[1 mark]</span>
 <answer><p>Address Bus</p></answer>
 
 Discuss the benefits and drawbacks of using cloud storage.<span class='mark'>[6 marks]</span>
 <answer>
-<h4>Benefits and Drawbacks</h4>
-<ul>
-  <li><strong>Benefits</strong>
-    <ul>
-      <li><strong>Accessibility</strong>: Access files from any location with WAN connectivity, collaborate in real-time with permission controls, and device-agnostic access (any internet-enabled device).</li>
-      <li><strong>Scalability</strong>: Flexible storage capacity adjustments (pay-as-you-grow).</li>
-      <li><strong>Reliability</strong>: Redundant server backups minimize data loss risks.</li>
-      <li><strong>Cost Efficiency</strong>: Reduces local hardware/staff costs (provider-managed IT).</li>
-    </ul>
-  </li>
-  <li><strong>Drawbacks</strong>
-    <ul>
-      <li><strong>Security Risks</strong>: Potential for external breaches or unauthorized access, and jurisdictional challenges in data protection laws.</li>
-      <li><strong>Dependency</strong>: Requires consistent high-speed internet and reliance on the provider's service continuity.</li>
-      <li><strong>Hidden Costs</strong>: Recurring subscription fees and potential overuse charges for bandwidth/storage.</li>
-      <li><strong>Environmental Impact</strong>: High energy consumption for servers and cooling.</li>
-    </ul>
-  </li>
-</ul>
+Benefits
+- Accessibility: Access files from any location with WAN connectivity, collaborate in real-time with permission controls, and device-agnostic access (any internet-enabled device).
+- Scalability: Flexible storage capacity adjustments (pay-as-you-grow).
+- Reliability: Redundant server backups minimize data loss risks.
+- Cost Efficiency: Reduces local hardware/staff costs (provider-managed IT).
+Drawbacks
+- Security Risks: Potential for external breaches or unauthorized access, and jurisdictional challenges in data protection laws.
+- Dependency: Requires consistent high-speed internet and reliance on the provider's service continuity.
+- Hidden Costs: Recurring subscription fees and potential overuse charges for bandwidth/storage.
+- Environmental Impact: High energy consumption for servers and cooling.
 </answer>
 
 Describe an embedded system <span class='mark'>[2 marks]</span>
 <answer><p>Embedded system is a combination of software and hardware (1) that is designed specifically to tackle a specific problem. (1) For example, usage in washing machine.</p></answer>
 
 <h3 id='chap-18'>Chapter 18: Logic </h3>
+
+Define truth table <span class='mark'>[1 mark]</span>
+<answer><p>A table showing all possible combinations of the inputs and outputs of an operator.</p></answer>
 
 <h3 id='chap-19'>Chapter 19: Software</h3>
 
@@ -1032,74 +1035,40 @@ What is an application software? <span class='mark'>[2 marks]</span>
 
 The operating system controls the scheduling of processes. Describe how the operating system uses scheduling to allocate processor time <span class='mark'>[4 marks]</span>
 <answer>
-<ul>
-<li>All processes are held in a queue</li>
-<li>Processes are prioritised</li>
-<li>Processes are allocated time slices</li>
-<li>Length of time slice depends on priority</li>
-<li>(and) processes are switched (at the end of their time slice)</li>
-<li>Unfinished processes are put to the back of the queue</li>
-<li>During the time slice the process has exclusive use of the processor</li>
-</ul>
+- All processes are held in a queue
+- Processes are prioritised
+- Processes are allocated time slices
+- Length of time slice depends on priority
+- (and) processes are switched (at the end of their time slice)
+- Unfinished processes are put to the back of the queue
+- During the time slice the process has exclusive use of the processor
 </answer>
 
 Describe how an operating system manages the storage of a file on random-access secondary storage. <span class="mark">[4 marks]</span>
 <answer>
-  <ul>
-    <li>OS checks whether there is space on disk</li>
-    <li>The file is broken into blocks</li>
-    <li>Blocks are stored in any spaces that are large enough to store each block</li>
-    <li>Blocks can reside anywhere on the storage</li>
-    <li>Meta data about file is created and separately stored</li>
-  </ul>
+- OS checks whether there is space on disk
+- The file is broken into blocks
+- Blocks are stored in any spaces that are large enough to store each block
+- Blocks can reside anywhere on the storage
+- Meta data about file is created and separately stored
 </answer>
 
 List at least 4 functions of Operating Systems <span class='mark'>[4 marks]</span>
 <answer>
-  <ul>
-    <li>Providing User Interface</li>
-    <li>User management</li>
-    <li>Hardware management</li>
-    <li>File management</li>
-    <li>Process management</li>
-    <li>Resource management</li>
-    <li>Memory management</li>
-    <li>Print Spooling</li>
-  </ul>
+- Providing User Interface
+- User management
+- Hardware management
+- File management
+- Process management
+- Resource management
+- Memory management
+- Print Spooling
 </answer>
 
-What are the differences between Graphical user interface and command line interface <span class='mark'>[3 marks]</span>
+State 2 differences between Graphical User Interface and Command Line Interface <span class='mark'>[2 marks]</span>
 <answer>
-- Interface
-- Advantages
-- Disadvantages
-- Command line (CLI)
-- Uses less system resources
-- Useful for automation of tasks
-- Commands are often faster to type than navigating menus
-- equires users to remember commands
-- Typing errors are common
-Less intuitive than GUI
-- Graphical (GUI)
-
-- Intuitive and user-friendly
-- Requires no previous knowledge to use
-- Information is visual, making it easier to understand
-- Uses more system resources
-- Can be slower to find and execute commands
-- Can be frustrating when doing repetitive tasks
-- Menu
-
-Simplicity
-Efficiency
-Limited flexibility
-Accessibility issues
-Natural language (NLI)
-
-Can be used by people with disabilities
-Intuitive
-Not always reliable
-Privacy concerns
+- A Command Line Interface (CLI) requires users to interact with the operating system using text based commands
+- A Graphical User Interface (GUI) requires users to interact with the operating system using visual elements such as windows, icons, menus & pointers (WIMP)
 </answer>
 
 What is scheduling? <span class='mark'>[2 marks]</span>
@@ -1109,54 +1078,44 @@ What is paging? <span class='mark'>[2 marks]</span>
 <answer><p>The algorithm that the OS uses to move programs from RAM to disk and back again when needed once main memory is full</p></answer>
 
 Why do users need back-up? <span class='mark'>[2 marks]</span>
-<answer><ul>
+<answer>
 To protect against loss of data from 
-<li>natural diseases</li>
-<li>Hardware failure</li>
-<li>Cyberattacks</li>
-</ul></answer>
-
-What is the main difference between scheduling and paging? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-What is the difference between virtual memory and scheduling? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+- natural diseases
+- Hardware failure
+- Cyberattacks
+</answer>
 
 A restaurant has a computer-based ordering system which is running slowly. A technician has said that the hard disfragmented. The technician has suggested using utility software to defragment the drive. <span class='mark'>[4 marks]</span>
-<answer><ul>
-<li> Orders have been saved onto the system as they order food and then deleted once processed (1)</li>
-<li>Once other orders have been made, new files are created (1) which may be bigger than the spaces left by the deleted files (1) </li>
-<li>The order files are split up (1)</li>
-</ul></answer>
+<answer>
+-  Orders have been saved onto the system as they order food and then deleted once processed (1)
+- Once other orders have been made, new files are created (1) which may be bigger than the spaces left by the deleted files (1) 
+- The order files are split up (1)
+</answer>
 
 Explain how defragmentation software could overcome the issue of the slow computer system.<span class='mark'>[3 marks]</span>
-<answer><ul>
-  <li> Files on the hard disk drive are moved (1)</li>
-  <li>Empty spaces collected together (1) </li>
-  <li>Files are moved to be stored together (1)</li>
-  <li>Fewer disc accesses are needed (1)</li>
-</ul></answer>
+<answer>
+-  Files on the hard disk drive are moved (1)
+- Empty spaces collected together (1) 
+- Files are moved to be stored together (1)
+- Fewer disc accesses are needed (1)
+</answer>
 
 Define 'What if' questions<span class='mark'>[2 marks]</span>
 <answer><p>running a computer model with a given set of inputs to see what the model produces as an output or prediction</p></answer>
 
 Explain one problem using simulation to predict the effect of changes <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>If the data is incomplete/inaccurate (1) the answers from the model might not be right (1)</li>
-    <li>If the assumptions the model is based on are inaccurate (1) the answers from the model might be incomplete/inaccurate (1)</li>
-  </ul>
+- If the data is incomplete/inaccurate (1) the answers from the model might not be right (1)
+- If the assumptions the model is based on are inaccurate (1) the answers from the model might be incomplete/inaccurate (1)
 </answer>
 
 Describe how the operating system enables processes to share a single CPU. <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>The operating system uses a scheduler to control processes (1)</li>
-    <li>The operating system holds processes in a queue (1)</li>
-    <li>Some processes may be given higher priorities than others (1)</li>
-    <li>Each process gains accesses to the CPU for a short time / time slice to execute (1)</li>
-    <li>Processes are swapped to/from (the queue / CPU)</li>
-  </ul>
+- The operating system uses a scheduler to control processes (1)
+- The operating system holds processes in a queue (1)
+- Some processes may be given higher priorities than others (1)
+- Each process gains accesses to the CPU for a short time / time slice to execute (1)
+- Processes are swapped to/from (the queue / CPU)  
 </answer>
 
 <h3 id='chap-20'>Chapter 20: Programming Languages </h3>
@@ -1169,11 +1128,9 @@ What is an instruction set? <span class='mark'>[1 mark]</span>
 
 Why is writing code in assembly challenging?<span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-<li>A very limited range of instructions available</li>
-<li>Have to manage all data and decide how to store them in memory manually</li>
-<li>Debugging is challenging and can make machine crash</li>
-</ul>
+- A very limited range of instructions available
+- Have to manage all data and decide how to store them in memory manually
+- Debugging is challenging and can make machine crash
 </answer>
 
 Compare characteristics of high-level languages and low-level languages <span class='mark'>[4 marks]</span>
@@ -1212,19 +1169,17 @@ Compare characteristics of high-level languages and low-level languages <span cl
 
 Identify 3 features that IDE might be used when programming<span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-<li>Run time Environment</li>
-<li>Editor (any feature such as auto-correct, auto-indent)</li>
-<li>Translator</li>
-<li>Version Control</li>
-<li>Breaking points</li>
-<li>Stepping</li>
-</ul>
+- Run time Environment
+- Editor (any feature such as auto-correct, auto-indent)
+- Translator
+- Version Control
+- Breaking points
+- Stepping
 </answer>
 
 Compare four features between a compiler and an interpreter. <span class='mark'>[4 marks]</span>
 <answer>
-<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td><strong>Execution</strong> <em>(1 mark)</em></td> <td>Translates entire code into machine language <strong>before</strong> execution.</td> <td>Translates and executes code <strong>line-by-line</strong>.</td> </tr> <tr> <td><strong>Speed</strong> <em>(1 mark)</em></td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td><strong>Error Handling</strong> <em>(1 mark)</em></td> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td><strong>Portability</strong> <em>(1 mark)</em></td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
+<table border="1" cellspacing="0" cellpadding="8"> <thead> <tr> <th>Feature</th> <th>Compiler</th> <th>Interpreter</th> </tr> </thead> <tbody> <tr> <td>Execution</td> <td>Translates entire code into machine language before execution.</td> <td>Translates and executes code line-by-line.</td> </tr> <tr> <td>Speed</td> <td>Faster execution (pre-compiled).</td> <td>Slower (translates during runtime).</td> </tr> <tr> <td>Error Handlitd> <td>Reports all errors after compilation.</td> <td>Stops at the first error encountered.</td> </tr> <tr> <td>Portability</td> <td>Output is machine-specific (less portable).</td> <td>Code can run on any machine with the interpreter (more portable).</td> </tr> </tbody> </table> </answer>
 
 <h2 id='topic-5'><a href='#toc'>Topic 5: Networking</a></h2>
 
@@ -1238,27 +1193,25 @@ What is a network protocol? <span class='mark'>[1 mark]</span>
 
 Why do people connect to network? <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>  
-    <li>To share access to the internet/WWW/broadband connection</li>  
-    <li>To enable internal communication using email, instant messaging, and calendar</li>  
-    <li>To share files/data across multiple devices</li>  
-    <li>To share peripherals like printers and other hardware</li>  
-  </ul> 
+- To share access to the internet/WWW/broadband connection  
+- To enable internal communication using email, instant messaging, and calendar  
+- To share files/data across multiple devices  
+- To share peripherals like printers and other hardware     
 </answer>
 
 List three types of network and define each one <span class='mark'>[3 marks]</span>
 <answer>
 	<table>
 		<tr>
-			<td><strong>LAN</strong></td>
+			<td>LAN</td>
 			<td>A network that covers a small geographical area</td>
 		</tr>
 		<tr>
-			<td><strong>WAN</strong></td>
+			<td>WAN</td>
 			<td>A combination of networks (LANs) that covers a large geographical area</td>
 		</tr>
 		<tr>
-			<td><strong>PAN</strong></td>
+			<td>PAN</td>
 			<td>A short-range network that forms near a single user connecting personal devices</td>
 		</tr>
 	</table>
@@ -1266,27 +1219,19 @@ List three types of network and define each one <span class='mark'>[3 marks]</sp
 
 Write the difference between LAN and WAN <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>LAN only covers a small geographical area whereas WAN covers a large geographical area</li>
-    <li>LAN is a single network but WAN is a collection of networks(LANs)</li>
-    <li>LAN is typically home network or owned by single organization. However, WAN is usually owned by multiple organizations</li>
-  </ul>
+- LAN only covers a small geographical area whereas WAN covers a large geographical area
+- LAN is a single network but WAN is a collection of networks(LANs)
+- LAN is typically home network or owned by single organization. However, WAN is usually owned by multiple organizations
 </answer>
-
-Write the difference between LAN and PAN <span class='mark'>[2 marks]</span>
-<answer><p><!--TODO--></p></answer>
 
 Define server <span class='mark'>[1 mark]</span>
 <answer><p>A powerful computer that provides services to other computers(clients) connected to the network</p></answer>
 
-Define client <span class='mark'>[1 mark]</span>
-<answer><p>A computer that is connected to the network</p></answer>
+Define client-server network model <span class='mark'>[1 marks]</span>
+<answer><p>A network that has at least one server to provide services to the client computers.</p></answer>
 
-Define client-server <span class='mark'>[2 marks]</span>
-<answer><p>A network that has a centralized server connected to it.</p></answer>
-
-Define peer-to-peer network <span class='mark'>[2 marks]</span>
-<answer><p>A network that does not have any centralized device</p></answer>
+Define peer-to-peer network model <span class='mark'>[1 marks]</span>
+<answer><p>A network that does have any dedicated servers. Each device can act as both client and server.</p></answer>
 
 Write the difference between client-sever and peer-to-peer network <span class='mark'>[2 marks]</span>
 <answer><p>In client-server network, all devices are connected to the sever whereas there is no centralized device in peer-to-peer network.</p></answer>
@@ -1300,53 +1245,51 @@ List features of client-server and peer-to-peer network <span class='mark'>[6 ma
       <th>Peer-to-peer</th>
 		</tr>
 		<tr>
-			<td><strong>Performance</strong></td>
-			<td><ul><li>Usually high performance when the serve is not drained</li></ul></td>
-			<td><ul><li>Depends on the number of devices connected as the network load is shared between nodes</li></ul></td>
+			<td>Performance</td>
+			<td>Usually high performance when the serve is not drained</td>
+			<td>Depends on the number of devices connected as the network load is shared between nodes</td>
 		</tr>
 		<tr>
-			<td><strong>Centralization</strong></td>
-			<td><ul><li>Has at least one centralized server</li></ul></td>
-			<td><ul><li>Does not have any centralized servers. All devices have equal access on files and resources</li></ul></td>
+			<td>Centralization</td>
+			<td>Has at least one centralized server</td>
+			<td>Does not have any centralized servers. All devices have equal access on files and resources</td>
 		</tr>
 		<tr>
-			<td><strong>Security</strong></td>
-			<td><ul><li>Can perform centralized patches/updates and reinforces user authentication</li></ul></td>
-			<td><ul><li>Usually not secure as peers can distribute malware easily</li></ul></td>
+			<td>Security</td>
+			<td>Can perform centralized patches/updates and reinforces user authentication</td>
+			<td>Usually not secure as peers can distribute malware easily</td>
 		</tr>
 		<tr>
-			<td><strong>Maintenance</strong></td>
-			<td><ul><li>Easy of maintenance as network is centralized</li></ul></td>
-			<td><ul><li>Hard to maintain the network as each peer/node is independent</li></ul></td>
+			<td>Maintenance</td>
+			<td>Easy of maintenance as network is centralized</td>
+			<td>Hard to maintain the network as each peer/node is independent</td>
 		</tr>
 		<tr>
-			<td><strong>Scalability</strong></td>
-			<td><ul><li>Easy to add new devices but might need additional server upgrades due to increased loads</li></ul></td>
-			<td><ul><li>Easy to add new devices without affecting the performance of the network</li></ul></td>
+			<td>Scalability</td>
+			<td>Easy to add new devices but might need additional server upgrades due to increased loads</td>
+			<td>Easy to add new devices without affecting the performance of the network</td>
 		</tr>
 		<tr>
-			<td><strong>Reliability</strong></td>
-			<td><ul><li>Services/Resources is not available when server goes down unless there are backup servers</li></ul></td>
-			<td><ul><li>Other nodes/devices can still contribute the resources even when the device disconnect</li></ul></td>
+			<td>Reliability</td>
+			<td>Services/Resources is not available when server goes down unless there are backup servers</td>
+			<td>Other nodes/devices can still contribute the resources even when the device disconnect</td>
 		</tr>
 		<tr>
-			<td><strong>Privacy</strong></td>
-			<td><ul><li>Has Privacy concerns as servers can monitor, spy and keep logs of the clients</li></ul></td>
-			<td><ul><li>Hard to track or identify peers on the network as there is no centralized device</li></ul></td>
+			<td>Privacy</td>
+			<td>Has Privacy concerns as servers can monitor, spy and keep logs of the clients</td>
+			<td>Hard to track or identify peers on the network as there is no centralized device</td>
 		</tr>
 	</table>
 </answer>
 
 Describe what is meant by the term Ethernet®. <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>A protocol (suite/group/family) (1)</li>
-    <li>Used on a wired network / wired connection (1)</li>
-    <li>Defines physical parts/type of cable(twisted pair, CAT6)/type of connector (1)</li>
-    <li>Defines how packets are checked for errors (1)</li>
-    <li>Defines the speed of transmission (1)</li>
-    <li>Operates at the link layer of the TCP/IP stack (1)</li>
-  </ul>
+- A protocol (suite/group/family) (1)
+- Used on a wired network / wired connection (1)
+- Defines physical parts/type of cable(twisted pair, CAT6)/type of connector (1)
+- Defines how packets are checked for errors (1)
+- Defines the speed of transmission (1)
+- Operates at the link layer of the TCP/IP stack (1)  
 </answer>
 
 Draw A Bus Topology <span class='mark'>[4 marks]</span>
@@ -1367,152 +1310,129 @@ Draw A Mesh Topology <span class='mark'>[4 marks]</span>
 
 Describe advantages and disadvantages of Bus Topology <span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-  <strong>Advantages</strong>
-  <li>Easy to install</li>
-  <li>Cheap cabling cost compared to star and mesh</li>
-  <li>Easy to add new devices</li>
-  <strong>Disadvantages</strong>
-  <li>Not secure</li>
-  <li>Hard to find faults</li>
-  <li>Single Failure Point (main cable/terminitor)</li>
-  <li>Poor Performance due to data collisions</li>
-</ul>
+Advantages
+- Easy to install
+- Cheap cabling cost compared to star and mesh
+- Easy to add new devices
+Disadvantages
+- Not secure
+- Hard to find faults
+- Single Failure Point (main cable/terminitor)
+- Poor Performance due to data collisions
 </answer>
 
 Describe advantages and disadvantages of Ring Topology <span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-  <strong>Advantages</strong>
-  <li>less cabling compared to other topologies</li>
-  <li>no data collisions as data flow in only one direction</li>
-  <strong>Disadvantages</strong>
-  <li>hard to add new devices</li>
-  <li>hard to find faults</li>
-  <li>single failure point</li>
-  <li>not secure</li>
-</ul>
+Advantages
+- less cabling compared to other topologies
+- no data collisions as data flow in only one direction
+Disadvantages
+- hard to add new devices
+- hard to find faults
+- single failure point
 </answer>
 
 Describe advantages and disadvantages of Star Topology <span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-  <strong>Advantages</strong>
-  <li>Easy to connect/ remove new nodes</li>
-  <li>Failure of one node/link does not affect the rest of the network</li>
-  <li>Easy to detect the failure of one node/link</li>
-  <strong>Disadvantages</strong>
-  <li>If the central switch/hub fails, then the whole network fails</li>
-  <li>Performance and the number of nodes that can be added depend on the capacity of the central switch/hub</li>
-  <li>Can require more cable than some of the other topologies</li>
-</ul>
+Advantages
+- Easy to connect/ remove new nodes
+- Failure of one node/link does not affect the rest of the network
+- Easy to detect the failure of one node/link
+Disadvantages
+- If the central switch/hub fails, then the whole network fails
+- Performance and the number of nodes that can be added depend on the capacity of the central switch/hub
+- Can require more cable than some of the other topologies
 </answer>
 
-<question>Describe advantages and disadvantages of Mesh Topology <span class='mark'>[3 marks]</span></question>
+Describe advantages and disadvantages of Mesh Topology <span class='mark'>[3 marks]</span>
 <answer>
-<ul>
-  <strong>Advantages</strong>
-  <li>High performance</li>
-  <li>High fault tolerant</li>
-  <strong>Disadvantages</strong>
-  <li>Excessive cabling</li>
-  <li>Expensive</li>
-  <li>Hard maintenance</li>
-</ul>
+Advantages
+- High performance
+- High fault tolerant
+Disadvantages
+- Excessive cabling
+- Expensive
+- Hard maintenance
 </answer>
 
-List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]
+List four layers of TCP/IP protocol stack and write function of each layer <span class='mark'>[6 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
     <tr>
-      <td><strong>Application</strong></td>
+      <td>Application</td>
       <td>
-        <ul>
-          <li>provides an user interface interacting with the user</li>
-          <li>hosts the application layer protocols such as email protocols</li>
-        </ul>
+          - provides an user interface interacting with the user
+          - hosts the application layer protocols such as email protocols
       </td>
     </tr>
     <tr>
-      <td><strong>Transport</strong></td>
+      <td>Transport</td>
       <td>
-        <ul>
-          <li>provides an end-to-end communication between devices</li>
-          <li>breaks down the data into packets</li>
-          <li>adds packets number in packets headers</li>
-        </ul>
+          - provides an end-to-end communication between devices
+          - breaks down the data into packets
+          - adds packets number in packets headers
       </td>
     </tr>
     <tr>
-      <td><strong>Internet</strong></td>
+      <td>Internet</td>
       <td>
-        <ul>
-          <li>Adds source IP address and destination IP address</li>
-        </ul>
+          - Adds source IP address and destination IP address
       </td>
     </tr>
     <tr>
-      <td><strong>Data link</strong></td>
+      <td>Data link</td>
       <td>
-        <ul>
-          <li>connects with physical components</li>
-        </ul>
+          - connects with physical components
       </td>
     </tr>
   </table>
 </answer>
 
-Write function of TCP protocol <span class='mark'>[4 marks]
+How does TCP protocol work? <span class='mark'>[4 marks]</span>
 <answer>
-  <ul>
-    <li>Works under transport layer</li>
-    <li>Ensures a reliable data transmission between devices</li>
-    <li>It uses error handling methods such as handshakes and checksums</li>
-    <li>It requests retransmission if it is necessary (when some of the data is missing or damanged)</li>
-  </ul>
+- It specifies the receiving computer sends acknowledgements that each section of the data sent has been received
+- Using checksums to ensure that the data received is accurate
+- Allowing the receiving computer to tell the sending computer to slow down transmission.
+- Ensuring data sent up to application layer contains no duplicate and is in correct order.
 </answer>
 
-List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]
+List two protocols that work in application layer and function of each protocol <span class='mark'>[4 marks]</span>
 <answer>
   <table border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Protocol</th>
+        <th>Description</th>
+      </tr>
+    </thead>
     <tr>
-      <td><strong>HTTP (Hyper-text Transfer Protocol)</strong></td>
+      <td>HTTP (Hyper-text Transfer Protocol)</td>
       <td>
-        <ul>
-          <li>used for transferring html documents</li>
-        </ul>
+          Used for transferring html documents
       </td>
     </tr>
     <tr>
-      <td><strong>HTTPS (Hyper-text Transfer Protocol Secure)</strong></td>
+      <td>HTTPS (Hyper-text Transfer Protocol Secure)</td>
       <td>
-        <ul>
-          <li>used for transferring html documents<strong>securely</strong></li>
-        </ul>
+          The same as HTTP but uses encryption to be more secured
       </td>
     </tr>
     <tr>
-      <td><strong>FTP (File Transfer Protocol)</strong></td>
+      <td>FTP (File Transfer Protocol)</td>
       <td>
-        <ul>
-          <li>used for transferring files</li>
-        </ul>
+          Used for transferring files
       </td>
     </tr>
     <tr>
-      <td><strong>SMTP (Simple Message Transfer Protocol)</strong></td>
+      <td>SMTP (Simple Message Transfer Protocol)</td>
       <td>
-        <ul>
-          <li>used for sending emails to mail servers and between mail servers</li>
-        </ul>
+          Used for sending emails to mail servers and between mail servers
       </td>
     </tr>
     <tr>
-      <td><strong>POP3 (Post Office Version 3) and IMAP (Internet Message Access Protocol)</strong></td>
+      <td>POP3 (Post Office Version 3) and IMAP (Internet Message Access Protocol)</td>
       <td>
-        <ul>
-          <li>used for receiving and reading emails from mail servers</li>
-        </ul>
+          Used for receiving and reading emails from mail servers
       </td>
     </tr>
   </table>
@@ -1520,15 +1440,13 @@ List two protocols that work in application layer and function of each protocol 
 
 List three email protocols <span class='mark'>[3 marks]</span>
 <answer>
-	<ul>
-		<li>SMTP</li>
-		<li>IMAP</li>
-		<li>POP3</li>
-	</ul>
+- SMTP
+- IMAP
+- POP3
 </answer>
 
 What is the difference between POP3 and IMAP <span class='mark'>[2 mark]</span>
-<answer><p>POP3 downloads the email to the user local storage once it is viewed and deletes on the mail server but IMAP keeps the email on mail server instead of downloading and deleting</p></answer>
+<answer><p>POP3 downloads the email to the user local storage. Once the file is downloaded, it deletes on the mail server; however IMAP keeps the email on mail server thus allowing different devices to sync.</p></answer>
 
 Function of DNS server <span class='mark'>[2 marks]</span>
 <answer><p>To give the corresponding IP address of domain name to the web broswer</p></answer>
@@ -1546,24 +1464,23 @@ Describe the process of accessing a web page <span class='mark'>[4 marks]</span>
 
 List two examples of wireless connectivity <span class='mark'>[3 marks]</span>
 <answer>
-	<ul>
-		<li>Wi-Fi</li>
-		<li>Bluetooth</li>
-		<li>Infra-red</li>
-	</ul>
+- Wi-Fi
+- Bluetooth
+- Infra-red
 </answer>
 
 List ways to identify devices on the network <span class='mark'>[3 marks]</span>
 <answer>
-	<ul>
-		<li>Device name</li>
-		<li>IP address</li>
-		<li>MAC address</li>
-	</ul>
+- Device name
+- IP address
+- MAC address
 </answer>
 
-What is the difference between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
-<answer><p>IP address is assigned by ISP and can be changed whereas MAC address is assigned by NIC card manufacturer and can be not changed</p></answer>
+What are the differences between IP addresses and MAC addresses <span class='mark'>[2 marks]</span>
+<answer>
+- IP address is dynamic/can change // MAC address is static/cannot change [1]
+- IP address is used to communicate on a WAN/Internet // MAC address is used to communicate on a LAN [1]
+</answer>
 
 Compare three features between wired and wireless connectivity. <span class='mark'>[6 marks]</span>
 <answer>
@@ -1571,22 +1488,22 @@ Compare three features between wired and wireless connectivity. <span class='mar
   <thead> <tr> <th>Feature</th> <th>Wired</th> <th>Wireless</th></tr></thead>
   <tbody>
     <tr>
-      <td><strong>Speed</strong></td>
+      <td>Speed</td>
       <td>Faster data transmission (e.g., fiber optic cables)</td>
       <td>Slower due to signal interference</td>
     </tr>
     <tr>
-      <td><strong>Security</strong></td>
+      <td>Security</td>
       <td>Harder to intercept (physical access required)</td>
       <td>Requires encryption to prevent eavesdropping</td>
     </tr>
     <tr>
-      <td><strong>Installation</strong></td>
+      <td>Installation</td>
       <td>Expensive/cumbersome (cables, ports)</td>
       <td>Flexible but prone to interference (walls/devices)</td>
     </tr>
     <tr>
-      <td><strong>Portability</strong></td>
+      <td>Portability</td>
       <td>Not portable due to cabling hazards</td>
       <td>Ultimate portability within the WAP range</td>
     </tr>
@@ -1594,20 +1511,17 @@ Compare three features between wired and wireless connectivity. <span class='mar
 </table>
 </answer>
 
-State two types of connectivity media <span class='mark'>[2 marks]</span>
-<answer><ul><li>Copper wire</li><li>Optical fibre</li></ul></answer>
-
-List two examples of networking devices <span class='mark'>[2 marks]</span>
+State two types of connectivity media for wired communication <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Router</li> 
-    <li>Switch</li> 
-    <li>Modem</li> 
-  </ul>
+- Copper wire
+- Optical fibre
 </answer>
 
-Write down the function of the switch <span class='mark'>[3 marks]</span>
-<answer><p>Switch connects devices and transfer data within a LAN. It does this by looking at destination MAC address and forwarding to the correct port to the intended device.</p></answer>
+Write down the function of the switch <span class='mark'>[2 marks]</span>
+<answer>
+- Switch connects devices and transfer data within a LAN. 
+- It does this by looking at destination MAC address and forwarding to the correct port to the intended device using the MAC address table.
+</answer>
 
 Write down the function of the modem <span class='mark'>[2 marks]</span>
 <answer><p>Modem is a device that converts digital signals to analogue signals and vice versa</p></answer>
@@ -1615,21 +1529,28 @@ Write down the function of the modem <span class='mark'>[2 marks]</span>
 Describe how a router directs data on the internet<span class='mark'>[5 marks]</span>
 <answer>
     <ol>
-        <li> Reads the data/packet to find the recipient's address (1)</li>
-        <li> Has physical connections to >=2 different networks (1)</li>
-        <li> Holds a routing table (1)</li>
-        <li> Stores information about (IP) addresses (1)</li>
-        <li> Keeps packets inside a network by not forwarding them (1)</li>
-        <li> Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]</li>
-        <li> Chooses the most efficient path to the next node (1)</li>
+        -  Reads the data/packet to find the recipient's address (1)
+        -  Has physical connections to >=2 different networks (1)
+        -  Holds a routing table (1)
+        -  Stores information about (IP) addresses (1)
+        -  Keeps packets inside a network by not forwarding them (1)
+        -  Forwards data / directs/forwards/sends packets (1) [Not ‘directs data’ as in question]
+        -  Chooses the most efficient path to the next node (1)
     </ol>
 </answer>
 
-Identify the radio frequency used by smartphones to connect to Wi-Fi <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>D 5 KHz</li></ul><span class='mark'>[1 mark]</span>
+Identify the radio frequency used by smartphones to connect to Wi-Fi <span class='mark'>[1 mark]</span> <ul><li>A 2.4 GHz</li><li>B 3 KHz</li><li>C. 4.1 GHz</li><li> D 5 KHz</li></ul>
 <answer><p>A 2.4 GHz</p></answer>
 
 Why do we use TCP/IP protocol suite? <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+- It makes the overall model easier to understand by dividing it into functional parts.
+- Each layer is specialized to perform a particular function.
+- The different layers can be combined in different ways.
+- One layer can be developed or changed without affecting the other layers.
+- It makes it easier to identify and correct networking errors and problems.
+- It provides a universal standard for hardware and software manufacturers to follow.
+</answer>
 
 <h3 id='chap-22'>Chapter 22: Network Security </h3>
 
@@ -1643,32 +1564,32 @@ Define Social Engineering and three types of it <span class='mark'>[6 marks]</sp
 <answer>
 	<table>
 		<tr>
-			<td><strong>Social Engineering</strong></td>
+			<td>Social Engineering</td>
 			<td>Exploiting the human behaviour/faults to steal sensitive/confidential information</td>
 		</tr>
 		<tr>
-			<td><strong>Phishing</strong></td>
+			<td>Phishing</td>
 			<td>Process of tricking the user to enter their personal information themselves. Attackers pretend to be from legitimate/original source</td>
 		</tr>
 		<tr>
-			<td><strong>Pharming</strong></td>
+			<td>Pharming</td>
 			<td>Process of redirecting the user to fake website by poisoning DNS server or browser DNS setting</td>
 		</tr>
 		<tr>
-			<td><strong>Shoulder Surfing</strong></td>
+			<td>Shoulder Surfing</td>
 			<td>
-        <li>A hacker/third party spies on/watches the user (of an electronic device) (1)</li> 
-        <li>In order to obtain their personal identification number/password/login information/sensitive information (1)</li>
+        - A hacker/third party spies on/watches the user (of an electronic device) (1) 
+        - In order to obtain their personal identification number/password/login information/sensitive information (1)
       </td>
 		</tr>
 	</table>
 </answer>
 
-Explain one way to protect from three types of social engineering <span class='mark'>[6 marks]</span>
+Explain ways to protect against Phishing, Pharming and Shoulder Surfing<span class='mark'>[6 marks]</span>
 <answer>
 	<table>
 		<tr>
-			<td><strong>Phishing</strong></td>
+			<td>Phishing</td>
 			<td>
         - enabling email spam
         - not clicking suspious/malicious links
@@ -1676,14 +1597,14 @@ Explain one way to protect from three types of social engineering <span class='m
       </td>
 		</tr>
 		<tr>
-			<td><strong>Pharming</strong></td>
+			<td>Pharming</td>
 			<td>
         - using secure DNS provider
         - looks for HTTPS protocol in site URL
       </td>
 		</tr>
 		<tr>
-			<td><strong>Shoulder Surfing</strong></td>
+			<td>Shoulder Surfing</td>
 			<td>
         - shield your screen/keypad/keyboard when entering (sensitive/personal) information (1)
         - to stop people seeing/memorising passwords/named sensitive item/sensitive/personal information (1)
@@ -1709,26 +1630,28 @@ Write down function of three malware types <span class='mark'>[6 marks]</span>
 <answer>
 	<table>
 		<tr>
-			<td><strong>Virus</strong></td>
+			<td>Virus</td>
 			<td>self-replicating software that is designed to harm the computer by draining computing power/deletes files</td>
 		</tr>
 		<tr>
-			<td><strong>Worm</strong></td>
+			<td>Worm</td>
 			<td>self-replicating software that functions the same as virus but it does not need host file or human interactions to spread</td>
 		</tr>
 		<tr>
-			<td><strong>Ramsomware</strong></td>
+			<td>Ramsomware</td>
 			<td>encrypts/locks the user files and demands a payment to decrypt/unlock it back</td>
 		</tr>
 		<tr>
-			<td><strong>Spyware</strong></td>
+			<td>Spyware</td>
 			<td>spys/monitors the screen to steal personal/sensitive/confidential information</td>
 		</tr>
 	</table>
 </answer>
 
 Function of firewall <span class='mark'>[2 marks]</span>
-<answer><p>Monitors ingoing and outgoing data traffic deciding which data to be allowed to pass through according to a set of rules known as firewall porlicy</p><answer>
+<answer>
+Monitors ingoing and outgoing data traffic deciding which data to be allowed to pass through according to a set of rules known as firewall policy
+</answer>
 
 List two ways to improve physical security <span class='mark'>[2 marks]</span>
 <answer>
@@ -1741,7 +1664,7 @@ List two ways to improve physical security <span class='mark'>[2 marks]</span>
 </answer>
 
 Define eavesdropping <span class='mark'>[2 marks]</span>
-<answer><p>process of intercepting or sniffing data traffic to steal personal/sensitive/confidential information</p><answer>
+<answer><p>process of intercepting or sniffing data traffic to steal personal/sensitive/confidential information</p></answer>
 
 State how to protect from eavesdropping <span class='mark'>[2 marks]</span>
 <answer>
@@ -1756,26 +1679,26 @@ List two features of a strong password <span class='mark'>[2 marks]</span>
 - uncommon/unique words
 </answer>
 
-Define audit trail <span class='mark'>[2 marks]</span>
-<answer><p>a detail record that keeps activity logs that contain who did changes, when happened and what changed</p><answer>
+Define audit trail <span class='mark'>[1 marks]</span>
+<answer><p>a detail record that keeps activity logs that contain who did changes, when happened and what changed</p></answer>
 
-Write down the purpose of audit trailing <span class='mark'>[2 marks]</span>
-<answer><p>to detect/find/analyze any suspicious activity that trys to get unauthorized access</p><answer>
+Write down the purpose of audit trailing <span class='mark'>[1 marks]</span>
+<answer><p>to detect/find/analyze any suspicious activity that trys to get unauthorized access</p></answer>
 
-Define modular testing <span class='mark'>[2 marks]</span>
-<answer><p>to encure each section/part is working accurately by testing</p><answer>
+Define modular testing <span class='mark'>[1 marks]</span>
+<answer><p>to encure each section/part is working accurately by testing</p></answer>
 
-Define penetration testing <span class='mark'>[2 marks]</span>
-<answer><p>process that is performed by ethical hackers for the sake of finding and fixing security vulnerabilities before getting exploiting by hackers</p><answer>
+Define penetration testing <span class='mark'>[1 marks]</span>
+<answer><p>process that is performed by ethical hackers for the sake of finding and fixing security vulnerabilities before getting exploiting by hackers</p></answer>
 
-Define two-factor authentication (2FA) <span class='mark'>[2 marks]</span>
-<answer><p>an authentication method that sends one-time security code (usually PIN) to authentication app or device</p><answer>
+Define two-factor authentication (2FA) <span class='mark'>[1 marks]</span>
+<answer><p>an authentication method that sends one-time security code (usually PIN) to authentication app or device</p></answer>
 
-Define access control <span class='mark'>[2 marks]</span>
-<answer><p>the ability to perform something with the data. For instance, modify, edit and copy.</p><answer>
+Define access control <span class='mark'>[1 marks]</span>
+<answer><p>the ability to perform something with the data. For instance, modify, edit and copy.</p></answer>
 
-Write down the purpose of using access control <span class='mark'>[2 marks]</span>
-<answer><p>to limit/prevent unauthorized access</p><answer>
+State the purpose of managing access control <span class='mark'>[1 marks]</span>
+<answer><p>To limit/prevent unauthorized access</p></answer>
 
 List at least two examples of software vulnerabilities <span class='mark'>[2 marks]</span>
 <answer>
@@ -1786,69 +1709,76 @@ List at least two examples of software vulnerabilities <span class='mark'>[2 mar
 
 Explain why the delay of not updating software to latest version could pose a threat to the security of the network<span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <strong>One method</strong>
-    <li>compromised/unpatched software is more vulnerable to attack (1)</li>
-    <li>and may allow an attacker control of the whole network (1)</li>
-    <strong>Another method</strong>
-    <li>unpatched software has known weaknesses (1)</li>
-    <li>which can be exploited by a hacker(1)</li>
-  </ul>
+One method
+- compromised/unpatched software is more vulnerable to attack (1)
+- and may allow an attacker control of the whole network (1)
+Another method
+- unpatched software has known weaknesses (1)
+- which can be exploited by a hacker(1)
 </answer>
 
 Describe how an email phishing attack targeting bank customers might work <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
+<answer>
+One way
+- The victim opens the unknown links given by attackers
+- and fill in the confidential information which attackers can use.
+Another way
+- An attacker will claim to be from a part of larger organization aiming to fix the issues from victim computer
+- Victim will follow through attacker's steps and give out the confidential information.
+</answer>
 
-Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li>Ethical Hacking<li>Commericial analysis tools</li><li>Review of network and user policies</li></ul><span class='mark'>[6 marks]</span>
+Discuss the methods Santiago can use to find and fix network vulnerabilities. Consider <ul><li> Ethical Hacking</li><li> Commericial analysis tools</li><li> Review of network and user policies</li></ul><span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/identifying-vulnerabilities.png' /></answer>
 
 <h3 id='chap-23'>Chapter 23: The Internet And The World Wide Web</h3>
 
 How do you access the web pages on internet? <span class='mark'>[4 marks]</span>
 <answer>
-<ul>
-  <li>First user has to enter a URL of the website</li>
-  <li>Domain name from URL has to be checked with DNS to find IP address</li>
-  <li>Web browser connects to web server using IP address found from DNS</li>
-  <li>A web page is transferred using HTTP(s) protocol</li>
-  <li>Web browser displayed the web page described by HTML</li>
-</ul>
+- First user has to enter a URL of the website
+- Domain name from URL has to be checked with DNS to find IP address
+- Web browser connects to web server using IP address found from DNS
+- A web page is transferred using HTTP(s) protocol
+- Web browser displayed the web page described by HTML
 </answer>
 
 Describe the difference between the Internet and the World Wide Web. <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-  <strong>Internet</strong>
-  <li>The internet is a global network of networks</li>
-  <li>The internet is the most well known WAN (Wide Area Network)</li>
-  <li>The internet is a infrastructure used to provide connectivity to WWW</li>
-  <strong>World Wide Web</strong>
-  <li>Collection of websites and web pages that are accessed using internet</li>
-  <li>Web pages are accessed using a web browser, which communicates with web servers to retrieve and display the content.</li>
-</ul>
+Internet
+- The internet is a global network of networks
+- The internet is the most well known WAN (Wide Area Network)
+- The internet is a infrastructure used to provide connectivity to WWW
+World Wide Web
+- Collection of websites and web pages that are accessed using internet
+- Web pages are accessed using a web browser, which communicates with web servers to retrieve and display the content.
 </answer>
 
-How many bits do IPv4 and IPv6 use for each address <span class='mark'>[2 marks]</span>
+How many bits do IPv4 and IPv6 use for each address? <span class='mark'>[2 marks]</span>
 <answer>
-<ul><li>IPv4 - 32 bits</li><li>IPv6 - 128 bits</li></ul>
+- IPv4 - 32 bits
+- IPv6 - 128 bits
 </answer>
 
 Why does IPv6 uses 128 bits? <span class='mark'>[2 marks]</span>
 <answer>
-<ul><li>IPv6 has 8 group of 4 hexadecimal digits </li><li>Each hexadecimal can represented using 4 bits</li><li>since they are in 4 hexadecimal digits, each group can be represented using 16 bits</li><li>It has total of 8 groups thus, 128 bits</li>
-</ul>
+- IPv6 has 8 group of 4 hexadecimal digits 
+- Each hexadecimal can represented using 4 bits
+- since they are in 4 hexadecimal digits, each group can be represented using 16 bits
+- It has total of 8 groups thus, 128 bits
 </answer>
 
 Explain why IPv6 addressing was introduced. <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-<li>IPv4 addresses are running out</li>
-<li>IPv6 can represent more devices using 128 bits per address compared to 32 bits per address</li>
-</ul>
+- IPv4 addresses are running out
+- IPv6 can represent more devices using 128 bits per address compared to 32 bits per address
 </answer>
 
-What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[6 marks]</span>
-<answer><!-- TODO --></answer>
+What are the role of a switch, WAP, router and a modem in a network? <span class='mark'>[4 marks]</span>
+<answer>
+- A switch connects multiple devices (computers, printers, etc.) to a single network, allowing them to communicate with each other. It operates at the data link layer, forwarding data packets based on MAC addresses. 
+- The router manages the flow of data between your devices and the internet, assigning IP addresses and routing traffic appropriately. It ensures that data is sent to the right devices and destinations. 
+- The WAP extends the network's reach by enabling wireless devices to connect to the network. It acts as a "hub" for wireless communication, allowing devices like smartphones and laptops to connect without the need for wired connections. 
+- The modem acts as the gateway between your home network and the internet, converting digital signals into analog signals for transmission and back. It's essentially the device that connects your network to your Internet Service Provider (ISP). 
+</answer>
 
 Draw a diagram connecting how computer gets access to internet <span class='mark'>[6 marks]</span>
 <answer><img src='assets/network/access-internet.png' /></answer>
@@ -1887,6 +1817,21 @@ List two ways in which landfills can be harmful for human health <span class='ma
 - contribute water/air pollutions due to toxic/radioactive materials
 - 
 </answer>
+List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span>
+<answer>
+- Tracking endangered animals using GPS trackers
+- Warning systems to alert approaching tsunamis
+- Measuring sea surface temperatures to learn more about climate change
+- Using sensors to turn off wasteful electrical resources
+</answer>
+
+Discuss the positive and negative effects of computer science technology on the environment <span class='mark'>[6 marks]</span>
+<answer>
+- Energy: Manufacture and use of devices uses energy. Manufacturing involves energy-intensive mining and processing of minerals. The use of devices involves the energy used by the devices themselves, but also by data centres. These data centres generate heat, so energy is needed to keep them cool. Much of the energy used comes from non-renewable sources such as gas and coal. Computer science is used in efficient energy production. Computer software is used to design, model and test efficient devices to produce electricity from wind, wave and solar power. Energy use can be reduced using smart technologies, such as light-sensitive switches that turn off lights when they are not needed. Efficient transport planning using computer modelling and analysis can reduce fuel use.
+- Sustainability: Digital devices use many different chemical elements. Some of these are rare and will be in short supply as they are used up. It is difficult to recycle devices to reuse these elements.
+- Waste: Electronic devices are difficult to recycle and are often disposed of in landfill sites as e-waste. Landfill sites take up areas of land that could be used for other purposes. Toxic substances such as lead, mercury and cobalt can get into the soil and the water supply from the landfill sites and so cause health problems.
+- Data analysis: Computer science technology can be used to monitor environmental factors by transmitting and analysing data. This data can be shared by scientists around the world who can collaborate to find solutions to problems. Computers can be used to develop models to forecast environmental behaviour and identify options for action.
+</answer>
 
 Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
@@ -1898,84 +1843,69 @@ Discuss the impact of computer technology on the environment. Consider <ul><li>M
 
 List two privacy enhancing tools <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Encryption</li>
-    <li>Password manager</li>
-    <li>VPN (Virtual Private Network)</li>
-    <li>Privacy-enhanced browsers (Brave, Firefox)</li>
-    <li>Cookies cleaner</li>
-    <li>Private browsing mode, incognito mode</li>
-    <li>Trackers blockers </li>
-  </ul>
+- Encryption
+- Password manager
+- VPN (Virtual Private Network)
+- Privacy-enhanced browsers (Brave, Firefox)
+- Cookies cleaner
+- Private browsing mode, incognito mode
+- Trackers blockers 
 </answer>
 
 List two benefits of giving away personal information <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Personalized experience</li>
-    <li>Faster user experiences due to autofill forms</li>
-  </ul>
+- Personalized experience
+- Faster user experiences due to autofill forms
 </answer>
 
 List two benefits of analyzing Big Data <span class='mark'>[2 marks]</span>
-<answer><ul>
-<li>Identify side effects of drug</li>
-<li>Recommending good resources to users that align with their interests</li>
-<li>Notify the spread of diseases</li>
-<li>Governments use Big Data to monitor traffic flows, energy usage, or public transport needs to improve urban planning</li>
-</ul></answer>
+<answer>
+- Identify side effects of drug
+- Recommending good resources to users that align with their interests
+- Notify the spread of diseases
+- Governments use Big Data to monitor traffic flows, energy usage, or public transport needs to improve urban planning
+</answer>
 
 State why it is important to protect personal information
-<answer><ul><li>Could fall into identify theft</li><li>which they can use our details to imitate behaviours of us to manipulate others.</li></ul></answer>
+<answer>
+- Could fall into identify theft
+- which they can use our details to imitate behaviours of us to manipulate others.
+</answer>
 
 <h3 id='chap-26'>Chapter 26: Digital Inclusion</h3>
-
-Define Technology-empowered <span class='mark'>[1 mark]</span>
-<answer><p>Not being accessible to computer technology</p></answer>
-
-Define Technology-excluded <span class='mark'>[1 mark]</span>
-<answer><p>Being able to access to computer technology</p></answer>
 
 Define Digital Divide <span class='mark'>[1 mark]</span>
 <answer><p>The gap between technology-empowered people and technology-excluded people</p></answer>
 
 List two benefits of being digitally included <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>More job opportunities</li>
-    <li>Access to online information and resources</li>
-    <li>Social interactions and communication</li>
-  </ul>
+- More job opportunities
+- Access to online information and resources
+- Social interactions and communication
 </answer>
 
 List two disadvantages of being digitally excluded <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Less job opportunities</li>
-    <li>Limited to online information and resources</li>
-    <li>Less social interaction and communication</li>
-  </ul>
+- Less job opportunities
+- Limited to online information and resources
+- Less social interaction and communication
 </answer>
 
 List two things that contribute to digital inclusion <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Not being to able to access to the internet</li>
-    <li>Poor landline infrastructure</li>
-    <li>Lack of knowledge or skills</li>
-    <li>Privacy concerns</li>
-    <li>Not being able to afford</li>
-  </ul>
+- Not being to able to access to the internet
+- Poor landline infrastructure
+- Lack of knowledge or skills
+- Privacy concerns
+- Not being able to afford
 </answer>
 
 List two ways to reduce digital inclusion <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Building more infrastructure to promote internet access</li>
-    <li>Offering more budget-friendly internet plans</li>
-    <li>Providing public wi-fi areas</li>
-    <li>Giving free tech training programs</li>
-  </ul>
+- Building more infrastructure to promote internet access
+- Offering more budget-friendly internet plans
+- Providing public wi-fi areas
+- Giving free tech training programs
 </answer>
 
 <h3 id='chap-27'>Chapter 27: Professionalism</h3>
@@ -1985,19 +1915,17 @@ Define professionalism <span class='mark'>[1 mark]</span>
 
 List two ways that computer scientists can demonstrate professionalism <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Belong to/have membership in a professional society (1)</li>
-    <li>Attend computer science related conferences/gatherings (1)</li>
-    <li>Attaining/gaining training/educational opportunities (1)</li>
-    <li>Behave in ethical/legal/moral ways (1)</li>
-    <li>Stay up to date with changes in the field/read up-to-date publications (1)</li>
-    <li>Use responsible programming practices e.g. due diligence/testing/ commenting code for maintainability (1)</li>
-    <li>Avoid bias when making design choices (1)</li>
-  </ul>
+- Belong to/have membership in a professional society (1)
+- Attend computer science related conferences/gatherings (1)
+- Attaining/gaining training/educational opportunities (1)
+- Behave in ethical/legal/moral ways (1)
+- Stay up to date with changes in the field/read up-to-date publications (1)
+- Use responsible programming practices e.g. due diligence/testing/ commenting code for maintainability (1)
+- Avoid bias when making design choices (1)
 </answer>
 
 Airtest produces exhaust emissions testing software. A programmer discovers that there is a bug in the software that produces inaccurate results under particular circumstances. Discuss What course of action the programmer should take and explain why. <span class='mark'>[4 marks]</span>
-<answer><!-- TODO --></answer>
+<answer><p>The BCS Code of Conduct for computer scientists stipulates that they should not withhold information on the performance of systems. Therefore, the programmer should inform their manager immediately. Furthermore, the code also states that they must avoid injuring others. If the testing software is producing faulty information about exhaust emissions it could also endanger human health, which is another reason for the programmer to take action to flag up the problem.</p></answer>
 
 <h3 id='chap-28'>Chapter 28: Computing And The Legal Impact Of Technology</h3>
 
@@ -2006,49 +1934,46 @@ Define intellectual property <span class='mark'>[1 mark]</span>
 
 List two ways to protect intellectual property <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Copyright</li>
-    <li>Patent</li>
-  </ul>
+- Copyright
+- Patent
 </answer>
 
-Difference between copyright and patent <span class='mark'>[2 marks]</span>
+Assess the extent to which the patent system is a barrier to the technological innovation. <span class='mark'>[4 marks]</span>
+<answer><p>A patent gives the patent holder the exclusive right for 20 years to make, use and sell an invention. This encourages inventiveness by ensuring that the owner of the patent (usually the employer of the inventors) gets recognition and benefits financially from the invention. However, in recent years, big companies such as Apple and Samsung have been embroiled in long and expensive legal battles over alleged patent infringements. To defend a patent is very costly. There is an argument that the money spent on legal fees would be better invested in research and development. Patent law encourages companies to keep new inventions secret and block others from using them for 20 years. If inventions were shared from the outset, the pace of technological progress and innovation would be accelerated.</p></answer>
+
+Difference the main between copyright and patent <span class='mark'>[2 marks]</span>
 <answer><p>Copyright only protects the expression of the product whereas patent protects the idea or design of the product</p></answer>
 
 Define proprietary software <span class='mark'>[1 mark]</span>
 <answer><p>Non-free software that restricts access of the source code</p></answer>
 
 Define open-source software <span class='mark'>[1 mark]</span>
-<answer><p>Free software that gives certain permissions of the source code to the users</p></answer>
+<answer><p>Free software that let user to modify, contribute, and distribute.</p></answer>
 
 List two benefits of proprietary software <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Available technical support</li>
-    <li>Better security</li>
-    <li>More user-friendly</li>
-  </ul>
+- Available technical support
+- Better security
+- More user-friendly
 </answer>
 
 List two benefits of open-source software <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>Highly customizable</li>
-    <li>Typically free, does not required to purchase the software</li>
-  </ul>
+- Highly customizable
+- Free
 </answer>
 
 Difference between proprietary software and open-source software <span class='mark'>[2 marks]</span>
-<answer><ul>
-<li>Open source software is free and able to edit and redistribute</li>
-<li>Proprietary software belongs to an individual or a compnay. Its license specifies that users aren't allowed to modify source code</li>
-</ul></answer>
+<answer>
+- Open source software is free and able to edit and redistribute
+- Proprietary software belongs to an individual or a company. Its license specifies that users aren't allowed to modify source code
+</answer>
 
 Provide two reasons why a content creator would considering using a Creative Commons license to make their work available to others <span class='mark'>[2 marks]</span>
-<answer><!-- TODO --></answer>
-
-Discuss how the software can be protected from illegal copying and/or illegal distribution. Consider <ul><li>intellectual property<li>licensing.</li></ul><span class='mark'>[6 marks]</span>
-<answer><p></p><answer>
+<answer>
+- To give the public permission to share and use their work. 
+- To allow others to modify and change the original work.
+</answer>
 
 <h3 id='chap-29'>Chapter 29: Current and Emerging Trends</h3>
 
@@ -2063,20 +1988,16 @@ What is DNA? <span class='mark'>[1 mark]</span>
 
 Describe differences between normal computer and DNA computers <span class='mark'>[2 marks]</span>
 <answer>
-<ul>
-  <li>DNA computers use DNA rather than silicon like normal computers. DNA doesn’t use two bits but four bits (A, T, G and C).Normal computers use binary which is two bits (0 and 1).</li>
-  <li>Like modern storage devices, DNA is digital, but it is not binary. Binary encoding uses two bits (0 and 1) but DNA uses four possible bits named adenine (A), thymine (T), guanine (G) and cytosine (C) after their chemical structure.</li>
-</ul>
+- DNA computers use DNA rather than silicon like normal computers. DNA doesn’t use two bits but four bits (A, T, G and C).Normal computers use binary which is two bits (0 and 1).
+- Like modern storage devices, DNA is digital, but it is not binary. Binary encoding uses two bits (0 and 1) but DNA uses four possible bits named adenine (A), thymine (T), guanine (G) and cytosine (C) after their chemical structure.
 </answer>
 
 Describe the advantages of DNA computers over normal ones <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>There will always be supply of DNA</li>
-    <li>The large supply of DNA makes it cheap resource</li>
-    <li>DNA biochips can be made cleanly unlike toxic materials used to make traditional processors</li>
-    <li>DNA computers are many times smaller than today’s computers.</li>
-  </ul>
+- There will always be supply of DNA
+- The large supply of DNA makes it cheap resource
+- DNA biochips can be made cleanly unlike toxic materials used to make traditional processors
+- DNA computers are many times smaller than today’s computers.
 </answer>
 
 Why is DNA suitable for storing data? <span class='mark'>[2 marks]</span>
@@ -2087,12 +2008,10 @@ Define what is meant by nanotechnology <span class='mark'>[1 mark]</span>
 
 Describe a place where nanotechnology is used. <span class='mark'>[1 mark]</span>
 <answer>
-  <ul>
-    <li>Self cleaning windows</li>
-    <li>Clothing</li>
-    <li>Scratch-Resistant coating</li>
-    <li>Medicine</li>
-  </ul>
+- Self cleaning windows
+- Clothing
+- Scratch-Resistant coating
+- Medicine
 </answer>
 
 What is meant by quantum computing <span class='mark'>[2 marks]</span>
@@ -2111,15 +2030,13 @@ Define the term qubit <span class='mark'>[1 mark]</span>
 How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
 
-How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark"></span>
+How can quantum computers solve complex arithmetic problems far more rapidly than classical computers? <span class="mark">[2 marks]</span>
 <answer><p>Each qubit can be 1 and 0 at the same time and so can calculate a vast number of possible outcomes simultaneously.</p></answer>
 
 Describe how artificial intelligence could identify what is wrong with patients by symptons. <span class='mark'>[2 marks]</span>
 <answer>
-  <ul>
-    <li>It will interpret/analyse patient input to identify symptoms (1) and match the symptoms to (possible) illnesses (1)</li>
-    <li>It will match symptoms to possible illnesses (1) and give the most likely/probable illness (1)</li>
-    <li>It will match symptoms to possible illnesses (1) and ask further questions to narrow it down (1)</li>
-    <li>It will match symptoms to possible illnesses (1) by searching/using a database/other data store (1)</li>
-  </ul>
+- It will interpret/analyse patient input to identify symptoms (1) and match the symptoms to (possible) illnesses (1)
+- It will match symptoms to possible illnesses (1) and give the most likely/probable illness (1)
+- It will match symptoms to possible illnesses (1) and ask further questions to narrow it down (1)
+- It will match symptoms to possible illnesses (1) by searching/using a database/other data store (1)
 </answer>
