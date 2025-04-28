@@ -755,7 +755,7 @@ Define compression <span class='mark'>[1 mark]</span>
 <answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
 
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
-<answer><p></p><answer>
+<answer><p>Lossy compression permenently deletes the data during compression state. In text documents, missing words can make the content unclear or even unreadable</p><answer>
 
 Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
 <answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
@@ -1828,12 +1828,12 @@ List at least two disadvantages of computer technology on the environment <span 
 </answer> 
 
 List two positive impacts of using technology on the environment <span class='mark'>[2 marks]</span>
-<answer><ul>
-<li>Tracking endangered animals using GPS trackers</li>
-<li>Warning systems to alert approaching tsunamis</li>
-<li>Measuring sea surface temperatures to learn more about climate change</li>
-<li>Using sensors to turn off wasteful electrical resources</li>
-</ul></answer>
+<answer>
+- Tracking endangered animals using GPS trackers 
+- Warning systems to alert approaching tsunamis
+- Measuring sea surface temperatures to learn more about climate change
+- Using sensors to turn off wasteful electrical resources
+</answer>
 
 List two ways to reduce energy consumption <span class='mark'>[2 marks]</span>
 <answer>
@@ -1845,8 +1845,9 @@ List two ways to reduce energy consumption <span class='mark'>[2 marks]</span>
 List two ways in which landfills can be harmful for human health <span class='mark'>[2 marks]</span>
 <answer>
 - contribute water/air pollutions due to toxic/radioactive materials
-- 
+- can cause chemical leak into the soil affecting near plants 
 </answer>
+
 List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span>
 <answer>
 - Tracking endangered animals using GPS trackers
