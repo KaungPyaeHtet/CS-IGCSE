@@ -109,6 +109,12 @@
 What is meant by an algorithm? <span class='mark'>[1 mark]</span>
 <answer><p>An algorithm is a precise step-by-step method for solving a problem or completing a task.</p></answer>
 
+What is the difference between program and algorithm? <span class='mark'>[2 marks]</span>
+<answer><p>An algorithm is simplely a plan that contains a set of instructions to perform a specific task whereas a program is the coded version of one or more algorithms so that the computer can execute</p></answer>
+
+State why using flowcharts would suitable to explain algorithms to non-technical people? <span class='mark'>[2 marks]</span>
+<answer><p>Flowchart gives a vistualized version of the algorithm making it easy to track down each step without needing any coding experiences/knowledges</p></answer>
+
 <h3 id='chap-2'>Chapter 2: Creating Algorithms</h3>
 
 What is the difference between a constant and a variable <span class='mark'>[1 mark]</span>
@@ -119,12 +125,20 @@ Number Guessing Game FlowChart <span class='mark'>[5 marks]</span> <div class='q
 
 <h3 id='chap-3'>Chapter 3: Sorting and Searching Algorithms</h3>
 
+Define recursion <span class='mark'>[1 mark]</span>
+<answer><p>A process that is repeated again and again until the condition is met</p></answer>
+
+Define bruteforce <span class='mark'>[2 marks]</span>
+<answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
+
+Define divide and conqueror <span class='mark'>[2 marks]</span>
+<answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
+
 How does Linear search work? <span class='mark'>[3 marks]</span>
 <answer>
 - Starts at the first item of the list
     - Compare the current item with the searching item
     - If they are same then stop, else move to the next item until the end of list is reached or the value is found
-  
 </answer>
 
 How does Binary search work? <span class='mark'>[4 marks]</span>
@@ -134,7 +148,6 @@ How does Binary search work? <span class='mark'>[4 marks]</span>
     - If median is higher, selects the left side of the list and repeat the first two steps
     - If median is lower, selects the right side of the list and repeat the first two steps
     - Repeat these steps until the search is found or all median items have been checked
-  
 </answer>
 
 How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
@@ -143,7 +156,33 @@ How does bubble sort work (ascending order) <span class='mark'>[3 marks]</span>
     - Compare two adjacent values, if they are not in ascending order then swap
     - if they are in ascending order then move on to next value
     - Repeat these steps until there are no swaps in the whole pass
-  
+</answer>
+
+How merge sort works <span class='mark'>[4 marks]</span>
+<answer>
+- it recursively breaks down the array into smaller sub-arrays
+- until each single value is seperated 
+- then it sorts adjacent sub-arrays and merges the results
+- repeat the process until all sub-arrays are combined into one sorted array 
+</answer>
+
+State two benefits of using linear search algorithm <span class='mark'>[4 marks]</span>
+<answer>
+- easy to understand/debug/implement
+- memory efficient as in-place algorithm 
+- the array does not need to be sorted saving workload and computing power
+</answer>
+
+State two benefits of using binary search algorithm <span class='mark'>[4 marks]</span>
+<answer>
+- better effieiency on large data sets
+- less time complexity compared to linear search 
+</answer>
+
+State two benefits of using bubble sort algorithm <span class='mark'>[4 marks]</span>
+<answer>
+- memory efficiency due to being in-place algorithm 
+- suitable for small programs and data set 
 </answer>
 
 A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when sorting this list using a bubble sort algorithm <span class='mark'>[2 marks]</span>
@@ -151,15 +190,6 @@ A list is made up of the numbers 4, 1, 2, 6, 3, 5. Identify steps involved when 
 - Pass 1: 1 2 4 3 5 6
 - Pass 2: 1 2 3 4 5 6
 </answer>
-
-Define recursion <span class='mark'>[1 mark]</span>
-<answer><p>A process that is repeated again and again until the condition is met</p></answer>
-
-Define bruteforce <span class='mark'>[2 marks]</span>
-<answer><p>An algorithm that doesn't have any techniques to improve performance, but relies on computing power to try all possibilities until the solution is reached.</p></answer>
-
-Define divide and conqueror <span class='mark'>[2 marks]</span>
-<answer><p>An algorithm design that works by dividing a problem into smaller and smaller sub-problems, until they are easy to solve. The solutions are then combined to complete problem</p></answer>
 
 <h3 id='chap-4'>Chapter 4: Decomposition and Abstractions</h3>
 
@@ -723,6 +753,9 @@ Table of unit of data in computer from b to TB<span class='mark'>[6 marks]</span
 
 Define compression <span class='mark'>[1 mark]</span>
 <answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
+
+Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
+<answer><p>Lossy compression permenently deletes the data during compression state. In text documents, missing words can make the content unclear or even unreadable</p><answer>
 
 Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
 <answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
@@ -1787,6 +1820,34 @@ Accessing Internet Diagram <span class='mark'>[3 marks]</span> <img src='assets/
 
 <h3 id='chap-24'>Chapter 24: Computing And The Environmental impact of Technology</h3>
 
+List at least two disadvantages of computer technology on the environment <span class='mark'>[2 marks]</span>
+<answer>
+- high energy consumption leading to climate change/global warming as non-renewable/fossil fuels are being used to generate electricity 
+- landfills due to e-waste causing pollutions (water/air) 
+- material shortages as excessive amount of it are being used for manufacturing digital devices
+</answer> 
+
+List two positive impacts of using technology on the environment <span class='mark'>[2 marks]</span>
+<answer>
+- Tracking endangered animals using GPS trackers 
+- Warning systems to alert approaching tsunamis
+- Measuring sea surface temperatures to learn more about climate change
+- Using sensors to turn off wasteful electrical resources
+</answer>
+
+List two ways to reduce energy consumption <span class='mark'>[2 marks]</span>
+<answer>
+- implementing automative lighting systems to reduce unnecessary/wasteful electricity usage
+- choosing digital devices that has a low energy consumption rate/high energy efficiency rate
+- replacing energy efficient materials in manufacturing digital devices
+</answer>
+
+List two ways in which landfills can be harmful for human health <span class='mark'>[2 marks]</span>
+<answer>
+- contribute water/air pollutions due to toxic/radioactive materials
+- can cause chemical leak into the soil affecting near plants 
+</answer>
+
 List two positive impacts of using technology on the environment<span class='mark'>[2 marks]</span>
 <answer>
 - Tracking endangered animals using GPS trackers
@@ -1805,6 +1866,9 @@ Discuss the positive and negative effects of computer science technology on the 
 
 Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
+
+Discuss the impact of computer technology on the environment. Consider <ul><li>Manufacturing</li><li>Usage</li><li>Disposal</li></ul><span class='mark'>[6 marks]</span>
+<answer><p></p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
