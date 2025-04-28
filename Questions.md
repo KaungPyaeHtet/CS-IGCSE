@@ -755,7 +755,7 @@ Define compression <span class='mark'>[1 mark]</span>
 <answer><p>Compression is reducing the the size of a file so that it takes up less space on secondary storage</p></answer>
 
 Explain why lossy compression cannot be used to compress text <span class='mark'>[2 marks]</span>
-<answer><p>Lossy compression permenently deletes the data during compression state. In text documents, missing words can make the content unclear or even unreadable</p><answer>
+<answer><p>Lossy compression permenently deletes the data during compression state. In text documents, missing words can make the content unclear or even unreadable</p></answer>
 
 Define Run-Length Encoding (RLE) <span class='mark'>[1 mark]</span>
 <answer><p>It is a lossless compression algorithm that is used for compression text documents</p></answer>
@@ -1866,9 +1866,6 @@ Discuss the positive and negative effects of computer science technology on the 
 
 Explain why cloud storage companies often locate their servers in cold countries to protect the environment <span class="mark">[3 marks]</span>
 <answer><p>To reduce electricity usage (1) because servers generate lots of heat (1), which would otherwise require air conditioners (1) that can be replaced with natural cooling system (1).</p></answer>
-
-Discuss the impact of computer technology on the environment. Consider <ul><li>Manufacturing</li><li>Usage</li><li>Disposal</li></ul><span class='mark'>[6 marks]</span>
-<answer><p></p></answer>
 
 <h3 id='chap-25'>Chapter 25: Privacy</h3>
 
